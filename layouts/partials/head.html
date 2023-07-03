@@ -1,0 +1,150 @@
+<head>
+    <link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/realm/css/common.css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+        integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw=="
+        crossorigin="anonymous"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
+    <title>G00F's Not a Wiki </title>
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward" />
+    <style>
+        table.Faction {
+            border-collapse: collapse;
+        }
+
+        .Faction th,
+        .Faction td {
+            border: 2px solid black;
+            padding: 3px;
+        }
+
+        .Faction td {
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .gsc-cursor-page {
+            padding-right: 10px;
+        }
+    </style>
+    <style>
+        table.ManaColors {
+            border-collapse: collapse;
+        }
+
+        .ManaColors th,
+        .ManaColors td {
+            border: 3px solid black;
+        }
+
+        .ManaColors td {
+            font-weight: bold
+        }
+
+        .gsc-cursor-page {
+            padding: 4px;
+        }
+    </style>
+    <style>
+        table.numtable {
+            border-collapse: collapse;
+        }
+
+        .numtable tr:hover {
+            background-color: #ffffff
+        }
+
+        .numtable tr:hover {
+            background-color: #ffffff
+        }
+
+        .numtable th,
+        .numtable td {
+            border: 3px solid #4c5b86;
+        }
+
+        .numtable td {
+            font-weight: bold
+        }
+
+        .gsc-cursor-page {
+            padding: 4px;
+        }
+    </style>
+    <style>
+        table.imgtable {
+            border-collapse: collapse;
+        }
+
+        .imgtable th,
+        .imgtable td {
+            border: none;
+        }
+
+        .imgtable td {
+            font-weight: bold
+        }
+
+        .gsc-cursor-page {
+            padding: 4px;
+        }
+    </style>
+    <style>
+        .black_overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 99%;
+            height: 50%;
+            padding: 16px;
+            border: 1px solid orange;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#Expand").on("hide.bs.collapse", function () {
+                $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
+            });
+            $("#Expand").on("show.bs.collapse", function () {
+                $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
+            });
+        });
+    </script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $("[research]").style_my_tooltips();
+            });
+        })(jQuery);
+    </script>
+    <script type="text/javascript">
+        function shohid(e) {
+            //$('.autohide').not(e.next()).hide();
+            $(e).parents('.autohide').show();
+            $(e).next().toggle();
+        }
+    </script>
+</head>

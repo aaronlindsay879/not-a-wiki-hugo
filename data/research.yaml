@@ -1,0 +1,31 @@
+Spellcraft:
+  - id: S1
+    name: Enchanting
+    for: Fairy
+    cost: 7.5e+125
+    effect:
+      description:
+        Increase the production of Enchanted Fields based on mana produced
+        in this game.
+      formula: "$(0.75x^{0.75})\\%$ where x is mana produced this game"
+  - id: S10
+    name: Channeling
+    for: Angel
+    hint: Open the Gates of Heaven.
+    requirement: 2,000 Heaven's Gate. (This Game)
+    cost: 2.883e+127
+    effect:
+      description:
+        Increase the production of all other buildings based on the amount
+        of Heaven's Domain you own.
+      formula: "$(110 * x)\\%$ where x is the amount of Enchanted Fields you own"
+Craftsmanship:
+  - id: C1
+    name: Dummy Targets
+    for: Elf
+    cost: 7.5e+125
+    effect:
+      description:
+        Increase Elven Training Grounds production based on the amount of
+        Faction Coins you found.
+      formula: "$(3 * \\ln(1 + x)^3)\\%$, where x is your Faction Coins found this game"

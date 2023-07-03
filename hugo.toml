@@ -1,0 +1,8 @@
+baseURL = 'http://naw.ramiel.cc/realm/'
+languageCode = 'en-us'
+title = 'NaW hugo'
+disablePathToLower = true
+staticDir = ['static', 'not-a-wiki-static']
+
+[markup.goldmark.renderer]
+unsafe = true

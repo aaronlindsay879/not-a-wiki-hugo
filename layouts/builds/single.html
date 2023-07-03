@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ .Content }}
+{{ $prod_builds := where .Params.builds "type" "Production" }}
+{{ $trophy_builds := where .Params.builds "type" "Trophy" }}
+{{ $buff_builds := where .Params.builds "type" "Buff" }}
+
+{{ if gt ($prod_builds | len) 0 }}
+<p><b>Production builds</b></p>
+<div class="category">
+    {{ range $prod_builds }}
+    {{ partial "build.html" (dict "build" .) }}
+    {{ end }}
+</div>
+{{ end }}
+
+{{ if gt ($trophy_builds | len) 0 }}
+<p><b>Trophy builds</b></p>
+<div class="category">
+    {{ range $trophy_builds }}
+    {{ partial "build.html" (dict "build" .) }}
+    {{ end }}
+</div>
+{{ end }}
+
+{{ if gt ($buff_builds | len) 0 }}
+<p><b>Buff builds</b></p>
+<div class="category">
+    {{ range $buff_builds }}
+    {{ partial "build.html" (dict "build" .) }}
+    {{ end }}
+</div>
+{{ end }}
+
+{{ end }}
