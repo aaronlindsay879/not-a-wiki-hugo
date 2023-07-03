@@ -1,863 +1,1212 @@
-<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico" >
-<body>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css"/>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js" integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw==" crossorigin="anonymous"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
-<title>G00F's Not a Wiki </title>
-<meta charset="UTF-8">
-<meta name="keywords" content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward"/>
-<style>
+
+<body>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/scripts/common.css" />
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+		integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw=="
+		crossorigin="anonymous"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
+	<title>G00F's Not a Wiki </title>
+	<meta charset="UTF-8">
+	<meta name="keywords"
+		content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward" />
+	<style>
 		table.Faction {
 			border-collapse: collapse;
 		}
-		.Faction th,.Faction td {
+
+		.Faction th,
+		.Faction td {
 			border: 2px solid black;
-		padding: 3px;
+			padding: 3px;
 		}
+
 		.Faction td {
 			font-weight: bold;
-		padding: 10px;
+			padding: 10px;
 		}
-	   .gsc-cursor-page  {
-		padding-right: 10px;
-	   }
+
+		.gsc-cursor-page {
+			padding-right: 10px;
+		}
 	</style>
-<style>
+	<style>
 		table.ManaColors {
 			border-collapse: collapse;
 		}
-		.ManaColors th,.ManaColors td {
+
+		.ManaColors th,
+		.ManaColors td {
 			border: 3px solid black;
 		}
+
 		.ManaColors td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
-</style>
-<style>
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
+	</style>
+	<style>
 		table.numtable {
 			border-collapse: collapse;
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
-		.numtable th,.numtable td {
+
+		.numtable th,
+		.numtable td {
 			border: 3px solid #4c5b86;
 		}
+
 		.numtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
+	<style>
 		table.imgtable {
 			border-collapse: collapse;
 		}
-		.imgtable th,.imgtable td {
+
+		.imgtable th,
+		.imgtable td {
 			border: none;
 		}
+
 		.imgtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
-	.black_overlay {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		z-index: 1001;
-		-moz-opacity: 0.8;
-		opacity: .80;
-		filter: alpha(opacity=80);
-	}
+	<style>
+		.black_overlay {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index: 1001;
+			-moz-opacity: 0.8;
+			opacity: .80;
+			filter: alpha(opacity=80);
+		}
 
-	.white_content {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 99%;
-		height: 50%;
-		padding: 16px;
-		border: 1px solid orange;
-		background-color: white;
-		z-index: 1002;
-		overflow: auto;
-	}
-</style>
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 99%;
+			height: 50%;
+			padding: 16px;
+			border: 1px solid orange;
+			background-color: white;
+			z-index: 1002;
+			overflow: auto;
+		}
+	</style>
 
-<script>
-	$(document).ready(function () {
-		$("#Expand").on("hide.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
-		});
-		$("#Expand").on("show.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
-		});
-	});
-</script>
-<script>
-	(function ($) {
+	<script>
 		$(document).ready(function () {
-			$("[research]").style_my_tooltips();
+			$("#Expand").on("hide.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
+			});
+			$("#Expand").on("show.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
+			});
 		});
-	})(jQuery);
-</script>
-<script type="text/javascript">
-	function shohid(e) {
-		//$('.autohide').not(e.next()).hide();
-		$(e).parents('.autohide').show();
-		$(e).next().toggle();
-	}
-</script>
-<div id="outer">
-	<div id="parent">
-		<div id="header" align="center">
+	</script>
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[research]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+		function shohid(e) {
+			//$('.autohide').not(e.next()).hide();
+			$(e).parents('.autohide').show();
+			$(e).next().toggle();
+		}
+	</script>
+	<div id="outer">
+		<div id="parent">
+			<div id="header" align="center">
+			</div>
 		</div>
-	</div>
-	<div id="navbox">
-		<div class="menu">
-			<ul>
-				<li><a href="/realm/Challenges" research="A complete list of Challenges and their requirements in image map form">Challenges</a>
-					<!--[if lte IE 6]>
+		<div id="navbox">
+			<div class="menu">
+				<ul>
+					<li><a href="/Challenges"
+							research="A complete list of Challenges and their requirements in image map form">Challenges</a>
+						<!--[if lte IE 6]>
 					<a href="#">Category one
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/Fairy" research="All Fairy Challenges">Fairy</a>
-						<li><a href="/realm/Elf" research="All Elven Challenges">Elven</a>
-						<li><a href="/realm/Angel" research="All Angel Challenges">Angel</a>
-						<li><a href="/realm/Goblin" research="All Goblin Challenges">Goblin</a>
-						<li><a href="/realm/Undead" research="All Undead Challenges">Undead</a>
-						<li><a href="/realm/Demon" research="All Demon Challenges">Demon</a>
-						<li><a href="/realm/Titan" research="All Titan Challenges">Titan</a>
-						<li><a href="/realm/Druid" research="All Druid Challenges">Druid</a>
-						<li><a href="/realm/Faceless" research="All Faceless Challenges">Faceless</a>
-						<li><a href="/realm/Dwarf" research="All Dwarven Challenges">Dwarven</a>
-						<li><a href="/realm/Drow" research="All Drow Challenges">Drow</a>
-						<li><a href="/realm/Dragons" research="All Dragon Challenges">Dragon</a>
-						<li><a href="/realm/Archon" research="All Archon Challenges">Archon</a>
-						<li><a href="/realm/Djinn" research="All Djinn Challenges">Djinn</a>
-						<li><a href="/realm/Makers" research="All Makers Challenges">Makers</a>
-						<li><a href="/realm/Mercenary" research="All Mercenary Challenges">Mercenary</a>
-							<ul>
-							</ul>
-							<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/Fairy" research="All Fairy Challenges">Fairy</a>
+							<li><a href="/Elf" research="All Elven Challenges">Elven</a>
+							<li><a href="/Angel" research="All Angel Challenges">Angel</a>
+							<li><a href="/Goblin" research="All Goblin Challenges">Goblin</a>
+							<li><a href="/Undead" research="All Undead Challenges">Undead</a>
+							<li><a href="/Demon" research="All Demon Challenges">Demon</a>
+							<li><a href="/Titan" research="All Titan Challenges">Titan</a>
+							<li><a href="/Druid" research="All Druid Challenges">Druid</a>
+							<li><a href="/Faceless" research="All Faceless Challenges">Faceless</a>
+							<li><a href="/Dwarf" research="All Dwarven Challenges">Dwarven</a>
+							<li><a href="/Drow" research="All Drow Challenges">Drow</a>
+							<li><a href="/Dragons" research="All Dragon Challenges">Dragon</a>
+							<li><a href="/Archon" research="All Archon Challenges">Archon</a>
+							<li><a href="/Djinn" research="All Djinn Challenges">Djinn</a>
+							<li><a href="/Makers" research="All Makers Challenges">Makers</a>
+							<li><a href="/Mercenary" research="All Mercenary Challenges">Mercenary</a>
+								<ul>
+								</ul>
+								<!--[if lte IE 6]>
 							</td></tr></table>
 							</a>
 							<![endif]-->
-						</li>
-					</ul>
-					<!--[if lte IE 6]>
+							</li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/TrophyPage" research="A complete list of Trophies and their requirements in image map form">Trophies</a>
-				</li>
-				<li><a href="/realm/Factions">Factions</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/TrophyPage"
+							research="A complete list of Trophies and their requirements in image map form">Trophies</a>
+					</li>
+					<li><a href="/Factions">Factions</a>
+						<!--[if lte IE 6]>
 					<a href="#">CATEGORY THREE
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/FairyFaction" research="Fairy">Fairy</a></li>
-						<li><a href="/realm/ElfFaction" research="Elven">Elven</a></li>
-						<li><a href="/realm/AngelFaction" research="Angel">Angel</a></li>
-						<li><a href="/realm/GoblinFaction" research="Goblin">Goblin</a></li>
-						<li><a href="/realm/UndeadFaction" research="Undead">Undead</a></li>
-						<li><a href="/realm/DemonFaction" research="Demon">Demon</a></li>
-						<li><a href="/realm/TitanFaction" research="Titan">Titan</a></li>
-						<li><a href="/realm/DruidFaction" research="Druid">Druid</a></li>
-						<li><a href="/realm/FacelessFaction" research="Faceless">Faceless</a></li>
-						<li><a href="/realm/DwarfFaction" research="Dwarven">Dwarven</a></li>
-						<li><a href="/realm/DrowFaction" research="Drow">Drow</a></li>
-						<li><a href="/realm/DragonFaction" research="Dragon">Dragon</a></li>
-						<li><a href="/realm/MercenaryFaction" research="Mercenary">Mercenary</a></li>
-						<li><a href="/realm/ArchonFaction" research="Archon">Archon</a></li>
-						<li><a href="/realm/DjinnFaction" research="Djinn">Djinn</a></li>
-						<li><a href="/realm/MakersFaction" research="Makers">Makers</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/FairyFaction" research="Fairy">Fairy</a></li>
+							<li><a href="/ElfFaction" research="Elven">Elven</a></li>
+							<li><a href="/AngelFaction" research="Angel">Angel</a></li>
+							<li><a href="/GoblinFaction" research="Goblin">Goblin</a></li>
+							<li><a href="/UndeadFaction" research="Undead">Undead</a></li>
+							<li><a href="/DemonFaction" research="Demon">Demon</a></li>
+							<li><a href="/TitanFaction" research="Titan">Titan</a></li>
+							<li><a href="/DruidFaction" research="Druid">Druid</a></li>
+							<li><a href="/FacelessFaction" research="Faceless">Faceless</a></li>
+							<li><a href="/DwarfFaction" research="Dwarven">Dwarven</a></li>
+							<li><a href="/DrowFaction" research="Drow">Drow</a></li>
+							<li><a href="/DragonFaction" research="Dragon">Dragon</a></li>
+							<li><a href="/MercenaryFaction" research="Mercenary">Mercenary</a></li>
+							<li><a href="/ArchonFaction" research="Archon">Archon</a></li>
+							<li><a href="/DjinnFaction" research="Djinn">Djinn</a></li>
+							<li><a href="/MakersFaction" research="Makers">Makers</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Artifacts" research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Artifacts"
+							research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
+						<!--[if lte IE 6]>
 					<a href="#">category 4
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
-						<li><a href="/realm/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
+							<li><a href="/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Research">Research</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Research">Research</a>
+						<!--[if lte IE 6]>
 					<a href="#">EXPLORER
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/ResearchList" research="Research List">Research List</a>
-						<li><a href="/realm/Researchtree" research="Research Tree">Research Tree</a></li>
-						<li><a href="/realm/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
+						<ul>
+							<li><a href="/ResearchList" research="Research List">Research List</a>
+							<li><a href="/Researchtree" research="Research Tree">Research Tree</a></li>
+							<li><a href="/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
+						</ul>
+						<!--[if lte IE 6]>
+					</td></tr></table>
+					</a>
+					<![endif]-->
+					</li>
+					<li><a href="/Notation">Notation</a>
+						<!--[if lte IE 6]>
+					</td></tr></table>
+					</a>
+					<![endif]-->
+					</li>
+					<li><a href="/PremiumUpgrades/">Premium</a>
+						<!--[if lte IE 6]>
+					</td></tr></table>
+					</a>
+					<![endif]-->
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="parent">
+			<div id="leftcolumn">
+				<div id="leftbox">
+				</div>
+				<div id="navcontainer">
+					<ul id="navlist">
+						<li id="active">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
+">
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+									border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+									width="1" height="1">
+							</form>
+						<li id="active"><a href="/realm" id="current">Home</a></li>
+						<li id="active"><a href="/GuestBook/gbook.php" id="current">G00F's<br />not a Guest Book</a>
+						</li>
+						<li id="active"><a href="/SiteMap/" id="current">Sitemap</a></li>
+						<li id="active"><a href="/Kong">Kongregate Links</a></li>
+						<li id="active"><a href="/WallofShame">Wall of Shame</a></li>
+						<li id="active"><a href="/Changes/" id="current">Latest Major Patch</a></li>
+						<li id="active"><a href="/Changelog">Changelog</a></li>
+						<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder
+								Discord</a></li>
+						<P align="center">The Game
+							<li id="active"><a href="/GameWindow">Game Window</a></li>
+							<li id="active"><a href="/Notation">Notation</a></li>
+							<li id="active"><a href="/Terminology">Terminology<br />HotKeys</a></li>
+							<li id="active"><a href="/RNG/" id="current">Random Number Generator</a></li>
+							<li id="active"><a href="/Reset">Abdication<br />Reincarnation<br />Ascension</a></li>
+							<li id="active"><a href="/Ascension2">Ascension 2</a></li>
+							<li id="active"><a href="/Ascension4">Ascension 4</a></li>
+							<li id="active"><a href="/Events">Events</a></li>
+						<P align="center">Tools and Guides
+							<li id="active"><a href="/Tools">Realm Grinder Tools</a></li>
+							<li id="active"><a target="_blank"
+									href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners
+									Guide </a></li>
+							<li id="active"><a href="/TrophyGuide">Trophy Guide</a></li>
+							<li id="active"><a href="/R16Guide">R16 Research Guide</a></li>
+						<P align="center">Upgrades
+							<li id="active"><a href="/Upgrades">Misc Upgrades</a></li>
+							<li id="active"><a href="/BuildingAlignments">Building Alignments</a></li>
+							<li id="active"><a href="/BuildingUpgrades">Building Upgrades</a></li>
+							<li id="active"><a href="/PremiumUpgrades">Premium Upgrades</a></li>
+							<li id="active"><a href="/Rubies">Rubies</a></li>
+							<li id="active"><a href="/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a>
+							</li>
+							<li id="active"><a href="/Factions">Factions</a></li>
+							<li id="active"><a href="/FactionUpgrades">Faction Upgrades</a></li>
+							<li id="active"><a href="/Spells">Spells</a></li>
+							<li id="active"><a href="/Heritages">Heritages</a></li>
+							<li id="active"><a href="/Artifacts/">Artifacts</a></li>
+							<li id="active"><a href="/Challenges/">Challenges</a></li>
+							<li id="active"><a href="/Bloodline">Bloodlines</a></li>
+							<li id="active"><a href="/Research">Research</a></li>
+							<li id="active"><a href="/Researchtree">Research Tree</a></li>
+							<li id="active"><a href="/SunForce">Sun Force</a></li>
+							<li id="active"><a href="/SpellTiers">Spell Tiers</a></li>
+							<li id="active"><a href="/Lineages">Lineages</a></li>
+							<li id="active"><a href="/ArtifactSet">Artifact Sets</a></li>
+							<li id="active"><a href="/Legacies">Legacies</a></li>
+						<P align="center">Builds
+							<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/A0_Plot.png">A0 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/MercBuilds" research="Mercenaries">R3-R16 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/ResearchBuilds" research="Research">R16-R29 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/PBuilds" research="Prestige Research">R30-R39 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></span></a></li>
+							<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/A1_Plot.png">A1 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R40-R46" research="Ascension 1">R40-R46 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R47-R60" research="Dragons">R47-R59 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R60-R75" research="Lineages">R60-R75 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R75Plus" research="Mercenary Research">R75-R99 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/A2_Plot.png">A2
+									Plot</a></li>
+							<li id="active"><a href="/R100Plus" research="Ascension 2">R100-R115 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
+							<li id="active"><a href="/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
+							<li id="active"><a target="_blank" research="R160+ Guide" href="/A3_Plot.png">A3 Plot <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
+							<li id="active"><a href="/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R220Plus" research="Ascension 4">R220+ Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+
 					</ul>
-					<!--[if lte IE 6]>
-					</td></tr></table>
-					</a>
-					<![endif]-->
-				</li>
-				<li><a href="/realm/Notation">Notation</a>
-					<!--[if lte IE 6]>
-					</td></tr></table>
-					</a>
-					<![endif]-->
-				</li>
-				<li><a href="/realm/PremiumUpgrades/">Premium</a>
-					<!--[if lte IE 6]>
-					</td></tr></table>
-					</a>
-					<![endif]-->
-				</li>
-			</ul>
+				</div>
+			</div>
+			<div id="rightcolumn">
+				<div class="rightbox">
+					<div class="rightboxcontent">
+						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img
+								src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
+					</div>
+				</div>
+				<link rel="stylesheet" href="http://musicfamily.org/realm/scripts/rtree.css" />
+				</link>
+
+				<p>Everything has a tooltip <b>hover</b> over them to see what they are.
+				<p><b>Game Window</b>
+				<p><img src="http://musicfamily.org/realm/Factions/picks/newtestwindow1.png"
+						usemap="#newtestwindow1-map">
+				<p><b>Options</b>
+				<p><img src="http://musicfamily.org/realm/Factions/picks/OptionsWindow.png" usemap="#OptionsWindow-map">
+					<map name="newtestwindow1-map">
+						<area target=""
+							research="Excavation / Artifacts<p> Excavation is unlocked once you have over 1B gems, produced over 10 Oc (1E28) coins and bought the Archeology Upgrade.<p>Excavating enables to find Rubies, Faction Coins and at certain thresholds or under certain conditions Artifacts. <p>Specific artifacts are required to unlock the Neutral &amp;amp; Prestige Factions.<p>Note: The numbers in the top right corner show the number of artifacts you could find.<p>Excavation Reset costs 1 Ruby up until 2999 excavations, switching to 2 Rubies at 3000 and above. It will reset the excavation counter to zero, all previously gained Excavation rewards and Rubies will persist and you can not find them again."
+							coords="5,67,62,120" shape="rect">
+						<area target=""
+							research="Upgrades<p>This is where you will buy all upgrades including Royal Exchanges and see all purchased Upgrades<p>Note: The numbers in the top right corner equal the amount of upgrades you could purchase.<p>Note: (!) an exclamation mark in the top right corner means that you can Reincarnate."
+							coords="5,9,58,62" shape="rect">
+						<area target="_blank"
+							research="Research<p>Enter the Research Facilities to improve your grinding potential. There you will be able to advance your research progress, unlock and buy special upgrades which will boost all your abilities hugely.<p>Starting at R16 you will be able to gain access to the Research Facilities<p>Vanilla Research: Unlock at R16<p>Neutral Research: Unlock at R23<p>Prestige Research: Unlock at R29<p>Neutral Prestige Research: Unlock at R47<p>Mercenary Research: Unlock at R75<p>Note: The numbers in the top right corner will appear when you unlocked a new Research.<p>Click image for more datails."
+							href="http://musicfamily.org/realm/Research/" coords="5,125,60,178" shape="rect">
+						<area target=""
+							research="Trophies<p>The Trophy tab will appear when you get your first Trophy, this is where you can see all your trophies.<p>Note: The numbers in the top right corner (if any) tells you how many new trophies you have."
+							coords="5,183,60,233" shape="rect">
+						<area target=""
+							research="Challenges<p>Prove your loyalty and dedication to the factions by completing their unique Challenges. You will be rewarded with new perks and upgrades to help in your Realm Grinder progress!<p>Vanilla Faction Challenges: unlock at R2<p>Neutral Faction Challenges: Unlock at R4<p>Prestige Faction Challenges: Unlock at R6<p>Neutral Prestige Challenges: Unlock at R48<p>Note: The numbers in the top right corner will appear when you complete a new Challenge."
+							coords="5,240,61,293" shape="rect">
+						<area target=""
+							research="Events: Realm Grinder Events take place at annual festivals such as Thanksgiving, Christmas, Easter etc. <p>Playing during an Event gives the players special one-time Trophies and temporary and/or permanent perks.<p>Note: (!) an exclamation mark in the top right corner appear during Events only."
+							coords="5,298,60,350" shape="rect">
+						<area target=""
+							research="Proof of Good Deed<p>You will be required to pick 1 of 3 Deeds before you can pick a Faction<p>Good Factions: Fairy, Elf, and Angel<p>Good Deed Cost: 25,000 coins"
+							coords="74,94,114,132" shape="rect">
+						<area target=""
+							research="Proof of Evil Deed<p>You will be required to pick 1 of 3 Deeds before you can pick a Faction<p>Evil Factions: Goblin, Undead, and Demon<p>Evil Deed Cost: 25,000 coins"
+							coords="118,92,158,132" shape="rect">
+						<area target=""
+							research="Proof of Neutrality<p>Works the same as Deeds, but allows access to the Neutral Factions<p>Neutral Factoins: Titan, Druid, and Faceless<p>Proof of Neutrality Cost: 10 Qa (1E16)"
+							coords="167,94,202,131" shape="rect">
+						<area target=""
+							research="Mercenary First Contract<p>At R3 you will be able to purchase Mercenary after meeting their requirements, (see Mercenary page )<p> Cost: 50 Spd (5e55) coins<p>Once you get Mercenary you will have access to all Faction's Upgrades and combine them to make builds. "
+							coords="210,94,249,132" shape="rect">
+						<area target=""
+							research="Bloodline<p>At R7 Bloodline unlocks and allows you to pick 1 from all available Factions"
+							coords="254,93,294,132" shape="rect">
+						<area target=""
+							research="Royal Exchange<p>After you choose an Alignment and Faction this icon will appear<p>Cost: Free<p>Increase the production of all buildings progressively. Can be bought multiple times, but the cost increases each time.<p>"
+							href="" coords="298,92,341,133" shape="rect">
+						<area target=""
+							research="Abdication<p>Abdicating is the 1st kind of soft reset in Realm Grinder. It allows you to cash in all the gems you have earned in order to boost your production.<p>Abdicating will reset all buildings, upgrades and coins, but you will keep your trophies and be awarded with gems that will boost your production. Otherwise, you may also spend Rubies to gain Gems without resetting!"
+							coords="101,9,227,36" shape="rect">
+						<area target=""
+							research="Reincarnation<p><p>At the beginning of the game you will see ???, once you collect enough gems it will switch to Reincarnation.<p>Reincarnation was introduced in the Underworld Expansion. In terms of game-play, it's a second kind of soft reset where players can trade in all of their gems and have most of their stats reset for other bonuses.<p>Reincarnation can only be performed for the first time when the user reaches 1 Oc (1E27) gems. Each subsequent reincarnation costs 1,000 times more gems.<p>This will show you what Reincarnation you are currently in and will show you how many gems needed to Reincarnate to the next level."
+							coords="240,9,362,36" shape="rect">
+						<area target=""
+							research="Default Spells<p>Tax Collection and Call to Arms will show for every Alignment, Faction, and every Abdication and Reincarnation.<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things."
+							coords="447,92,559,160" shape="rect">
+						<area target=""
+							research="Alignment Spells<p>Good Alignment: Holy Light<p>Evil Alignment: Blood Freenzy<p>Neutral Alignment: Gem Grinder<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things."
+							coords="556,198,447,165" shape="rect">
+						<area target=""
+							research="Default Spells<p>Starting at R14 Spiritual Surge will be available for every Alignment, Faction, and every Abdication and Reincarnation.<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things."
+							coords="448,239,560,269" shape="rect">
+						<area target=""
+							research="Faction Spells<p>After picking a Faction these Spells appear<p>Good Factions: Fairy = Fairy Chanting, Elf = Moon Blessing, Angel = God's Hand<p>Evil Factions: Goblin = Goblin's Greed, Undead = Night Time, Demon = Hellfire Blast<p>Neutral Factions: Titan = Lightning Strike = Druid = Grand Balance, Faceless = Brainwave<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things."
+							coords="447,202,574,236" shape="rect">
+						<area target=""
+							research="Farm (Alignment: Any)<p>Farms are the 1s of 3 buildings you will be able to buy at the start of the game.<p>First Farm cost 10 and increases 1.15 times the cost of the previous building of that type<p>Base production 2<p> Tier: 1"
+							coords="581,7,732,47" shape="rect">
+						<area target=""
+							research="Inn (Alignment: Any)<p>Inns are the 2nd of 3 buildings you will be able to buy at the start of the game.<p>First Inn cost 125 and increases 1.15 times the cost of the previous building of that type.<p>Base production 6<p> Tier: 2"
+							coords="583,50,732,87" shape="rect">
+						<area target=""
+							research="Blacksmith (Alignment: Any)<p>Blacksmith are the 3rd of 3 buildings you will be able to buy at the start of the game.<p>First Blacksmith cost 600 and increases 1.15 times the cost of the previous building of that type.<p>Base production 20<p>Tier: 3"
+							coords="582,89,730,127" shape="rect">
+						<area target=""
+							research="Warrior Barracks (Good Alignment)<p>Deep Mines (Neutral Alignment)<p>Slave Pens (Evil Alignment) <p>The cost for the first building is 1,800 and increases 1.15 times the cost of the previous building of that type.<p>Base production 65<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 4"
+							coords="582,131,730,165" shape="rect">
+						<area target=""
+							research="Knights Jousts (Good Alignment)<p>Stone Pillars (Neutral Alignment)<p>Orcish Arenas (Evil Alignment) <p>The cost for the first building is 5,600 and increases 1.15 times the cost of the previous building of that type.<p>Base production 200<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 5"
+							coords="582,169,729,207" shape="rect">
+						<area target=""
+							research="Wizard Towers (Good Alignment)<p>Alchemist Labs (Neutral Alignment)<p>Witch Conclaves (Evil Alignment) <p>The cost for the first building is 38,000 and increases 1.15 times the cost of the previous building of that type.<p>Base production 650<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 6"
+							coords="581,209,731,247" shape="rect">
+						<area target=""
+							research="Cathedrals (Good Alignment)<p>Monasteries (Neutral Alignment)<p>Dark Temples (Evil Alignment) <p>The cost for the first building is 441,999 and increases 1.15 times the cost of the previous building of that type.<p>Base production 2,000<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 7"
+							coords="582,249,731,287" shape="rect">
+						<area target=""
+							research="Citadels (Good Alignment)<p>Labyrinths (Neutral Alignment)<p>Necropolises (Evil Alignment) <p>The cost for the first building is 7.3m (7.3e6)and increases 1.15 times the cost of the previous building of that type.<p>Base production 8,500<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 8"
+							coords="580,287,730,327" shape="rect">
+						<area target=""
+							research="Royal Castles (Good Alignment)<p>Iron Strongholds (Neutral Alignment)<p>Evil Fortresses (Evil Alignment) <p>The cost for the first building is 145m (1.45e8) and increases 1.15 times the cost of the previous building of that type.<p>Base production 100,000<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 9"
+							coords="580,328,730,366" shape="rect">
+						<area target=""
+							research="Heaven's Gates (Good Alignment)<p>Ancient Pyramids (Neutral Alignment)<p>Hell Portals (Evil Alignment) <p>The cost for the first building is 3.2b (3.2e9) and increases 1.15 times the cost of the previous building of that type.<p>Base production 1,200,000 (1.2e6)<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 10"
+							coords="580,367,731,405" shape="rect">
+						<area target=""
+							research="Halls of Legends (Any Alignment)<p>The cost for the first building is 200b (2e11) and increases 1.15 times the cost of the previous building of that type.<p>Base production 250,000 per Trophy <p> This building will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 11"
+							coords="580,409,731,445" shape="rect">
+						<area target=""
+							research="Mana Bowl<p>Mana is a magic resource necessary to cast spells. At the beginning of a game, your base mana capacity is 1000, and your base mana regeneration rate is 0.50 per second.<p>There are many ways to increase mana regen or capacity: Faction upgrades, Research upgrades. challenge rewards, Heritages"
+							coords="511,47,35" shape="circle">
+						<area target=""
+							research="Shop Tab<p> This is where you can buy Premium Upgrades such as Gifts, Rubies, Gem Conversion, and Timewarps with Kreds or Rubies."
+							coords="449,347,507,406" shape="rect">
+						<area target=""
+							research="The Scry Tab<p>The Scrying function enables you to gain an extra boost of your choice in exchange for viewing a video advertisement which will help Divine Games gain some revenue.<p>Three choices<p>+100% production for 4 hours<p>+2 m/s and +10 mana regen for 30 minutes<p> Faction Coins are multiplied by assistants. <p>Formula : (10 + x) ^ 1.1 -> y * ((10 + x) ^ 1.1), where x is FC chance and y is assistants you own.<p>Some countries have more ads then others and players from those countries will be able to scry more often.<p> Some players will be able to scry as much as they want and have both timers running all the time, others may only be able to scry only once or twice per day and will need to be strategic about when to best use it.<p> A few people will not be able to scry at all."
+							coords="513,348,570,406" shape="rect">
+						<area target=""
+							research="Buy Button<p>This button is used to select the amount of buildings to buy with each click.<p>You can toggle it to Buy1,Buy10,Buy1000 or BuyMax by clicking on it.<p>You can disable this button in the Options Menu."
+							coords="451,414,571,443" shape="rect">
+						<area target=""
+							research="Assistants: Are little helpers that helps gather coins and Faction Coins. They are represented by the little icons around main building. Hover over it to get details.<p>Assistant clicks are not like manual clicks, their income is influenced by clicking reward upgrades, but they will not help to build-up clicking bonus<p>You can buy more Assistants by getting 100 of the same building (max 2 per building)or through Unique Upgrades in later game"
+							coords="409,205,425,218" shape="rect">
+						<area target=""
+							research="Coins<p>This shows your current amount of coins and total coins gained"
+							coords="8,452,100,483" shape="rect">
+						<area target=""
+							research="Production<p>This shows your total coin production per second by Assistants and by clicking also shows your Offline production"
+							coords="130,452,230,485" shape="rect">
+						<area target=""
+							research="Gems<p>Shows you total Gem count<p>Shows how many gems you gain when you Abdicate<p>Shows increase of production after Abdication"
+							coords="267,452,322,482" shape="rect">
+						<area target=""
+							research="Rubies<p>You can gain Rubies by excavating, Events or buying them.<p>Rubies are a rare resource which allows you to increase all aspects of your production. Accumulating them will unlock new upgrades and trophies, providing both a permanent passive bonus and the ability to spend them to purchase new perks.<p>Rubies persist through Abdications and Reincarnations."
+							coords="378,452,422,482" shape="rect">
+						<area target=""
+							research="Assistants:<p>Shows your total Assistant count and total Assistant production per second<p>Little helpers that auto-click the treasure once every second for 5% of your clicking reward and helps gather coins and Faction Coins. Hover over it to get details.<p>Assistant clicks are not like manual clicks, their income is influenced by clicking reward upgrades, but they will not help to build-up clicking bonus<p>You can buy more Assistants by getting 100 of the same building (max 2 assistants per building set)or through Upgrades"
+							coords="480,452,530,482" shape="rect">
+						<area target=""
+							research="Tips and Hints<p> Clicking this will give you tips and hints<p>Also clicking this 100 times in a row will award you with a trophy"
+							coords="647,452,674,483" shape="rect">
+						<area target="" research="Stats<p>This will show you most of your game stats."
+							coords="674,452,705,483" shape="rect">
+						<area target=""
+							research="Options<p>Here you can set many options<p> This is where you can save you game to cloud or restore from cloud<p> Registering with Cloud will award you with a trophy<p>Here you can import and export your game"
+							coords="705,451,734,483" shape="rect">
+						<area target=""
+							research="Clicking this will hide everything(user interface) and only show the background"
+							coords="614,452,645,483" shape="rect">
+						<area target="" research="Clicking these Arrows in game will show/hide the Upgrades"
+							coords="362,66,382,85" shape="rect">
+						<area target="" research="Clicking these Arrows in game will show/hide the Upgrades"
+							coords="362,140,382,158" shape="rect">
+						<area target="" research="Clicking these Arrows in game will show/hide the Upgrades"
+							coords="362,213,382,232" shape="rect">
+						<area target=""
+							research="Some Upgrades will be shaded, this means you can not afford them or you have not met the requirements"
+							coords="165,167,205,207" shape="rect">
+						<area target=""
+							research="All Highlighted Upgrades can be bought, Shaded Upgrades can not be bought"
+							coords="74,240,385,324" shape="rect">
+						<area target=""
+							research="You will have many types of Upgrades, be careful of the ones you buy as they may remove other Upgrades."
+							coords="74,166,159,207" shape="rect">
+						<area target=""
+							research="Priority Autocasting<p>Allows you to prioritize the order of spell casting.(Set with Ctrl+Click)<p>Spells with lower priority will be cast only if the higher priority spells are already active. <p>Only while offline, increase your spells cast amount by 1 per minute.<p>Cost: 400 Ud (4E38)"
+							coords="560,145,572,160" shape="rect">
+						<area target=""
+							research="Efficient Autocasting<p>Allows you to set spells to work outside of contingency and planned settings. These spells (set with CTRL+SHIFT+Click), or in the spell tooltip,disregard your contingency rules and are casted as soon as you have enough mana for them.<p>Cost: 700 Vg (7E65)<p>Only while offline, increase your mana production by an additional 10% of your mana regeneration per second, and your spells cast amount by an additional 2 per minute."
+							coords="561,254,575,271" shape="rect">
+						<area target=""
+							research="Faction Coins<p>When you start the game you will have 6 different types, 1 for each Faction. In later game you will unlock 2 more types for Prestige.<p>After picking a Faction save Faction Coins for that Faction and use the others for Royal Exchanges."
+							href="" coords="67,407,400,447" shape="rect">
+						<area target=""
+							research="Planned Autocasting<p>Allows you to set Primary and Secondary spells. Primary spells (Set with Shift+Click) will fire when the mana reaches amount set by the Contingency slidebar. Secondary spells (Set with SHIFT+Click) will fire as soon as there is enough mana, and if ALL the primary spells are active. <p>Only while offline, increase mana produced by an additional 10% of your mana regeneration per second and your spells cast amount by an additional 2 per minute."
+							coords="558,181,574,198" shape="rect">
+						<area target=""
+							research="Contingency Autocasting<p>Allows you to set a minimum amount of mana before starting to Autocast. A slide bar will appear on the mana bowl when you CTRL+Click while pointing to the mana bowl<p>By adjusting its height you will set a minimum amount of mana for spells to start casting. Once your mana reaches the threshold, spells will follow the priority rules. The contingency loop will break when there is not enough mana to continue, at which point the cycle will reset.<p>Only while offline, increase your spells cast amount by an additional 2 per minute."
+							coords="528,9,8" shape="circle">
+						<area target=""
+							research="Buy All<p>When you start the game this button will not show, It Unlocks at 100 Gems.<p>In Options you can set this to include Royal Exchanges."
+							coords="181,40,274,56" shape="rect">
+					</map>
+					<map name="OptionsWindow-map">
+						<area target=""
+							research="Use Thousands Separator<p>Putting an X in this box will shows numbers with (,) in them.<p>Examples<p>With X 2,000<p>Without X 2000"
+							coords="48,71,254,92" shape="rect">
+						<area target=""
+							research="Don't Group Upgrades by Category<p>Putting an X in this box will group all upgrades together.<p>Without X it will separate upgrades by category. "
+							coords="47,96,305,114" shape="rect">
+						<area target=""
+							research="Don't Group Trophies by Category<p>Putting an X in this box will show all trophies in 1 general category.<p>Examples<p>With X 1 category (Trophies Unlocked).<p>Without X 5 categories, Allegiances Trophies, Misc Trophies, Magic Trophies, Building Trophies, and Secret Trophies"
+							coords="48,118,307,138" shape="rect">
+						<area target=""
+							research="Don't Consolidate Upgrades<p>Putting an X in this box will show all upgrades you have purchased.<p>Without X you will only see the last upgrade you purchased in that series. "
+							coords="47,142,268,161" shape="rect">
+						<area target=""
+							research="Don't Consolidate Trophies<p>Putting an X in this box will show all trophies earned.<p>Without X you will see the last trophy you earned in that series."
+							coords="48,167,261,185" shape="rect">
+						<area target=""
+							research="Disable Warning for Ruby Upgrades<p>Putting an X in this box you will not be warned that you are about to spend rubies.<p>Without X you will be warned that you are about to spend rubies.(Recommended)"
+							coords="47,190,318,209" shape="rect">
+						<area target=""
+							research="Numbers Format<p>All 3 sets of numbers below are the same amount.<p>Short Notation: 100 No coins<p>Scientific Notation: 1e32 coins (Recommended)<p>Engineering Notation: 100e30 coins"
+							coords="45,39,599,60" shape="rect">
+						<area target=""
+							research="Disable Warning for Exchanges<p>Putting an X in this box will stop all warnings that you are about to spend Faction Coins for Royal Exchanges.<p>Without X you will be warned that you are about to spend Faction Coins on Royal Exchanges<p>Note: The warning is only for the Faction Coins of your Faction.<p>Note This has no effect on the Buy All Button."
+							coords="49,214,289,234" shape="rect">
+						<area target=""
+							research="Disable Click Particles<p>Putting an X in this box will hide the faction coins you see when the background is clicked."
+							coords="49,239,230,257" shape="rect">
+						<area target=""
+							research="Disable Click Text<p>Putting an X in this box will hide all faction coin and income coin text."
+							coords="49,263,201,281" shape="rect">
+						<area target=""
+							research="Disable Menu Sliding Animation<p>Putting an X in this box will make the Menu pop out.<p>Without X the Menu will slide out."
+							coords="45,285,296,305" shape="rect">
+						<area target=""
+							research="Block Background Clicks<p>Putting an X in this box will block you from doing manual clicks on the background.<p>Without X you can click the background.<p>Note: this does not effect Automatic Clicks."
+							coords="49,310,245,328" shape="rect">
+						<area target=""
+							research="Disable Non-Manual Clicks<p>Putting an X in this box will stop all Automatic Clicks.<p>Note: This does not effect Manual Clicks."
+							coords="49,334,263,352" shape="rect">
+						<area target=""
+							research="Enable Spell Tooltip Persist<p>Putting an X in this box will allow you to select Spell Tiers and set Autocasting inside the Tooltip.<p>Without X you will need to set Spell Tiers and set Autocasting with the keyboard and clicking the spell."
+							coords="48,358,265,376" shape="rect">
+						<area target=""
+							research="Disable Gifts<p>Putting X in any of these boxes will Disable that gift<p>Without X all Gifts are active<p>Note: The Gifts have no effect on any Challenge or Trophy run in a negative way, so no need to disable any of them."
+							href="" coords="49,381,378,401" shape="rect">
+						<area target=""
+							research="Disable Cloud Check at Stratup<p>Putting X in this boc will stop Cloud from checking if you have a higher save than the one that is in your current game at Startup.<p>Without X Cloud will check to see if it has a save higher than the current game at startup and offer to load it for you."
+							coords="382,70,625,90" shape="rect">
+						<area target=""
+							research="Buy All Exchanges<p>Putting X in this box will allow you to Buy All Royal Exchanges when you click the Buy All button.<p.Without X you will need to buy Royal Exchanges manually."
+							coords="382,95,536,115" shape="rect">
+						<area target=""
+							research="Sort Purchased Upgrades by Price<p>Putting X in this box will put all Purchased Upgrades in order by price with the lowest price first.<p>Without X upgrades appear in order that they are purchased."
+							coords="382,119,642,139" shape="rect">
+						<area target=""
+							research="Language<p>Here is where you can select your preferred Language.<p>English, Español, Deutsch, Français, Português(Brasil), Pусский, and Italiano<p>Note Changing Language does not lock you to that Language and is just as easy to select another Language."
+							coords="514,317,639,361" shape="rect">
+						<area target=""
+							research="Sort Unpurchased Upgrades by Price<p>Putting X in this box will put all Unpurchased Upgrades in order by price with the lowest price first.<p>Without X Unpurchased Upgrades appear in order that they become available."
+							coords="383,144,662,162" shape="rect">
+						<area target=""
+							research="Hide Purchased Upgrades<p>Putting X in this box will hide all Purchased Upgrades you have.<p>Without X you will see all Purchased Upgrades."
+							coords="382,166,588,185" shape="rect">
+						<area target=""
+							research="Hide Unavailable Researches<p>Putting X in this box will hide all Unavailable Researches.<p>Without X you will see all Researches."
+							coords="382,190,608,210" shape="rect">
+						<area target=""
+							research="Disable Multibuy for Upgrade Series<p>Putting X in this box will allow you to buy one Upgrade at a time for each series.<p>Without X you will be able to buy all Upgrades in that series with one click."
+							coords="382,213,658,233" shape="rect">
+						<area target=""
+							research="Disable BuyMax Button<p>Putting X in this box will hide the BuyMax button and you will only be able to buy 1 building at a time<p>Without X you will be able to buy 1, 10, 100, 1000, or Maximum amount of buildings depending on what you have it set to buy."
+							coords="383,237,567,257" shape="rect">
+						<area target=""
+							research="Skip All Tutorials<p>Putting X in this box will stop most tips, hints, and tutorials from popping up<p>Without X the Tutorial will popup up when you reach some milestones."
+							coords="382,261,534,281" shape="rect">
+						<area target=""
+							research="Cloud Options<p>This is where you can see your Kongregate ID number and you saved game information"
+							coords="47,438,580,466" shape="rect">
+						<area target=""
+							research="Overwrite<p>If your current game does not match your Cloud Save you can Overwrite the Cloud save to match your current game.<p>When the Overwrite button is clicked a box a box will pop up titled 'Cloud Overwrite' stating 'This will permanently replace your existing cloud save with the current one. Type &quot;OVERWRITE&quot; in the field below to confirm.<p>You will then be required to click Overwrite or Don't Overwrite."
+							coords="48,473,138,502" shape="rect">
+						<area target=""
+							research="Restore<p>If your current game does not match your Cloud Save you can use this button to Restore it with the Cloud Save.<p>When you click Restore a box will pop up titled 'Cloud Restore' stating 'Restoring from the cloud will permanently overwrite your current savegame. Type &quot;RESTORE&quot; in the field below to confirm.<p>You will then be required to click Restore or Don't Restore."
+							coords="145,474,234,503" shape="rect">
+						<area target=""
+							research="Save Options<p>Save: Clicking this will save your game with cloud (only if it matches the cloud saved game).<p>Export: This will copy to clipboard (the right mouse click used to copy and paste) then you can paste it to a text file to manually save your game.<p>Import: This is where you can paste your saved text file to load it in the game."
+							coords="48,541,331,570" shape="rect">
+						<area target=""
+							research="Hard Reset<p>If you want to start over click this button and you will start at the beginning of the game and you will loose most of your previous stats."
+							coords="47,617,139,645" shape="rect">
+						<area target=""
+							research="This is the current game version, click it to see the current and previous versions."
+							coords="625,648,676,661" shape="rect">
+			</div>
+			<div id="footer">
+			</div>
 		</div>
 	</div>
-
-	<div id="parent">
-		<div id="leftcolumn">
-			<div id="leftbox">
-			</div>
-			<div id="navcontainer">
-				<ul id="navlist">
-				  <li id="active"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-					<li id="active"><a href="/realm" id="current">Home</a></li>
-					<li id="active"><a href="/realm/GuestBook/gbook.php" id="current">G00F's<br/>not a Guest Book</a></li>
-					<li id="active"><a href="/realm/SiteMap/" id="current">Sitemap</a></li>
-					<li id="active"><a href="/realm/Kong">Kongregate Links</a></li>
-					<li id="active"><a href="/realm/WallofShame">Wall of Shame</a></li>
-					<li id="active"><a href="/realm/Changes/" id="current">Latest Major Patch</a></li>
-					<li id="active"><a href="/realm/Changelog">Changelog</a></li>
-					<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder Discord</a></li>
-					<P align="center">The Game
-					<li id="active"><a href="/realm/GameWindow">Game Window</a></li>
-					<li id="active"><a href="/realm/Notation">Notation</a></li>
-					<li id="active"><a href="/realm/Terminology">Terminology<br/>HotKeys</a></li>
-					<li id="active"><a href="/realm/RNG/" id="current">Random Number Generator</a></li>
-					<li id="active"><a href="/realm/Reset">Abdication<br/>Reincarnation<br/>Ascension</a></li>
-					<li id="active"><a href="/realm/Ascension2">Ascension 2</a></li>
-					<li id="active"><a href="/realm/Ascension4">Ascension 4</a></li>
-					<li id="active"><a href="/realm/Events">Events</a></li>
-					<P align="center">Tools and Guides
-					<li id="active"><a href="/realm/Tools">Realm Grinder Tools</a></li>
-					<li id="active"><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners Guide </a></li>
-					<li id="active"><a href="/realm/TrophyGuide">Trophy Guide</a></li>
-					<li id="active"><a href="/realm/R16Guide">R16 Research Guide</a></li>
-					<P align="center">Upgrades
-					<li id="active"><a href="/realm/Upgrades">Misc Upgrades</a></li>
-					<li id="active"><a href="/realm/BuildingAlignments">Building Alignments</a></li>
-					<li id="active"><a href="/realm/BuildingUpgrades">Building Upgrades</a></li>
-					<li id="active"><a href="/realm/PremiumUpgrades">Premium Upgrades</a></li>
-					<li id="active"><a href="/realm/Rubies">Rubies</a></li>
-					<li id="active"><a href="/realm/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a></li>
-					<li id="active"><a href="/realm/Factions">Factions</a></li>
-					<li id="active"><a href="/realm/FactionUpgrades">Faction Upgrades</a></li>
-					<li id="active"><a href="/realm/Spells">Spells</a></li>
-					<li id="active"><a href="/realm/Heritages">Heritages</a></li>
-					<li id="active"><a href="/realm/Artifacts/">Artifacts</a></li>
-					<li id="active"><a href="/realm/Challenges/">Challenges</a></li>
-					<li id="active"><a href="/realm/Bloodline">Bloodlines</a></li>
-					<li id="active"><a href="/realm/Research">Research</a></li>
-					<li id="active"><a href="/realm/Researchtree">Research Tree</a></li>
-					<li id="active"><a href="/realm/SunForce">Sun Force</a></li>
-					<li id="active"><a href="/realm/SpellTiers">Spell Tiers</a></li>
-					<li id="active"><a href="/realm/Lineages">Lineages</a></li>
-					<li id="active"><a href="/realm/ArtifactSet">Artifact Sets</a></li>
-					<li id="active"><a href="/realm/Legacies">Legacies</a></li>
-					<P align="center">Builds
-					<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/realm/A0_Plot.png">A0 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/MercBuilds" research="Mercenaries">R3-R16 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/ResearchBuilds" research="Research">R16-R29 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/PBuilds" research="Prestige Research">R30-R39 Builds <span style="color:gold">(Not updated for v4.2)</span></span></a></li>
-					<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/realm/A1_Plot.png">A1 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R40-R46" research="Ascension 1">R40-R46 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R47-R60" research="Dragons">R47-R59 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R60-R75" research="Lineages">R60-R75 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R75Plus" research="Mercenary Research">R75-R99 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/realm/A2_Plot.png">A2 Plot</a></li>
-					<li id="active"><a href="/realm/R100Plus" research="Ascension 2">R100-R115 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
-					<li id="active"><a href="/realm/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
-					<li id="active"><a target="_blank" research="R160+ Guide" href="/realm/A3_Plot.png">A3 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
-					<li id="active"><a href="/realm/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>					
-					<li id="active"><a href="/realm/R220Plus" research="Ascension 4">R220+ Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-
-					</ul>
-					</div>
-					</div>
-					<div id="rightcolumn">
-					<div class="rightbox">
-				  <div class="rightboxcontent">
-						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
-					</div>
-					</div>
-<link rel="stylesheet" href="http://musicfamily.org/realm/scripts/rtree.css" /></link>
-
-<p>Everything has a tooltip <b>hover</b> over them to see what they are.
-<p><b>Game Window</b>
-<p><img src="http://musicfamily.org/realm/Factions/picks/newtestwindow1.png" usemap="#newtestwindow1-map">
-<p><b>Options</b>
-<p><img src="http://musicfamily.org/realm/Factions/picks/OptionsWindow.png" usemap="#OptionsWindow-map">
-<map name="newtestwindow1-map">
-    <area target="" research="Excavation / Artifacts<p> Excavation is unlocked once you have over 1B gems, produced over 10 Oc (1E28) coins and bought the Archeology Upgrade.<p>Excavating enables to find Rubies, Faction Coins and at certain thresholds or under certain conditions Artifacts. <p>Specific artifacts are required to unlock the Neutral &amp;amp; Prestige Factions.<p>Note: The numbers in the top right corner show the number of artifacts you could find.<p>Excavation Reset costs 1 Ruby up until 2999 excavations, switching to 2 Rubies at 3000 and above. It will reset the excavation counter to zero, all previously gained Excavation rewards and Rubies will persist and you can not find them again." coords="5,67,62,120" shape="rect">
-    <area target="" research="Upgrades<p>This is where you will buy all upgrades including Royal Exchanges and see all purchased Upgrades<p>Note: The numbers in the top right corner equal the amount of upgrades you could purchase.<p>Note: (!) an exclamation mark in the top right corner means that you can Reincarnate." coords="5,9,58,62" shape="rect">
-    <area target="_blank" research="Research<p>Enter the Research Facilities to improve your grinding potential. There you will be able to advance your research progress, unlock and buy special upgrades which will boost all your abilities hugely.<p>Starting at R16 you will be able to gain access to the Research Facilities<p>Vanilla Research: Unlock at R16<p>Neutral Research: Unlock at R23<p>Prestige Research: Unlock at R29<p>Neutral Prestige Research: Unlock at R47<p>Mercenary Research: Unlock at R75<p>Note: The numbers in the top right corner will appear when you unlocked a new Research.<p>Click image for more datails." href="http://musicfamily.org/realm/Research/" coords="5,125,60,178" shape="rect">
-    <area target="" research="Trophies<p>The Trophy tab will appear when you get your first Trophy, this is where you can see all your trophies.<p>Note: The numbers in the top right corner (if any) tells you how many new trophies you have." coords="5,183,60,233" shape="rect">
-    <area target="" research="Challenges<p>Prove your loyalty and dedication to the factions by completing their unique Challenges. You will be rewarded with new perks and upgrades to help in your Realm Grinder progress!<p>Vanilla Faction Challenges: unlock at R2<p>Neutral Faction Challenges: Unlock at R4<p>Prestige Faction Challenges: Unlock at R6<p>Neutral Prestige Challenges: Unlock at R48<p>Note: The numbers in the top right corner will appear when you complete a new Challenge." coords="5,240,61,293" shape="rect">
-    <area target="" research="Events: Realm Grinder Events take place at annual festivals such as Thanksgiving, Christmas, Easter etc. <p>Playing during an Event gives the players special one-time Trophies and temporary and/or permanent perks.<p>Note: (!) an exclamation mark in the top right corner appear during Events only." coords="5,298,60,350" shape="rect">
-    <area target="" research="Proof of Good Deed<p>You will be required to pick 1 of 3 Deeds before you can pick a Faction<p>Good Factions: Fairy, Elf, and Angel<p>Good Deed Cost: 25,000 coins" coords="74,94,114,132" shape="rect">
-    <area target="" research="Proof of Evil Deed<p>You will be required to pick 1 of 3 Deeds before you can pick a Faction<p>Evil Factions: Goblin, Undead, and Demon<p>Evil Deed Cost: 25,000 coins" coords="118,92,158,132" shape="rect">
-    <area target="" research="Proof of Neutrality<p>Works the same as Deeds, but allows access to the Neutral Factions<p>Neutral Factoins: Titan, Druid, and Faceless<p>Proof of Neutrality Cost: 10 Qa (1E16)" coords="167,94,202,131" shape="rect">
-    <area target="" research="Mercenary First Contract<p>At R3 you will be able to purchase Mercenary after meeting their requirements, (see Mercenary page )<p> Cost: 50 Spd (5e55) coins<p>Once you get Mercenary you will have access to all Faction's Upgrades and combine them to make builds. " coords="210,94,249,132" shape="rect">
-    <area target="" research="Bloodline<p>At R7 Bloodline unlocks and allows you to pick 1 from all available Factions" coords="254,93,294,132" shape="rect">
-    <area target="" research="Royal Exchange<p>After you choose an Alignment and Faction this icon will appear<p>Cost: Free<p>Increase the production of all buildings progressively. Can be bought multiple times, but the cost increases each time.<p>" href="" coords="298,92,341,133" shape="rect">
-    <area target="" research="Abdication<p>Abdicating is the 1st kind of soft reset in Realm Grinder. It allows you to cash in all the gems you have earned in order to boost your production.<p>Abdicating will reset all buildings, upgrades and coins, but you will keep your trophies and be awarded with gems that will boost your production. Otherwise, you may also spend Rubies to gain Gems without resetting!" coords="101,9,227,36" shape="rect">
-    <area target="" research="Reincarnation<p><p>At the beginning of the game you will see ???, once you collect enough gems it will switch to Reincarnation.<p>Reincarnation was introduced in the Underworld Expansion. In terms of game-play, it's a second kind of soft reset where players can trade in all of their gems and have most of their stats reset for other bonuses.<p>Reincarnation can only be performed for the first time when the user reaches 1 Oc (1E27) gems. Each subsequent reincarnation costs 1,000 times more gems.<p>This will show you what Reincarnation you are currently in and will show you how many gems needed to Reincarnate to the next level." coords="240,9,362,36" shape="rect">
-    <area target="" research="Default Spells<p>Tax Collection and Call to Arms will show for every Alignment, Faction, and every Abdication and Reincarnation.<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things." coords="447,92,559,160" shape="rect">
-    <area target="" research="Alignment Spells<p>Good Alignment: Holy Light<p>Evil Alignment: Blood Freenzy<p>Neutral Alignment: Gem Grinder<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things." coords="556,198,447,165" shape="rect">
-    <area target="" research="Default Spells<p>Starting at R14 Spiritual Surge will be available for every Alignment, Faction, and every Abdication and Reincarnation.<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things." coords="448,239,560,269" shape="rect">
-    <area target="" research="Faction Spells<p>After picking a Faction these Spells appear<p>Good Factions: Fairy = Fairy Chanting, Elf = Moon Blessing, Angel = God's Hand<p>Evil Factions: Goblin = Goblin's Greed, Undead = Night Time, Demon = Hellfire Blast<p>Neutral Factions: Titan = Lightning Strike = Druid = Grand Balance, Faceless = Brainwave<p>Spells are an active component of the game mechanics that boost production. They require mana to be cast and only work while playing online.<p>Their duration, resource gain, mana-cost, and mana regeneration speed can be altered by getting specific Faction, Heritage, Challenge, or Research upgrades. Different aspects of the spells can also be used in other upgrades (eg: while a spell is active, the number of spell casts, based on mana produced, among other things." coords="447,202,574,236" shape="rect">
-    <area target="" research="Farm (Alignment: Any)<p>Farms are the 1s of 3 buildings you will be able to buy at the start of the game.<p>First Farm cost 10 and increases 1.15 times the cost of the previous building of that type<p>Base production 2<p> Tier: 1" coords="581,7,732,47" shape="rect">
-    <area target="" research="Inn (Alignment: Any)<p>Inns are the 2nd of 3 buildings you will be able to buy at the start of the game.<p>First Inn cost 125 and increases 1.15 times the cost of the previous building of that type.<p>Base production 6<p> Tier: 2" coords="583,50,732,87" shape="rect">
-    <area target="" research="Blacksmith (Alignment: Any)<p>Blacksmith are the 3rd of 3 buildings you will be able to buy at the start of the game.<p>First Blacksmith cost 600 and increases 1.15 times the cost of the previous building of that type.<p>Base production 20<p>Tier: 3" coords="582,89,730,127" shape="rect">
-    <area target="" research="Warrior Barracks (Good Alignment)<p>Deep Mines (Neutral Alignment)<p>Slave Pens (Evil Alignment) <p>The cost for the first building is 1,800 and increases 1.15 times the cost of the previous building of that type.<p>Base production 65<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 4" coords="582,131,730,165" shape="rect">
-    <area target="" research="Knights Jousts (Good Alignment)<p>Stone Pillars (Neutral Alignment)<p>Orcish Arenas (Evil Alignment) <p>The cost for the first building is 5,600 and increases 1.15 times the cost of the previous building of that type.<p>Base production 200<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 5" coords="582,169,729,207" shape="rect">
-    <area target="" research="Wizard Towers (Good Alignment)<p>Alchemist Labs (Neutral Alignment)<p>Witch Conclaves (Evil Alignment) <p>The cost for the first building is 38,000 and increases 1.15 times the cost of the previous building of that type.<p>Base production 650<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 6" coords="581,209,731,247" shape="rect">
-    <area target="" research="Cathedrals (Good Alignment)<p>Monasteries (Neutral Alignment)<p>Dark Temples (Evil Alignment) <p>The cost for the first building is 441,999 and increases 1.15 times the cost of the previous building of that type.<p>Base production 2,000<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 7" coords="582,249,731,287" shape="rect">
-    <area target="" research="Citadels (Good Alignment)<p>Labyrinths (Neutral Alignment)<p>Necropolises (Evil Alignment) <p>The cost for the first building is 7.3m (7.3e6)and increases 1.15 times the cost of the previous building of that type.<p>Base production 8,500<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 8" coords="580,287,730,327" shape="rect">
-    <area target="" research="Royal Castles (Good Alignment)<p>Iron Strongholds (Neutral Alignment)<p>Evil Fortresses (Evil Alignment) <p>The cost for the first building is 145m (1.45e8) and increases 1.15 times the cost of the previous building of that type.<p>Base production 100,000<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 9" coords="580,328,730,366" shape="rect">
-    <area target="" research="Heaven's Gates (Good Alignment)<p>Ancient Pyramids (Neutral Alignment)<p>Hell Portals (Evil Alignment) <p>The cost for the first building is 3.2b (3.2e9) and increases 1.15 times the cost of the previous building of that type.<p>Base production 1,200,000 (1.2e6)<p>One of these buildings will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 10" coords="580,367,731,405" shape="rect">
-    <area target="" research="Halls of Legends (Any Alignment)<p>The cost for the first building is 200b (2e11) and increases 1.15 times the cost of the previous building of that type.<p>Base production 250,000 per Trophy <p> This building will show up once you affiliate with a Faction and will stay until you Abdicate or Reincarnate <p> Tier: 11" coords="580,409,731,445" shape="rect">
-    <area target="" research="Mana Bowl<p>Mana is a magic resource necessary to cast spells. At the beginning of a game, your base mana capacity is 1000, and your base mana regeneration rate is 0.50 per second.<p>There are many ways to increase mana regen or capacity: Faction upgrades, Research upgrades. challenge rewards, Heritages" coords="511,47,35" shape="circle">
-    <area target="" research="Shop Tab<p> This is where you can buy Premium Upgrades such as Gifts, Rubies, Gem Conversion, and Timewarps with Kreds or Rubies." coords="449,347,507,406" shape="rect">
-    <area target="" research="The Scry Tab<p>The Scrying function enables you to gain an extra boost of your choice in exchange for viewing a video advertisement which will help Divine Games gain some revenue.<p>Three choices<p>+100% production for 4 hours<p>+2 m/s and +10 mana regen for 30 minutes<p> Faction Coins are multiplied by assistants. <p>Formula : (10 + x) ^ 1.1 -> y * ((10 + x) ^ 1.1), where x is FC chance and y is assistants you own.<p>Some countries have more ads then others and players from those countries will be able to scry more often.<p> Some players will be able to scry as much as they want and have both timers running all the time, others may only be able to scry only once or twice per day and will need to be strategic about when to best use it.<p> A few people will not be able to scry at all." coords="513,348,570,406" shape="rect">
-    <area target="" research="Buy Button<p>This button is used to select the amount of buildings to buy with each click.<p>You can toggle it to Buy1,Buy10,Buy1000 or BuyMax by clicking on it.<p>You can disable this button in the Options Menu." coords="451,414,571,443" shape="rect">
-    <area target="" research="Assistants: Are little helpers that helps gather coins and Faction Coins. They are represented by the little icons around main building. Hover over it to get details.<p>Assistant clicks are not like manual clicks, their income is influenced by clicking reward upgrades, but they will not help to build-up clicking bonus<p>You can buy more Assistants by getting 100 of the same building (max 2 per building)or through Unique Upgrades in later game" coords="409,205,425,218" shape="rect">
-    <area target="" research="Coins<p>This shows your current amount of coins and total coins gained" coords="8,452,100,483" shape="rect">
-    <area target="" research="Production<p>This shows your total coin production per second by Assistants and by clicking also shows your Offline production" coords="130,452,230,485" shape="rect">
-    <area target="" research="Gems<p>Shows you total Gem count<p>Shows how many gems you gain when you Abdicate<p>Shows increase of production after Abdication" coords="267,452,322,482" shape="rect">
-    <area target="" research="Rubies<p>You can gain Rubies by excavating, Events or buying them.<p>Rubies are a rare resource which allows you to increase all aspects of your production. Accumulating them will unlock new upgrades and trophies, providing both a permanent passive bonus and the ability to spend them to purchase new perks.<p>Rubies persist through Abdications and Reincarnations." coords="378,452,422,482" shape="rect">
-    <area target="" research="Assistants:<p>Shows your total Assistant count and total Assistant production per second<p>Little helpers that auto-click the treasure once every second for 5% of your clicking reward and helps gather coins and Faction Coins. Hover over it to get details.<p>Assistant clicks are not like manual clicks, their income is influenced by clicking reward upgrades, but they will not help to build-up clicking bonus<p>You can buy more Assistants by getting 100 of the same building (max 2 assistants per building set)or through Upgrades" coords="480,452,530,482" shape="rect">
-    <area target="" research="Tips and Hints<p> Clicking this will give you tips and hints<p>Also clicking this 100 times in a row will award you with a trophy" coords="647,452,674,483" shape="rect">
-    <area target="" research="Stats<p>This will show you most of your game stats." coords="674,452,705,483" shape="rect">
-    <area target="" research="Options<p>Here you can set many options<p> This is where you can save you game to cloud or restore from cloud<p> Registering with Cloud will award you with a trophy<p>Here you can import and export your game" coords="705,451,734,483" shape="rect">
-    <area target="" research="Clicking this will hide everything(user interface) and only show the background" coords="614,452,645,483" shape="rect">
-    <area target="" research="Clicking these Arrows in game will show/hide the Upgrades" coords="362,66,382,85" shape="rect">
-    <area target="" research="Clicking these Arrows in game will show/hide the Upgrades" coords="362,140,382,158" shape="rect">
-    <area target="" research="Clicking these Arrows in game will show/hide the Upgrades" coords="362,213,382,232" shape="rect">
-    <area target="" research="Some Upgrades will be shaded, this means you can not afford them or you have not met the requirements" coords="165,167,205,207" shape="rect">
-    <area target="" research="All Highlighted Upgrades can be bought, Shaded Upgrades can not be bought" coords="74,240,385,324" shape="rect">
-    <area target="" research="You will have many types of Upgrades, be careful of the ones you buy as they may remove other Upgrades." coords="74,166,159,207" shape="rect">
-    <area target="" research="Priority Autocasting<p>Allows you to prioritize the order of spell casting.(Set with Ctrl+Click)<p>Spells with lower priority will be cast only if the higher priority spells are already active. <p>Only while offline, increase your spells cast amount by 1 per minute.<p>Cost: 400 Ud (4E38)" coords="560,145,572,160" shape="rect">
-    <area target="" research="Efficient Autocasting<p>Allows you to set spells to work outside of contingency and planned settings. These spells (set with CTRL+SHIFT+Click), or in the spell tooltip,disregard your contingency rules and are casted as soon as you have enough mana for them.<p>Cost: 700 Vg (7E65)<p>Only while offline, increase your mana production by an additional 10% of your mana regeneration per second, and your spells cast amount by an additional 2 per minute." coords="561,254,575,271" shape="rect">
-    <area target="" research="Faction Coins<p>When you start the game you will have 6 different types, 1 for each Faction. In later game you will unlock 2 more types for Prestige.<p>After picking a Faction save Faction Coins for that Faction and use the others for Royal Exchanges." href="" coords="67,407,400,447" shape="rect">
-    <area target="" research="Planned Autocasting<p>Allows you to set Primary and Secondary spells. Primary spells (Set with Shift+Click) will fire when the mana reaches amount set by the Contingency slidebar. Secondary spells (Set with SHIFT+Click) will fire as soon as there is enough mana, and if ALL the primary spells are active. <p>Only while offline, increase mana produced by an additional 10% of your mana regeneration per second and your spells cast amount by an additional 2 per minute." coords="558,181,574,198" shape="rect">
-    <area target="" research="Contingency Autocasting<p>Allows you to set a minimum amount of mana before starting to Autocast. A slide bar will appear on the mana bowl when you CTRL+Click while pointing to the mana bowl<p>By adjusting its height you will set a minimum amount of mana for spells to start casting. Once your mana reaches the threshold, spells will follow the priority rules. The contingency loop will break when there is not enough mana to continue, at which point the cycle will reset.<p>Only while offline, increase your spells cast amount by an additional 2 per minute." coords="528,9,8" shape="circle">
-    <area target="" research="Buy All<p>When you start the game this button will not show, It Unlocks at 100 Gems.<p>In Options you can set this to include Royal Exchanges." coords="181,40,274,56" shape="rect">
-</map>
-<map name="OptionsWindow-map">
-    <area target="" research="Use Thousands Separator<p>Putting an X in this box will shows numbers with (,) in them.<p>Examples<p>With X 2,000<p>Without X 2000" coords="48,71,254,92" shape="rect">
-    <area target="" research="Don't Group Upgrades by Category<p>Putting an X in this box will group all upgrades together.<p>Without X it will separate upgrades by category. " coords="47,96,305,114" shape="rect">
-    <area target="" research="Don't Group Trophies by Category<p>Putting an X in this box will show all trophies in 1 general category.<p>Examples<p>With X 1 category (Trophies Unlocked).<p>Without X 5 categories, Allegiances Trophies, Misc Trophies, Magic Trophies, Building Trophies, and Secret Trophies" coords="48,118,307,138" shape="rect">
-    <area target="" research="Don't Consolidate Upgrades<p>Putting an X in this box will show all upgrades you have purchased.<p>Without X you will only see the last upgrade you purchased in that series. " coords="47,142,268,161" shape="rect">
-    <area target="" research="Don't Consolidate Trophies<p>Putting an X in this box will show all trophies earned.<p>Without X you will see the last trophy you earned in that series." coords="48,167,261,185" shape="rect">
-    <area target="" research="Disable Warning for Ruby Upgrades<p>Putting an X in this box you will not be warned that you are about to spend rubies.<p>Without X you will be warned that you are about to spend rubies.(Recommended)" coords="47,190,318,209" shape="rect">
-    <area target="" research="Numbers Format<p>All 3 sets of numbers below are the same amount.<p>Short Notation: 100 No coins<p>Scientific Notation: 1e32 coins (Recommended)<p>Engineering Notation: 100e30 coins" coords="45,39,599,60" shape="rect">
-    <area target="" research="Disable Warning for Exchanges<p>Putting an X in this box will stop all warnings that you are about to spend Faction Coins for Royal Exchanges.<p>Without X you will be warned that you are about to spend Faction Coins on Royal Exchanges<p>Note: The warning is only for the Faction Coins of your Faction.<p>Note This has no effect on the Buy All Button." coords="49,214,289,234" shape="rect">
-    <area target="" research="Disable Click Particles<p>Putting an X in this box will hide the faction coins you see when the background is clicked." coords="49,239,230,257" shape="rect">
-    <area target="" research="Disable Click Text<p>Putting an X in this box will hide all faction coin and income coin text." coords="49,263,201,281" shape="rect">
-    <area target="" research="Disable Menu Sliding Animation<p>Putting an X in this box will make the Menu pop out.<p>Without X the Menu will slide out." coords="45,285,296,305" shape="rect">
-    <area target="" research="Block Background Clicks<p>Putting an X in this box will block you from doing manual clicks on the background.<p>Without X you can click the background.<p>Note: this does not effect Automatic Clicks." coords="49,310,245,328" shape="rect">
-    <area target="" research="Disable Non-Manual Clicks<p>Putting an X in this box will stop all Automatic Clicks.<p>Note: This does not effect Manual Clicks." coords="49,334,263,352" shape="rect">
-    <area target="" research="Enable Spell Tooltip Persist<p>Putting an X in this box will allow you to select Spell Tiers and set Autocasting inside the Tooltip.<p>Without X you will need to set Spell Tiers and set Autocasting with the keyboard and clicking the spell." coords="48,358,265,376" shape="rect">
-    <area target="" research="Disable Gifts<p>Putting X in any of these boxes will Disable that gift<p>Without X all Gifts are active<p>Note: The Gifts have no effect on any Challenge or Trophy run in a negative way, so no need to disable any of them." href="" coords="49,381,378,401" shape="rect">
-    <area target="" research="Disable Cloud Check at Stratup<p>Putting X in this boc will stop Cloud from checking if you have a higher save than the one that is in your current game at Startup.<p>Without X Cloud will check to see if it has a save higher than the current game at startup and offer to load it for you." coords="382,70,625,90" shape="rect">
-    <area target="" research="Buy All Exchanges<p>Putting X in this box will allow you to Buy All Royal Exchanges when you click the Buy All button.<p.Without X you will need to buy Royal Exchanges manually." coords="382,95,536,115" shape="rect">
-    <area target="" research="Sort Purchased Upgrades by Price<p>Putting X in this box will put all Purchased Upgrades in order by price with the lowest price first.<p>Without X upgrades appear in order that they are purchased." coords="382,119,642,139" shape="rect">
-    <area target="" research="Language<p>Here is where you can select your preferred Language.<p>English, Español, Deutsch, Français, Português(Brasil), Pусский, and Italiano<p>Note Changing Language does not lock you to that Language and is just as easy to select another Language." coords="514,317,639,361" shape="rect">
-    <area target="" research="Sort Unpurchased Upgrades by Price<p>Putting X in this box will put all Unpurchased Upgrades in order by price with the lowest price first.<p>Without X Unpurchased Upgrades appear in order that they become available." coords="383,144,662,162" shape="rect">
-    <area target="" research="Hide Purchased Upgrades<p>Putting X in this box will hide all Purchased Upgrades you have.<p>Without X you will see all Purchased Upgrades." coords="382,166,588,185" shape="rect">
-    <area target="" research="Hide Unavailable Researches<p>Putting X in this box will hide all Unavailable Researches.<p>Without X you will see all Researches." coords="382,190,608,210" shape="rect">
-    <area target="" research="Disable Multibuy for Upgrade Series<p>Putting X in this box will allow you to buy one Upgrade at a time for each series.<p>Without X you will be able to buy all Upgrades in that series with one click." coords="382,213,658,233" shape="rect">
-    <area target="" research="Disable BuyMax Button<p>Putting X in this box will hide the BuyMax button and you will only be able to buy 1 building at a time<p>Without X you will be able to buy 1, 10, 100, 1000, or Maximum amount of buildings depending on what you have it set to buy." coords="383,237,567,257" shape="rect">
-    <area target="" research="Skip All Tutorials<p>Putting X in this box will stop most tips, hints, and tutorials from popping up<p>Without X the Tutorial will popup up when you reach some milestones." coords="382,261,534,281" shape="rect">
-    <area target="" research="Cloud Options<p>This is where you can see your Kongregate ID number and you saved game information" coords="47,438,580,466" shape="rect">
-    <area target="" research="Overwrite<p>If your current game does not match your Cloud Save you can Overwrite the Cloud save to match your current game.<p>When the Overwrite button is clicked a box a box will pop up titled 'Cloud Overwrite' stating 'This will permanently replace your existing cloud save with the current one. Type &quot;OVERWRITE&quot; in the field below to confirm.<p>You will then be required to click Overwrite or Don't Overwrite." coords="48,473,138,502" shape="rect">
-    <area target="" research="Restore<p>If your current game does not match your Cloud Save you can use this button to Restore it with the Cloud Save.<p>When you click Restore a box will pop up titled 'Cloud Restore' stating 'Restoring from the cloud will permanently overwrite your current savegame. Type &quot;RESTORE&quot; in the field below to confirm.<p>You will then be required to click Restore or Don't Restore." coords="145,474,234,503" shape="rect">
-    <area target="" research="Save Options<p>Save: Clicking this will save your game with cloud (only if it matches the cloud saved game).<p>Export: This will copy to clipboard (the right mouse click used to copy and paste) then you can paste it to a text file to manually save your game.<p>Import: This is where you can paste your saved text file to load it in the game." coords="48,541,331,570" shape="rect">
-    <area target="" research="Hard Reset<p>If you want to start over click this button and you will start at the beginning of the game and you will loose most of your previous stats." coords="47,617,139,645" shape="rect">
-    <area target="" research="This is the current game version, click it to see the current and previous versions." coords="625,648,676,661" shape="rect">
-</div>
-<div id="footer">
-</div>
-</div>
-</div>
-<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
-<tbody>
-<tr>
-<td style="padding:0.2em 0.5em;">
-<FONT color=#98AFC7> | <a href="/realm/Resources" research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds"><FONT color=#98AFC7>Resources</a> | <a href="/realm/Reset" research="Reset - Abdication - Reincarnation"><FONT color=#98AFC7>Soft Resets</a> | <a href="/realm/BuildingAlignments" research="Building Alignments"><FONT color=#98AFC7>Buildings</a> | <a href="/realm/Heritages" research="Faction Heritages"><FONT color=#98AFC7>Heritages</a> | <a href="/realm/Bloodline" research="Faction Bloodlines" class="mw-redirect"><FONT color=#98AFC7>Bloodlines</a>
- | <a href="/realm/Spells" research="Spells and Tier unlock Times"><FONT color=#98AFC7>Spells</a> | <a href="/realm/Artifacts" research="Excavations"><FONT color=#98AFC7>Excavations</a>  | <a href="/realm/Challenges" research="Complete list of Challenges and descriptions"><FONT color=#98AFC7>Challenges</a> | <a href="/realm/Upgrades" research="Upgrades"><FONT color=#98AFC7>Upgrades</a> | <a href="/realm/TrophyPage" research="Complete list of Trophies and descriptions"><FONT color=#98AFC7>Trophies</a>
- | <a href="/realm/Factions" research="Factions"><FONT color=#98AFC7>Factions</a> | <a href="/realm/Research" research="The Research Facilities - Short and long names"><FONT color=#98AFC7>Research</a> |
-<p> | <a href="/realm/MercBuilds" research="Mercenary Builds"><FONT color=#98AFC7>Merc Builds</a> | <a href="/realm/ResearchBuilds" research="Research Builds"><FONT color=#98AFC7>Research Builds</a> | <a href="/realm/PBuilds" research="Evil and Good Prestige Builds"><FONT color=#98AFC7>Prestige Builds</a> | <a href="/realm/R40-R46" research="Ascension Builds"><FONT color=#98AFC7>Dragon Unlock</a> | <a href="/realm/R47-R60" research="Neutral Prestige Builds"><FONT color=#98AFC7>Neutral Prestige Builds</a> | <a href="/realm/Researchtree" research="Complete list of Research and descriptions"><FONT color=#98AFC7>Research Tree</a> |
-</p>
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Vanilla Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>"><FONT color=#98AFC7>Good Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon"><FONT color=#98AFC7>Evil Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Neutral Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon"><FONT color=#98AFC7>Prestige Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers"><FONT color=#98AFC7>A2 Elite Factions</a> </span> |
-</p>
- | <a href="/realm/Events" research="Events"><FONT color=#98AFC7>Events</a>  | <a href="/realm/Changes" research="Latest Major Patch"><FONT color=#98AFC7>Latest Major Patch</a> | <a href="/realm/Changelog" research="Changelog"><FONT color=#98AFC7>Changelog</a> | <a href="/realm/Notation" research="Short - Scientific - Engineering"><FONT color=#98AFC7>Notation</a> |  <a href="/realm/Terminology" research="Commonly used terms and abbreviations"><FONT color=#98AFC7>Terminology</a> | <a href="/realm/Tools" research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki"><FONT color=#98AFC7>Tools</a> | <a href="/realm/Kong" research="Help"><FONT color=#98AFC7>Kongregate Links</a>  |
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a href="/realm/FairyFaction" research="Fairy (Good)"><FONT color=#98AFC7>Fairy</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a href="/realm/ElfFaction" research="Elf (Good)"><FONT color=#98AFC7>Elven</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a href="/realm/AngelFaction" research="Angel (Good)"><FONT color=#98AFC7>Angel</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a href="/realm/GoblinFaction" research="Goblin (Evil)"><FONT color=#98AFC7>Goblin</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a href="/realm/UndeadFaction" research="Undead (Evil)"><FONT color=#98AFC7>Undead</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a href="/realm/DemonFaction" research="Demon (Evil)"><FONT color=#98AFC7>Demon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a href="/realm/TitanFaction" research="Titan (Neutral)"><FONT color=#98AFC7>Titan</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a href="/realm/DruidFaction" research="Druid (Neutral)"><FONT color=#98AFC7>Druid</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a href="/realm/FacelessFaction" research="Faceless (Neutral)"><FONT color=#98AFC7>Faceless</a> </span> |
-</p>
-<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a href="/realm/MercenaryFaction" research="Mercenary"><FONT color=#98AFC7>Mercenary</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a href="/realm/DwarfFaction" research="Dwarf (Good Prestige)"><FONT color=#98AFC7>Dwarf</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a href="/realm/DrowFaction" research="Drow (Evil Prestige)"><FONT color=#98AFC7>Drow</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a href="/realm/DragonFaction" research="Dragon (Neutral Prestige)"><FONT color=#98AFC7>Dragon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a href="/realm/ArchonFaction" research="Archon (A2 Elite)"><FONT color=#98AFC7>Archon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a href="/realm/DjinnFaction" research="Djinn (A2 Elite)"><FONT color=#98AFC7>Djinn</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a href="/realm/MakersFaction" research="Makers (A2 Elite)"><FONT color=#98AFC7>Makers</a> </span> |
-</p>
-</td></tr></tbody></table>
-<p align="center"><FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/"><FONT color=#98AFC7><b>G00FBALL</b></font></a></p>
-<div align="center"><FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
-<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
-<p align="center">5ku||3d</p>
-<p align="center">6000j</p>
-<p align="center">7636kei</p>
-<p align="center">Aaborg</p>
-<p align="center">Aaron Cook</p>
-<p align="center">acbdefgfedbca</p>
-<p align="center">acer4321</p>
-<p align="center">Ach3ck</p>
-<p align="center">AJZ3</p>
-<p align="center">AKL</p>
-<p align="center">Alright</p>
-<p align="center">Altoscholto</p>
-<p align="center">Amirin</p>
-<p align="center">Anathah</p>
-<p align="center">AndreikaD</p>
-<p align="center">Antendren</p>
-<p align="center">apocal_88</p>
-<p align="center">arcanmster</p>
-<p align="center">Archmage</p>
-<p align="center">arintayn2</p>
-<p align="center">ARTEZZ</p>
-<p align="center">art-of-dom</p>
-<p align="center">ash1soccer</p>
-<p align="center">Ashthar</p>
-<p align="center">aurora</p>
-<p align="center">aviv</p>
-<p align="center">Azua</p>
-<p align="center">Bearpaws</p>
-<p align="center">BigGeak</p>
-<p align="center">bigshawnt</p>
-<p align="center">BillK14</p>
-<p align="center">BionicFrog</p>
-<p align="center">BioRules</p>
-<p align="center">blackbird</p>
-<p align="center">Blackeye</p>
-<p align="center">Blue</p>
-<p align="center">bobbert</p>
-<p align="center">Boffo</p>
-<p align="center">Book909</p>
-<p align="center">boss_mc</p>
-<p align="center">Boyo</p>
-<p align="center">brc48632</p>
-<p align="center">Breeze</p>
-<p align="center">btzeroes</p>
-<p align="center">burninglegion64</p>
-<p align="center">BuzzMarzz</p>
-<p align="center">CafeMaker</p>
-<p align="center">CamoBrie</p>
-<p align="center">capito27</p>
-<p align="center">Chaos</p>
-<p align="center">Chaosmancer7</p>
-<p align="center">chaosmarine4226</p>
-<p align="center">CheeseWitch</p>
-<p align="center">chris</p>
-<p align="center">chrispi</p>
-<p align="center">CHRullz</p>
-<p align="center">Ck</p>
-<p align="center">CluelessWonder</p>
-<p align="center">Coal_CC</p>
-<p align="center">ColdDrake13</p>
-<p align="center">Corgi</p>
-<p align="center">cralo</p>
-<p align="center">Cromedome</p>
-<p align="center">Cromieplays</p>
-<p align="center">Curunur</p>
-<p align="center">Cyden</p>
-<p align="center">Da Banana Man</p>
-<p align="center">DainDwarf</p>
-<p align="center">Damxacer1</p>
-<p align="center">Dariof4</p>
-<p align="center">DED SERVER</p>
-<p align="center">Delichtig</p>
-<p align="center">Dienes</p>
-<p align="center">djones0823</p>
-<p align="center">djru8ix</p>
-<p align="center">Doubleshoe</p>
-<p align="center">dox4242</p>
-<p align="center">DR</p>
-<p align="center">Draven</p>
-<p align="center">Drogor</p>
-<p align="center">drseilzug</p>
-<p align="center">EagleAgg03</p>
-<p align="center">Ebilkill</p>
-<p align="center">ehyder</p>
-<p align="center">eleganceseraph</p>
-<p align="center">ElJay</p>
-<p align="center">Eltro</p>
-<p align="center">Enexplogen</p>
-<p align="center">ensteffahn</p>
-<p align="center">ErrolErrolson</p>
-<p align="center">escalon</p>
-<p align="center">Essigschurke</p>
-<p align="center">Evengrey</p>
-<p align="center">Exsanguine</p>
-<p align="center">FastHit</p>
-<p align="center">FedeJossa</p>
-<p align="center">Fire</p>
-<p align="center">Flameslinger01</p>
-<p align="center">Fonzoland</p>
-<p align="center">Franelas</p>
-<p align="center">Freakomant</p>
-<p align="center">Fryguy9</p>
-<p align="center">furkannnO</p>
-<p align="center">fwbx529</p>
-<p align="center">gaccount</p>
-<p align="center">GalacManta</p>
-<p align="center">gamemasterty</p>
-<p align="center">Geno</p>
-<p align="center">Ghorre</p>
-<p align="center">Glitchstorm</p>
-<p align="center">Goholtramor</p>
-<p align="center">Grazloth</p>
-<p align="center">GreenMJ13</p>
-<p align="center">grelf</p>
-<p align="center">Guy</p>
-<p align="center">gvaiou</p>
-<p align="center">HeinQuek</p>
-<p align="center">HellTest</p>
-<p align="center">Heronimo2</p>
-<p align="center">heyitsdross</p>
-<p align="center">hiimahotdog</p>
-<p align="center">homebrewer54</p>
-<p align="center">Hotspot</p>
-<p align="center">iam10ninjas</p>
-<p align="center">Ignus</p>
-<p align="center">Igorogi</p>
-<p align="center">iluxa4000</p>
-<p align="center">Ilya</p>
-<p align="center">ivanovichkoslov</p>
-<p align="center">j8ner</p>
-<p align="center">jabberok</p>
-<p align="center">Jakeb2002</p>
-<p align="center">Jenetikitty</p>
-<p align="center">JezuzLizard</p>
-<p align="center">JGChan</p>
-<p align="center">jgchan29</p>
-<p align="center">Joa</p>
-<p align="center">johnharveybc</p>
-<p align="center">johnleprude</p>
-<p align="center">johny_blaze</p>
-<p align="center">jonny0panic</p>
-<p align="center">Just1pirate</p>
-<p align="center">Just1pirate</p>
-<p align="center">kabuto44</p>
-<p align="center">Kacper</p>
-<p align="center">Kain</p>
-<p align="center">Kanra</p>
-<p align="center">Kaos</p>
-<p align="center">Keben</p>
-<p align="center">kiluh</p>
-<p align="center">KRIEG</p>
-<p align="center">Kroll</p>
-<p align="center">kuerti</p>
-<p align="center">KuraTheDog</p>
-<p align="center">Kurt-bookboy</p>
-<p align="center">KyonLevic</p>
-<p align="center">Lailoken</p>
-<p align="center">Lapare</p>
-<p align="center">Lavi04</p>
-<p align="center">Lavi04</p>
-<p align="center">Lead Luigi</p>
-<p align="center">LeoB516</p>
-<p align="center">LeoC.II</p>
-<p align="center">lesd</p>
-<p align="center">lesdruides</p>
-<p align="center">Liraso</p>
-<p align="center">Lollipop</p>
-<p align="center">lordulster</p>
-<p align="center">Luio2revenge</p>
-<p align="center">lvl 1 crook</p>
-<p align="center">magnanimousCynic</p>
-<p align="center">Magnusly</p>
-<p align="center">ManDude33</p>
-<p align="center">mangafreak140</p>
-<p align="center">mangaking118</p>
-<p align="center">MarioFanaticXV</p>
-<p align="center">masteff</p>
-<p align="center">Masterzan</p>
-<p align="center">Matrix4767</p>
-<p align="center">Max Schradin</p>
-<p align="center">Maya</p>
-<p align="center">McguyverZero</p>
-<p align="center">Mechaflood</p>
-<p align="center">Merp</p>
-<p align="center">Milkopilko</p>
-<p align="center">mpeechee</p>
-<p align="center">Mr.Celedown</p>
-<p align="center">MrGerman</p>
-<p align="center">mrothorr</p>
-<p align="center">myogin</p>
-<p align="center">Mysticman89</p>
-<p align="center">MythWiz_</p>
-<p align="center">nakota</p>
-<p align="center">Namelessname</p>
-<p align="center">NateMcCloud</p>
-<p align="center">Necrodoom</p>
-<p align="center">NecroXD</p>
-<p align="center">Neutral Potato</p>
-<p align="center">NeutralPotato</p>
-<p align="center">Nizidramaniiyt</p>
-<p align="center">noonomoon</p>
-<p align="center">NTWgreatest</p>
-<p align="center">NTWgrinder</p>
-<p align="center">oholoko</p>
-<p align="center">Okami</p>
-<p align="center">okunderground</p>
-<p align="center">onianinara</p>
-<p align="center">Onoxious</p>
-<p align="center">Origin</p>
-<p align="center">oswarlan</p>
-<p align="center">OvenBakedGod</p>
-<p align="center">Paah</p>
-<p align="center">pacmanlite</p>
-<p align="center">Palamazzi</p>
-<p align="center">Parasitez83</p>
-<p align="center">Piezza24</p>
-<p align="center">pizza_troll</p>
-<p align="center">pkal</p>
-<p align="center">plaaosert</p>
-<p align="center">player2aj</p>
-<p align="center">Polibus</p>
-<p align="center">Popington</p>
-<p align="center">primal cradily</p>
-<p align="center">Proxy</p>
-<p align="center">pseudobyte</p>
-<p align="center">PseudonymousBosh</p>
-<p align="center">Pyxl</p>
-<p align="center">q1235<p></p>
-<p align="center">raato</p>
-<p align="center">Rade</p>
-<p align="center">RageBall</p>
-<p align="center">RastlinV</p>
-<p align="center">RebelKeithy</p>
-<p align="center">Redd</p>
-<p align="center">Redd</p>
-<p align="center">Regulus</p>
-<p align="center">Reknot</p>
-<p align="center">RetroDerpSquid9</p>
-<p align="center">rhaek7</p>
-<p align="center">Rustle Crowe</p>
-<p align="center">Ryonir</p>
-<p align="center">saitenhieb</p>
-<p align="center">SamGooBat</p>
-<p align="center">Sandworm</p>
-<p align="center">Sas Assassin</p>
-<p align="center">Sc0rp</p>
-<p align="center">Sefa</p>
-<p align="center">Seyliz</p>
-<p align="center">Shantie</p>
-<p align="center">shayner12</p>
-<p align="center">Sheer</p>
-<p align="center">Sho Phaune</p>
-<p align="center">Skulled190</p>
-<p align="center">Slakkarn</p>
-<p align="center">Slakkarn</p>
-<p align="center">slantfer</p>
-<p align="center">solidifiedmind</p>
-<p align="center">somarilnos</p>
-<p align="center">SomeoneLucas</p>
-<p align="center">Soulrift</p>
-<p align="center">Space Troll</p>
-<p align="center">spamtraprus</p>
-<p align="center">Spanosa</p>
-<p align="center">SRT</p>
-<p align="center">StAUG</p>
-<p align="center">stmlee</p>
-<p align="center">Stoner Claff</p>
-<p align="center">Sum Yung Gai</p>
-<p align="center">sunk</p>
-<p align="center">Suranis</p>
-<p align="center">swim</p>
-<p align="center">Synthini</p>
-<p align="center">Sythen2014</p>
-<p align="center">tangyifei</p>
-<p align="center">Tanny</p>
-<p align="center">Taxiway</p>
-<p align="center">tbrown30</p>
-<p align="center">Teabagger Vance</p>
-<p align="center">Technosaurus</p>
-<p align="center">Tenebricosus</p>
-<p align="center">Tenyasha</p>
-<p align="center">ThatGuy</p>
-<p align="center">The Homa</p>
-<p align="center">ThePeon</p>
-<p align="center">Thorian</p>
-<p align="center">toifel131</p>
-<p align="center">Tornadobird</p>
-<p align="center">torskenn</p>
-<p align="center">trevYT</p>
-<p align="center">Trewq_</p>
-<p align="center">TrostNi</p>
-<p align="center">Tskami_ek</p>
-<p align="center">Tyler</p>
-<p align="center">ukulelejongetje<p></p>
-<p align="center">UndeadAbbys</p>
-<p align="center">Uni</p>
-<p align="center">Username</p>
-<p align="center">uwnim</p>
-<p align="center">Valentin</p>
-<p align="center">Versine</p>
-<p align="center">VilgefortzPL</p>
-<p align="center">Vince</p>
-<p align="center">waga baba bobo</p>
-<p align="center">WaitingIdly</p>
-<p align="center">waterfire425</p>
-<p align="center">websterguy</p>
-<p align="center">Weedheter</p>
-<p align="center">Wlerin</p>
-<p align="center">Wolf415</p>
-<p align="center">wolfsblood</p>
-<p align="center">woopemgood</p>
-<p align="center">WynneYilmaz</p>
-<p align="center">xemima</p>
-<p align="center">XenosHg</p>
-<p align="center">Xentha</p>
-<p align="center">XenTwo</p>
-<p align="center">xeperiset</p>
-<p align="center">Xikre</p>
-<p align="center">Xorious</p>
-<p align="center">Xpt14</p>
-<p align="center">xXRochforteXx</p>
-<p align="center">Yarilo</p>
-<p align="center">ydc1017902176</p>
-<p align="center">yob</p>
-<p align="center">Zange</p>
-<p align="center">Zaraza</p>
-<p align="center">Zariars</p>
-<p align="center">Zeckenschwarm</p>
-<p align="center">Zeen</p>
-<p align="center">Zelphh1</p>
-<p align="center">Zepto</p>
-<p align="center">zionhian</p>
-<p align="center">Zyllyn</p>
-<p align="center">Zylon</p>
-<p align="center">Дикий Речной Пёс</p>
-</marquee>
-<style>
-.html-marquee {
-  height:14px;
-  width:160px;
-  background-color:Black;
-  font-family:Cursive;
-  font-size:14px;
-  color:#98AFC7;
-  font-weight:bold;
-  border-width:1;
-  border-style:solid;
-  border-color:Black;
-}
-</style>
-<script>
-function myFunction(e) {
-  var copyText = e.next();
-  if (isOS()) {
-        var textElement = copyText[0];
-        var editable = textElement.contentEditable;
-        var readOnly = textElement.readOnly;
-        textElement.contentEditable = true;
-        textElement.readOnly = false;
-        var range = document.createRange();
-        range.selectNodeContents(textElement);
-        var selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textElement.setSelectionRange(0, 999999);
-        textElement.contentEditable = editable;
-        textElement.readOnly = readOnly;
-    } else {
-        copyText.select();
-    }
-  document.execCommand('copy');
-}
- function isOS() {
-    return navigator.userAgent.match(/ipad|iphone/i);
-}
-</script>
-<div align="center">
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0" alt="visitor counter"></a>
+	<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
+		<tbody>
+			<tr>
+				<td style="padding:0.2em 0.5em;">
+					<FONT color=#98AFC7> | <a href="/Resources"
+							research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds">
+							<FONT color=#98AFC7>Resources
+						</a> | <a href="/Reset" research="Reset - Abdication - Reincarnation">
+							<FONT color=#98AFC7>Soft Resets
+						</a> | <a href="/BuildingAlignments" research="Building Alignments">
+							<FONT color=#98AFC7>Buildings
+						</a> | <a href="/Heritages" research="Faction Heritages">
+							<FONT color=#98AFC7>Heritages
+						</a> | <a href="/Bloodline" research="Faction Bloodlines" class="mw-redirect">
+							<FONT color=#98AFC7>Bloodlines
+						</a>
+						| <a href="/Spells" research="Spells and Tier unlock Times">
+							<FONT color=#98AFC7>Spells
+						</a> | <a href="/Artifacts" research="Excavations">
+							<FONT color=#98AFC7>Excavations
+						</a> | <a href="/Challenges" research="Complete list of Challenges and descriptions">
+							<FONT color=#98AFC7>Challenges
+						</a> | <a href="/Upgrades" research="Upgrades">
+							<FONT color=#98AFC7>Upgrades
+						</a> | <a href="/TrophyPage" research="Complete list of Trophies and descriptions">
+							<FONT color=#98AFC7>Trophies
+						</a>
+						| <a href="/Factions" research="Factions">
+							<FONT color=#98AFC7>Factions
+						</a> | <a href="/Research" research="The Research Facilities - Short and long names">
+							<FONT color=#98AFC7>Research
+						</a> |
+						<p> | <a href="/MercBuilds" research="Mercenary Builds">
+								<FONT color=#98AFC7>Merc Builds
+							</a> | <a href="/ResearchBuilds" research="Research Builds">
+								<FONT color=#98AFC7>Research Builds
+							</a> | <a href="/PBuilds" research="Evil and Good Prestige Builds">
+								<FONT color=#98AFC7>Prestige Builds
+							</a> | <a href="/R40-R46" research="Ascension Builds">
+								<FONT color=#98AFC7>Dragon Unlock
+							</a> | <a href="/R47-R60" research="Neutral Prestige Builds">
+								<FONT color=#98AFC7>Neutral Prestige Builds
+							</a> | <a href="/Researchtree" research="Complete list of Research and descriptions">
+								<FONT color=#98AFC7>Research Tree
+							</a> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a
+									research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Vanilla Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a
+									research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>">
+									<FONT color=#98AFC7>Good Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a
+									research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon">
+									<FONT color=#98AFC7>Evil Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a
+									research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Neutral Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon">
+									<FONT color=#98AFC7>Prestige Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers">
+									<FONT color=#98AFC7>A2 Elite Factions
+								</a> </span> |
+						</p>
+						| <a href="/Events" research="Events">
+							<FONT color=#98AFC7>Events
+						</a> | <a href="/Changes" research="Latest Major Patch">
+							<FONT color=#98AFC7>Latest Major Patch
+						</a> | <a href="/Changelog" research="Changelog">
+							<FONT color=#98AFC7>Changelog
+						</a> | <a href="/Notation" research="Short - Scientific - Engineering">
+							<FONT color=#98AFC7>Notation
+						</a> | <a href="/Terminology" research="Commonly used terms and abbreviations">
+							<FONT color=#98AFC7>Terminology
+						</a> | <a href="/Tools"
+							research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki">
+							<FONT color=#98AFC7>Tools
+						</a> | <a href="/Kong" research="Help">
+							<FONT color=#98AFC7>Kongregate Links
+						</a> |
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a
+									href="/FairyFaction" research="Fairy (Good)">
+									<FONT color=#98AFC7>Fairy
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a
+									href="/ElfFaction" research="Elf (Good)">
+									<FONT color=#98AFC7>Elven
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a
+									href="/AngelFaction" research="Angel (Good)">
+									<FONT color=#98AFC7>Angel
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a
+									href="/GoblinFaction" research="Goblin (Evil)">
+									<FONT color=#98AFC7>Goblin
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a
+									href="/UndeadFaction" research="Undead (Evil)">
+									<FONT color=#98AFC7>Undead
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a
+									href="/DemonFaction" research="Demon (Evil)">
+									<FONT color=#98AFC7>Demon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a
+									href="/TitanFaction" research="Titan (Neutral)">
+									<FONT color=#98AFC7>Titan
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a
+									href="/DruidFaction" research="Druid (Neutral)">
+									<FONT color=#98AFC7>Druid
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a
+									href="/FacelessFaction" research="Faceless (Neutral)">
+									<FONT color=#98AFC7>Faceless
+								</a> </span> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									href="/MercenaryFaction" research="Mercenary">
+									<FONT color=#98AFC7>Mercenary
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a
+									href="/DwarfFaction" research="Dwarf (Good Prestige)">
+									<FONT color=#98AFC7>Dwarf
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a
+									href="/DrowFaction" research="Drow (Evil Prestige)">
+									<FONT color=#98AFC7>Drow
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a
+									href="/DragonFaction" research="Dragon (Neutral Prestige)">
+									<FONT color=#98AFC7>Dragon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a
+									href="/ArchonFaction" research="Archon (A2 Elite)">
+									<FONT color=#98AFC7>Archon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a
+									href="/DjinnFaction" research="Djinn (A2 Elite)">
+									<FONT color=#98AFC7>Djinn
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a
+									href="/MakersFaction" research="Makers (A2 Elite)">
+									<FONT color=#98AFC7>Makers
+								</a> </span> |
+						</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p align="center">
+		<FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/">
+				<FONT color=#98AFC7><b>G00FBALL</b></font>
+			</a>
+	</p>
+	<div align="center">
+		<FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
+			<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
+				<p align="center">5ku||3d</p>
+				<p align="center">6000j</p>
+				<p align="center">7636kei</p>
+				<p align="center">Aaborg</p>
+				<p align="center">Aaron Cook</p>
+				<p align="center">acbdefgfedbca</p>
+				<p align="center">acer4321</p>
+				<p align="center">Ach3ck</p>
+				<p align="center">AJZ3</p>
+				<p align="center">AKL</p>
+				<p align="center">Alright</p>
+				<p align="center">Altoscholto</p>
+				<p align="center">Amirin</p>
+				<p align="center">Anathah</p>
+				<p align="center">AndreikaD</p>
+				<p align="center">Antendren</p>
+				<p align="center">apocal_88</p>
+				<p align="center">arcanmster</p>
+				<p align="center">Archmage</p>
+				<p align="center">arintayn2</p>
+				<p align="center">ARTEZZ</p>
+				<p align="center">art-of-dom</p>
+				<p align="center">ash1soccer</p>
+				<p align="center">Ashthar</p>
+				<p align="center">aurora</p>
+				<p align="center">aviv</p>
+				<p align="center">Azua</p>
+				<p align="center">Bearpaws</p>
+				<p align="center">BigGeak</p>
+				<p align="center">bigshawnt</p>
+				<p align="center">BillK14</p>
+				<p align="center">BionicFrog</p>
+				<p align="center">BioRules</p>
+				<p align="center">blackbird</p>
+				<p align="center">Blackeye</p>
+				<p align="center">Blue</p>
+				<p align="center">bobbert</p>
+				<p align="center">Boffo</p>
+				<p align="center">Book909</p>
+				<p align="center">boss_mc</p>
+				<p align="center">Boyo</p>
+				<p align="center">brc48632</p>
+				<p align="center">Breeze</p>
+				<p align="center">btzeroes</p>
+				<p align="center">burninglegion64</p>
+				<p align="center">BuzzMarzz</p>
+				<p align="center">CafeMaker</p>
+				<p align="center">CamoBrie</p>
+				<p align="center">capito27</p>
+				<p align="center">Chaos</p>
+				<p align="center">Chaosmancer7</p>
+				<p align="center">chaosmarine4226</p>
+				<p align="center">CheeseWitch</p>
+				<p align="center">chris</p>
+				<p align="center">chrispi</p>
+				<p align="center">CHRullz</p>
+				<p align="center">Ck</p>
+				<p align="center">CluelessWonder</p>
+				<p align="center">Coal_CC</p>
+				<p align="center">ColdDrake13</p>
+				<p align="center">Corgi</p>
+				<p align="center">cralo</p>
+				<p align="center">Cromedome</p>
+				<p align="center">Cromieplays</p>
+				<p align="center">Curunur</p>
+				<p align="center">Cyden</p>
+				<p align="center">Da Banana Man</p>
+				<p align="center">DainDwarf</p>
+				<p align="center">Damxacer1</p>
+				<p align="center">Dariof4</p>
+				<p align="center">DED SERVER</p>
+				<p align="center">Delichtig</p>
+				<p align="center">Dienes</p>
+				<p align="center">djones0823</p>
+				<p align="center">djru8ix</p>
+				<p align="center">Doubleshoe</p>
+				<p align="center">dox4242</p>
+				<p align="center">DR</p>
+				<p align="center">Draven</p>
+				<p align="center">Drogor</p>
+				<p align="center">drseilzug</p>
+				<p align="center">EagleAgg03</p>
+				<p align="center">Ebilkill</p>
+				<p align="center">ehyder</p>
+				<p align="center">eleganceseraph</p>
+				<p align="center">ElJay</p>
+				<p align="center">Eltro</p>
+				<p align="center">Enexplogen</p>
+				<p align="center">ensteffahn</p>
+				<p align="center">ErrolErrolson</p>
+				<p align="center">escalon</p>
+				<p align="center">Essigschurke</p>
+				<p align="center">Evengrey</p>
+				<p align="center">Exsanguine</p>
+				<p align="center">FastHit</p>
+				<p align="center">FedeJossa</p>
+				<p align="center">Fire</p>
+				<p align="center">Flameslinger01</p>
+				<p align="center">Fonzoland</p>
+				<p align="center">Franelas</p>
+				<p align="center">Freakomant</p>
+				<p align="center">Fryguy9</p>
+				<p align="center">furkannnO</p>
+				<p align="center">fwbx529</p>
+				<p align="center">gaccount</p>
+				<p align="center">GalacManta</p>
+				<p align="center">gamemasterty</p>
+				<p align="center">Geno</p>
+				<p align="center">Ghorre</p>
+				<p align="center">Glitchstorm</p>
+				<p align="center">Goholtramor</p>
+				<p align="center">Grazloth</p>
+				<p align="center">GreenMJ13</p>
+				<p align="center">grelf</p>
+				<p align="center">Guy</p>
+				<p align="center">gvaiou</p>
+				<p align="center">HeinQuek</p>
+				<p align="center">HellTest</p>
+				<p align="center">Heronimo2</p>
+				<p align="center">heyitsdross</p>
+				<p align="center">hiimahotdog</p>
+				<p align="center">homebrewer54</p>
+				<p align="center">Hotspot</p>
+				<p align="center">iam10ninjas</p>
+				<p align="center">Ignus</p>
+				<p align="center">Igorogi</p>
+				<p align="center">iluxa4000</p>
+				<p align="center">Ilya</p>
+				<p align="center">ivanovichkoslov</p>
+				<p align="center">j8ner</p>
+				<p align="center">jabberok</p>
+				<p align="center">Jakeb2002</p>
+				<p align="center">Jenetikitty</p>
+				<p align="center">JezuzLizard</p>
+				<p align="center">JGChan</p>
+				<p align="center">jgchan29</p>
+				<p align="center">Joa</p>
+				<p align="center">johnharveybc</p>
+				<p align="center">johnleprude</p>
+				<p align="center">johny_blaze</p>
+				<p align="center">jonny0panic</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">kabuto44</p>
+				<p align="center">Kacper</p>
+				<p align="center">Kain</p>
+				<p align="center">Kanra</p>
+				<p align="center">Kaos</p>
+				<p align="center">Keben</p>
+				<p align="center">kiluh</p>
+				<p align="center">KRIEG</p>
+				<p align="center">Kroll</p>
+				<p align="center">kuerti</p>
+				<p align="center">KuraTheDog</p>
+				<p align="center">Kurt-bookboy</p>
+				<p align="center">KyonLevic</p>
+				<p align="center">Lailoken</p>
+				<p align="center">Lapare</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lead Luigi</p>
+				<p align="center">LeoB516</p>
+				<p align="center">LeoC.II</p>
+				<p align="center">lesd</p>
+				<p align="center">lesdruides</p>
+				<p align="center">Liraso</p>
+				<p align="center">Lollipop</p>
+				<p align="center">lordulster</p>
+				<p align="center">Luio2revenge</p>
+				<p align="center">lvl 1 crook</p>
+				<p align="center">magnanimousCynic</p>
+				<p align="center">Magnusly</p>
+				<p align="center">ManDude33</p>
+				<p align="center">mangafreak140</p>
+				<p align="center">mangaking118</p>
+				<p align="center">MarioFanaticXV</p>
+				<p align="center">masteff</p>
+				<p align="center">Masterzan</p>
+				<p align="center">Matrix4767</p>
+				<p align="center">Max Schradin</p>
+				<p align="center">Maya</p>
+				<p align="center">McguyverZero</p>
+				<p align="center">Mechaflood</p>
+				<p align="center">Merp</p>
+				<p align="center">Milkopilko</p>
+				<p align="center">mpeechee</p>
+				<p align="center">Mr.Celedown</p>
+				<p align="center">MrGerman</p>
+				<p align="center">mrothorr</p>
+				<p align="center">myogin</p>
+				<p align="center">Mysticman89</p>
+				<p align="center">MythWiz_</p>
+				<p align="center">nakota</p>
+				<p align="center">Namelessname</p>
+				<p align="center">NateMcCloud</p>
+				<p align="center">Necrodoom</p>
+				<p align="center">NecroXD</p>
+				<p align="center">Neutral Potato</p>
+				<p align="center">NeutralPotato</p>
+				<p align="center">Nizidramaniiyt</p>
+				<p align="center">noonomoon</p>
+				<p align="center">NTWgreatest</p>
+				<p align="center">NTWgrinder</p>
+				<p align="center">oholoko</p>
+				<p align="center">Okami</p>
+				<p align="center">okunderground</p>
+				<p align="center">onianinara</p>
+				<p align="center">Onoxious</p>
+				<p align="center">Origin</p>
+				<p align="center">oswarlan</p>
+				<p align="center">OvenBakedGod</p>
+				<p align="center">Paah</p>
+				<p align="center">pacmanlite</p>
+				<p align="center">Palamazzi</p>
+				<p align="center">Parasitez83</p>
+				<p align="center">Piezza24</p>
+				<p align="center">pizza_troll</p>
+				<p align="center">pkal</p>
+				<p align="center">plaaosert</p>
+				<p align="center">player2aj</p>
+				<p align="center">Polibus</p>
+				<p align="center">Popington</p>
+				<p align="center">primal cradily</p>
+				<p align="center">Proxy</p>
+				<p align="center">pseudobyte</p>
+				<p align="center">PseudonymousBosh</p>
+				<p align="center">Pyxl</p>
+				<p align="center">q1235
+				<p></p>
+				<p align="center">raato</p>
+				<p align="center">Rade</p>
+				<p align="center">RageBall</p>
+				<p align="center">RastlinV</p>
+				<p align="center">RebelKeithy</p>
+				<p align="center">Redd</p>
+				<p align="center">Redd</p>
+				<p align="center">Regulus</p>
+				<p align="center">Reknot</p>
+				<p align="center">RetroDerpSquid9</p>
+				<p align="center">rhaek7</p>
+				<p align="center">Rustle Crowe</p>
+				<p align="center">Ryonir</p>
+				<p align="center">saitenhieb</p>
+				<p align="center">SamGooBat</p>
+				<p align="center">Sandworm</p>
+				<p align="center">Sas Assassin</p>
+				<p align="center">Sc0rp</p>
+				<p align="center">Sefa</p>
+				<p align="center">Seyliz</p>
+				<p align="center">Shantie</p>
+				<p align="center">shayner12</p>
+				<p align="center">Sheer</p>
+				<p align="center">Sho Phaune</p>
+				<p align="center">Skulled190</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">slantfer</p>
+				<p align="center">solidifiedmind</p>
+				<p align="center">somarilnos</p>
+				<p align="center">SomeoneLucas</p>
+				<p align="center">Soulrift</p>
+				<p align="center">Space Troll</p>
+				<p align="center">spamtraprus</p>
+				<p align="center">Spanosa</p>
+				<p align="center">SRT</p>
+				<p align="center">StAUG</p>
+				<p align="center">stmlee</p>
+				<p align="center">Stoner Claff</p>
+				<p align="center">Sum Yung Gai</p>
+				<p align="center">sunk</p>
+				<p align="center">Suranis</p>
+				<p align="center">swim</p>
+				<p align="center">Synthini</p>
+				<p align="center">Sythen2014</p>
+				<p align="center">tangyifei</p>
+				<p align="center">Tanny</p>
+				<p align="center">Taxiway</p>
+				<p align="center">tbrown30</p>
+				<p align="center">Teabagger Vance</p>
+				<p align="center">Technosaurus</p>
+				<p align="center">Tenebricosus</p>
+				<p align="center">Tenyasha</p>
+				<p align="center">ThatGuy</p>
+				<p align="center">The Homa</p>
+				<p align="center">ThePeon</p>
+				<p align="center">Thorian</p>
+				<p align="center">toifel131</p>
+				<p align="center">Tornadobird</p>
+				<p align="center">torskenn</p>
+				<p align="center">trevYT</p>
+				<p align="center">Trewq_</p>
+				<p align="center">TrostNi</p>
+				<p align="center">Tskami_ek</p>
+				<p align="center">Tyler</p>
+				<p align="center">ukulelejongetje
+				<p></p>
+				<p align="center">UndeadAbbys</p>
+				<p align="center">Uni</p>
+				<p align="center">Username</p>
+				<p align="center">uwnim</p>
+				<p align="center">Valentin</p>
+				<p align="center">Versine</p>
+				<p align="center">VilgefortzPL</p>
+				<p align="center">Vince</p>
+				<p align="center">waga baba bobo</p>
+				<p align="center">WaitingIdly</p>
+				<p align="center">waterfire425</p>
+				<p align="center">websterguy</p>
+				<p align="center">Weedheter</p>
+				<p align="center">Wlerin</p>
+				<p align="center">Wolf415</p>
+				<p align="center">wolfsblood</p>
+				<p align="center">woopemgood</p>
+				<p align="center">WynneYilmaz</p>
+				<p align="center">xemima</p>
+				<p align="center">XenosHg</p>
+				<p align="center">Xentha</p>
+				<p align="center">XenTwo</p>
+				<p align="center">xeperiset</p>
+				<p align="center">Xikre</p>
+				<p align="center">Xorious</p>
+				<p align="center">Xpt14</p>
+				<p align="center">xXRochforteXx</p>
+				<p align="center">Yarilo</p>
+				<p align="center">ydc1017902176</p>
+				<p align="center">yob</p>
+				<p align="center">Zange</p>
+				<p align="center">Zaraza</p>
+				<p align="center">Zariars</p>
+				<p align="center">Zeckenschwarm</p>
+				<p align="center">Zeen</p>
+				<p align="center">Zelphh1</p>
+				<p align="center">Zepto</p>
+				<p align="center">zionhian</p>
+				<p align="center">Zyllyn</p>
+				<p align="center">Zylon</p>
+				<p align="center">Дикий Речной Пёс</p>
+			</marquee>
+			<style>
+				.html-marquee {
+					height: 14px;
+					width: 160px;
+					background-color: Black;
+					font-family: Cursive;
+					font-size: 14px;
+					color: #98AFC7;
+					font-weight: bold;
+					border-width: 1;
+					border-style: solid;
+					border-color: Black;
+				}
+			</style>
+			<script>
+				function myFunction(e) {
+					var copyText = e.next();
+					if (isOS()) {
+						var textElement = copyText[0];
+						var editable = textElement.contentEditable;
+						var readOnly = textElement.readOnly;
+						textElement.contentEditable = true;
+						textElement.readOnly = false;
+						var range = document.createRange();
+						range.selectNodeContents(textElement);
+						var selection = window.getSelection();
+						selection.removeAllRanges();
+						selection.addRange(range);
+						textElement.setSelectionRange(0, 999999);
+						textElement.contentEditable = editable;
+						textElement.readOnly = readOnly;
+					} else {
+						copyText.select();
+					}
+					document.execCommand('copy');
+				}
+				function isOS() {
+					return navigator.userAgent.match(/ipad|iphone/i);
+				}
+			</script>
+			<div align="center">
+				<a href="https://www.cutercounter.com/" target="_blank"><img
+						src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0"
+						alt="visitor counter"></a>
 </body>
+
 </html>

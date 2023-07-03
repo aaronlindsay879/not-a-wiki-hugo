@@ -1,1263 +1,1653 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
 <head>
-<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css"/>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js" integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw==" crossorigin="anonymous"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
-<title>G00F's Not a Wiki </title>
-<meta charset="UTF-8">
-<meta name="keywords" content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward"/>
-<style>
+	<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/scripts/common.css" />
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+		integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw=="
+		crossorigin="anonymous"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
+	<title>G00F's Not a Wiki </title>
+	<meta charset="UTF-8">
+	<meta name="keywords"
+		content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward" />
+	<style>
 		table.Faction {
 			border-collapse: collapse;
 		}
-		.Faction th,.Faction td {
+
+		.Faction th,
+		.Faction td {
 			border: 2px solid black;
-		padding: 3px;
+			padding: 3px;
 		}
+
 		.Faction td {
 			font-weight: bold;
-		padding: 10px;
+			padding: 10px;
 		}
-	   .gsc-cursor-page  {
-		padding-right: 10px;
-	   }
+
+		.gsc-cursor-page {
+			padding-right: 10px;
+		}
 	</style>
-<style>
+	<style>
 		table.ManaColors {
 			border-collapse: collapse;
 		}
-		.ManaColors th,.ManaColors td {
+
+		.ManaColors th,
+		.ManaColors td {
 			border: 3px solid black;
 		}
+
 		.ManaColors td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
-</style>
-<style>
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
+	</style>
+	<style>
 		table.numtable {
 			border-collapse: collapse;
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
-		.numtable th,.numtable td {
+
+		.numtable th,
+		.numtable td {
 			border: 3px solid #4c5b86;
 		}
+
 		.numtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
+	<style>
 		table.imgtable {
 			border-collapse: collapse;
 		}
-		.imgtable th,.imgtable td {
+
+		.imgtable th,
+		.imgtable td {
 			border: none;
 		}
+
 		.imgtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
-	.black_overlay {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		z-index: 1001;
-		-moz-opacity: 0.8;
-		opacity: .80;
-		filter: alpha(opacity=80);
-	}
+	<style>
+		.black_overlay {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index: 1001;
+			-moz-opacity: 0.8;
+			opacity: .80;
+			filter: alpha(opacity=80);
+		}
 
-	.white_content {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 99%;
-		height: 50%;
-		padding: 16px;
-		border: 1px solid orange;
-		background-color: white;
-		z-index: 1002;
-		overflow: auto;
-	}
-</style>
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 99%;
+			height: 50%;
+			padding: 16px;
+			border: 1px solid orange;
+			background-color: white;
+			z-index: 1002;
+			overflow: auto;
+		}
+	</style>
 
-<script>
-	$(document).ready(function () {
-		$("#Expand").on("hide.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
-		});
-		$("#Expand").on("show.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
-		});
-	});
-</script>
-<script>
-	(function ($) {
+	<script>
 		$(document).ready(function () {
-			$("[research]").style_my_tooltips();
+			$("#Expand").on("hide.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
+			});
+			$("#Expand").on("show.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
+			});
 		});
-	})(jQuery);
-</script>
-<script type="text/javascript">
-	function shohid(e) {
-		//$('.autohide').not(e.next()).hide();
-		$(e).parents('.autohide').show();
-		$(e).next().toggle();
-	}
-</script>
-<div id="outer">
-	<div id="parent">
-		<div id="header" align="center">
+	</script>
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[research]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+		function shohid(e) {
+			//$('.autohide').not(e.next()).hide();
+			$(e).parents('.autohide').show();
+			$(e).next().toggle();
+		}
+	</script>
+	<div id="outer">
+		<div id="parent">
+			<div id="header" align="center">
+			</div>
 		</div>
-	</div>
-	<div id="navbox">
-		<div class="menu">
-			<ul>
-				<li><a href="/realm/Challenges" research="A complete list of Challenges and their requirements in image map form">Challenges</a>
-					<!--[if lte IE 6]>
+		<div id="navbox">
+			<div class="menu">
+				<ul>
+					<li><a href="/Challenges"
+							research="A complete list of Challenges and their requirements in image map form">Challenges</a>
+						<!--[if lte IE 6]>
 					<a href="#">Category one
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/Fairy" research="All Fairy Challenges">Fairy</a>
-						<li><a href="/realm/Elf" research="All Elven Challenges">Elven</a>
-						<li><a href="/realm/Angel" research="All Angel Challenges">Angel</a>
-						<li><a href="/realm/Goblin" research="All Goblin Challenges">Goblin</a>
-						<li><a href="/realm/Undead" research="All Undead Challenges">Undead</a>
-						<li><a href="/realm/Demon" research="All Demon Challenges">Demon</a>
-						<li><a href="/realm/Titan" research="All Titan Challenges">Titan</a>
-						<li><a href="/realm/Druid" research="All Druid Challenges">Druid</a>
-						<li><a href="/realm/Faceless" research="All Faceless Challenges">Faceless</a>
-						<li><a href="/realm/Dwarf" research="All Dwarven Challenges">Dwarven</a>
-						<li><a href="/realm/Drow" research="All Drow Challenges">Drow</a>
-						<li><a href="/realm/Dragons" research="All Dragon Challenges">Dragon</a>
-						<li><a href="/realm/Archon" research="All Archon Challenges">Archon</a>
-						<li><a href="/realm/Djinn" research="All Djinn Challenges">Djinn</a>
-						<li><a href="/realm/Makers" research="All Makers Challenges">Makers</a>
-						<li><a href="/realm/Mercenary" research="All Mercenary Challenges">Mercenary</a>
-							<ul>
-							</ul>
-							<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/Fairy" research="All Fairy Challenges">Fairy</a>
+							<li><a href="/Elf" research="All Elven Challenges">Elven</a>
+							<li><a href="/Angel" research="All Angel Challenges">Angel</a>
+							<li><a href="/Goblin" research="All Goblin Challenges">Goblin</a>
+							<li><a href="/Undead" research="All Undead Challenges">Undead</a>
+							<li><a href="/Demon" research="All Demon Challenges">Demon</a>
+							<li><a href="/Titan" research="All Titan Challenges">Titan</a>
+							<li><a href="/Druid" research="All Druid Challenges">Druid</a>
+							<li><a href="/Faceless" research="All Faceless Challenges">Faceless</a>
+							<li><a href="/Dwarf" research="All Dwarven Challenges">Dwarven</a>
+							<li><a href="/Drow" research="All Drow Challenges">Drow</a>
+							<li><a href="/Dragons" research="All Dragon Challenges">Dragon</a>
+							<li><a href="/Archon" research="All Archon Challenges">Archon</a>
+							<li><a href="/Djinn" research="All Djinn Challenges">Djinn</a>
+							<li><a href="/Makers" research="All Makers Challenges">Makers</a>
+							<li><a href="/Mercenary" research="All Mercenary Challenges">Mercenary</a>
+								<ul>
+								</ul>
+								<!--[if lte IE 6]>
 							</td></tr></table>
 							</a>
 							<![endif]-->
-						</li>
-					</ul>
-					<!--[if lte IE 6]>
+							</li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/TrophyPage" research="A complete list of Trophies and their requirements in image map form">Trophies</a>
-				</li>
-				<li><a href="/realm/Factions">Factions</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/TrophyPage"
+							research="A complete list of Trophies and their requirements in image map form">Trophies</a>
+					</li>
+					<li><a href="/Factions">Factions</a>
+						<!--[if lte IE 6]>
 					<a href="#">CATEGORY THREE
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/FairyFaction" research="Fairy">Fairy</a></li>
-						<li><a href="/realm/ElfFaction" research="Elven">Elven</a></li>
-						<li><a href="/realm/AngelFaction" research="Angel">Angel</a></li>
-						<li><a href="/realm/GoblinFaction" research="Goblin">Goblin</a></li>
-						<li><a href="/realm/UndeadFaction" research="Undead">Undead</a></li>
-						<li><a href="/realm/DemonFaction" research="Demon">Demon</a></li>
-						<li><a href="/realm/TitanFaction" research="Titan">Titan</a></li>
-						<li><a href="/realm/DruidFaction" research="Druid">Druid</a></li>
-						<li><a href="/realm/FacelessFaction" research="Faceless">Faceless</a></li>
-						<li><a href="/realm/DwarfFaction" research="Dwarven">Dwarven</a></li>
-						<li><a href="/realm/DrowFaction" research="Drow">Drow</a></li>
-						<li><a href="/realm/DragonFaction" research="Dragon">Dragon</a></li>
-						<li><a href="/realm/MercenaryFaction" research="Mercenary">Mercenary</a></li>
-						<li><a href="/realm/ArchonFaction" research="Archon">Archon</a></li>
-						<li><a href="/realm/DjinnFaction" research="Djinn">Djinn</a></li>
-						<li><a href="/realm/MakersFaction" research="Makers">Makers</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/FairyFaction" research="Fairy">Fairy</a></li>
+							<li><a href="/ElfFaction" research="Elven">Elven</a></li>
+							<li><a href="/AngelFaction" research="Angel">Angel</a></li>
+							<li><a href="/GoblinFaction" research="Goblin">Goblin</a></li>
+							<li><a href="/UndeadFaction" research="Undead">Undead</a></li>
+							<li><a href="/DemonFaction" research="Demon">Demon</a></li>
+							<li><a href="/TitanFaction" research="Titan">Titan</a></li>
+							<li><a href="/DruidFaction" research="Druid">Druid</a></li>
+							<li><a href="/FacelessFaction" research="Faceless">Faceless</a></li>
+							<li><a href="/DwarfFaction" research="Dwarven">Dwarven</a></li>
+							<li><a href="/DrowFaction" research="Drow">Drow</a></li>
+							<li><a href="/DragonFaction" research="Dragon">Dragon</a></li>
+							<li><a href="/MercenaryFaction" research="Mercenary">Mercenary</a></li>
+							<li><a href="/ArchonFaction" research="Archon">Archon</a></li>
+							<li><a href="/DjinnFaction" research="Djinn">Djinn</a></li>
+							<li><a href="/MakersFaction" research="Makers">Makers</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Artifacts" research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Artifacts"
+							research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
+						<!--[if lte IE 6]>
 					<a href="#">category 4
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
-						<li><a href="/realm/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
+							<li><a href="/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Research">Research</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Research">Research</a>
+						<!--[if lte IE 6]>
 					<a href="#">EXPLORER
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/ResearchList" research="Research List">Research List</a>
-						<li><a href="/realm/Researchtree" research="Research Tree">Research Tree</a></li>
-						<li><a href="/realm/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/ResearchList" research="Research List">Research List</a>
+							<li><a href="/Researchtree" research="Research Tree">Research Tree</a></li>
+							<li><a href="/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Notation">Notation</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Notation">Notation</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/PremiumUpgrades/">Premium</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/PremiumUpgrades/">Premium</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="parent">
-		<div id="leftcolumn">
-			<div id="leftbox">
+					</li>
+				</ul>
 			</div>
-			<div id="navcontainer">
-				<ul id="navlist">
-				  <li id="active"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
+		</div>
+
+		<div id="parent">
+			<div id="leftcolumn">
+				<div id="leftbox">
+				</div>
+				<div id="navcontainer">
+					<ul id="navlist">
+						<li id="active">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
 ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-					<li id="active"><a href="/realm" id="current">Home</a></li>
-					<li id="active"><a href="/realm/GuestBook/gbook.php" id="current">G00F's<br/>not a Guest Book</a></li>
-					<li id="active"><a href="/realm/SiteMap/" id="current">Sitemap</a></li>
-					<li id="active"><a href="/realm/Kong">Kongregate Links</a></li>
-					<li id="active"><a href="/realm/WallofShame">Wall of Shame</a></li>
-					<li id="active"><a href="/realm/Changes/" id="current">Latest Major Patch</a></li>
-					<li id="active"><a href="/realm/Changelog">Changelog</a></li>
-					<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder Discord</a></li>
-					<P align="center">The Game
-					<li id="active"><a href="/realm/GameWindow">Game Window</a></li>
-					<li id="active"><a href="/realm/Notation">Notation</a></li>
-					<li id="active"><a href="/realm/Terminology">Terminology<br/>HotKeys</a></li>
-					<li id="active"><a href="/realm/RNG/" id="current">Random Number Generator</a></li>
-					<li id="active"><a href="/realm/Reset">Abdication<br/>Reincarnation<br/>Ascension</a></li>
-					<li id="active"><a href="/realm/Ascension2">Ascension 2</a></li>
-					<li id="active"><a href="/realm/Ascension4">Ascension 4</a></li>
-					<li id="active"><a href="/realm/Events">Events</a></li>
-					<P align="center">Tools and Guides
-					<li id="active"><a href="/realm/Tools">Realm Grinder Tools</a></li>
-					<li id="active"><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners Guide </a></li>
-					<li id="active"><a href="/realm/TrophyGuide">Trophy Guide</a></li>
-					<li id="active"><a href="/realm/R16Guide">R16 Research Guide</a></li>
-					<P align="center">Upgrades
-					<li id="active"><a href="/realm/Upgrades">Misc Upgrades</a></li>
-					<li id="active"><a href="/realm/BuildingAlignments">Building Alignments</a></li>
-					<li id="active"><a href="/realm/BuildingUpgrades">Building Upgrades</a></li>
-					<li id="active"><a href="/realm/PremiumUpgrades">Premium Upgrades</a></li>
-					<li id="active"><a href="/realm/Rubies">Rubies</a></li>
-					<li id="active"><a href="/realm/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a></li>
-					<li id="active"><a href="/realm/Factions">Factions</a></li>
-					<li id="active"><a href="/realm/FactionUpgrades">Faction Upgrades</a></li>
-					<li id="active"><a href="/realm/Spells">Spells</a></li>
-					<li id="active"><a href="/realm/Heritages">Heritages</a></li>
-					<li id="active"><a href="/realm/Artifacts/">Artifacts</a></li>
-					<li id="active"><a href="/realm/Challenges/">Challenges</a></li>
-					<li id="active"><a href="/realm/Bloodline">Bloodlines</a></li>
-					<li id="active"><a href="/realm/Research">Research</a></li>
-					<li id="active"><a href="/realm/Researchtree">Research Tree</a></li>
-					<li id="active"><a href="/realm/SunForce">Sun Force</a></li>
-					<li id="active"><a href="/realm/SpellTiers">Spell Tiers</a></li>
-					<li id="active"><a href="/realm/Lineages">Lineages</a></li>
-					<li id="active"><a href="/realm/ArtifactSet">Artifact Sets</a></li>
-					<li id="active"><a href="/realm/Legacies">Legacies</a></li>
-					<P align="center">Builds
-					<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/realm/A0_Plot.png">A0 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/MercBuilds" research="Mercenaries">R3-R16 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/ResearchBuilds" research="Research">R16-R29 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/PBuilds" research="Prestige Research">R30-R39 Builds <span style="color:gold">(Not updated for v4.2)</span></span></a></li>
-					<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/realm/A1_Plot.png">A1 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R40-R46" research="Ascension 1">R40-R46 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R47-R60" research="Dragons">R47-R59 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R60-R75" research="Lineages">R60-R75 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R75Plus" research="Mercenary Research">R75-R99 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/realm/A2_Plot.png">A2 Plot</a></li>
-					<li id="active"><a href="/realm/R100Plus" research="Ascension 2">R100-R115 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
-					<li id="active"><a href="/realm/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
-					<li id="active"><a target="_blank" research="R160+ Guide" href="/realm/A3_Plot.png">A3 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
-					<li id="active"><a href="/realm/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>					
-					<li id="active"><a href="/realm/R220Plus" research="Ascension 4">R220+ Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+									border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+									width="1" height="1">
+							</form>
+						<li id="active"><a href="/realm" id="current">Home</a></li>
+						<li id="active"><a href="/GuestBook/gbook.php" id="current">G00F's<br />not a Guest Book</a>
+						</li>
+						<li id="active"><a href="/SiteMap/" id="current">Sitemap</a></li>
+						<li id="active"><a href="/Kong">Kongregate Links</a></li>
+						<li id="active"><a href="/WallofShame">Wall of Shame</a></li>
+						<li id="active"><a href="/Changes/" id="current">Latest Major Patch</a></li>
+						<li id="active"><a href="/Changelog">Changelog</a></li>
+						<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder
+								Discord</a></li>
+						<P align="center">The Game
+							<li id="active"><a href="/GameWindow">Game Window</a></li>
+							<li id="active"><a href="/Notation">Notation</a></li>
+							<li id="active"><a href="/Terminology">Terminology<br />HotKeys</a></li>
+							<li id="active"><a href="/RNG/" id="current">Random Number Generator</a></li>
+							<li id="active"><a href="/Reset">Abdication<br />Reincarnation<br />Ascension</a></li>
+							<li id="active"><a href="/Ascension2">Ascension 2</a></li>
+							<li id="active"><a href="/Ascension4">Ascension 4</a></li>
+							<li id="active"><a href="/Events">Events</a></li>
+						<P align="center">Tools and Guides
+							<li id="active"><a href="/Tools">Realm Grinder Tools</a></li>
+							<li id="active"><a target="_blank"
+									href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners
+									Guide </a></li>
+							<li id="active"><a href="/TrophyGuide">Trophy Guide</a></li>
+							<li id="active"><a href="/R16Guide">R16 Research Guide</a></li>
+						<P align="center">Upgrades
+							<li id="active"><a href="/Upgrades">Misc Upgrades</a></li>
+							<li id="active"><a href="/BuildingAlignments">Building Alignments</a></li>
+							<li id="active"><a href="/BuildingUpgrades">Building Upgrades</a></li>
+							<li id="active"><a href="/PremiumUpgrades">Premium Upgrades</a></li>
+							<li id="active"><a href="/Rubies">Rubies</a></li>
+							<li id="active"><a href="/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a>
+							</li>
+							<li id="active"><a href="/Factions">Factions</a></li>
+							<li id="active"><a href="/FactionUpgrades">Faction Upgrades</a></li>
+							<li id="active"><a href="/Spells">Spells</a></li>
+							<li id="active"><a href="/Heritages">Heritages</a></li>
+							<li id="active"><a href="/Artifacts/">Artifacts</a></li>
+							<li id="active"><a href="/Challenges/">Challenges</a></li>
+							<li id="active"><a href="/Bloodline">Bloodlines</a></li>
+							<li id="active"><a href="/Research">Research</a></li>
+							<li id="active"><a href="/Researchtree">Research Tree</a></li>
+							<li id="active"><a href="/SunForce">Sun Force</a></li>
+							<li id="active"><a href="/SpellTiers">Spell Tiers</a></li>
+							<li id="active"><a href="/Lineages">Lineages</a></li>
+							<li id="active"><a href="/ArtifactSet">Artifact Sets</a></li>
+							<li id="active"><a href="/Legacies">Legacies</a></li>
+						<P align="center">Builds
+							<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/A0_Plot.png">A0 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/MercBuilds" research="Mercenaries">R3-R16 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/ResearchBuilds" research="Research">R16-R29 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/PBuilds" research="Prestige Research">R30-R39 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></span></a></li>
+							<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/A1_Plot.png">A1 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R40-R46" research="Ascension 1">R40-R46 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R47-R60" research="Dragons">R47-R59 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R60-R75" research="Lineages">R60-R75 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R75Plus" research="Mercenary Research">R75-R99 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/A2_Plot.png">A2
+									Plot</a></li>
+							<li id="active"><a href="/R100Plus" research="Ascension 2">R100-R115 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
+							<li id="active"><a href="/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
+							<li id="active"><a target="_blank" research="R160+ Guide" href="/A3_Plot.png">A3 Plot <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
+							<li id="active"><a href="/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R220Plus" research="Ascension 4">R220+ Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
 
 					</ul>
+				</div>
+			</div>
+			<div id="rightcolumn">
+				<div class="rightbox">
+					<div class="rightboxcontent">
+						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img
+								src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
 					</div>
+				</div>
+				<h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
+				<p>All Researches can be found here: <b><a href="http://musicfamily.org/realm/Researchtree"> Research
+							Tree</a></b> or <b><a href="http://musicfamily.org/realm/ResearchList"> Research
+							List</a></b>.</p>
+				<p>Research was implemented in the Secrets expansion series (Secrets of the Realm, Secrets of the
+					ancients, Secrets of the underworld) bringing "secret" powers to enhance each mythical faction.
+					Overtaking the Mercenaries, it is accessible from R16 for Vanilla, R23 for Neutral, R29 for Prestige
+					Factions, and R75 for Mercenary.</p>
+				<p>Enter the Research Facilities to improve your grinding potential.</p>
+				<p>There you will be able to advance your research progress, unlock and buy special upgrades which will
+					boost all your abilities hugely.</p>
+				<p>Your research points in each branch are limited by the amount of Reincarnations you have.</p>
+				<hr>
+				<p><b>The Facilities & Related Factions</b></p>
+				<p>Each Facility is related to several Factions: Vanilla factions are related to one facility, Neutral
+					to two, Prestige to three, and Mercenary to one. Each facility increases the production of the
+					related Faction's based on Research Points invested (see next section).</p>
+				<p><b>Production Bonus</b>: (100000 * (1 + 0.01 * x ^ 0.7))%, where x is the amount of Research Points
+					invested in the facility.</p>
+				<p><b>Secrets Production Bonus</b>: 1000%</p>
+				<p><b>Facility cost</b>: 10 Notg (1e121) coins, 1 M (1e6) Faction Coins of the related faction(s).</p>
+				<hr>
+				<p><b>Research Points</b></p>
+				<p>With increasing number of Reincarnations, you can spend more Research Points (RP) to upgrade each
+					facility. The available Research Points per facility are based on the number of Reincarnations made.
+				</p>
+				<p><b>Formula (A0, A1)</b>: ((x + 1) * x / 2), where x is the number of Reincarnations made.</p>
+				<p><b>Formula (A3 [R175-R190], and A4 [R220-R246])</b>: (5000 + (125 * (x - 174)), where x is the number
+					of Reincarnations made.</p>
+				<p>The RP upgrade cost increases according to the following formulas (x is the number of to be invested
+					RP).</p>
+				<p><b>A0 (1 - 780)</b>:<br> Coins: (1e126 * 1.5 ^ x)<br> Faction Coins: ((x + 1) ^ 3)</p>
+				<p><b>A1 (781 - 5000)</b>:<br> Formula: (1e42 * 1.147 ^ (x - 780))<br> Faction Coins: ((x + 1) ^ 3)</p>
+				<p><b>A3 (5001 - 7000)</b>:<br> Formula: (1e126 * 1.75 ^ ((x - 5000) / 10))<br> Faction Coins: (10 * (x
+					+ 1) ^ 10)</p>
+				<p><b>A4 (7001 - 14000)</b>:<br> Formula: (1.4 ^ (0.1 * (x - 7000)))<br> Faction Coins: (10 * 1.15 ^
+					(0.03 * x)</p>
+				<p><b>
+						<center>Research Slots/Budget</center>
+					</b></p>
+				<p><b>R16-R99 (A0, A1)</b>: You get a limited number of Research slots for each facility, depending on
+					what upgrades you have you can have up to 6 slots for each facility.</p>
+				<p><b>R100-R159 (A2)</b>: You get 1 Research slot for each facility, and A0 and A1 research slot
+					upgrades are removed, however, faction researches are free and take no slots.</p>
+				<p><b>R160-R219 (A3)</b>: The research slots change to a budget based on each research's point value and
+					starts at 0, increasable by R170 power (+3000) and a 2nd Facility Upgrade (+3000) to a total of
+					6000. The budget can be further increased with Archon Bloodline (+500 and more).</p>
+				<p><b>R220+ (A4)</b>: The budget system from A3 is the same, but each Trade Treaty, Friendship Pact,
+					Alliance and Union will also give +2000 each to the budget, for a total of +8000 currently (14,000
+					in total).</p>
+				<p>Upon abdication, your purchased Research Points will persist, but your Research Upgrade Slots/Budget
+					will reset so you can make different research builds each run.</p>
+				<div class="shlisting">
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Research Slot/Budget
+									Upgrade Requirements</a></b></p>
+						<div class="autohide">
+							<p><b>Research Slot Upgrade Requirements</b></p>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/MagicianSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Magician</b> (R20+)</p>
+							<p><b>Requirement</b>: Discover at least 10 Spellcraft Researches.</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Spellcraft upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/ArtisanSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Artisan</b> (R19+)</p>
+							<p><b>Requirement</b>: Discover at least 10 Craftsmanship Researches.</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Craftsmanship upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/DemigodSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Demigod</b> (R20+)</p>
+							<p><b>Requirement</b>: Discover at least 10 Divine Researches.</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Divine upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/BusinessmanSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Businessman</b> (R20+)</p>
+							<p><b>Requirement</b>: Discover at least 10 Economics Researches</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Economics upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/ApothecarySlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Apothecary</b> (R17+)</p>
+							<p><b>Requirement</b>: Discover at least 10 Alchemy Researches</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Alchemy upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/WarlordSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Warlord</b> (R20+)</p>
+							<p><b>Requirement</b>: R20, Discover at least 10 Warfare Researches</p>
+							<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
+							<p><b>Effect</b>: Increase Warfare upgrade slot by 1</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/AncientDeviceSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Artifact-Ancient Device</b> (R23+)</p>
+							<p><b>Requirement</b>: Find the Ancient Device (Play a Neutral Faction, 2000+ Excavations,
+								Unique Building.</p>
+							<p><b>Chance</b>: 0.2% per excavation</p>
+							<p><b>Cost</b>: 100 QiSxg (1e200)</p>
+							<p><b>Effect</b>: Provides 2 additional slots for Neutral researches(1 for each related
+								Neutral Faction Facility you are playing).</p>
+							<p><b>Note</b>: Needs purchased for each Neutral research run.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/HornoftheKingsSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Artifact-Horn of the Kings</b> (R29+)</p>
+							<p><b>Requirement</b>: Find the Horn of the Kings (Have Dwarven Forges, 3250+ Excavations)
+							</p>
+							<p><b>Cost</b>: 10 SxSpg (1e232), 10m Dwarven Coins</p>
+							<p><b>Effect</b>: Provides 3 additional slots for Dwarven research (+2 Craftsman slots, +1
+								to the Good faction's facility you are playing).</p>
+							<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/FlameofBondelnarSlotUpgrade.png"
+									alt="Warfare" align="middle"> <b>Artifact-Flame of Bondelnar</b> (R29+)</p>
+							<p><b>Requirement</b>: R29, Find the Flame of Bondelnar (Have Spider Sanctuaries, 3250+
+								Excavations)</p>
+							<p><b>Cost</b>: 10 SxSpg (1e232), 10m Drow Coins</p>
+							<p><b>Effect</b>: Provides 3 additional slots for Drow research: (+2 Warfare slots, +1 to
+								the Evil faction's facility you are playing).</p>
+							<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/ForgottenRelic.png" align=middle>
+								<b>Artifact-Forgotten Relic</b> (R175+)
+							</p>
+							<p><b>Clue</b>: Research it!</p>
+							<p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving
+								and flailing endlessly to create ever-different patterns.</p>
+							<p><b>Requirement</b>: R175+</p>
+							<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
+							<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their
+								respective upgrade.</p>
+							<p><b>Chance</b>: (x ^ 2 / 100,000,000,000)%, where x is spent Research points.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/ManaLoom.png" align="middle">
+								<b>Artifact-Mana Loom</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Attracted by amassed mana reserves.</p>
+							<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
+							<p><b>Requirement</b>: R180+, Chaos Alignment</p>
+							<p><b>Chance</b>: (log10(1 + x) ^ 3 / 50000)%, where x is mana produced (This Game)</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Mana Loom artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Spellcraft research facility, permanently increasing
+								Spellcraft budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Fairy Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Factory.png" align="middle">
+								<b>Artifact-Factory</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Dig it manually.</p>
+							<p><b>Description</b>: Mass-production is the way to go.</p>
+							<p><b>Requirement</b>: R180+, Neutral Alignment</p>
+							<p><b>Chance</b>: (log10(1 + x) ^ 3 / 10000)%, where x is clicks (This Game)</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Factory artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Craftsmanship research facility, permanently
+								increasing Craftsmanship budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Elven Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Mythos.png" align="middle">
+								<b>Artifact-Mythos</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Spells get sad when not used for a long time.</p>
+							<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
+							<p><b>Requirement</b>: R180+, Good Alignment</p>
+							<p><b>Chance</b>: (x / 4,320,000)%, where x is minimum spell activity time. (This
+								Reincarnation)</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Mythos artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Divine research facility, permanently increasing
+								Divine budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Angel Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Vault.png" align="middle">
+								<b>Artifact-Vault</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Show your prowess as a Royal Trader.</p>
+							<p><b>Description</b>: Never a place could be more secure.</p>
+							<p><b>Requirement</b>: R180+, Balance Alignment</p>
+							<p><b>Chance</b>: (x / 100,000,000)%, where x is Royal Exchange Bonus.</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Vault artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Economics research facility, permanently increasing
+								Economics budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Goblin Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Athanor.png" align="middle">
+								<b>Artifact-Athanor</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Archemy.</p>
+							<p><b>Description</b>: The legendary oven that could smelt souls into matter.</p>
+							<p><b>Requirement</b>: R180+, Order Alignment</p>
+							<p><b>Chance</b>: (x / 1,000,000)%, where x is Alchemy Research Points.</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Athanor artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Alchemy research facility, permanently increasing
+								Alchemy budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Undead Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Battlefield.png" align="middle">
+								<b>Artifact-Battlefield</b> (R180+)
+							</p>
+							<p><b>Clue</b>: Would you think an army is enough to excavate this?</p>
+							<p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
+							<p><b>Requirement</b>: R180+, Evil Alignment</p>
+							<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000), where x is the number of Assistants. (base
+								and temporary, not invisible)</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Requirement</b>: Forgotten Relic, Battlefield artifact and upgrade.</p>
+							<p><b>Upgrade Effect</b>: Expands the Warfare research facility, permanently increasing
+								Warfare budget by +3000.</p>
+							<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Demon Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+							<br>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Apeiron.png" align="middle">
+								<b>Artifact-Apeiron</b> (R175+)
+							</p>
+							<p><b>Clue</b>: Be different.</p>
+							<p><b>Description</b>: The source of everything. Can fit in the average pocket.</p>
+							<p><b>Requirement</b>: R175, Mercenary, 15 different faction upgrades.</p>
+							<p><b>Chance</b>: 0.1%</p>
+							<p><b>Effect</b>: Unlocks upgrade with same name.</p>
+							<p><b>Upgrade Effect</b>: Unlocks new Research Facility at R180.</p>
+							<p><b>Upgrade Description</b>: Take advantage of the most ancient and secret arts to empower
+								your production beyonds known limits.</p>
+							<p><b>Upgrade Description</b>: Unlock the Forbidden research facility and increase Mercenary
+								production by 100%, plus an additional bonus based on Forbidden research point. These
+								upgrades will persist through abdications and reincarnations, providing a permanent
+								bonus to all factions affected.</p>
+							<p><b>Upgrade Cost</b>: 1 Qatg (1e105), 100 Qid (1e50) Dwarven and Drow Coins</p>
+							<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+						</div>
 					</div>
-					<div id="rightcolumn">
-					<div class="rightbox">
-				  <div class="rightboxcontent">
-						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Research
+									Facilities</a></b></p>
+						<div class="autohide">
+							<p><b>Short and long names</b></p>
+							<p><b>S</b>=Spellcraft, <b>C</b>=Craftsmanship, <b>D</b>=Divine, <b>E</b>=Economics,
+								<b>A</b>=Alchemy, <b>W</b>=Warfare, and <b>F</b>=Forbidden
+							</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Spellcraft.png" alt="Spellcraft"
+									align="middle"> <b>Spellcraft</b> (R16+)</p>
+							<p>Delve into the arcane mysteries of Spellcraft, discovering new ways to produce and use
+								mana.</p>
+							<p><b>Effect</b>: Increases <b>Fairy</b>, <b>Faceless</b> and <b>Drow</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Craftsmanship.png"
+									alt="Craftsmanship" align="middle"> <b>Craftsmanship</b> (R16+)</p>
+							<p>Learn how to use tools and experience to improve your production by mastering
+								Craftsmanship.</p>
+							<p><b>Effect</b>: Increases <b>Elven</b>, <b>Titan</b> and <b>Dwarven</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Divine.png" alt="Divine"
+									align="middle">
+								<b>Divine</b> (R16+)
+							</p>
+							<p>Harness the power of the eternals, increasing your spell affinity and bestowing Divine
+								power on all your productivity.</p>
+							<p><b>Effect</b>: Increases <b>Angel</b>, <b>Faceless</b> and <b>Dwarven</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Economics.png" alt="Economics"
+									align="middle"> <b>Economics</b> (R16+)</p>
+							<p>Exploit your resources with Economics knowledge, taking maximum advantage of your
+								properties and turning time into money.</p>
+							<p><b>Effect</b>: Increases <b>Goblin</b>, <b>Druid</b> and <b>Dwarven</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Alchemy.png" alt="Alchemy"
+									align="middle"> <b>Alchemy</b> (R16+)</p>
+							<p>Tap the near-unlimited sources of Alchemy to improve your production and benefit from all
+								your assets.</p>
+							<p><b>Effect</b>: Increases <b>Undead</b>, <b>Druid</b> and <b>Drow</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Warfare.png" alt="Warfare"
+									align="middle"> <b>Warfare</b> (R16+)</p>
+							<p>Use strategical prowess and manpower tp manipulate the production system in your favor.
+							</p>
+							<p><b>Effect</b>: Increases <b>Demon</b>, <b>Titan</b> and <b>Drow</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are
+								available and also tells you your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Forbidden.png" align="middle">
+								<b>Forbidden</b> (R180+)
+							</p>
+							<p>Take advantage of the most ancient and secret arts to empower your production beyonds
+								known limits.</p>
+							<p><b>Effect</b>: Increases <b>Mercenary</b> production.</p>
+							<p>Pointing to this ingame will tell you how many Points are available and also tells you
+								your total research points.</p>
+							<p><b>Research Point Production</b>:</p>
+							<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility
+								affinities.</p>
+							<br />
+						</div>
 					</div>
+				</div>
+				<br>
+				<center><b>Research Requirements</b></center>
+				<div class="shlisting">
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Vanilla Research</a></b>
+							(R16+)</p>
+						<div class="autohide">
+							<h6>Fairy</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Fairyr1.png" align="middle">
+									Enchanted
+									Field Quest</b></p>
+							<p>Hey! Listen! A True Fairy has never enough Farms! We will offer you the chance to improve
+								them!</p>
+							<p><b>Requirement</b>: R16 + 2250 Farms</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Fairyr2.png"
+										alt="Enchanted Field" align="middle"> Enchanted Field</b></p>
+							<p>Upgrade Farms to Enchanted Fields, boosting their production based on the amount of
+								assistants you own and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (50 * (500 * x) ^ 0.5), where x is your Assistants stat.</p>
+							<p><b>Requirement</b>: Buy "Enchanted Field Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Spellweaveryr.png"
+										alt="Enchanted Field" align="middle"> Spellweavery</b></p>
+							<p>Unlocks the Spellcraft research facility and increases Fairy production by 100000%, plus
+								an additional bonus based on Spellcraft research points.</p>
+							<p><b>Requirement</b>: All Fairy faction upgrades bought, Enchanted Field</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Fairy coins</p>
+							<hr>
+							<h6>Elf</h6>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Elfr1.png"
+									alt="Training Grounds Quest" align="middle"> Elven Training Grounds Quest</p>
+							<p>Hello, mellonamin. We require a new place to train our soldiers. Build enough Warrior
+								Barracks, and we'll make them worthy of you.</p>
+							<p><b>Requirement</b>: R16 + 1750 Warrior Barracks</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Elfr2.png"
+									alt="Elven Training Grounds" align="middle"> Elven Training Grounds</p>
+							<p>Upgrade Warrior Barracks To Elven Training Grounds, boosting their production based on
+								the total amount of clicks you made and unlocking more unique perks for the building.
+							</p>
+							<p><b>Formula</b>: ((50 * x^0.85) + 50 * ln^6(1 + x))%, where x is your Treasure Clicks
+								(Total) stat.</p>
+							<p><b>Requirement</b>: Buy "Elven Training Grounds Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Carpentryr.png"
+									alt="Elven Training Grounds" align="middle"> Carpentry</p>
+							<p>Unlocks the Craftsmanship research facility and increases Elven production by 100000%,
+								plus an additional bonus based on Craftsmanship research points.</p>
+							<p><b>Requirement</b>: All Elven faction upgrades bought, Elven Training Grounds</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Elven coins</p>
+							<hr>
+							<h6>Angel</h6>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Angelr1.png"
+									alt="Heaven's Domain Quest" align="middle"> Heaven's Domain Quest</p>
+							<p>Bless you, dear friend. The Lands of the sky are expanding as more good souls are joining
+								our ranks. Would you be so kind to provide them a place to stay in the Heavens?</p>
+							<p><b>Requirement</b>: R16 + 1500 Heaven's Gates</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Angelr2.png" alt="Heaven's Domain"
+									align="middle"> Heaven's Domain</p>
+							<p>Upgrade Heaven's Gate To Heaven's Domains, boosting their production by 35000% per spell
+								affecting them and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (350 * x ^ 1.1), where x is the amount of Active Spells</p>
+							<p><b>Requirement</b>: Buy "Heaven's Domain Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Pantheonr.png"
+									alt="Heaven's Domain Quest" align="middle"> Pantheon</p>
+							<p>Unlocks the Divine research facility and increases Angel production by 100000%, plus an
+								additional bonus based on Divine research points.</p>
+							<p><b>Requirement</b>: All Angel faction upgrades bought, Heaven's Domain</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Angel coins</p>
+							<hr>
+							<h6>Goblin</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Goblinr1.png"
+										alt="Goblin Banks Quest" align="middle"> Goblin Banks Quest</b></p>
+							<p>Hey There! We need a safe place to keep our honestly earned savings. We'll turn those
+								Witch Conclaves into something more... useful, if you build enough of them.</p>
+							<p><b>Requirement</b>: R16 + 1750 Witch Conclaves</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Goblinr2.png" alt="Goblin Banks"
+										align="middle"> Goblin Banks</b></p>
+							<p>Upgrade Witch Conclaves To Goblin Banks, boosting their production based on the amount of
+								gold you own and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: 650 + 10000 * log^1.5(1 + x), where x is your current amount of Coins.
+							</p>
+							<p><b>Requirement</b>: Buy "Goblin Banks Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Exchequerr.png"
+										alt="Goblin Banks Quest" align="middle"> Exchequer</b></p>
+							<p>Unlocks the Economics research facility and increases Goblin production by 100000%, plus
+								an additional bonus based on Economics research points.</p>
+							<p><b>Requirement</b>: All Goblin faction upgrades bought, Goblin Banks</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Goblin coins</p>
+							<hr>
+							<h6>Undead</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Undeadr1.png"
+										alt="Undercities Quest" align="middle"> Undercities Quest</b></p>
+							<p>Hello there. The dead stand ready. Give them a place to rise and live again... Build
+								enough Necropolises, we'll take care of the rest.</p>
+							<p><b>Requirement</b>: R16 + 1750 Necropolises</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Undeadr2.png" alt="Undercities"
+										align="middle"> Undercities</b></p>
+							<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in
+								this game and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (10 * (2x)^0.75)%, where x is your Playtime (This Game) stat.</p>
+							<p><b>Requirement</b>: Buy "Undercities Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Laboratoryr.png"
+										alt="Laboratory" align="middle"> Laboratory</b></p>
+							<p>Unlocks the Alchemy research facility and increases Undead production by 100000%, plus an
+								additional bonus based on Alchemy research points.</p>
+							<p><b>Requirement</b>: Undercities and all Undead faction upgrades bought</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Undead coins</p>
+							<hr>
+							<h6>Demon</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Demonr1.png"
+										alt="Infernal Realm Quest" align="middle"> Infernal Realm Quest</b></p>
+							<p>Useless underling, be warned! The Demons are going to invade your world with all their
+								might. If you know which side you want to be on when that happens, build those Hell
+								Portals!</p>
+							<p><b>Requirement</b>: R16 + 1500 Hell Portals</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Demonr2.png"
+										alt="Infernal Realm" align="middle"> Infernal Realm</b></p>
+							<p>Upgrade Hell Portals To Infernal Realms, boosting their production by 100% per Trophy you
+								unlocked and unlocking more unique perks for the building.</p>
+							<p><b>Requirement</b>: Buy "Infernal Realm Quest"</p>
+							<p><b>Effect</b>: Grants access to the Research Facilities.</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/StrategyRoomr.png"
+										alt="Strategy Room" align="middle"> Strategy Room</b></p>
+							<p>Unlocks the Warfare research facility and increases Demon production by 100000%, plus an
+								additional bonus based on Warfare research points.</p>
+							<p><b>Requirement</b>: All Demon faction upgrades bought, Infernal Realm</p>
+							<p><b>Cost</b>: 1E121 coins, 1E6 Demon coins</p>
+						</div>
 					</div>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
-	<p>All Researches can be found here: <b><a href="http://musicfamily.org/realm/Researchtree"> Research Tree</a></b> or <b><a href="http://musicfamily.org/realm/ResearchList"> Research List</a></b>.</p>
-	<p>Research was implemented in the Secrets expansion series (Secrets of the Realm, Secrets of the ancients, Secrets of the underworld) bringing "secret" powers to enhance each mythical faction. Overtaking the Mercenaries, it is accessible from R16 for Vanilla, R23 for Neutral, R29 for Prestige Factions, and R75 for Mercenary.</p>
-	<p>Enter the Research Facilities to improve your grinding potential.</p>
-	<p>There you will be able to advance your research progress, unlock and buy special upgrades which will boost all your abilities hugely.</p>
-	<p>Your research points in each branch are limited by the amount of Reincarnations you have.</p>
-	<hr>
-	<p><b>The Facilities & Related Factions</b></p>
-	<p>Each Facility is related to several Factions: Vanilla factions are related to one facility, Neutral to two, Prestige to three, and Mercenary to one. Each facility increases the production of the related Faction's based on Research Points invested (see next section).</p>
-	<p><b>Production Bonus</b>: (100000 * (1 + 0.01 * x ^ 0.7))%, where x is the amount of Research Points invested in the facility.</p>
-	<p><b>Secrets Production Bonus</b>: 1000%</p>
-	<p><b>Facility cost</b>: 10 Notg (1e121) coins, 1 M (1e6) Faction Coins of the related faction(s).</p>
-	<hr>
-	<p><b>Research Points</b></p>
-	<p>With increasing number of Reincarnations, you can spend more Research Points (RP) to upgrade each facility. The available Research Points per facility are based on the number of Reincarnations made.</p>
-	<p><b>Formula (A0, A1)</b>: ((x + 1) * x / 2), where x is the number of Reincarnations made.</p>
-	<p><b>Formula (A3 [R175-R190], and A4 [R220-R246])</b>: (5000 + (125 * (x - 174)), where x is the number of Reincarnations made.</p>
-	<p>The RP upgrade cost increases according to the following formulas (x is the number of to be invested RP).</p>
-	<p><b>A0 (1 - 780)</b>:<br> Coins: (1e126 * 1.5 ^ x)<br> Faction Coins: ((x + 1) ^ 3)</p>
-	<p><b>A1 (781 - 5000)</b>:<br> Formula: (1e42 * 1.147 ^ (x - 780))<br> Faction Coins: ((x + 1) ^ 3)</p>
-	<p><b>A3 (5001 - 7000)</b>:<br> Formula: (1e126 * 1.75 ^ ((x - 5000) / 10))<br> Faction Coins: (10 * (x + 1) ^ 10)</p>
-	<p><b>A4 (7001 - 14000)</b>:<br> Formula: (1.4 ^ (0.1 * (x - 7000)))<br> Faction Coins: (10 * 1.15 ^ (0.03 * x)</p>
-	<p><b><center>Research Slots/Budget</center></b></p>
-	<p><b>R16-R99 (A0, A1)</b>: You get a limited number of Research slots for each facility, depending on what upgrades you have you can have up to 6 slots for each facility.</p>
-	<p><b>R100-R159 (A2)</b>: You get 1 Research slot for each facility, and A0 and A1 research slot upgrades are removed, however, faction researches are free and take no slots.</p>
-	<p><b>R160-R219 (A3)</b>: The research slots change to a budget based on each research's point value and starts at 0, increasable by R170 power (+3000) and a 2nd Facility Upgrade (+3000) to a total of 6000. The budget can be further increased with Archon Bloodline (+500 and more).</p>
-	<p><b>R220+ (A4)</b>: The budget system from A3 is the same, but each Trade Treaty, Friendship Pact, Alliance and Union will also give +2000 each to the budget, for a total of +8000 currently (14,000 in total).</p>
-	<p>Upon abdication, your purchased Research Points will persist, but your Research Upgrade Slots/Budget will reset so you can make different research builds each run.</p>
-	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Research Slot/Budget Upgrade Requirements</a></b></p>
-			<div class="autohide">
-				<p><b>Research Slot Upgrade Requirements</b></p>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/MagicianSlotUpgrade.png" alt="Warfare" align="middle"> <b>Magician</b> (R20+)</p>
-				<p><b>Requirement</b>: Discover at least 10 Spellcraft Researches.</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Spellcraft upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ArtisanSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artisan</b> (R19+)</p>
-				<p><b>Requirement</b>: Discover at least 10 Craftsmanship Researches.</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Craftsmanship upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/DemigodSlotUpgrade.png" alt="Warfare" align="middle"> <b>Demigod</b> (R20+)</p>
-				<p><b>Requirement</b>: Discover at least 10 Divine Researches.</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Divine upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/BusinessmanSlotUpgrade.png" alt="Warfare" align="middle"> <b>Businessman</b> (R20+)</p>
-				<p><b>Requirement</b>: Discover at least 10 Economics Researches</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Economics upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ApothecarySlotUpgrade.png" alt="Warfare" align="middle"> <b>Apothecary</b> (R17+)</p>
-				<p><b>Requirement</b>: Discover at least 10 Alchemy Researches</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Alchemy upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/WarlordSlotUpgrade.png" alt="Warfare" align="middle"> <b>Warlord</b> (R20+)</p>
-				<p><b>Requirement</b>: R20, Discover at least 10 Warfare Researches</p>
-				<p><b>Cost</b>: 250 Noqag (2.5e152)</p>
-				<p><b>Effect</b>: Increase Warfare upgrade slot by 1</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/AncientDeviceSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Ancient Device</b> (R23+)</p>
-				<p><b>Requirement</b>: Find the Ancient Device (Play a Neutral Faction, 2000+ Excavations, Unique Building.</p>
-				<p><b>Chance</b>: 0.2% per excavation</p>
-				<p><b>Cost</b>: 100 QiSxg (1e200)</p>
-				<p><b>Effect</b>: Provides 2 additional slots for Neutral researches(1 for each related Neutral Faction Facility you are playing).</p>
-				<p><b>Note</b>: Needs purchased for each Neutral research run.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/HornoftheKingsSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Horn of the Kings</b> (R29+)</p>
-				<p><b>Requirement</b>: Find the Horn of the Kings (Have Dwarven Forges, 3250+ Excavations)</p>
-				<p><b>Cost</b>: 10 SxSpg (1e232), 10m Dwarven Coins</p>
-				<p><b>Effect</b>: Provides 3 additional slots for Dwarven research (+2 Craftsman slots, +1 to the Good faction's facility you are playing).</p>
-				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/FlameofBondelnarSlotUpgrade.png" alt="Warfare" align="middle"> <b>Artifact-Flame of Bondelnar</b> (R29+)</p>
-				<p><b>Requirement</b>: R29, Find the Flame of Bondelnar (Have Spider Sanctuaries, 3250+ Excavations)</p>
-				<p><b>Cost</b>: 10 SxSpg (1e232), 10m Drow Coins</p>
-				<p><b>Effect</b>: Provides 3 additional slots for Drow research: (+2 Warfare slots, +1 to the Evil faction's facility you are playing).</p>
-				<p><b>Note</b>: Needs purchased for each Prestige research run.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ForgottenRelic.png" align=middle> <b>Artifact-Forgotten Relic</b> (R175+)</p>
-				<p><b>Clue</b>: Research it!</p>
-				<p><b>Description</b>: Intricate leylines of mana cover the surface of this stone, moving and flailing endlessly to create ever-different patterns.</p>
-				<p><b>Requirement</b>: R175+</p>
-				<p><b>Effect</b>: Unlocks Facility Research upgrades</p>
-				<p><b>Note</b>: Each Facility needs their respective artifact and this artifact to get their respective upgrade.</p>
-				<p><b>Chance</b>: (x ^ 2 / 100,000,000,000)%, where x is spent Research points.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ManaLoom.png" align="middle"> <b>Artifact-Mana Loom</b> (R180+)</p>
-				<p><b>Clue</b>: Attracted by amassed mana reserves.</p>
-				<p><b>Description</b>: Used to weave even the thinnest mana strings.</p>
-				<p><b>Requirement</b>: R180+, Chaos Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 50000)%, where x is mana produced (This Game)</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Mana Loom artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Spellcraft research facility, permanently increasing Spellcraft budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Fairy Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Factory.png" align="middle"> <b>Artifact-Factory</b> (R180+)</p>
-				<p><b>Clue</b>: Dig it manually.</p>
-				<p><b>Description</b>: Mass-production is the way to go.</p>
-				<p><b>Requirement</b>: R180+, Neutral Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 10000)%, where x is clicks (This Game)</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Factory artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Craftsmanship research facility, permanently increasing Craftsmanship budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Elven Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Mythos.png" align="middle"> <b>Artifact-Mythos</b> (R180+)</p>
-				<p><b>Clue</b>: Spells get sad when not used for a long time.</p>
-				<p><b>Description</b>: Accurate historical list of every existing or non-existing deity.</p>
-				<p><b>Requirement</b>: R180+, Good Alignment</p>
-				<p><b>Chance</b>: (x / 4,320,000)%, where x is minimum spell activity time. (This Reincarnation)</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Mythos artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Divine research facility, permanently increasing Divine budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Angel Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Vault.png" align="middle"> <b>Artifact-Vault</b> (R180+)</p>
-				<p><b>Clue</b>: Show your prowess as a Royal Trader.</p>
-				<p><b>Description</b>: Never a place could be more secure.</p>
-				<p><b>Requirement</b>: R180+, Balance Alignment</p>
-				<p><b>Chance</b>: (x / 100,000,000)%, where x is Royal Exchange Bonus.</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Vault artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Economics research facility, permanently increasing Economics budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Goblin Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Athanor.png" align="middle"> <b>Artifact-Athanor</b> (R180+)</p>
-				<p><b>Clue</b>: Archemy.</p>
-				<p><b>Description</b>: The legendary oven that could smelt souls into matter.</p>
-				<p><b>Requirement</b>: R180+, Order Alignment</p>
-				<p><b>Chance</b>: (x / 1,000,000)%, where x is Alchemy Research Points.</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Athanor artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Alchemy research facility, permanently increasing Alchemy budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Undead Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Battlefield.png" align="middle"> <b>Artifact-Battlefield</b> (R180+)</p>
-				<p><b>Clue</b>: Would you think an army is enough to excavate this?</p>
-				<p><b>Description</b>: An extremely accurate replica of a battle fought long ago.</p>
-				<p><b>Requirement</b>: R180+, Evil Alignment</p>
-				<p><b>Chance</b>: (log10(1 + x) ^ 3 / 20,000), where x is the number of Assistants. (base and temporary, not invisible)</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Requirement</b>: Forgotten Relic, Battlefield artifact and upgrade.</p>
-				<p><b>Upgrade Effect</b>: Expands the Warfare research facility, permanently increasing Warfare budget by +3000.</p>
-				<p><b>Upgrade Cost</b>: 10 Dtg (1e100), 1 Qid (1e48) Demon Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
-				<br>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Apeiron.png" align="middle"> <b>Artifact-Apeiron</b> (R175+)</p>
-				<p><b>Clue</b>: Be different.</p>
-				<p><b>Description</b>: The source of everything. Can fit in the average pocket.</p>
-				<p><b>Requirement</b>: R175, Mercenary, 15 different faction upgrades.</p>
-				<p><b>Chance</b>: 0.1%</p>
-				<p><b>Effect</b>: Unlocks upgrade with same name.</p>
-				<p><b>Upgrade Effect</b>: Unlocks new Research Facility at R180.</p>
-				<p><b>Upgrade Description</b>: Take advantage of the most ancient and secret arts to empower your production beyonds known limits.</p>
-				<p><b>Upgrade Description</b>: Unlock the Forbidden research facility and increase Mercenary production by 100%, plus an additional bonus based on Forbidden research point. These upgrades will persist through abdications and reincarnations, providing a permanent bonus to all factions affected.</p>
-				<p><b>Upgrade Cost</b>: 1 Qatg (1e105), 100 Qid (1e50) Dwarven and Drow Coins</p>
-				<p><b>Note</b>: Upgrade only needs to be bought once.</p>
+				</div>
+				<div class="shlisting">
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Neutral Research</a></b>
+							(R23+)</p>
+						<div class="autohide">
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheAncientsr.png"
+										alt="Secrets of the Ancients" align="middle"> Secrets of the Ancients</b></p>
+							<p>Unlocks research for Titan, Druids and Faceless and increases production by 100,000%,
+								plus an additional bonus based on Economics research points.</p>
+							<p><b>Requirement</b>: Neutral Unique Building</p>
+							<p><b>Requirement</b>: The Key To The Lost City artifact (for this you need: 1500
+								excavations, R23+)</p>
+							<p><b>Cost</b>: 1 Noqag (1e151) Coins, 1 M (1e6) Fairy, Elven, Angel, Goblin, Undead and
+								Demon coins</p>
+							<hr>
+							<h6>Titan</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Titanr1.png"
+										alt="Olympian Halls Quest" align="middle"> Olympian Halls Quest</b></p>
+							<p>Khaire, ruler. More of our people will join your cause if you build enough Hall of
+								Legends. Our architects will take care of expanding them to accommodate the almighty
+								Titans.</p>
+							<p><b>Requirement</b>: R22+</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Titanr2.png"
+										alt="Olympian Halls" align="middle"> Olympian Halls</b></p>
+							<p>Upgrade Halls of Legend to Olympian Halls, boosting their production by 15% per Royal
+								Exchange you've purchased and unlocking more unique perks for the building.</p>
+							<p><b>Requirement</b> 2000 Halls of Legends</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<hr>
+							<h6>Druid</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Druidr1.png"
+										alt="Stonehenge Circles Quest" align="middle"> Stonehenge Circles Quest</b></p>
+							<p>Hello, friend. The balance of nature requires more magic to sustain it. Build enough
+								Stone Pillars, we'll gather our elders to improve them.</p>
+							<p><b>Requirement</b>: R22+</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Druidr2.png"
+										alt="Stonehenge Circles" align="middle"> Stonehenge Circles</b></p>
+							<p>Upgrade Stone Pillars to Stonehenge Circles, boosting their production by 25% per point
+								of Maximum Mana and unlocking more unique perks for the building.</p>
+							<p><b>Note</b>: The bonus is not a multiple of 25; this may be due to max. mana appearing as
+								a floating point number instead of an integer.</p>
+							<p><b>Requirement</b>: 2000 Stone Pillars</p>
+							<p><b>Cost</b>: 10 Ttg (1E103)</p>
+							<hr>
+							<h6>Faceless</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Facelessr1.png"
+										alt="Sunken Cities Quest" align="middle"> Sunken Cities Quest</b></p>
+							<p>C-uh'e sll'ha hrii nog nwyar. Kn'a wgah'n ph'sgn'wahl. (Those unpronounceable words with
+								no apparent meaning have spoken directly to your mind: you have to build enough
+								Labyrinths).</p>
+							<p><b>Requirement</b>: R22+</p>
+							<p><b>Cost</b>: 10 Dtg (1E100)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Facelessr2.png"
+										alt="Sunken Cities" align="middle"> Sunken Cities</b></p>
+							<p>Upgrade Labyrinths to Sunken Cities, boosting their production based on time spent in
+								your longest game session and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (75 * (x / 3600) ^ 0.9)%, where x is your Playtime (Longest Session)
+								stat.</p>
+							<p><b>Requirement</b>: 2000 Labyrinths</p>
+							<p><b>Cost</b>: 10 Ttg (1E103))</p>
+						</div>
+					</div>
+				</div>
+				<div class="shlisting">
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Prestige Research</a></b>
+							(R29+)</p>
+						<div class="autohide">
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/EarthCoreArtifactr.png"
+										alt="Earth Core Artifact" align="middle"> Artifact-Earth Core</b></p>
+							<p>Your Magesty, our miners report to have found an unstable substance, throbbing with
+								magical power. The Dwarves and Drow are ready to share the Secrets of the Underworld!
+							</p>
+							<p><b>Requirement</b>: R29 + 2750th Excavation</p>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheUnderworldFactionUpgrade.png"
+										alt="Secrets of the Underworld" align="middle"> Secrets of the Underworld</b>
+							</p>
+							<p>Unlocks researches for Dwarven and Drow and provides a bonus for individual research
+								branches.</p>
+							<p><b>Requirement</b>: Prestige Unique Building (Dwarf or Drow), Artifact-Earth Core</p>
+							<p><b>Cost</b>: 100 SXg (1E185), 10M of each faction coin</p>
+							<p><b>Note</b>: Secrets of the Underworld allows Prestige factions to benefit from RP
+								production formula with no extra bonus.</p>
+							<hr>
+							<h6>Dwarf</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/DwravenForgeQuestr.png"
+										alt="Dwarven Forge Quest" align="middle"> Dwarven Forge Quest</b></p>
+							<p>Aye again lad! Don't ye want a better place to forge yer weapons? With Enough Blacksmiths
+								me people can help ye!</p>
+							<p><b>Requirement</b>: R28, 3500 Blacksmiths</p>
+							<p><b>Cost</b>: 10 Sxg (1E184)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/DwarvenForgesr.png"
+										alt="Dwarven Forges" align="middle"> Dwarven Forges</b></p>
+							<p><b>In-game Description</b></p>
+							<p>Upgrade Blacksmiths to Dwarven Forges, boosting their production based on mana regen and
+								unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (80 * x ^ 0.8)%, where x is your Mana per Second stat.</p>
+							<p><b>Requirement</b>: Dwarven Forge Quest</p>
+							<p><b>Cost</b>: 10 USxg (1E187)</p>
+							<hr>
+							<h6>Drow</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/SpiderSanctuaryQuestr.png"
+										alt="Spider Sanctuary Quest" align="middle"> Spider Sanctuary Quest</b></p>
+							<p><b>In-game Description</b></p>
+							<p>Kivvil. Our Valsharess requires more places to worship the almighty Spider Queen. Build
+								enough Dark Temples, and our priestresses will consecrate them.</p>
+							<p><b>Requirement</b>: R28, 2000 Dark Temples</p>
+							<p><b>Cost</b>: 10 Sxg (1E184)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/SpiderSanctuaryr.png"
+										alt="Spider Sanctuary" align="middle"> Spider Sanctuary</b></p>
+							<p><b>In-game Description</b></p>
+							<p>Upgrade Dark Temples to Spider Sanctuaries, boosting their production based on time spent
+								offline and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (32 * x ^ 0.8), where x is your Time Spent Offline (Total) stat.</p>
+							<p><b>Requirement</b>: Spider Sanctuary Quest</p>
+							<p><b>Cost</b>: 10 USxg (1E187)</p>
+							<hr>
+							<h6>Dragons</h6>
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Wyrm'sDenQuestFactionUpgrade.png"
+										align="middle"> Wyrm's Den Quest</b></p>
+							<p>Ava'yorn thurirl. Our kind needs large spaces and a place to take flight. Build enough
+								Iron Strongholds to make room for us.</p>
+							<p><b>Effect</b>: Unlocks Wyrm's Den</p>
+							<p><b>Requirement</b>: R46+, 4500 Iron Strongholds</p>
+							<p><b>Cost</b>: 100 Tvg (1.0e74)</p>
+							<br />
+							<p><b><img src="http://musicfamily.org/realm/Factions/picks/Wyrm'sDenFactionUpgrade.png"
+										align="middle"> Wyrm's Den</b></p>
+							<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total
+								amount of Faction Coins you collected and unlocking more unique perks for the building.
+							</p>
+							<p><b>Formula</b>: 0.065 * (ln(1 + (x / 2) + y)) ^ 3.65 where x is faction coins (This Game)
+								and y is Faction Coins (This R)</p>
+							<p><b>Effect</b>: Unlocks Wyrm's Den Unique Building</p>
+							<p><b>Requirement</b>: Wyrm's Den Quest, Dragon's Trade Treaty</p>
+							<p><b>Cost</b>: 10 Nod (1.e61)</p>
+						</div>
+					</div>
+				</div>
+				<div class="shlisting">
+					<div class="shelementwhole">
+						<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Mercenary</a></b>
+							(R75-R99, R160-219)</p>
+						<div class="autohide">
+							<p><b>Note</b>: At R160+ you will need to unlock Mercenary again, click <a
+									href="http://musicfamily.org/realm/MercenaryFaction/#MercenaryDuel"><b>here</b></a>
+								to see
+								requirements.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/ObsidianShardArtifact.png"
+									alt="Secrets of the Warriors" align="middle"> <b>Artifact-Obsidian Shard</b></p>
+							<p><b>Requirement</b>: 8000 Excavations any Faction.</p>
+							<p><b>Description</b>: Extremely hard and black as darkness itself, this material cannot
+								apparently be carved or melted. It is a mystery how you can make this thing into a
+								sword.</p>
+							<p><b>Effect</b>: Unlocks Secrets of the Warriors.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheWarriors.png"
+									alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
+							<p><b>Requirement</b>: Obsidian Shard</p>
+							<p><b>Cost</b>: 100 Qiqag (1e140) and 10 Qa (1e16) of every Faction Coin.</p>
+							<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by
+								1000%.</p>
+							<br />
+							<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryEncampmentQuest.png"
+									alt="Mercenary Encampment Quest" align="middle"> <b>Mercenary Encampment Quest</b>
+							</p>
+							<p>We salute you, commander. Your strategical skills had not gone unnoticed within our
+								ranks. We have decided to offer you a chance to establish a formal encampment within
+								your boundaries... Build more structures to strengthen our city.</p>
+							<p><b>Requirement</b>: Mercenary (Any Alignment), 125k buildings</p>
+							<p><b>Cost</b>: 10 Notg (1e121)</p>
+							<p><b>Note</b>: Only needs bought once.</p>
+							<p><b>Unlocks</b>: Mercenary Unique Buildings</p>
+							<br />
+							<p><b>Good Alignment</b></p>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryCamp.png"
+									alt="Mercenary Camp" align="middle"> <b>Mercenary Camp</b></p>
+							<p><b>Requirement</b>: Mercenary Encampment Quest</p>
+							<p><b>Cost</b>: 100 Qag (1e125)</p>
+							<p><b>Effect 1</b>: Allows access to Research Facilities</p>
+							<p><b>Effect 2</b>: Upgrade Knights Jousts to Mercenary Camps, boosting their production
+								based on the amount of Non-Unique buildings you own and unlocking more unique perks for
+								the building.</p>
+							<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.05), where x is number of Non-Unique Buildings.</p>
+							<p><b>Effect 3</b>: Unlocks Round Table</p>
+							<br />
+							<p><b>Evil Alignment</b></p>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/TyrantGarrison.png"
+									alt="Tyrant Garrison" align="middle"> <b>Tyrant Garrison</b></p>
+							<p><b>Requirement</b>: Mercenary Encampment Quest</p>
+							<p><b>Cost</b>: 100 Qag (1e125)</p>
+							<p><b>Effect 1</b>: Allows access to Research Facilities</p>
+							<p><b>Effect 2</b>: Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production
+								based on Offline Production Bonus and unlocking more unique perks for the building.</p>
+							<p><b>Formula</b>: (0.5 * log10(x) ^ 3.5), where x is Offline Production Bonus.</p>
+							<p><b>Effect 3</b>: Unlocks Dark Covenant</p>
+							<br />
+							<p><b>Neutral Alignment</b></p>
+							<p><img src="http://musicfamily.org/realm/Factions/picks/Freemason'sHall.png"
+									alt="Freemason's Hall" align="middle"> <b>Freemason's Hall</b></p>
+							<p><b>Requirement</b>: Mercenary Encampment Quest</p>
+							<p><b>Cost</b>: 100 Qag (1e125)</p>
+							<p><b>Effect 1</b>: Allows access to Research Facilities</p>
+							<p><b>Effect 2</b>: Upgrade Inns to Freemason's Hall, Boosting their production based on the
+								highest amount of assistants you had in a single game (This R) and unlocking more unique
+								perks for the building.</p>
+							<p><b>Formula</b>: (20 + 20 * x), where x is assistants you had in a single game (This R).
+							</p>
+							<p><b>Effect 3</b>: Unlocks Secret Exchange</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Research Facilities</a></b></p>
-			<div class="autohide">
-				<p><b>Short and long names</b></p>
-				<p><b>S</b>=Spellcraft, <b>C</b>=Craftsmanship, <b>D</b>=Divine, <b>E</b>=Economics, <b>A</b>=Alchemy, <b>W</b>=Warfare, and <b>F</b>=Forbidden</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Spellcraft.png" alt="Spellcraft" align="middle"> <b>Spellcraft</b> (R16+)</p>
-				<p>Delve into the arcane mysteries of Spellcraft, discovering new ways to produce and use mana.</p>
-				<p><b>Effect</b>: Increases <b>Fairy</b>, <b>Faceless</b> and <b>Drow</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Craftsmanship.png" alt="Craftsmanship" align="middle"> <b>Craftsmanship</b> (R16+)</p>
-				<p>Learn how to use tools and experience to improve your production by mastering Craftsmanship.</p>
-				<p><b>Effect</b>: Increases <b>Elven</b>, <b>Titan</b> and <b>Dwarven</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Divine.png" alt="Divine" align="middle"> <b>Divine</b> (R16+)</p>
-				<p>Harness the power of the eternals, increasing your spell affinity and bestowing Divine power on all your productivity.</p>
-				<p><b>Effect</b>: Increases <b>Angel</b>, <b>Faceless</b> and <b>Dwarven</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Economics.png" alt="Economics" align="middle"> <b>Economics</b> (R16+)</p>
-				<p>Exploit your resources with Economics knowledge, taking maximum advantage of your properties and turning time into money.</p>
-				<p><b>Effect</b>: Increases <b>Goblin</b>, <b>Druid</b> and <b>Dwarven</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Alchemy.png" alt="Alchemy" align="middle"> <b>Alchemy</b> (R16+)</p>
-				<p>Tap the near-unlimited sources of Alchemy to improve your production and benefit from all your assets.</p>
-				<p><b>Effect</b>: Increases <b>Undead</b>, <b>Druid</b> and <b>Drow</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Warfare.png" alt="Warfare" align="middle"> <b>Warfare</b> (R16+)</p>
-				<p>Use strategical prowess and manpower tp manipulate the production system in your favor.</p>
-				<p><b>Effect</b>: Increases <b>Demon</b>, <b>Titan</b> and <b>Drow</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Slots (R16-R159) / Points (R160+) are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Forbidden.png" align="middle"> <b>Forbidden</b> (R180+)</p>
-				<p>Take advantage of the most ancient and secret arts to empower your production beyonds known limits.</p>
-				<p><b>Effect</b>: Increases <b>Mercenary</b> production.</p>
-				<p>Pointing to this ingame will tell you how many Points are available and also tells you your total research points.</p>
-				<p><b>Research Point Production</b>:</p>
-				<p><b>Formula</b>: (100,000 * (1 + 0.01 * x ^ 0.7))%, where x is RP total of facility affinities.</p>
-				<br/>
-			</div>
-		</div>
-	</div>
-	<br>
-	<center><b>Research Requirements</b></center>
-	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Vanilla Research</a></b> (R16+)</p>
-			<div class="autohide">
-				<h6>Fairy</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Fairyr1.png" align="middle"> Enchanted Field Quest</b></p>
-				<p>Hey! Listen! A True Fairy has never enough Farms! We will offer you the chance to improve them!</p>
-				<p><b>Requirement</b>: R16 + 2250 Farms</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Fairyr2.png" alt="Enchanted Field" align="middle"> Enchanted Field</b></p>
-				<p>Upgrade Farms to Enchanted Fields, boosting their production based on the amount of assistants you own and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (50 * (500 * x) ^ 0.5), where x is your Assistants stat.</p>
-				<p><b>Requirement</b>: Buy "Enchanted Field Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Spellweaveryr.png" alt="Enchanted Field" align="middle"> Spellweavery</b></p>
-				<p>Unlocks the Spellcraft research facility and increases Fairy production by 100000%, plus an additional bonus based on Spellcraft research points.</p>
-				<p><b>Requirement</b>: All Fairy faction upgrades bought, Enchanted Field</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Fairy coins</p>
-				<hr>
-				<h6>Elf</h6>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Elfr1.png" alt="Training Grounds Quest" align="middle"> Elven Training Grounds Quest</p>
-				<p>Hello, mellonamin. We require a new place to train our soldiers. Build enough Warrior Barracks, and we'll make them worthy of you.</p>
-				<p><b>Requirement</b>: R16 + 1750 Warrior Barracks</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Elfr2.png" alt="Elven Training Grounds" align="middle"> Elven Training Grounds</p>
-				<p>Upgrade Warrior Barracks To Elven Training Grounds, boosting their production based on the total amount of clicks you made and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: ((50 * x^0.85) + 50 * ln^6(1 + x))%, where x is your Treasure Clicks (Total) stat.</p>
-				<p><b>Requirement</b>: Buy "Elven Training Grounds Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Carpentryr.png" alt="Elven Training Grounds" align="middle"> Carpentry</p>
-				<p>Unlocks the Craftsmanship research facility and increases Elven production by 100000%, plus an additional bonus based on Craftsmanship research points.</p>
-				<p><b>Requirement</b>: All Elven faction upgrades bought, Elven Training Grounds</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Elven coins</p>
-				<hr>
-				<h6>Angel</h6>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Angelr1.png" alt="Heaven's Domain Quest" align="middle"> Heaven's Domain Quest</p>
-				<p>Bless you, dear friend. The Lands of the sky are expanding as more good souls are joining our ranks. Would you be so kind to provide them a place to stay in the Heavens?</p>
-				<p><b>Requirement</b>: R16 + 1500 Heaven's Gates</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Angelr2.png" alt="Heaven's Domain" align="middle"> Heaven's Domain</p>
-				<p>Upgrade Heaven's Gate To Heaven's Domains, boosting their production by 35000% per spell affecting them and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (350 * x ^ 1.1), where x is the amount of Active Spells</p>
-				<p><b>Requirement</b>: Buy "Heaven's Domain Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Pantheonr.png" alt="Heaven's Domain Quest" align="middle"> Pantheon</p>
-				<p>Unlocks the Divine research facility and increases Angel production by 100000%, plus an additional bonus based on Divine research points.</p>
-				<p><b>Requirement</b>: All Angel faction upgrades bought, Heaven's Domain</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Angel coins</p>
-				<hr>
-				<h6>Goblin</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Goblinr1.png" alt="Goblin Banks Quest" align="middle"> Goblin Banks Quest</b></p>
-				<p>Hey There! We need a safe place to keep our honestly earned savings. We'll turn those Witch Conclaves into something more... useful, if you build enough of them.</p>
-				<p><b>Requirement</b>: R16 + 1750 Witch Conclaves</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Goblinr2.png" alt="Goblin Banks" align="middle"> Goblin Banks</b></p>
-				<p>Upgrade Witch Conclaves To Goblin Banks, boosting their production based on the amount of gold you own and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: 650 + 10000 * log^1.5(1 + x), where x is your current amount of Coins.</p>
-				<p><b>Requirement</b>: Buy "Goblin Banks Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Exchequerr.png" alt="Goblin Banks Quest" align="middle"> Exchequer</b></p>
-				<p>Unlocks the Economics research facility and increases Goblin production by 100000%, plus an additional bonus based on Economics research points.</p>
-				<p><b>Requirement</b>: All Goblin faction upgrades bought, Goblin Banks</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Goblin coins</p>
-				<hr>
-				<h6>Undead</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Undeadr1.png" alt="Undercities Quest" align="middle"> Undercities Quest</b></p>
-				<p>Hello there. The dead stand ready. Give them a place to rise and live again... Build enough Necropolises, we'll take care of the rest.</p>
-				<p><b>Requirement</b>: R16 + 1750 Necropolises</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Undeadr2.png" alt="Undercities" align="middle"> Undercities</b></p>
-				<p>Upgrade Necropolises To Undercities, boosting their production based on time spent in this game and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (10 * (2x)^0.75)%, where x is your Playtime (This Game) stat.</p>
-				<p><b>Requirement</b>: Buy "Undercities Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Laboratoryr.png" alt="Laboratory" align="middle"> Laboratory</b></p>
-				<p>Unlocks the Alchemy research facility and increases Undead production by 100000%, plus an additional bonus based on Alchemy research points.</p>
-				<p><b>Requirement</b>: Undercities and all Undead faction upgrades bought</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Undead coins</p>
-				<hr>
-				<h6>Demon</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Demonr1.png" alt="Infernal Realm Quest" align="middle"> Infernal Realm Quest</b></p>
-				<p>Useless underling, be warned! The Demons are going to invade your world with all their might. If you know which side you want to be on when that happens, build those Hell Portals!</p>
-				<p><b>Requirement</b>: R16 + 1500 Hell Portals</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Demonr2.png" alt="Infernal Realm" align="middle"> Infernal Realm</b></p>
-				<p>Upgrade Hell Portals To Infernal Realms, boosting their production by 100% per Trophy you unlocked and unlocking more unique perks for the building.</p>
-				<p><b>Requirement</b>: Buy "Infernal Realm Quest"</p>
-				<p><b>Effect</b>: Grants access to the Research Facilities.</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/StrategyRoomr.png" alt="Strategy Room" align="middle"> Strategy Room</b></p>
-				<p>Unlocks the Warfare research facility and increases Demon production by 100000%, plus an additional bonus based on Warfare research points.</p>
-				<p><b>Requirement</b>: All Demon faction upgrades bought, Infernal Realm</p>
-				<p><b>Cost</b>: 1E121 coins, 1E6 Demon coins</p>
+			<div id="footer">
 			</div>
 		</div>
 	</div>
-	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Neutral Research</a></b> (R23+)</p>
-			<div class="autohide">
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheAncientsr.png" alt="Secrets of the Ancients" align="middle"> Secrets of the Ancients</b></p>
-				<p>Unlocks research for Titan, Druids and Faceless and increases production by 100,000%, plus an additional bonus based on Economics research points.</p>
-				<p><b>Requirement</b>: Neutral Unique Building</p>
-				<p><b>Requirement</b>: The Key To The Lost City artifact (for this you need: 1500 excavations, R23+)</p>
-				<p><b>Cost</b>: 1 Noqag (1e151) Coins, 1 M (1e6) Fairy, Elven, Angel, Goblin, Undead and Demon coins</p>
-				<hr>
-				<h6>Titan</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Titanr1.png" alt="Olympian Halls Quest" align="middle"> Olympian Halls Quest</b></p>
-				<p>Khaire, ruler. More of our people will join your cause if you build enough Hall of Legends. Our architects will take care of expanding them to accommodate the almighty Titans.</p>
-				<p><b>Requirement</b>: R22+</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Titanr2.png" alt="Olympian Halls" align="middle"> Olympian Halls</b></p>
-				<p>Upgrade Halls of Legend to Olympian Halls, boosting their production by 15% per Royal Exchange you've purchased and unlocking more unique perks for the building.</p>
-				<p><b>Requirement</b> 2000 Halls of Legends</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<hr>
-				<h6>Druid</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Druidr1.png" alt="Stonehenge Circles Quest" align="middle"> Stonehenge Circles Quest</b></p>
-				<p>Hello, friend. The balance of nature requires more magic to sustain it. Build enough Stone Pillars, we'll gather our elders to improve them.</p>
-				<p><b>Requirement</b>: R22+</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Druidr2.png" alt="Stonehenge Circles" align="middle"> Stonehenge Circles</b></p>
-				<p>Upgrade Stone Pillars to Stonehenge Circles, boosting their production by 25% per point of Maximum Mana and unlocking more unique perks for the building.</p>
-				<p><b>Note</b>: The bonus is not a multiple of 25; this may be due to max. mana appearing as a floating point number instead of an integer.</p>
-				<p><b>Requirement</b>: 2000 Stone Pillars</p>
-				<p><b>Cost</b>: 10 Ttg (1E103)</p>
-				<hr>
-				<h6>Faceless</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Facelessr1.png" alt="Sunken Cities Quest" align="middle"> Sunken Cities Quest</b></p>
-				<p>C-uh'e sll'ha hrii nog nwyar. Kn'a wgah'n ph'sgn'wahl. (Those unpronounceable words with no apparent meaning have spoken directly to your mind: you have to build enough Labyrinths).</p>
-				<p><b>Requirement</b>: R22+</p>
-				<p><b>Cost</b>: 10 Dtg (1E100)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Facelessr2.png" alt="Sunken Cities" align="middle"> Sunken Cities</b></p>
-				<p>Upgrade Labyrinths to Sunken Cities, boosting their production based on time spent in your longest game session and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (75 * (x / 3600) ^ 0.9)%, where x is your Playtime (Longest Session) stat.</p>
-				<p><b>Requirement</b>: 2000 Labyrinths</p>
-				<p><b>Cost</b>: 10 Ttg (1E103))</p>
-			</div>
-		</div>
-	</div>
-	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Prestige Research</a></b> (R29+)</p>
-			<div class="autohide">
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/EarthCoreArtifactr.png" alt="Earth Core Artifact" align="middle"> Artifact-Earth Core</b></p>
-				<p>Your Magesty, our miners report to have found an unstable substance, throbbing with magical power. The Dwarves and Drow are ready to share the Secrets of the Underworld!</p>
-				<p><b>Requirement</b>: R29 + 2750th Excavation</p>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheUnderworldFactionUpgrade.png" alt="Secrets of the Underworld" align="middle"> Secrets of the Underworld</b></p>
-				<p>Unlocks researches for Dwarven and Drow and provides a bonus for individual research branches.</p>
-				<p><b>Requirement</b>: Prestige Unique Building (Dwarf or Drow), Artifact-Earth Core</p>
-				<p><b>Cost</b>: 100 SXg (1E185), 10M of each faction coin</p>
-				<p><b>Note</b>: Secrets of the Underworld allows Prestige factions to benefit from RP production formula with no extra bonus.</p>
-				<hr>
-				<h6>Dwarf</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/DwravenForgeQuestr.png" alt="Dwarven Forge Quest" align="middle"> Dwarven Forge Quest</b></p>
-				<p>Aye again lad! Don't ye want a better place to forge yer weapons? With Enough Blacksmiths me people can help ye!</p>
-				<p><b>Requirement</b>: R28, 3500 Blacksmiths</p>
-				<p><b>Cost</b>: 10 Sxg (1E184)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/DwarvenForgesr.png" alt="Dwarven Forges" align="middle"> Dwarven Forges</b></p>
-				<p><b>In-game Description</b></p>
-				<p>Upgrade Blacksmiths to Dwarven Forges, boosting their production based on mana regen and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (80 * x ^ 0.8)%, where x is your Mana per Second stat.</p>
-				<p><b>Requirement</b>: Dwarven Forge Quest</p>
-				<p><b>Cost</b>: 10 USxg (1E187)</p>
-				<hr>
-				<h6>Drow</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/SpiderSanctuaryQuestr.png" alt="Spider Sanctuary Quest" align="middle"> Spider Sanctuary Quest</b></p>
-				<p><b>In-game Description</b></p>
-				<p>Kivvil. Our Valsharess requires more places to worship the almighty Spider Queen. Build enough Dark Temples, and our priestresses will consecrate them.</p>
-				<p><b>Requirement</b>: R28, 2000 Dark Temples</p>
-				<p><b>Cost</b>: 10 Sxg (1E184)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/SpiderSanctuaryr.png" alt="Spider Sanctuary" align="middle"> Spider Sanctuary</b></p>
-				<p><b>In-game Description</b></p>
-				<p>Upgrade Dark Temples to Spider Sanctuaries, boosting their production based on time spent offline and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (32 * x ^ 0.8), where x is your Time Spent Offline (Total) stat.</p>
-				<p><b>Requirement</b>: Spider Sanctuary Quest</p>
-				<p><b>Cost</b>: 10 USxg (1E187)</p>
-				<hr>
-				<h6>Dragons</h6>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Wyrm'sDenQuestFactionUpgrade.png" align="middle"> Wyrm's Den Quest</b></p>
-				<p>Ava'yorn thurirl. Our kind needs large spaces and a place to take flight. Build enough Iron Strongholds to make room for us.</p>
-				<p><b>Effect</b>: Unlocks Wyrm's Den</p>
-				<p><b>Requirement</b>: R46+, 4500 Iron Strongholds</p>
-				<p><b>Cost</b>: 100 Tvg (1.0e74)</p>
-				<br/>
-				<p><b><img src="http://musicfamily.org/realm/Factions/picks/Wyrm'sDenFactionUpgrade.png" align="middle"> Wyrm's Den</b></p>
-				<p>Upgrade Iron Stronghold to Wyrm's Den, boosting their production based on the total amount of Faction Coins you collected and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: 0.065 * (ln(1 + (x / 2) + y)) ^ 3.65 where x is faction coins (This Game) and y is Faction Coins (This R)</p>
-				<p><b>Effect</b>: Unlocks Wyrm's Den Unique Building</p>
-				<p><b>Requirement</b>: Wyrm's Den Quest, Dragon's Trade Treaty</p>
-				<p><b>Cost</b>: 10 Nod (1.e61)</p>
-			</div>
-		</div>
-	</div>
-	<div class="shlisting">
-		<div class="shelementwhole">
-			<p onclick="shohid($(this));"><b> <a href="#" onclick="return false;">Mercenary</a></b> (R75-R99, R160-219)</p>
-			<div class="autohide">
-				<p><b>Note</b>: At R160+ you will need to unlock Mercenary again, click <a href="http://musicfamily.org/realm/MercenaryFaction/#MercenaryDuel"><b>here</b></a> to see requirements.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/ObsidianShardArtifact.png" alt="Secrets of the Warriors" align="middle"> <b>Artifact-Obsidian Shard</b></p>
-				<p><b>Requirement</b>: 8000 Excavations any Faction.</p>
-				<p><b>Description</b>: Extremely hard and black as darkness itself, this material cannot apparently be carved or melted. It is a mystery how you can make this thing into a sword.</p>
-				<p><b>Effect</b>: Unlocks Secrets of the Warriors.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/SecretsoftheWarriors.png" alt="Secrets of the Warriors" align="middle"> <b>Secrets of the Warriors</b></p>
-				<p><b>Requirement</b>: Obsidian Shard</p>
-				<p><b>Cost</b>: 100 Qiqag (1e140) and 10 Qa (1e16) of every Faction Coin.</p>
-				<p><b>Effect</b>: Unlocks Researches for Mercenaries and increases their production by 1000%.</p>
-				<br/>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryEncampmentQuest.png" alt="Mercenary Encampment Quest" align="middle"> <b>Mercenary Encampment Quest</b></p>
-				<p>We salute you, commander. Your strategical skills had not gone unnoticed within our ranks. We have decided to offer you a chance to establish a formal encampment within your boundaries... Build more structures to strengthen our city.</p>
-				<p><b>Requirement</b>: Mercenary (Any Alignment), 125k buildings</p>
-				<p><b>Cost</b>: 10 Notg (1e121)</p>
-				<p><b>Note</b>: Only needs bought once.</p>
-				<p><b>Unlocks</b>: Mercenary Unique Buildings</p>
-				<br/>
-				<p><b>Good Alignment</b></p>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/MercenaryCamp.png" alt="Mercenary Camp" align="middle"> <b>Mercenary Camp</b></p>
-				<p><b>Requirement</b>: Mercenary Encampment Quest</p>
-				<p><b>Cost</b>: 100 Qag (1e125)</p>
-				<p><b>Effect 1</b>: Allows access to Research Facilities</p>
-				<p><b>Effect 2</b>: Upgrade Knights Jousts to Mercenary Camps, boosting their production based on the amount of Non-Unique buildings you own and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (1.25 * (1 + x) ^ 1.05), where x is number of Non-Unique Buildings.</p>
-				<p><b>Effect 3</b>: Unlocks Round Table</p>
-				<br/>
-				<p><b>Evil Alignment</b></p>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/TyrantGarrison.png" alt="Tyrant Garrison" align="middle"> <b>Tyrant Garrison</b></p>
-				<p><b>Requirement</b>: Mercenary Encampment Quest</p>
-				<p><b>Cost</b>: 100 Qag (1e125)</p>
-				<p><b>Effect 1</b>: Allows access to Research Facilities</p>
-				<p><b>Effect 2</b>: Upgrade Evil Fortresses to Tyrant Garrisons, boosting their production based on Offline Production Bonus and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (0.5 * log10(x) ^ 3.5), where x is Offline Production Bonus.</p>
-				<p><b>Effect 3</b>: Unlocks Dark Covenant</p>
-				<br/>
-				<p><b>Neutral Alignment</b></p>
-				<p><img src="http://musicfamily.org/realm/Factions/picks/Freemason'sHall.png" alt="Freemason's Hall" align="middle"> <b>Freemason's Hall</b></p>
-				<p><b>Requirement</b>: Mercenary Encampment Quest</p>
-				<p><b>Cost</b>: 100 Qag (1e125)</p>
-				<p><b>Effect 1</b>: Allows access to Research Facilities</p>
-				<p><b>Effect 2</b>: Upgrade Inns to Freemason's Hall, Boosting their production based on the highest amount of assistants you had in a single game (This R) and unlocking more unique perks for the building.</p>
-				<p><b>Formula</b>: (20 + 20 * x), where x is assistants you had in a single game (This R).</p>
-				<p><b>Effect 3</b>: Unlocks Secret Exchange</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="footer">
-</div>
-</div>
-</div>
-<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
-<tbody>
-<tr>
-<td style="padding:0.2em 0.5em;">
-<FONT color=#98AFC7> | <a href="/realm/Resources" research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds"><FONT color=#98AFC7>Resources</a> | <a href="/realm/Reset" research="Reset - Abdication - Reincarnation"><FONT color=#98AFC7>Soft Resets</a> | <a href="/realm/BuildingAlignments" research="Building Alignments"><FONT color=#98AFC7>Buildings</a> | <a href="/realm/Heritages" research="Faction Heritages"><FONT color=#98AFC7>Heritages</a> | <a href="/realm/Bloodline" research="Faction Bloodlines" class="mw-redirect"><FONT color=#98AFC7>Bloodlines</a>
- | <a href="/realm/Spells" research="Spells and Tier unlock Times"><FONT color=#98AFC7>Spells</a> | <a href="/realm/Artifacts" research="Excavations"><FONT color=#98AFC7>Excavations</a>  | <a href="/realm/Challenges" research="Complete list of Challenges and descriptions"><FONT color=#98AFC7>Challenges</a> | <a href="/realm/Upgrades" research="Upgrades"><FONT color=#98AFC7>Upgrades</a> | <a href="/realm/TrophyPage" research="Complete list of Trophies and descriptions"><FONT color=#98AFC7>Trophies</a>
- | <a href="/realm/Factions" research="Factions"><FONT color=#98AFC7>Factions</a> | <a href="/realm/Research" research="The Research Facilities - Short and long names"><FONT color=#98AFC7>Research</a> |
-<p> | <a href="/realm/MercBuilds" research="Mercenary Builds"><FONT color=#98AFC7>Merc Builds</a> | <a href="/realm/ResearchBuilds" research="Research Builds"><FONT color=#98AFC7>Research Builds</a> | <a href="/realm/PBuilds" research="Evil and Good Prestige Builds"><FONT color=#98AFC7>Prestige Builds</a> | <a href="/realm/R40-R46" research="Ascension Builds"><FONT color=#98AFC7>Dragon Unlock</a> | <a href="/realm/R47-R60" research="Neutral Prestige Builds"><FONT color=#98AFC7>Neutral Prestige Builds</a> | <a href="/realm/Researchtree" research="Complete list of Research and descriptions"><FONT color=#98AFC7>Research Tree</a> |
-</p>
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Vanilla Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>"><FONT color=#98AFC7>Good Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon"><FONT color=#98AFC7>Evil Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Neutral Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon"><FONT color=#98AFC7>Prestige Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers"><FONT color=#98AFC7>A2 Elite Factions</a> </span> |
-</p>
- | <a href="/realm/Events" research="Events"><FONT color=#98AFC7>Events</a>  | <a href="/realm/Changes" research="Latest Major Patch"><FONT color=#98AFC7>Latest Major Patch</a> | <a href="/realm/Changelog" research="Changelog"><FONT color=#98AFC7>Changelog</a> | <a href="/realm/Notation" research="Short - Scientific - Engineering"><FONT color=#98AFC7>Notation</a> |  <a href="/realm/Terminology" research="Commonly used terms and abbreviations"><FONT color=#98AFC7>Terminology</a> | <a href="/realm/Tools" research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki"><FONT color=#98AFC7>Tools</a> | <a href="/realm/Kong" research="Help"><FONT color=#98AFC7>Kongregate Links</a>  |
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a href="/realm/FairyFaction" research="Fairy (Good)"><FONT color=#98AFC7>Fairy</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a href="/realm/ElfFaction" research="Elf (Good)"><FONT color=#98AFC7>Elven</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a href="/realm/AngelFaction" research="Angel (Good)"><FONT color=#98AFC7>Angel</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a href="/realm/GoblinFaction" research="Goblin (Evil)"><FONT color=#98AFC7>Goblin</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a href="/realm/UndeadFaction" research="Undead (Evil)"><FONT color=#98AFC7>Undead</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a href="/realm/DemonFaction" research="Demon (Evil)"><FONT color=#98AFC7>Demon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a href="/realm/TitanFaction" research="Titan (Neutral)"><FONT color=#98AFC7>Titan</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a href="/realm/DruidFaction" research="Druid (Neutral)"><FONT color=#98AFC7>Druid</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a href="/realm/FacelessFaction" research="Faceless (Neutral)"><FONT color=#98AFC7>Faceless</a> </span> |
-</p>
-<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a href="/realm/MercenaryFaction" research="Mercenary"><FONT color=#98AFC7>Mercenary</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a href="/realm/DwarfFaction" research="Dwarf (Good Prestige)"><FONT color=#98AFC7>Dwarf</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a href="/realm/DrowFaction" research="Drow (Evil Prestige)"><FONT color=#98AFC7>Drow</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a href="/realm/DragonFaction" research="Dragon (Neutral Prestige)"><FONT color=#98AFC7>Dragon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a href="/realm/ArchonFaction" research="Archon (A2 Elite)"><FONT color=#98AFC7>Archon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a href="/realm/DjinnFaction" research="Djinn (A2 Elite)"><FONT color=#98AFC7>Djinn</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a href="/realm/MakersFaction" research="Makers (A2 Elite)"><FONT color=#98AFC7>Makers</a> </span> |
-</p>
-</td></tr></tbody></table>
-<p align="center"><FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/"><FONT color=#98AFC7><b>G00FBALL</b></font></a></p>
-<div align="center"><FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
-<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
-<p align="center">5ku||3d</p>
-<p align="center">6000j</p>
-<p align="center">7636kei</p>
-<p align="center">Aaborg</p>
-<p align="center">Aaron Cook</p>
-<p align="center">acbdefgfedbca</p>
-<p align="center">acer4321</p>
-<p align="center">Ach3ck</p>
-<p align="center">AJZ3</p>
-<p align="center">AKL</p>
-<p align="center">Alright</p>
-<p align="center">Altoscholto</p>
-<p align="center">Amirin</p>
-<p align="center">Anathah</p>
-<p align="center">AndreikaD</p>
-<p align="center">Antendren</p>
-<p align="center">apocal_88</p>
-<p align="center">arcanmster</p>
-<p align="center">Archmage</p>
-<p align="center">arintayn2</p>
-<p align="center">ARTEZZ</p>
-<p align="center">art-of-dom</p>
-<p align="center">ash1soccer</p>
-<p align="center">Ashthar</p>
-<p align="center">aurora</p>
-<p align="center">aviv</p>
-<p align="center">Azua</p>
-<p align="center">Bearpaws</p>
-<p align="center">BigGeak</p>
-<p align="center">bigshawnt</p>
-<p align="center">BillK14</p>
-<p align="center">BionicFrog</p>
-<p align="center">BioRules</p>
-<p align="center">blackbird</p>
-<p align="center">Blackeye</p>
-<p align="center">Blue</p>
-<p align="center">bobbert</p>
-<p align="center">Boffo</p>
-<p align="center">Book909</p>
-<p align="center">boss_mc</p>
-<p align="center">Boyo</p>
-<p align="center">brc48632</p>
-<p align="center">Breeze</p>
-<p align="center">btzeroes</p>
-<p align="center">burninglegion64</p>
-<p align="center">BuzzMarzz</p>
-<p align="center">CafeMaker</p>
-<p align="center">CamoBrie</p>
-<p align="center">capito27</p>
-<p align="center">Chaos</p>
-<p align="center">Chaosmancer7</p>
-<p align="center">chaosmarine4226</p>
-<p align="center">CheeseWitch</p>
-<p align="center">chris</p>
-<p align="center">chrispi</p>
-<p align="center">CHRullz</p>
-<p align="center">Ck</p>
-<p align="center">CluelessWonder</p>
-<p align="center">Coal_CC</p>
-<p align="center">ColdDrake13</p>
-<p align="center">Corgi</p>
-<p align="center">cralo</p>
-<p align="center">Cromedome</p>
-<p align="center">Cromieplays</p>
-<p align="center">Curunur</p>
-<p align="center">Cyden</p>
-<p align="center">Da Banana Man</p>
-<p align="center">DainDwarf</p>
-<p align="center">Damxacer1</p>
-<p align="center">Dariof4</p>
-<p align="center">DED SERVER</p>
-<p align="center">Delichtig</p>
-<p align="center">Dienes</p>
-<p align="center">djones0823</p>
-<p align="center">djru8ix</p>
-<p align="center">Doubleshoe</p>
-<p align="center">dox4242</p>
-<p align="center">DR</p>
-<p align="center">Draven</p>
-<p align="center">Drogor</p>
-<p align="center">drseilzug</p>
-<p align="center">EagleAgg03</p>
-<p align="center">Ebilkill</p>
-<p align="center">ehyder</p>
-<p align="center">eleganceseraph</p>
-<p align="center">ElJay</p>
-<p align="center">Eltro</p>
-<p align="center">Enexplogen</p>
-<p align="center">ensteffahn</p>
-<p align="center">ErrolErrolson</p>
-<p align="center">escalon</p>
-<p align="center">Essigschurke</p>
-<p align="center">Evengrey</p>
-<p align="center">Exsanguine</p>
-<p align="center">FastHit</p>
-<p align="center">FedeJossa</p>
-<p align="center">Fire</p>
-<p align="center">Flameslinger01</p>
-<p align="center">Fonzoland</p>
-<p align="center">Franelas</p>
-<p align="center">Freakomant</p>
-<p align="center">Fryguy9</p>
-<p align="center">furkannnO</p>
-<p align="center">fwbx529</p>
-<p align="center">gaccount</p>
-<p align="center">GalacManta</p>
-<p align="center">gamemasterty</p>
-<p align="center">Geno</p>
-<p align="center">Ghorre</p>
-<p align="center">Glitchstorm</p>
-<p align="center">Goholtramor</p>
-<p align="center">Grazloth</p>
-<p align="center">GreenMJ13</p>
-<p align="center">grelf</p>
-<p align="center">Guy</p>
-<p align="center">gvaiou</p>
-<p align="center">HeinQuek</p>
-<p align="center">HellTest</p>
-<p align="center">Heronimo2</p>
-<p align="center">heyitsdross</p>
-<p align="center">hiimahotdog</p>
-<p align="center">homebrewer54</p>
-<p align="center">Hotspot</p>
-<p align="center">iam10ninjas</p>
-<p align="center">Ignus</p>
-<p align="center">Igorogi</p>
-<p align="center">iluxa4000</p>
-<p align="center">Ilya</p>
-<p align="center">ivanovichkoslov</p>
-<p align="center">j8ner</p>
-<p align="center">jabberok</p>
-<p align="center">Jakeb2002</p>
-<p align="center">Jenetikitty</p>
-<p align="center">JezuzLizard</p>
-<p align="center">JGChan</p>
-<p align="center">jgchan29</p>
-<p align="center">Joa</p>
-<p align="center">johnharveybc</p>
-<p align="center">johnleprude</p>
-<p align="center">johny_blaze</p>
-<p align="center">jonny0panic</p>
-<p align="center">Just1pirate</p>
-<p align="center">Just1pirate</p>
-<p align="center">kabuto44</p>
-<p align="center">Kacper</p>
-<p align="center">Kain</p>
-<p align="center">Kanra</p>
-<p align="center">Kaos</p>
-<p align="center">Keben</p>
-<p align="center">kiluh</p>
-<p align="center">KRIEG</p>
-<p align="center">Kroll</p>
-<p align="center">kuerti</p>
-<p align="center">KuraTheDog</p>
-<p align="center">Kurt-bookboy</p>
-<p align="center">KyonLevic</p>
-<p align="center">Lailoken</p>
-<p align="center">Lapare</p>
-<p align="center">Lavi04</p>
-<p align="center">Lavi04</p>
-<p align="center">Lead Luigi</p>
-<p align="center">LeoB516</p>
-<p align="center">LeoC.II</p>
-<p align="center">lesd</p>
-<p align="center">lesdruides</p>
-<p align="center">Liraso</p>
-<p align="center">Lollipop</p>
-<p align="center">lordulster</p>
-<p align="center">Luio2revenge</p>
-<p align="center">lvl 1 crook</p>
-<p align="center">magnanimousCynic</p>
-<p align="center">Magnusly</p>
-<p align="center">ManDude33</p>
-<p align="center">mangafreak140</p>
-<p align="center">mangaking118</p>
-<p align="center">MarioFanaticXV</p>
-<p align="center">masteff</p>
-<p align="center">Masterzan</p>
-<p align="center">Matrix4767</p>
-<p align="center">Max Schradin</p>
-<p align="center">Maya</p>
-<p align="center">McguyverZero</p>
-<p align="center">Mechaflood</p>
-<p align="center">Merp</p>
-<p align="center">Milkopilko</p>
-<p align="center">mpeechee</p>
-<p align="center">Mr.Celedown</p>
-<p align="center">MrGerman</p>
-<p align="center">mrothorr</p>
-<p align="center">myogin</p>
-<p align="center">Mysticman89</p>
-<p align="center">MythWiz_</p>
-<p align="center">nakota</p>
-<p align="center">Namelessname</p>
-<p align="center">NateMcCloud</p>
-<p align="center">Necrodoom</p>
-<p align="center">NecroXD</p>
-<p align="center">Neutral Potato</p>
-<p align="center">NeutralPotato</p>
-<p align="center">Nizidramaniiyt</p>
-<p align="center">noonomoon</p>
-<p align="center">NTWgreatest</p>
-<p align="center">NTWgrinder</p>
-<p align="center">oholoko</p>
-<p align="center">Okami</p>
-<p align="center">okunderground</p>
-<p align="center">onianinara</p>
-<p align="center">Onoxious</p>
-<p align="center">Origin</p>
-<p align="center">oswarlan</p>
-<p align="center">OvenBakedGod</p>
-<p align="center">Paah</p>
-<p align="center">pacmanlite</p>
-<p align="center">Palamazzi</p>
-<p align="center">Parasitez83</p>
-<p align="center">Piezza24</p>
-<p align="center">pizza_troll</p>
-<p align="center">pkal</p>
-<p align="center">plaaosert</p>
-<p align="center">player2aj</p>
-<p align="center">Polibus</p>
-<p align="center">Popington</p>
-<p align="center">primal cradily</p>
-<p align="center">Proxy</p>
-<p align="center">pseudobyte</p>
-<p align="center">PseudonymousBosh</p>
-<p align="center">Pyxl</p>
-<p align="center">q1235<p></p>
-<p align="center">raato</p>
-<p align="center">Rade</p>
-<p align="center">RageBall</p>
-<p align="center">RastlinV</p>
-<p align="center">RebelKeithy</p>
-<p align="center">Redd</p>
-<p align="center">Redd</p>
-<p align="center">Regulus</p>
-<p align="center">Reknot</p>
-<p align="center">RetroDerpSquid9</p>
-<p align="center">rhaek7</p>
-<p align="center">Rustle Crowe</p>
-<p align="center">Ryonir</p>
-<p align="center">saitenhieb</p>
-<p align="center">SamGooBat</p>
-<p align="center">Sandworm</p>
-<p align="center">Sas Assassin</p>
-<p align="center">Sc0rp</p>
-<p align="center">Sefa</p>
-<p align="center">Seyliz</p>
-<p align="center">Shantie</p>
-<p align="center">shayner12</p>
-<p align="center">Sheer</p>
-<p align="center">Sho Phaune</p>
-<p align="center">Skulled190</p>
-<p align="center">Slakkarn</p>
-<p align="center">Slakkarn</p>
-<p align="center">slantfer</p>
-<p align="center">solidifiedmind</p>
-<p align="center">somarilnos</p>
-<p align="center">SomeoneLucas</p>
-<p align="center">Soulrift</p>
-<p align="center">Space Troll</p>
-<p align="center">spamtraprus</p>
-<p align="center">Spanosa</p>
-<p align="center">SRT</p>
-<p align="center">StAUG</p>
-<p align="center">stmlee</p>
-<p align="center">Stoner Claff</p>
-<p align="center">Sum Yung Gai</p>
-<p align="center">sunk</p>
-<p align="center">Suranis</p>
-<p align="center">swim</p>
-<p align="center">Synthini</p>
-<p align="center">Sythen2014</p>
-<p align="center">tangyifei</p>
-<p align="center">Tanny</p>
-<p align="center">Taxiway</p>
-<p align="center">tbrown30</p>
-<p align="center">Teabagger Vance</p>
-<p align="center">Technosaurus</p>
-<p align="center">Tenebricosus</p>
-<p align="center">Tenyasha</p>
-<p align="center">ThatGuy</p>
-<p align="center">The Homa</p>
-<p align="center">ThePeon</p>
-<p align="center">Thorian</p>
-<p align="center">toifel131</p>
-<p align="center">Tornadobird</p>
-<p align="center">torskenn</p>
-<p align="center">trevYT</p>
-<p align="center">Trewq_</p>
-<p align="center">TrostNi</p>
-<p align="center">Tskami_ek</p>
-<p align="center">Tyler</p>
-<p align="center">ukulelejongetje<p></p>
-<p align="center">UndeadAbbys</p>
-<p align="center">Uni</p>
-<p align="center">Username</p>
-<p align="center">uwnim</p>
-<p align="center">Valentin</p>
-<p align="center">Versine</p>
-<p align="center">VilgefortzPL</p>
-<p align="center">Vince</p>
-<p align="center">waga baba bobo</p>
-<p align="center">WaitingIdly</p>
-<p align="center">waterfire425</p>
-<p align="center">websterguy</p>
-<p align="center">Weedheter</p>
-<p align="center">Wlerin</p>
-<p align="center">Wolf415</p>
-<p align="center">wolfsblood</p>
-<p align="center">woopemgood</p>
-<p align="center">WynneYilmaz</p>
-<p align="center">xemima</p>
-<p align="center">XenosHg</p>
-<p align="center">Xentha</p>
-<p align="center">XenTwo</p>
-<p align="center">xeperiset</p>
-<p align="center">Xikre</p>
-<p align="center">Xorious</p>
-<p align="center">Xpt14</p>
-<p align="center">xXRochforteXx</p>
-<p align="center">Yarilo</p>
-<p align="center">ydc1017902176</p>
-<p align="center">yob</p>
-<p align="center">Zange</p>
-<p align="center">Zaraza</p>
-<p align="center">Zariars</p>
-<p align="center">Zeckenschwarm</p>
-<p align="center">Zeen</p>
-<p align="center">Zelphh1</p>
-<p align="center">Zepto</p>
-<p align="center">zionhian</p>
-<p align="center">Zyllyn</p>
-<p align="center">Zylon</p>
-<p align="center">Дикий Речной Пёс</p>
-</marquee>
-<style>
-.html-marquee {
-  height:14px;
-  width:160px;
-  background-color:Black;
-  font-family:Cursive;
-  font-size:14px;
-  color:#98AFC7;
-  font-weight:bold;
-  border-width:1;
-  border-style:solid;
-  border-color:Black;
-}
-</style>
-<script>
-function myFunction(e) {
-  var copyText = e.next();
-  if (isOS()) {
-        var textElement = copyText[0];
-        var editable = textElement.contentEditable;
-        var readOnly = textElement.readOnly;
-        textElement.contentEditable = true;
-        textElement.readOnly = false;
-        var range = document.createRange();
-        range.selectNodeContents(textElement);
-        var selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textElement.setSelectionRange(0, 999999);
-        textElement.contentEditable = editable;
-        textElement.readOnly = readOnly;
-    } else {
-        copyText.select();
-    }
-  document.execCommand('copy');
-}
- function isOS() {
-    return navigator.userAgent.match(/ipad|iphone/i);
-}
-</script>
-<div align="center">
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0" alt="visitor counter"></a>
-</body>
+	<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
+		<tbody>
+			<tr>
+				<td style="padding:0.2em 0.5em;">
+					<FONT color=#98AFC7> | <a href="/Resources"
+							research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds">
+							<FONT color=#98AFC7>Resources
+						</a> | <a href="/Reset" research="Reset - Abdication - Reincarnation">
+							<FONT color=#98AFC7>Soft Resets
+						</a> | <a href="/BuildingAlignments" research="Building Alignments">
+							<FONT color=#98AFC7>Buildings
+						</a> | <a href="/Heritages" research="Faction Heritages">
+							<FONT color=#98AFC7>Heritages
+						</a> | <a href="/Bloodline" research="Faction Bloodlines" class="mw-redirect">
+							<FONT color=#98AFC7>Bloodlines
+						</a>
+						| <a href="/Spells" research="Spells and Tier unlock Times">
+							<FONT color=#98AFC7>Spells
+						</a> | <a href="/Artifacts" research="Excavations">
+							<FONT color=#98AFC7>Excavations
+						</a> | <a href="/Challenges" research="Complete list of Challenges and descriptions">
+							<FONT color=#98AFC7>Challenges
+						</a> | <a href="/Upgrades" research="Upgrades">
+							<FONT color=#98AFC7>Upgrades
+						</a> | <a href="/TrophyPage" research="Complete list of Trophies and descriptions">
+							<FONT color=#98AFC7>Trophies
+						</a>
+						| <a href="/Factions" research="Factions">
+							<FONT color=#98AFC7>Factions
+						</a> | <a href="/Research" research="The Research Facilities - Short and long names">
+							<FONT color=#98AFC7>Research
+						</a> |
+						<p> | <a href="/MercBuilds" research="Mercenary Builds">
+								<FONT color=#98AFC7>Merc Builds
+							</a> | <a href="/ResearchBuilds" research="Research Builds">
+								<FONT color=#98AFC7>Research Builds
+							</a> | <a href="/PBuilds" research="Evil and Good Prestige Builds">
+								<FONT color=#98AFC7>Prestige Builds
+							</a> | <a href="/R40-R46" research="Ascension Builds">
+								<FONT color=#98AFC7>Dragon Unlock
+							</a> | <a href="/R47-R60" research="Neutral Prestige Builds">
+								<FONT color=#98AFC7>Neutral Prestige Builds
+							</a> | <a href="/Researchtree" research="Complete list of Research and descriptions">
+								<FONT color=#98AFC7>Research Tree
+							</a> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a
+									research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Vanilla Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a
+									research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>">
+									<FONT color=#98AFC7>Good Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a
+									research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon">
+									<FONT color=#98AFC7>Evil Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a
+									research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Neutral Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon">
+									<FONT color=#98AFC7>Prestige Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers">
+									<FONT color=#98AFC7>A2 Elite Factions
+								</a> </span> |
+						</p>
+						| <a href="/Events" research="Events">
+							<FONT color=#98AFC7>Events
+						</a> | <a href="/Changes" research="Latest Major Patch">
+							<FONT color=#98AFC7>Latest Major Patch
+						</a> | <a href="/Changelog" research="Changelog">
+							<FONT color=#98AFC7>Changelog
+						</a> | <a href="/Notation" research="Short - Scientific - Engineering">
+							<FONT color=#98AFC7>Notation
+						</a> | <a href="/Terminology" research="Commonly used terms and abbreviations">
+							<FONT color=#98AFC7>Terminology
+						</a> | <a href="/Tools"
+							research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki">
+							<FONT color=#98AFC7>Tools
+						</a> | <a href="/Kong" research="Help">
+							<FONT color=#98AFC7>Kongregate Links
+						</a> |
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a
+									href="/FairyFaction" research="Fairy (Good)">
+									<FONT color=#98AFC7>Fairy
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a
+									href="/ElfFaction" research="Elf (Good)">
+									<FONT color=#98AFC7>Elven
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a
+									href="/AngelFaction" research="Angel (Good)">
+									<FONT color=#98AFC7>Angel
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a
+									href="/GoblinFaction" research="Goblin (Evil)">
+									<FONT color=#98AFC7>Goblin
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a
+									href="/UndeadFaction" research="Undead (Evil)">
+									<FONT color=#98AFC7>Undead
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a
+									href="/DemonFaction" research="Demon (Evil)">
+									<FONT color=#98AFC7>Demon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a
+									href="/TitanFaction" research="Titan (Neutral)">
+									<FONT color=#98AFC7>Titan
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a
+									href="/DruidFaction" research="Druid (Neutral)">
+									<FONT color=#98AFC7>Druid
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a
+									href="/FacelessFaction" research="Faceless (Neutral)">
+									<FONT color=#98AFC7>Faceless
+								</a> </span> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									href="/MercenaryFaction" research="Mercenary">
+									<FONT color=#98AFC7>Mercenary
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a
+									href="/DwarfFaction" research="Dwarf (Good Prestige)">
+									<FONT color=#98AFC7>Dwarf
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a
+									href="/DrowFaction" research="Drow (Evil Prestige)">
+									<FONT color=#98AFC7>Drow
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a
+									href="/DragonFaction" research="Dragon (Neutral Prestige)">
+									<FONT color=#98AFC7>Dragon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a
+									href="/ArchonFaction" research="Archon (A2 Elite)">
+									<FONT color=#98AFC7>Archon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a
+									href="/DjinnFaction" research="Djinn (A2 Elite)">
+									<FONT color=#98AFC7>Djinn
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a
+									href="/MakersFaction" research="Makers (A2 Elite)">
+									<FONT color=#98AFC7>Makers
+								</a> </span> |
+						</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p align="center">
+		<FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/">
+				<FONT color=#98AFC7><b>G00FBALL</b></font>
+			</a>
+	</p>
+	<div align="center">
+		<FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
+			<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
+				<p align="center">5ku||3d</p>
+				<p align="center">6000j</p>
+				<p align="center">7636kei</p>
+				<p align="center">Aaborg</p>
+				<p align="center">Aaron Cook</p>
+				<p align="center">acbdefgfedbca</p>
+				<p align="center">acer4321</p>
+				<p align="center">Ach3ck</p>
+				<p align="center">AJZ3</p>
+				<p align="center">AKL</p>
+				<p align="center">Alright</p>
+				<p align="center">Altoscholto</p>
+				<p align="center">Amirin</p>
+				<p align="center">Anathah</p>
+				<p align="center">AndreikaD</p>
+				<p align="center">Antendren</p>
+				<p align="center">apocal_88</p>
+				<p align="center">arcanmster</p>
+				<p align="center">Archmage</p>
+				<p align="center">arintayn2</p>
+				<p align="center">ARTEZZ</p>
+				<p align="center">art-of-dom</p>
+				<p align="center">ash1soccer</p>
+				<p align="center">Ashthar</p>
+				<p align="center">aurora</p>
+				<p align="center">aviv</p>
+				<p align="center">Azua</p>
+				<p align="center">Bearpaws</p>
+				<p align="center">BigGeak</p>
+				<p align="center">bigshawnt</p>
+				<p align="center">BillK14</p>
+				<p align="center">BionicFrog</p>
+				<p align="center">BioRules</p>
+				<p align="center">blackbird</p>
+				<p align="center">Blackeye</p>
+				<p align="center">Blue</p>
+				<p align="center">bobbert</p>
+				<p align="center">Boffo</p>
+				<p align="center">Book909</p>
+				<p align="center">boss_mc</p>
+				<p align="center">Boyo</p>
+				<p align="center">brc48632</p>
+				<p align="center">Breeze</p>
+				<p align="center">btzeroes</p>
+				<p align="center">burninglegion64</p>
+				<p align="center">BuzzMarzz</p>
+				<p align="center">CafeMaker</p>
+				<p align="center">CamoBrie</p>
+				<p align="center">capito27</p>
+				<p align="center">Chaos</p>
+				<p align="center">Chaosmancer7</p>
+				<p align="center">chaosmarine4226</p>
+				<p align="center">CheeseWitch</p>
+				<p align="center">chris</p>
+				<p align="center">chrispi</p>
+				<p align="center">CHRullz</p>
+				<p align="center">Ck</p>
+				<p align="center">CluelessWonder</p>
+				<p align="center">Coal_CC</p>
+				<p align="center">ColdDrake13</p>
+				<p align="center">Corgi</p>
+				<p align="center">cralo</p>
+				<p align="center">Cromedome</p>
+				<p align="center">Cromieplays</p>
+				<p align="center">Curunur</p>
+				<p align="center">Cyden</p>
+				<p align="center">Da Banana Man</p>
+				<p align="center">DainDwarf</p>
+				<p align="center">Damxacer1</p>
+				<p align="center">Dariof4</p>
+				<p align="center">DED SERVER</p>
+				<p align="center">Delichtig</p>
+				<p align="center">Dienes</p>
+				<p align="center">djones0823</p>
+				<p align="center">djru8ix</p>
+				<p align="center">Doubleshoe</p>
+				<p align="center">dox4242</p>
+				<p align="center">DR</p>
+				<p align="center">Draven</p>
+				<p align="center">Drogor</p>
+				<p align="center">drseilzug</p>
+				<p align="center">EagleAgg03</p>
+				<p align="center">Ebilkill</p>
+				<p align="center">ehyder</p>
+				<p align="center">eleganceseraph</p>
+				<p align="center">ElJay</p>
+				<p align="center">Eltro</p>
+				<p align="center">Enexplogen</p>
+				<p align="center">ensteffahn</p>
+				<p align="center">ErrolErrolson</p>
+				<p align="center">escalon</p>
+				<p align="center">Essigschurke</p>
+				<p align="center">Evengrey</p>
+				<p align="center">Exsanguine</p>
+				<p align="center">FastHit</p>
+				<p align="center">FedeJossa</p>
+				<p align="center">Fire</p>
+				<p align="center">Flameslinger01</p>
+				<p align="center">Fonzoland</p>
+				<p align="center">Franelas</p>
+				<p align="center">Freakomant</p>
+				<p align="center">Fryguy9</p>
+				<p align="center">furkannnO</p>
+				<p align="center">fwbx529</p>
+				<p align="center">gaccount</p>
+				<p align="center">GalacManta</p>
+				<p align="center">gamemasterty</p>
+				<p align="center">Geno</p>
+				<p align="center">Ghorre</p>
+				<p align="center">Glitchstorm</p>
+				<p align="center">Goholtramor</p>
+				<p align="center">Grazloth</p>
+				<p align="center">GreenMJ13</p>
+				<p align="center">grelf</p>
+				<p align="center">Guy</p>
+				<p align="center">gvaiou</p>
+				<p align="center">HeinQuek</p>
+				<p align="center">HellTest</p>
+				<p align="center">Heronimo2</p>
+				<p align="center">heyitsdross</p>
+				<p align="center">hiimahotdog</p>
+				<p align="center">homebrewer54</p>
+				<p align="center">Hotspot</p>
+				<p align="center">iam10ninjas</p>
+				<p align="center">Ignus</p>
+				<p align="center">Igorogi</p>
+				<p align="center">iluxa4000</p>
+				<p align="center">Ilya</p>
+				<p align="center">ivanovichkoslov</p>
+				<p align="center">j8ner</p>
+				<p align="center">jabberok</p>
+				<p align="center">Jakeb2002</p>
+				<p align="center">Jenetikitty</p>
+				<p align="center">JezuzLizard</p>
+				<p align="center">JGChan</p>
+				<p align="center">jgchan29</p>
+				<p align="center">Joa</p>
+				<p align="center">johnharveybc</p>
+				<p align="center">johnleprude</p>
+				<p align="center">johny_blaze</p>
+				<p align="center">jonny0panic</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">kabuto44</p>
+				<p align="center">Kacper</p>
+				<p align="center">Kain</p>
+				<p align="center">Kanra</p>
+				<p align="center">Kaos</p>
+				<p align="center">Keben</p>
+				<p align="center">kiluh</p>
+				<p align="center">KRIEG</p>
+				<p align="center">Kroll</p>
+				<p align="center">kuerti</p>
+				<p align="center">KuraTheDog</p>
+				<p align="center">Kurt-bookboy</p>
+				<p align="center">KyonLevic</p>
+				<p align="center">Lailoken</p>
+				<p align="center">Lapare</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lead Luigi</p>
+				<p align="center">LeoB516</p>
+				<p align="center">LeoC.II</p>
+				<p align="center">lesd</p>
+				<p align="center">lesdruides</p>
+				<p align="center">Liraso</p>
+				<p align="center">Lollipop</p>
+				<p align="center">lordulster</p>
+				<p align="center">Luio2revenge</p>
+				<p align="center">lvl 1 crook</p>
+				<p align="center">magnanimousCynic</p>
+				<p align="center">Magnusly</p>
+				<p align="center">ManDude33</p>
+				<p align="center">mangafreak140</p>
+				<p align="center">mangaking118</p>
+				<p align="center">MarioFanaticXV</p>
+				<p align="center">masteff</p>
+				<p align="center">Masterzan</p>
+				<p align="center">Matrix4767</p>
+				<p align="center">Max Schradin</p>
+				<p align="center">Maya</p>
+				<p align="center">McguyverZero</p>
+				<p align="center">Mechaflood</p>
+				<p align="center">Merp</p>
+				<p align="center">Milkopilko</p>
+				<p align="center">mpeechee</p>
+				<p align="center">Mr.Celedown</p>
+				<p align="center">MrGerman</p>
+				<p align="center">mrothorr</p>
+				<p align="center">myogin</p>
+				<p align="center">Mysticman89</p>
+				<p align="center">MythWiz_</p>
+				<p align="center">nakota</p>
+				<p align="center">Namelessname</p>
+				<p align="center">NateMcCloud</p>
+				<p align="center">Necrodoom</p>
+				<p align="center">NecroXD</p>
+				<p align="center">Neutral Potato</p>
+				<p align="center">NeutralPotato</p>
+				<p align="center">Nizidramaniiyt</p>
+				<p align="center">noonomoon</p>
+				<p align="center">NTWgreatest</p>
+				<p align="center">NTWgrinder</p>
+				<p align="center">oholoko</p>
+				<p align="center">Okami</p>
+				<p align="center">okunderground</p>
+				<p align="center">onianinara</p>
+				<p align="center">Onoxious</p>
+				<p align="center">Origin</p>
+				<p align="center">oswarlan</p>
+				<p align="center">OvenBakedGod</p>
+				<p align="center">Paah</p>
+				<p align="center">pacmanlite</p>
+				<p align="center">Palamazzi</p>
+				<p align="center">Parasitez83</p>
+				<p align="center">Piezza24</p>
+				<p align="center">pizza_troll</p>
+				<p align="center">pkal</p>
+				<p align="center">plaaosert</p>
+				<p align="center">player2aj</p>
+				<p align="center">Polibus</p>
+				<p align="center">Popington</p>
+				<p align="center">primal cradily</p>
+				<p align="center">Proxy</p>
+				<p align="center">pseudobyte</p>
+				<p align="center">PseudonymousBosh</p>
+				<p align="center">Pyxl</p>
+				<p align="center">q1235
+				<p></p>
+				<p align="center">raato</p>
+				<p align="center">Rade</p>
+				<p align="center">RageBall</p>
+				<p align="center">RastlinV</p>
+				<p align="center">RebelKeithy</p>
+				<p align="center">Redd</p>
+				<p align="center">Redd</p>
+				<p align="center">Regulus</p>
+				<p align="center">Reknot</p>
+				<p align="center">RetroDerpSquid9</p>
+				<p align="center">rhaek7</p>
+				<p align="center">Rustle Crowe</p>
+				<p align="center">Ryonir</p>
+				<p align="center">saitenhieb</p>
+				<p align="center">SamGooBat</p>
+				<p align="center">Sandworm</p>
+				<p align="center">Sas Assassin</p>
+				<p align="center">Sc0rp</p>
+				<p align="center">Sefa</p>
+				<p align="center">Seyliz</p>
+				<p align="center">Shantie</p>
+				<p align="center">shayner12</p>
+				<p align="center">Sheer</p>
+				<p align="center">Sho Phaune</p>
+				<p align="center">Skulled190</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">slantfer</p>
+				<p align="center">solidifiedmind</p>
+				<p align="center">somarilnos</p>
+				<p align="center">SomeoneLucas</p>
+				<p align="center">Soulrift</p>
+				<p align="center">Space Troll</p>
+				<p align="center">spamtraprus</p>
+				<p align="center">Spanosa</p>
+				<p align="center">SRT</p>
+				<p align="center">StAUG</p>
+				<p align="center">stmlee</p>
+				<p align="center">Stoner Claff</p>
+				<p align="center">Sum Yung Gai</p>
+				<p align="center">sunk</p>
+				<p align="center">Suranis</p>
+				<p align="center">swim</p>
+				<p align="center">Synthini</p>
+				<p align="center">Sythen2014</p>
+				<p align="center">tangyifei</p>
+				<p align="center">Tanny</p>
+				<p align="center">Taxiway</p>
+				<p align="center">tbrown30</p>
+				<p align="center">Teabagger Vance</p>
+				<p align="center">Technosaurus</p>
+				<p align="center">Tenebricosus</p>
+				<p align="center">Tenyasha</p>
+				<p align="center">ThatGuy</p>
+				<p align="center">The Homa</p>
+				<p align="center">ThePeon</p>
+				<p align="center">Thorian</p>
+				<p align="center">toifel131</p>
+				<p align="center">Tornadobird</p>
+				<p align="center">torskenn</p>
+				<p align="center">trevYT</p>
+				<p align="center">Trewq_</p>
+				<p align="center">TrostNi</p>
+				<p align="center">Tskami_ek</p>
+				<p align="center">Tyler</p>
+				<p align="center">ukulelejongetje
+				<p></p>
+				<p align="center">UndeadAbbys</p>
+				<p align="center">Uni</p>
+				<p align="center">Username</p>
+				<p align="center">uwnim</p>
+				<p align="center">Valentin</p>
+				<p align="center">Versine</p>
+				<p align="center">VilgefortzPL</p>
+				<p align="center">Vince</p>
+				<p align="center">waga baba bobo</p>
+				<p align="center">WaitingIdly</p>
+				<p align="center">waterfire425</p>
+				<p align="center">websterguy</p>
+				<p align="center">Weedheter</p>
+				<p align="center">Wlerin</p>
+				<p align="center">Wolf415</p>
+				<p align="center">wolfsblood</p>
+				<p align="center">woopemgood</p>
+				<p align="center">WynneYilmaz</p>
+				<p align="center">xemima</p>
+				<p align="center">XenosHg</p>
+				<p align="center">Xentha</p>
+				<p align="center">XenTwo</p>
+				<p align="center">xeperiset</p>
+				<p align="center">Xikre</p>
+				<p align="center">Xorious</p>
+				<p align="center">Xpt14</p>
+				<p align="center">xXRochforteXx</p>
+				<p align="center">Yarilo</p>
+				<p align="center">ydc1017902176</p>
+				<p align="center">yob</p>
+				<p align="center">Zange</p>
+				<p align="center">Zaraza</p>
+				<p align="center">Zariars</p>
+				<p align="center">Zeckenschwarm</p>
+				<p align="center">Zeen</p>
+				<p align="center">Zelphh1</p>
+				<p align="center">Zepto</p>
+				<p align="center">zionhian</p>
+				<p align="center">Zyllyn</p>
+				<p align="center">Zylon</p>
+				<p align="center">Дикий Речной Пёс</p>
+			</marquee>
+			<style>
+				.html-marquee {
+					height: 14px;
+					width: 160px;
+					background-color: Black;
+					font-family: Cursive;
+					font-size: 14px;
+					color: #98AFC7;
+					font-weight: bold;
+					border-width: 1;
+					border-style: solid;
+					border-color: Black;
+				}
+			</style>
+			<script>
+				function myFunction(e) {
+					var copyText = e.next();
+					if (isOS()) {
+						var textElement = copyText[0];
+						var editable = textElement.contentEditable;
+						var readOnly = textElement.readOnly;
+						textElement.contentEditable = true;
+						textElement.readOnly = false;
+						var range = document.createRange();
+						range.selectNodeContents(textElement);
+						var selection = window.getSelection();
+						selection.removeAllRanges();
+						selection.addRange(range);
+						textElement.setSelectionRange(0, 999999);
+						textElement.contentEditable = editable;
+						textElement.readOnly = readOnly;
+					} else {
+						copyText.select();
+					}
+					document.execCommand('copy');
+				}
+				function isOS() {
+					return navigator.userAgent.match(/ipad|iphone/i);
+				}
+			</script>
+			<div align="center">
+				<a href="https://www.cutercounter.com/" target="_blank"><img
+						src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0"
+						alt="visitor counter"></a>
+				</body>
+
 </html>

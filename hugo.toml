@@ -1,4 +1,4 @@
-baseURL = 'http://naw.ramiel.cc/realm/'
+baseURL = 'http://naw.ramiel.cc/'
 languageCode = 'en-us'
 title = 'NaW hugo'
 disablePathToLower = true

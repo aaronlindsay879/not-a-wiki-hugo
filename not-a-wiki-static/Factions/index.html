@@ -1,391 +1,439 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
 <head>
-<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css"/>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js" integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw==" crossorigin="anonymous"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
-<title>G00F's Not a Wiki </title>
-<meta charset="UTF-8">
-<meta name="keywords" content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward"/>
-<style>
+	<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/scripts/common.css" />
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+		integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw=="
+		crossorigin="anonymous"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
+	<title>G00F's Not a Wiki </title>
+	<meta charset="UTF-8">
+	<meta name="keywords"
+		content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward" />
+	<style>
 		table.Faction {
 			border-collapse: collapse;
 		}
-		.Faction th,.Faction td {
+
+		.Faction th,
+		.Faction td {
 			border: 2px solid black;
-		padding: 3px;
+			padding: 3px;
 		}
+
 		.Faction td {
 			font-weight: bold;
-		padding: 10px;
+			padding: 10px;
 		}
-	   .gsc-cursor-page  {
-		padding-right: 10px;
-	   }
+
+		.gsc-cursor-page {
+			padding-right: 10px;
+		}
 	</style>
-<style>
+	<style>
 		table.ManaColors {
 			border-collapse: collapse;
 		}
-		.ManaColors th,.ManaColors td {
+
+		.ManaColors th,
+		.ManaColors td {
 			border: 3px solid black;
 		}
+
 		.ManaColors td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
-</style>
-<style>
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
+	</style>
+	<style>
 		table.numtable {
 			border-collapse: collapse;
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
-		.numtable th,.numtable td {
+
+		.numtable th,
+		.numtable td {
 			border: 3px solid #4c5b86;
 		}
+
 		.numtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
+	<style>
 		table.imgtable {
 			border-collapse: collapse;
 		}
-		.imgtable th,.imgtable td {
+
+		.imgtable th,
+		.imgtable td {
 			border: none;
 		}
+
 		.imgtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
-	.black_overlay {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		z-index: 1001;
-		-moz-opacity: 0.8;
-		opacity: .80;
-		filter: alpha(opacity=80);
-	}
+	<style>
+		.black_overlay {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index: 1001;
+			-moz-opacity: 0.8;
+			opacity: .80;
+			filter: alpha(opacity=80);
+		}
 
-	.white_content {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 99%;
-		height: 50%;
-		padding: 16px;
-		border: 1px solid orange;
-		background-color: white;
-		z-index: 1002;
-		overflow: auto;
-	}
-</style>
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 99%;
+			height: 50%;
+			padding: 16px;
+			border: 1px solid orange;
+			background-color: white;
+			z-index: 1002;
+			overflow: auto;
+		}
+	</style>
 
-<script>
-	$(document).ready(function () {
-		$("#Expand").on("hide.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
-		});
-		$("#Expand").on("show.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
-		});
-	});
-</script>
-<script>
-	(function ($) {
+	<script>
 		$(document).ready(function () {
-			$("[research]").style_my_tooltips();
+			$("#Expand").on("hide.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
+			});
+			$("#Expand").on("show.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
+			});
 		});
-	})(jQuery);
-</script>
-<script type="text/javascript">
-	function shohid(e) {
-		//$('.autohide').not(e.next()).hide();
-		$(e).parents('.autohide').show();
-		$(e).next().toggle();
-	}
-</script>
-<div id="outer">
-	<div id="parent">
-		<div id="header" align="center">
+	</script>
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[research]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+		function shohid(e) {
+			//$('.autohide').not(e.next()).hide();
+			$(e).parents('.autohide').show();
+			$(e).next().toggle();
+		}
+	</script>
+	<div id="outer">
+		<div id="parent">
+			<div id="header" align="center">
+			</div>
 		</div>
-	</div>
-	<div id="navbox">
-		<div class="menu">
-			<ul>
-				<li><a href="/realm/Challenges" research="A complete list of Challenges and their requirements in image map form">Challenges</a>
-					<!--[if lte IE 6]>
+		<div id="navbox">
+			<div class="menu">
+				<ul>
+					<li><a href="/Challenges"
+							research="A complete list of Challenges and their requirements in image map form">Challenges</a>
+						<!--[if lte IE 6]>
 					<a href="#">Category one
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/Fairy" research="All Fairy Challenges">Fairy</a>
-						<li><a href="/realm/Elf" research="All Elven Challenges">Elven</a>
-						<li><a href="/realm/Angel" research="All Angel Challenges">Angel</a>
-						<li><a href="/realm/Goblin" research="All Goblin Challenges">Goblin</a>
-						<li><a href="/realm/Undead" research="All Undead Challenges">Undead</a>
-						<li><a href="/realm/Demon" research="All Demon Challenges">Demon</a>
-						<li><a href="/realm/Titan" research="All Titan Challenges">Titan</a>
-						<li><a href="/realm/Druid" research="All Druid Challenges">Druid</a>
-						<li><a href="/realm/Faceless" research="All Faceless Challenges">Faceless</a>
-						<li><a href="/realm/Dwarf" research="All Dwarven Challenges">Dwarven</a>
-						<li><a href="/realm/Drow" research="All Drow Challenges">Drow</a>
-						<li><a href="/realm/Dragons" research="All Dragon Challenges">Dragon</a>
-						<li><a href="/realm/Archon" research="All Archon Challenges">Archon</a>
-						<li><a href="/realm/Djinn" research="All Djinn Challenges">Djinn</a>
-						<li><a href="/realm/Makers" research="All Makers Challenges">Makers</a>
-						<li><a href="/realm/Mercenary" research="All Mercenary Challenges">Mercenary</a>
-							<ul>
-							</ul>
-							<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/Fairy" research="All Fairy Challenges">Fairy</a>
+							<li><a href="/Elf" research="All Elven Challenges">Elven</a>
+							<li><a href="/Angel" research="All Angel Challenges">Angel</a>
+							<li><a href="/Goblin" research="All Goblin Challenges">Goblin</a>
+							<li><a href="/Undead" research="All Undead Challenges">Undead</a>
+							<li><a href="/Demon" research="All Demon Challenges">Demon</a>
+							<li><a href="/Titan" research="All Titan Challenges">Titan</a>
+							<li><a href="/Druid" research="All Druid Challenges">Druid</a>
+							<li><a href="/Faceless" research="All Faceless Challenges">Faceless</a>
+							<li><a href="/Dwarf" research="All Dwarven Challenges">Dwarven</a>
+							<li><a href="/Drow" research="All Drow Challenges">Drow</a>
+							<li><a href="/Dragons" research="All Dragon Challenges">Dragon</a>
+							<li><a href="/Archon" research="All Archon Challenges">Archon</a>
+							<li><a href="/Djinn" research="All Djinn Challenges">Djinn</a>
+							<li><a href="/Makers" research="All Makers Challenges">Makers</a>
+							<li><a href="/Mercenary" research="All Mercenary Challenges">Mercenary</a>
+								<ul>
+								</ul>
+								<!--[if lte IE 6]>
 							</td></tr></table>
 							</a>
 							<![endif]-->
-						</li>
-					</ul>
-					<!--[if lte IE 6]>
+							</li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/TrophyPage" research="A complete list of Trophies and their requirements in image map form">Trophies</a>
-				</li>
-				<li><a href="/realm/Factions">Factions</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/TrophyPage"
+							research="A complete list of Trophies and their requirements in image map form">Trophies</a>
+					</li>
+					<li><a href="/Factions">Factions</a>
+						<!--[if lte IE 6]>
 					<a href="#">CATEGORY THREE
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/FairyFaction" research="Fairy">Fairy</a></li>
-						<li><a href="/realm/ElfFaction" research="Elven">Elven</a></li>
-						<li><a href="/realm/AngelFaction" research="Angel">Angel</a></li>
-						<li><a href="/realm/GoblinFaction" research="Goblin">Goblin</a></li>
-						<li><a href="/realm/UndeadFaction" research="Undead">Undead</a></li>
-						<li><a href="/realm/DemonFaction" research="Demon">Demon</a></li>
-						<li><a href="/realm/TitanFaction" research="Titan">Titan</a></li>
-						<li><a href="/realm/DruidFaction" research="Druid">Druid</a></li>
-						<li><a href="/realm/FacelessFaction" research="Faceless">Faceless</a></li>
-						<li><a href="/realm/DwarfFaction" research="Dwarven">Dwarven</a></li>
-						<li><a href="/realm/DrowFaction" research="Drow">Drow</a></li>
-						<li><a href="/realm/DragonFaction" research="Dragon">Dragon</a></li>
-						<li><a href="/realm/MercenaryFaction" research="Mercenary">Mercenary</a></li>
-						<li><a href="/realm/ArchonFaction" research="Archon">Archon</a></li>
-						<li><a href="/realm/DjinnFaction" research="Djinn">Djinn</a></li>
-						<li><a href="/realm/MakersFaction" research="Makers">Makers</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/FairyFaction" research="Fairy">Fairy</a></li>
+							<li><a href="/ElfFaction" research="Elven">Elven</a></li>
+							<li><a href="/AngelFaction" research="Angel">Angel</a></li>
+							<li><a href="/GoblinFaction" research="Goblin">Goblin</a></li>
+							<li><a href="/UndeadFaction" research="Undead">Undead</a></li>
+							<li><a href="/DemonFaction" research="Demon">Demon</a></li>
+							<li><a href="/TitanFaction" research="Titan">Titan</a></li>
+							<li><a href="/DruidFaction" research="Druid">Druid</a></li>
+							<li><a href="/FacelessFaction" research="Faceless">Faceless</a></li>
+							<li><a href="/DwarfFaction" research="Dwarven">Dwarven</a></li>
+							<li><a href="/DrowFaction" research="Drow">Drow</a></li>
+							<li><a href="/DragonFaction" research="Dragon">Dragon</a></li>
+							<li><a href="/MercenaryFaction" research="Mercenary">Mercenary</a></li>
+							<li><a href="/ArchonFaction" research="Archon">Archon</a></li>
+							<li><a href="/DjinnFaction" research="Djinn">Djinn</a></li>
+							<li><a href="/MakersFaction" research="Makers">Makers</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Artifacts" research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Artifacts"
+							research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
+						<!--[if lte IE 6]>
 					<a href="#">category 4
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
-						<li><a href="/realm/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
+							<li><a href="/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Research">Research</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Research">Research</a>
+						<!--[if lte IE 6]>
 					<a href="#">EXPLORER
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/ResearchList" research="Research List">Research List</a>
-						<li><a href="/realm/Researchtree" research="Research Tree">Research Tree</a></li>
-						<li><a href="/realm/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/ResearchList" research="Research List">Research List</a>
+							<li><a href="/Researchtree" research="Research Tree">Research Tree</a></li>
+							<li><a href="/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Notation">Notation</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Notation">Notation</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/PremiumUpgrades/">Premium</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/PremiumUpgrades/">Premium</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="parent">
-		<div id="leftcolumn">
-			<div id="leftbox">
+					</li>
+				</ul>
 			</div>
-			<div id="navcontainer">
-				<ul id="navlist">
-				  <li id="active"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+		</div>
+
+		<div id="parent">
+			<div id="leftcolumn">
+				<div id="leftbox">
+				</div>
+				<div id="navcontainer">
+					<ul id="navlist">
+						<li id="active">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-					<li id="active"><a href="/realm" id="current">Home</a></li>
-					<li id="active"><a href="/realm/GuestBook/gbook.php" id="current">G00F's<br/>not a Guest Book</a></li>
-					<li id="active"><a href="/realm/SiteMap/" id="current">Sitemap</a></li>
-					<li id="active"><a href="/realm/Kong">Kongregate Links</a></li>
-					<li id="active"><a href="/realm/WallofShame">Wall of Shame</a></li>
-					<li id="active"><a href="/realm/Changes/" id="current">Latest Major Patch</a></li>
-					<li id="active"><a href="/realm/Changelog">Changelog</a></li>
-					<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder Discord</a></li>
-					<P align="center">The Game
-					<li id="active"><a href="/realm/GameWindow">Game Window</a></li>
-					<li id="active"><a href="/realm/Notation">Notation</a></li>
-					<li id="active"><a href="/realm/Terminology">Terminology<br/>HotKeys</a></li>
-					<li id="active"><a href="/realm/RNG/" id="current">Random Number Generator</a></li>
-					<li id="active"><a href="/realm/Reset">Abdication<br/>Reincarnation<br/>Ascension</a></li>
-					<li id="active"><a href="/realm/Ascension2">Ascension 2</a></li>
-					<li id="active"><a href="/realm/Ascension4">Ascension 4</a></li>
-					<li id="active"><a href="/realm/Events">Events</a></li>
-					<P align="center">Tools and Guides
-					<li id="active"><a href="/realm/Tools">Realm Grinder Tools</a></li>
-					<li id="active"><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners Guide </a></li>
-					<li id="active"><a href="/realm/TrophyGuide">Trophy Guide</a></li>
-					<li id="active"><a href="/realm/R16Guide">R16 Research Guide</a></li>
-					<P align="center">Upgrades
-					<li id="active"><a href="/realm/Upgrades">Misc Upgrades</a></li>
-					<li id="active"><a href="/realm/BuildingAlignments">Building Alignments</a></li>
-					<li id="active"><a href="/realm/BuildingUpgrades">Building Upgrades</a></li>
-					<li id="active"><a href="/realm/PremiumUpgrades">Premium Upgrades</a></li>
-					<li id="active"><a href="/realm/Rubies">Rubies</a></li>
-					<li id="active"><a href="/realm/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a></li>
-					<li id="active"><a href="/realm/Factions">Factions</a></li>
-					<li id="active"><a href="/realm/FactionUpgrades">Faction Upgrades</a></li>
-					<li id="active"><a href="/realm/Spells">Spells</a></li>
-					<li id="active"><a href="/realm/Heritages">Heritages</a></li>
-					<li id="active"><a href="/realm/Artifacts/">Artifacts</a></li>
-					<li id="active"><a href="/realm/Challenges/">Challenges</a></li>
-					<li id="active"><a href="/realm/Bloodline">Bloodlines</a></li>
-					<li id="active"><a href="/realm/Research">Research</a></li>
-					<li id="active"><a href="/realm/Researchtree">Research Tree</a></li>
-					<li id="active"><a href="/realm/SunForce">Sun Force</a></li>
-					<li id="active"><a href="/realm/SpellTiers">Spell Tiers</a></li>
-					<li id="active"><a href="/realm/Lineages">Lineages</a></li>
-					<li id="active"><a href="/realm/ArtifactSet">Artifact Sets</a></li>
-					<li id="active"><a href="/realm/Legacies">Legacies</a></li>
-					<P align="center">Builds
-					<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/realm/A0_Plot.png">A0 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/MercBuilds" research="Mercenaries">R3-R16 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/ResearchBuilds" research="Research">R16-R29 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/PBuilds" research="Prestige Research">R30-R39 Builds <span style="color:gold">(Not updated for v4.2)</span></span></a></li>
-					<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/realm/A1_Plot.png">A1 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R40-R46" research="Ascension 1">R40-R46 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R47-R60" research="Dragons">R47-R59 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R60-R75" research="Lineages">R60-R75 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R75Plus" research="Mercenary Research">R75-R99 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/realm/A2_Plot.png">A2 Plot</a></li>
-					<li id="active"><a href="/realm/R100Plus" research="Ascension 2">R100-R115 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
-					<li id="active"><a href="/realm/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
-					<li id="active"><a target="_blank" research="R160+ Guide" href="/realm/A3_Plot.png">A3 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
-					<li id="active"><a href="/realm/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>					
-					<li id="active"><a href="/realm/R220Plus" research="Ascension 4">R220+ Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+									border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+									width="1" height="1">
+							</form>
+						<li id="active"><a href="/realm" id="current">Home</a></li>
+						<li id="active"><a href="/GuestBook/gbook.php" id="current">G00F's<br />not a Guest Book</a>
+						</li>
+						<li id="active"><a href="/SiteMap/" id="current">Sitemap</a></li>
+						<li id="active"><a href="/Kong">Kongregate Links</a></li>
+						<li id="active"><a href="/WallofShame">Wall of Shame</a></li>
+						<li id="active"><a href="/Changes/" id="current">Latest Major Patch</a></li>
+						<li id="active"><a href="/Changelog">Changelog</a></li>
+						<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder
+								Discord</a></li>
+						<P align="center">The Game
+							<li id="active"><a href="/GameWindow">Game Window</a></li>
+							<li id="active"><a href="/Notation">Notation</a></li>
+							<li id="active"><a href="/Terminology">Terminology<br />HotKeys</a></li>
+							<li id="active"><a href="/RNG/" id="current">Random Number Generator</a></li>
+							<li id="active"><a href="/Reset">Abdication<br />Reincarnation<br />Ascension</a></li>
+							<li id="active"><a href="/Ascension2">Ascension 2</a></li>
+							<li id="active"><a href="/Ascension4">Ascension 4</a></li>
+							<li id="active"><a href="/Events">Events</a></li>
+						<P align="center">Tools and Guides
+							<li id="active"><a href="/Tools">Realm Grinder Tools</a></li>
+							<li id="active"><a target="_blank"
+									href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners
+									Guide </a></li>
+							<li id="active"><a href="/TrophyGuide">Trophy Guide</a></li>
+							<li id="active"><a href="/R16Guide">R16 Research Guide</a></li>
+						<P align="center">Upgrades
+							<li id="active"><a href="/Upgrades">Misc Upgrades</a></li>
+							<li id="active"><a href="/BuildingAlignments">Building Alignments</a></li>
+							<li id="active"><a href="/BuildingUpgrades">Building Upgrades</a></li>
+							<li id="active"><a href="/PremiumUpgrades">Premium Upgrades</a></li>
+							<li id="active"><a href="/Rubies">Rubies</a></li>
+							<li id="active"><a href="/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a>
+							</li>
+							<li id="active"><a href="/Factions">Factions</a></li>
+							<li id="active"><a href="/FactionUpgrades">Faction Upgrades</a></li>
+							<li id="active"><a href="/Spells">Spells</a></li>
+							<li id="active"><a href="/Heritages">Heritages</a></li>
+							<li id="active"><a href="/Artifacts/">Artifacts</a></li>
+							<li id="active"><a href="/Challenges/">Challenges</a></li>
+							<li id="active"><a href="/Bloodline">Bloodlines</a></li>
+							<li id="active"><a href="/Research">Research</a></li>
+							<li id="active"><a href="/Researchtree">Research Tree</a></li>
+							<li id="active"><a href="/SunForce">Sun Force</a></li>
+							<li id="active"><a href="/SpellTiers">Spell Tiers</a></li>
+							<li id="active"><a href="/Lineages">Lineages</a></li>
+							<li id="active"><a href="/ArtifactSet">Artifact Sets</a></li>
+							<li id="active"><a href="/Legacies">Legacies</a></li>
+						<P align="center">Builds
+							<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/A0_Plot.png">A0 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/MercBuilds" research="Mercenaries">R3-R16 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/ResearchBuilds" research="Research">R16-R29 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/PBuilds" research="Prestige Research">R30-R39 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></span></a></li>
+							<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/A1_Plot.png">A1 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R40-R46" research="Ascension 1">R40-R46 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R47-R60" research="Dragons">R47-R59 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R60-R75" research="Lineages">R60-R75 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R75Plus" research="Mercenary Research">R75-R99 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/A2_Plot.png">A2
+									Plot</a></li>
+							<li id="active"><a href="/R100Plus" research="Ascension 2">R100-R115 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
+							<li id="active"><a href="/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
+							<li id="active"><a target="_blank" research="R160+ Guide" href="/A3_Plot.png">A3 Plot <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
+							<li id="active"><a href="/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R220Plus" research="Ascension 4">R220+ Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
 
 					</ul>
+				</div>
+			</div>
+			<div id="rightcolumn">
+				<div class="rightbox">
+					<div class="rightboxcontent">
+						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img
+								src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
 					</div>
-					</div>
-					<div id="rightcolumn">
-					<div class="rightbox">
-				  <div class="rightboxcontent">
-						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
-					</div>
-					</div>
-<p><img src="http://musicfamily.org/realm/Factions/picks/FactionGrid.png" usemap="#FactionGrid-map">
+				</div>
+				<p><img src="http://musicfamily.org/realm/Factions/picks/FactionGrid.png" usemap="#FactionGrid-map">
 
-<map name="FactionGrid-map">
-	<area href="http://musicfamily.org/realm/FairyFaction/" research="
+					<map name="FactionGrid-map">
+						<area href="http://musicfamily.org/realm/FairyFaction/" research="
 <p><b>Fairy</b></p>
 <p>Fairies focus on the small and common things and make them magically powerful.</p>
 <p>Affiliating yourself with the Fairy faction will hugely improve the output of lower tier buildings.</p>
 <p>Part of the Good Vanilla Factions, the Fairies can cheaply build the 3 first Tier buildings, thus boosting perks based on amount of buildings, and help get some of the building trophy series.</p>
 <p>With their spell upgrade, they can magically multiply the amount of assistants, which combined with other perks can become a very strong asset.</p>
 	" coords="4,4,58,58" shape="rect">
-	<area href="http://musicfamily.org/realm/ElfFaction/" research="
+						<area href="http://musicfamily.org/realm/ElfFaction/" research="
 <p><b>Elven</b></p>
 <p>Elves are masters of efficiency and expertise, taking the best results from every single action.</p>
 <p>Affiliating yourself with the Elves faction will dramatically boost your clicking rewards while forsaking passive production.</p>
 <p>Part of the Good Vanilla Factions, the Elven Faction increase click reward and the chance to find faction coins.</p>
 <p>They can help you to get the Click and Faction coins trophies series. Their spell upgrade will relieve you from the necessity of manual clicking and let you aim for the Treasure Trophies series while idling.</p>
 	" coords="64,4,118,58" shape="rect">
-	<area href="http://musicfamily.org/realm/AngelFaction/" research="
+						<area href="http://musicfamily.org/realm/AngelFaction/" research="
 <p><b>Angel</b></p>
 <p>Angels' ability with magic is unparalleled as they have the innate power to infuse mana into everything they touch.</p>
 <p>Affiliating yourself with the Angels faction will grant you nearly unlimited spell power and the ability to take advantage of it directly.</p>
 <p>Part of the Good Vanilla Factions, Angels empower mana and spells, and thus can help when aiming for the mana and spell trophy series.</p>
 <p>Their Bloodline increases Mana Regeneration based on spells cast this game.</p>
 	" coords="124,4,178,58" shape="rect">
-	<area href="http://musicfamily.org/realm/GoblinFaction/" research="
+						<area href="http://musicfamily.org/realm/GoblinFaction/" research="
 <p><b>Goblin</b></p>
 <p>The sly Goblins excel at making the best possible deals and bargains.</p>
 <p>Affiliating yourself with the Goblins faction will vastly increase the potential of your Tax Collection spell.</p>
 <p>Part of the Evil Vanilla Factions, the Goblin's asset is the ability to empower the Tax collection spell, therefore boosting both their production and the production of Faction Coins.</p>
 <p>Their Bloodline will be valuable when aiming for all the building trophy series.</p>
 	" coords="184,4,238,58" shape="rect">
-	<area href="http://musicfamily.org/realm/UndeadFaction/" research="
+						<area href="http://musicfamily.org/realm/UndeadFaction/" research="
 <p><b>Undead</b></p>
 <p>Undeads are resilient and tireless, but most importantly, they can't die.</p>
 <p>Affiliating yourself with the Undead faction will grant you a steady flow of production which increases drastically as time passes.</p>
 <p>Part of the Evil Vanilla Factions, the Undead become more powerful with time.</p>
 <p>Their Heritage and Bloodline give assistants based on playtime and reincarnations and is more frequently used in late games.</p>
 	" coords="244,4,298,58" shape="rect">
-	<area href="http://musicfamily.org/realm/DemonFaction/" research="
+						<area href="http://musicfamily.org/realm/DemonFaction/" research="
 <p><b>Demon</b></p>
 <p>The mighty and fearless Demons cannot bother with petty trifles, they only care for greatness and power.</p>
 <p>Affiliating yourself with the Demons faction will hugely improve the output of higher tier buildings.</p>
 <p>Part of the Evil Vanilla Factions, the Demons are related to increasing production of highest tier buildings and have perks based on the amount of trophies unlocked.</p>
 <p>Their Bloodline boosts the production bonus of gems based on how much time you spent with the Evil alignment this reincarnation.</p>
 	" coords="304,4,358,58" shape="rect">
-	<area href="http://musicfamily.org/realm/TitanFaction/" research="
+						<area href="http://musicfamily.org/realm/TitanFaction/" research="
 <p><b>Titan</b></p>
 <p>Titans were an ancient race of giant creatures with godlike powers and millennial knowledge.</p>
 <p>Affiliating yourself with the Titans faction means big numbers: they will boost every aspect of your economy to unimaginable values.</p>
@@ -393,608 +441,782 @@
 <p>Both the Titans' Bloodline and Heritage boost your production based on how many Royal Exchanges you have purchased in this abdication.</p>
 <p>Their Faction spell is based on luck and can become very powerful.</p>
 	" coords="4,64,58,118" shape="rect">
-	<area href="http://musicfamily.org/realm/DruidFaction/" research="
+						<area href="http://musicfamily.org/realm/DruidFaction/" research="
 <p><b>Druid</b></p>
 <p>The wise Druids of old were a group of people from all races who strove to maintain world balance with mystical discipline and powerful magic.</p>
 <p>Affiliating yourself with the Druids faction will boost your magic capabilities and reward balancing of all things.</p>
 <p>Part of the Neutral Faction, the Druids feature a considerably nice Heritage that increases max mana, and their bloodline increase mana regeneration based on your max mana.</p>
 <p>Their final Challenge reward extends their spell to affect more buildings.</p>
 	" coords="64,64,118,118" shape="rect">
-	<area href="http://musicfamily.org/realm/FacelessFaction/" research="
+						<area href="http://musicfamily.org/realm/FacelessFaction/" research="
 <p><b>Faceless</b></p>
 <p>Little is known about the Faceless, but it is said they did not possess individual minds, instead they were all connected to a central consciousness which governed all their choices and behaviours.</p>
 <p>Affiliating yourself to the Faceless Faction will boost your production based on your past choices while giving progressively better bonuses.</p>
 <p>Part of the Neutral Faction, the Faceless feature perks that becomes stronger with time.</p>
 <p>Their Heritage is based on the highest amount of buildings owned in the current reincarnation, and thus can easily be improved by doing a Goblin-line run.</p>
 	" coords="124,64,178,118" shape="rect">
-	<area href="http://musicfamily.org/realm/DwarfFaction/" research="
+						<area href="http://musicfamily.org/realm/DwarfFaction/" research="
 <p><b>Dwarven</b></p>
 <p>The Dwarves make the best masons, artisans and blacksmiths in all the realms. Their creations will outlast anything made by other races... except for beer, that is.</p>
 <p>The Dwarven faction focus on boosting production based on how many times you excavated this Reincarnation.</p>
 <p>Part of the Prestige Faction, the Dwarven Faction appears in addition to a good faction and enables the player to use all the 2 faction spells and 18 upgrades and from both the Good and Dwarven factions.</p>
 <p>The Dwarven faction cannot be combined with Evil or Neutral Factions, nor is there Research Tree for Dwarven.</p>
 	" coords="184,64,238,118" shape="rect">
-	<area href="http://musicfamily.org/realm/DrowFaction/" research="
+						<area href="http://musicfamily.org/realm/DrowFaction/" research="
 <p><b>Drow</b></p>
 <p>The Drows believe that any crime can go unpunished if nobody notices you did it. They value and praise perfect executions, and will reward those who plan accordingly.</p>
 <p>The Drow faction focus on boosting offline production, and boosting production based on offline production.</p>
 <p>Part of the Prestige Faction, the Drow Faction appears in addition to an Evil faction, this enables the player to use all the 2 faction spells and 18 upgrades and from both the Evil and Drow factions.</p>
 <p>The Drow faction cannot be combined with Good or Neutral Factions, nor is there Research Tree for Drow.</p>
 	" coords="244,64,298,118" shape="rect">
-	<area href="http://musicfamily.org/realm/DragonFaction/" research="
+						<area href="http://musicfamily.org/realm/DragonFaction/" research="
 <p><b>Dragon</b></p>
 <p>The Dragon is the mightiest, most imposing creature of all the realms. None may stand a chance alone against a Dragon, not even the firecest of heroes.</p>
 <p>They usually care little for the lower creatures, but you have piqued their interest.</p>
 <p>Part of the Prestige Faction, the Dragon Faction appears in addition to an Neutral faction, this enables the player to use all the 2 faction spells and 18 upgrades and from both the Neutral and Dragon factions.</p>
 <p>The Dragon faction cannot be combined with Good or Evil. Unlocking the Dragon faction requires 46 Reincarnations and can be done by completing a series of quests.</p>
 	" coords="304,64,358,118" shape="rect">
-	<area href="http://musicfamily.org/realm/ArchonFaction" research="
+						<area href="http://musicfamily.org/realm/ArchonFaction" research="
 <p><b>Archon</b></p>
 <p>The Archon value loyalty and any systematic and efficient plan of action.</p>
 <p>Affiliating with them will increase your ability to boost your production immensely over long periods of time.</p>
 	" coords="4,124,58,178" shape="rect">
-	<area href="http://musicfamily.org/realm/DjinnFaction" research="
+						<area href="http://musicfamily.org/realm/DjinnFaction" research="
 <p><b>Djinn</b></p>
 <p>A magical race of ephemeral and elusive beings, unbound by natural rules but instead commanding them.</p>
 <p>Affiliating with them will grant you the ability to manipulate random outcomes to your advantage.</p>
 	" coords="64,124,118,178" shape="rect">
-	<area href="http://musicfamily.org/realm/MakersFaction" research="
+						<area href="http://musicfamily.org/realm/MakersFaction" research="
 <p><b>Makers</b></p>
 <p>The legendary old race which is said to have created the world, their watchful eye aims to keep all forces in check.</p>
 <p>Affiliating with them will increase your ability to dominate all your resources.</p>
 	" coords="124,124,178,178" shape="rect">
-	<area href="http://musicfamily.org/realm/MercenaryFaction/" research="
+						<area href="http://musicfamily.org/realm/MercenaryFaction/" research="
 <p><b>Mercenary</b></p>
 <p>When a mercenary crosses your path, there's only one thing that can save your life: offer him more money than he can get by killing you.</p>
 <p>If you gain the favor of the mercenaries, you will be able to combine the power of all races at once.</p>
 <p>Available in all alignments, The Mercenaries can combine the power of the existing factions: Lets you choose 2 spells and 3x4 faction upgrades enabling you to create a custom cross-faction build.</p>
 <p>Unlocking the Mercenaries Requires 3 reincarnations and can be done in different game plays.</p>
 	" coords="184,124,238,178" shape="rect">
-</map>
-<p><b>Factions</b></p>
-<p>There are several types of Factions:</p>
-<p>- <b>Vanilla</b>: includes the Good factions (Fairy, Elf and Angel) & Evil factions (Goblin, Undead and Demon)</p>
-<p>- <b>Neutral</b>: includes Titan, Druid and Faceless</p>
-<p>- <b>Prestige</b>: includes Dwarven, Drow and much later on, Dragon</p>
-<p>- <b>Mercenary</b></p>
-<p>- <b>Elite</b>: includes Archon, Djinn and Makers.</p>
-</br>
-<p>The Vanilla Factions show up by default but the others first need to be unlocked. Once unlocked they will stay unlocked throughout all Abdications and Reincarnations.</p>
-<p>To affiliate with a Faction, you first need to choose their Alignment.</p>
-<p>This makes all the Factions of that alignment available, and you can then choose which one to join.</p>
-<p><b>Note</b>: Vanilla and Neutral Factions are together referred as <b>Base Factions</b>.</p>
-<p><b>Note</b>: The icons used in the below section are the Faction's <b>Trade Treaties</b>, their first Faction upgrade.</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/FairyFaction"><img src="http://musicfamily.org/realm/Factions/picks/FairyTradeTreaty.png" alt="Fairy"></a> Fairy</p>
-<p><b>Requirement</b>: Proof of Good Deed</p>
-<p><b>Cost</b>: Free with 0 gems, 20 Fairy Coins with any gems</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/ElfFaction"><img src="http://musicfamily.org/realm/Factions/picks/ElvenTradeTreaty.png"></a> Elven</p>
-<p><b>Requirement</b>: Proof of Good Deed</p>
-<p><b>Cost</b>: 20 Elven Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Elven Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/AngelFaction"><img src="http://musicfamily.org/realm/Factions/picks/AngelTradeTreaty.png"></a> Angel</p>
-<p><b>Requirement</b>: Proof of Good Deed
-<p><b>Cost</b>: 20 Angel Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Angel Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/GoblinFaction"><img src="http://musicfamily.org/realm/Factions/picks/GoblinTradeTreaty.png"></a> Goblin</p>
-<p><b>Requirement</b>: Proof of Evil Deed</p>
-<p><b>Cost</b>: Free with 0 gems, 20 Goblin Coins with any gems</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Goblin Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/UndeadFaction"><img src="http://musicfamily.org/realm/Factions/picks/UndeadTradeTreaty.png"></a> Undead</p>
-<p><b>Requirement</b>: Proof of Evil Deed</p>
-<p><b>Cost</b>: 20 Undead Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Undead Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DemonFaction"><img src="http://musicfamily.org/realm/Factions/picks/DemonTradeTreaty.png"></a> Demon</p>
-<p><b>Requirement</b>: Proof of Evil Deed</p>
-<p><b>Cost</b>: 20 Demon Coins.</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Demon Coins</p>
-<hr>
-<p><b>Neutral Factions</b></p>
-<p><a href="http://musicfamily.org/realm/TitanFaction"><img src="http://musicfamily.org/realm/Factions/picks/TitanTradeTreaty.png"></a> Titan</p>
-<p><b>Unlock Requirement</b>: Fragment of a Titan Statue (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Neutrality</p>
-<p><b>Cost</b>: 250 Angel Coins, 250 Goblin Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Angel & Goblin Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DruidFaction"><img src="http://musicfamily.org/realm/Factions/picks/DruidTradeTreaty.png"></a> Druid</p>
-<p><b>Unlock Requirement</b>: Druidic Runestone (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Neutrality</p>
-<p><b>Cost</b>: 250 Elven Coins, 250 Demon Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Elven & Demon Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/FacelessFaction"><img src="http://musicfamily.org/realm/Factions/picks/FacelessTradeTreaty.png"></a> Faceless</p>
-<p><b>Unlock Requirement</b>: Octopus Shaped Spine (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Neutrality</p>
-<p><b>Cost</b>: 250 Fairy Coins, 250 Undead Coins</p>
-<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy & Undead Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DwarfFaction"><img src="http://musicfamily.org/realm/Factions/picks/DwarvenTradeTreaty.png"></a> Dwarven</p>
-<p><b>Unlock Requirement</b>: Sturdy Bearded Man's Quest (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Good Deed, Alliance upgrade of the Good Base Faction, Underworld Diplomacy (only R0-R2)</p>
-<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
-<p><b>Cost</b> 3,000 Dwarven Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DrowFaction"><img src="http://musicfamily.org/realm/Factions/picks/DrowTradeTreaty.png"></a> Drow</p>
-<p><b>Unlock Requirement</b>: Cloaked Shady Figure's Quest (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Evil Deed, Alliance upgrade of the Evil Base Faction, Underworld Diplomacy (only R0-R2)</p>
-<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
-<p><b>Cost</b> 3,000 Drow Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DragonFaction"><img src="http://musicfamily.org/realm/Factions/picks/DragonTradeTreaty.png"></a> Dragon</p>
-<p><b>Unlock Requirement</b>: Elder Dragon (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Neutrality, Alliance upgrade of the Neutral Base Faction</p>
-<p><b>Available</b>: R46-R99, R116-R219, R235+</p>
-<p><b>Cost</b>: 5 B (5e9) Dwarven & Drow Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/MercenaryFaction"><img src="http://musicfamily.org/realm/Factions/picks/MercenaryFirstContract.png"></a> Mercenary</p>
-<p><b>Unlock Requirement R3+</b>: Mercenary Tribute (only needs to be bought once)</p>
-<p><b>Unlock Requirement R160+</b>: Mercenary Duel (only needs to be bought once)</p>
-<p><b>Alignment: Any</b></p>
-<p><b>Available</b>: R3-R99, R160-R219</p>
-<p><b>Cost</b> 50 Spd (5e55), A1+: Free</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/ArchonFaction"><img src="http://musicfamily.org/realm/Factions/picks/ArchonTradeTreaty.png"></a> Archon</p>
-<p><b>Unlock Requirement</b>: Archon Quest (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Order, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
-<p><b>Cost</b>: 1 Oc (1e27) Angel & Undead Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/DjinnFaction"><img src="http://musicfamily.org/realm/Factions/picks/DjinnTradeTreaty.png"></a> Djinn</p>
-<p><b>Unlock Requirement</b>: Djinn Quest (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Chaos, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
-<p><b>Cost</b>: 1 Oc (1e27) Fairy & Demon Coins</p>
-<hr>
-<p><a href="http://musicfamily.org/realm/MakersFaction"><img src="http://musicfamily.org/realm/Factions/picks/MakersTradeTreaty.png"></a> Makers</p>
-<p><b>Unlock Requirement</b>: Makers Quest (only needs to be bought once)</p>
-<p><b>Requirement</b>: Proof of Balance, Union upgrades of both Base & Prestige Faction</p>
-<p><b>Available</b>: R125-R219</p>
-<p><b>Cost</b>: 1 Oc (1e27) Elven & Goblin Coins</p>
-<hr>
-<p><b>Historical Background</b></p>
-<p>Good Factions are oriented to a more active game-play, focusing on spells and treasure clicks.</p>
-<p>Evil Factions are oriented to a more idle game-play, focusing on steady and passive building production.</p>
-<p>The Neutral Factions were added in the Ancient Races expansion, they cover a mixture both active and passive game-play and may offer faster advancement than Good and Evil factions. Neutral Factions are only available once you have reached billion gems and fulfilled certain requirements.</p>
-<p>Part of the Underworld expansion, Prestige Factions are purchased in "addition to" a Vanilla faction of the same alignment. They enable the player to combine the power from both the Vanilla and Prestige factions.</p>
-<p>Mercenaries were added in the After-life expansion as an ultimate powerhouse.</p>
-<p>Elite Factions were added in v3.4, they are paired with the additional alignment unlocked in Ascension 2 and will be able to stack upon a base and prestige factions, for a total of three affiliations simultaneously.</p>
-<hr>
-<p><b>Faction Spell & Upgrades</b></p>
-<p>Each Faction has its own Faction specific spell and 3x3 Tier upgrades (3x4 for Mercenaries). The Tier upgrades only show up in order, so when you buy Tier 1 then Tier 2 will show up and then Tier 3, and hence cannot be bought before.</p>
-<p>Each Faction also has its own symbol and color code.</p>
-<p>In the first column are the Tier 1 upgrades, in the second, Tier 2 and third, Tier 3 upgrades. </p>
-<p>The first colored upgrade of each tier cost Faction coins and they unlock the 3 following upgrades.</p>
-<p>These upgrades are exclusive faction upgrades and cost usual coins.</p>
-<p>Early game, it is advised to quickly affiliate with each Faction at least once, because for each Faction, purchasing 12 faction upgrades (this includes faction treaty) once grants their Faction Champion trophy, which in turn rewards their exclusive and universal <a href="http://musicfamily.org/realm/Heritages"><b>Heritage upgrade</b></a>.</p>
-<p>Also, the quantity of bought faction upgrades is tracked throughout reincarnations and it is required to unlock Bloodline upgrades.</p>
-<p>PS: In order to simplify notation, instead of using the individual names of each Faction upgrade, we generally identify them numerically. e.g.: DD5 = Druid(2,3) means: In the 2nd Tier, the third secondary Tier upgrade, belonging to Druid. (which is an upgrade named Shapeshifting), more info about the terminology can be found <a href="http://musicfamily.org/realm/Terminology/"><b>here</a></b>.</p>
-</div>
-<div id="footer">
-</div>
-</div>
-</div>
-<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
-<tbody>
-<tr>
-<td style="padding:0.2em 0.5em;">
-<FONT color=#98AFC7> | <a href="/realm/Resources" research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds"><FONT color=#98AFC7>Resources</a> | <a href="/realm/Reset" research="Reset - Abdication - Reincarnation"><FONT color=#98AFC7>Soft Resets</a> | <a href="/realm/BuildingAlignments" research="Building Alignments"><FONT color=#98AFC7>Buildings</a> | <a href="/realm/Heritages" research="Faction Heritages"><FONT color=#98AFC7>Heritages</a> | <a href="/realm/Bloodline" research="Faction Bloodlines" class="mw-redirect"><FONT color=#98AFC7>Bloodlines</a>
- | <a href="/realm/Spells" research="Spells and Tier unlock Times"><FONT color=#98AFC7>Spells</a> | <a href="/realm/Artifacts" research="Excavations"><FONT color=#98AFC7>Excavations</a>  | <a href="/realm/Challenges" research="Complete list of Challenges and descriptions"><FONT color=#98AFC7>Challenges</a> | <a href="/realm/Upgrades" research="Upgrades"><FONT color=#98AFC7>Upgrades</a> | <a href="/realm/TrophyPage" research="Complete list of Trophies and descriptions"><FONT color=#98AFC7>Trophies</a>
- | <a href="/realm/Factions" research="Factions"><FONT color=#98AFC7>Factions</a> | <a href="/realm/Research" research="The Research Facilities - Short and long names"><FONT color=#98AFC7>Research</a> |
-<p> | <a href="/realm/MercBuilds" research="Mercenary Builds"><FONT color=#98AFC7>Merc Builds</a> | <a href="/realm/ResearchBuilds" research="Research Builds"><FONT color=#98AFC7>Research Builds</a> | <a href="/realm/PBuilds" research="Evil and Good Prestige Builds"><FONT color=#98AFC7>Prestige Builds</a> | <a href="/realm/R40-R46" research="Ascension Builds"><FONT color=#98AFC7>Dragon Unlock</a> | <a href="/realm/R47-R60" research="Neutral Prestige Builds"><FONT color=#98AFC7>Neutral Prestige Builds</a> | <a href="/realm/Researchtree" research="Complete list of Research and descriptions"><FONT color=#98AFC7>Research Tree</a> |
-</p>
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Vanilla Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>"><FONT color=#98AFC7>Good Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon"><FONT color=#98AFC7>Evil Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Neutral Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon"><FONT color=#98AFC7>Prestige Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers"><FONT color=#98AFC7>A2 Elite Factions</a> </span> |
-</p>
- | <a href="/realm/Events" research="Events"><FONT color=#98AFC7>Events</a>  | <a href="/realm/Changes" research="Latest Major Patch"><FONT color=#98AFC7>Latest Major Patch</a> | <a href="/realm/Changelog" research="Changelog"><FONT color=#98AFC7>Changelog</a> | <a href="/realm/Notation" research="Short - Scientific - Engineering"><FONT color=#98AFC7>Notation</a> |  <a href="/realm/Terminology" research="Commonly used terms and abbreviations"><FONT color=#98AFC7>Terminology</a> | <a href="/realm/Tools" research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki"><FONT color=#98AFC7>Tools</a> | <a href="/realm/Kong" research="Help"><FONT color=#98AFC7>Kongregate Links</a>  |
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a href="/realm/FairyFaction" research="Fairy (Good)"><FONT color=#98AFC7>Fairy</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a href="/realm/ElfFaction" research="Elf (Good)"><FONT color=#98AFC7>Elven</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a href="/realm/AngelFaction" research="Angel (Good)"><FONT color=#98AFC7>Angel</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a href="/realm/GoblinFaction" research="Goblin (Evil)"><FONT color=#98AFC7>Goblin</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a href="/realm/UndeadFaction" research="Undead (Evil)"><FONT color=#98AFC7>Undead</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a href="/realm/DemonFaction" research="Demon (Evil)"><FONT color=#98AFC7>Demon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a href="/realm/TitanFaction" research="Titan (Neutral)"><FONT color=#98AFC7>Titan</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a href="/realm/DruidFaction" research="Druid (Neutral)"><FONT color=#98AFC7>Druid</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a href="/realm/FacelessFaction" research="Faceless (Neutral)"><FONT color=#98AFC7>Faceless</a> </span> |
-</p>
-<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a href="/realm/MercenaryFaction" research="Mercenary"><FONT color=#98AFC7>Mercenary</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a href="/realm/DwarfFaction" research="Dwarf (Good Prestige)"><FONT color=#98AFC7>Dwarf</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a href="/realm/DrowFaction" research="Drow (Evil Prestige)"><FONT color=#98AFC7>Drow</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a href="/realm/DragonFaction" research="Dragon (Neutral Prestige)"><FONT color=#98AFC7>Dragon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a href="/realm/ArchonFaction" research="Archon (A2 Elite)"><FONT color=#98AFC7>Archon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a href="/realm/DjinnFaction" research="Djinn (A2 Elite)"><FONT color=#98AFC7>Djinn</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a href="/realm/MakersFaction" research="Makers (A2 Elite)"><FONT color=#98AFC7>Makers</a> </span> |
-</p>
-</td></tr></tbody></table>
-<p align="center"><FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/"><FONT color=#98AFC7><b>G00FBALL</b></font></a></p>
-<div align="center"><FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
-<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
-<p align="center">5ku||3d</p>
-<p align="center">6000j</p>
-<p align="center">7636kei</p>
-<p align="center">Aaborg</p>
-<p align="center">Aaron Cook</p>
-<p align="center">acbdefgfedbca</p>
-<p align="center">acer4321</p>
-<p align="center">Ach3ck</p>
-<p align="center">AJZ3</p>
-<p align="center">AKL</p>
-<p align="center">Alright</p>
-<p align="center">Altoscholto</p>
-<p align="center">Amirin</p>
-<p align="center">Anathah</p>
-<p align="center">AndreikaD</p>
-<p align="center">Antendren</p>
-<p align="center">apocal_88</p>
-<p align="center">arcanmster</p>
-<p align="center">Archmage</p>
-<p align="center">arintayn2</p>
-<p align="center">ARTEZZ</p>
-<p align="center">art-of-dom</p>
-<p align="center">ash1soccer</p>
-<p align="center">Ashthar</p>
-<p align="center">aurora</p>
-<p align="center">aviv</p>
-<p align="center">Azua</p>
-<p align="center">Bearpaws</p>
-<p align="center">BigGeak</p>
-<p align="center">bigshawnt</p>
-<p align="center">BillK14</p>
-<p align="center">BionicFrog</p>
-<p align="center">BioRules</p>
-<p align="center">blackbird</p>
-<p align="center">Blackeye</p>
-<p align="center">Blue</p>
-<p align="center">bobbert</p>
-<p align="center">Boffo</p>
-<p align="center">Book909</p>
-<p align="center">boss_mc</p>
-<p align="center">Boyo</p>
-<p align="center">brc48632</p>
-<p align="center">Breeze</p>
-<p align="center">btzeroes</p>
-<p align="center">burninglegion64</p>
-<p align="center">BuzzMarzz</p>
-<p align="center">CafeMaker</p>
-<p align="center">CamoBrie</p>
-<p align="center">capito27</p>
-<p align="center">Chaos</p>
-<p align="center">Chaosmancer7</p>
-<p align="center">chaosmarine4226</p>
-<p align="center">CheeseWitch</p>
-<p align="center">chris</p>
-<p align="center">chrispi</p>
-<p align="center">CHRullz</p>
-<p align="center">Ck</p>
-<p align="center">CluelessWonder</p>
-<p align="center">Coal_CC</p>
-<p align="center">ColdDrake13</p>
-<p align="center">Corgi</p>
-<p align="center">cralo</p>
-<p align="center">Cromedome</p>
-<p align="center">Cromieplays</p>
-<p align="center">Curunur</p>
-<p align="center">Cyden</p>
-<p align="center">Da Banana Man</p>
-<p align="center">DainDwarf</p>
-<p align="center">Damxacer1</p>
-<p align="center">Dariof4</p>
-<p align="center">DED SERVER</p>
-<p align="center">Delichtig</p>
-<p align="center">Dienes</p>
-<p align="center">djones0823</p>
-<p align="center">djru8ix</p>
-<p align="center">Doubleshoe</p>
-<p align="center">dox4242</p>
-<p align="center">DR</p>
-<p align="center">Draven</p>
-<p align="center">Drogor</p>
-<p align="center">drseilzug</p>
-<p align="center">EagleAgg03</p>
-<p align="center">Ebilkill</p>
-<p align="center">ehyder</p>
-<p align="center">eleganceseraph</p>
-<p align="center">ElJay</p>
-<p align="center">Eltro</p>
-<p align="center">Enexplogen</p>
-<p align="center">ensteffahn</p>
-<p align="center">ErrolErrolson</p>
-<p align="center">escalon</p>
-<p align="center">Essigschurke</p>
-<p align="center">Evengrey</p>
-<p align="center">Exsanguine</p>
-<p align="center">FastHit</p>
-<p align="center">FedeJossa</p>
-<p align="center">Fire</p>
-<p align="center">Flameslinger01</p>
-<p align="center">Fonzoland</p>
-<p align="center">Franelas</p>
-<p align="center">Freakomant</p>
-<p align="center">Fryguy9</p>
-<p align="center">furkannnO</p>
-<p align="center">fwbx529</p>
-<p align="center">gaccount</p>
-<p align="center">GalacManta</p>
-<p align="center">gamemasterty</p>
-<p align="center">Geno</p>
-<p align="center">Ghorre</p>
-<p align="center">Glitchstorm</p>
-<p align="center">Goholtramor</p>
-<p align="center">Grazloth</p>
-<p align="center">GreenMJ13</p>
-<p align="center">grelf</p>
-<p align="center">Guy</p>
-<p align="center">gvaiou</p>
-<p align="center">HeinQuek</p>
-<p align="center">HellTest</p>
-<p align="center">Heronimo2</p>
-<p align="center">heyitsdross</p>
-<p align="center">hiimahotdog</p>
-<p align="center">homebrewer54</p>
-<p align="center">Hotspot</p>
-<p align="center">iam10ninjas</p>
-<p align="center">Ignus</p>
-<p align="center">Igorogi</p>
-<p align="center">iluxa4000</p>
-<p align="center">Ilya</p>
-<p align="center">ivanovichkoslov</p>
-<p align="center">j8ner</p>
-<p align="center">jabberok</p>
-<p align="center">Jakeb2002</p>
-<p align="center">Jenetikitty</p>
-<p align="center">JezuzLizard</p>
-<p align="center">JGChan</p>
-<p align="center">jgchan29</p>
-<p align="center">Joa</p>
-<p align="center">johnharveybc</p>
-<p align="center">johnleprude</p>
-<p align="center">johny_blaze</p>
-<p align="center">jonny0panic</p>
-<p align="center">Just1pirate</p>
-<p align="center">Just1pirate</p>
-<p align="center">kabuto44</p>
-<p align="center">Kacper</p>
-<p align="center">Kain</p>
-<p align="center">Kanra</p>
-<p align="center">Kaos</p>
-<p align="center">Keben</p>
-<p align="center">kiluh</p>
-<p align="center">KRIEG</p>
-<p align="center">Kroll</p>
-<p align="center">kuerti</p>
-<p align="center">KuraTheDog</p>
-<p align="center">Kurt-bookboy</p>
-<p align="center">KyonLevic</p>
-<p align="center">Lailoken</p>
-<p align="center">Lapare</p>
-<p align="center">Lavi04</p>
-<p align="center">Lavi04</p>
-<p align="center">Lead Luigi</p>
-<p align="center">LeoB516</p>
-<p align="center">LeoC.II</p>
-<p align="center">lesd</p>
-<p align="center">lesdruides</p>
-<p align="center">Liraso</p>
-<p align="center">Lollipop</p>
-<p align="center">lordulster</p>
-<p align="center">Luio2revenge</p>
-<p align="center">lvl 1 crook</p>
-<p align="center">magnanimousCynic</p>
-<p align="center">Magnusly</p>
-<p align="center">ManDude33</p>
-<p align="center">mangafreak140</p>
-<p align="center">mangaking118</p>
-<p align="center">MarioFanaticXV</p>
-<p align="center">masteff</p>
-<p align="center">Masterzan</p>
-<p align="center">Matrix4767</p>
-<p align="center">Max Schradin</p>
-<p align="center">Maya</p>
-<p align="center">McguyverZero</p>
-<p align="center">Mechaflood</p>
-<p align="center">Merp</p>
-<p align="center">Milkopilko</p>
-<p align="center">mpeechee</p>
-<p align="center">Mr.Celedown</p>
-<p align="center">MrGerman</p>
-<p align="center">mrothorr</p>
-<p align="center">myogin</p>
-<p align="center">Mysticman89</p>
-<p align="center">MythWiz_</p>
-<p align="center">nakota</p>
-<p align="center">Namelessname</p>
-<p align="center">NateMcCloud</p>
-<p align="center">Necrodoom</p>
-<p align="center">NecroXD</p>
-<p align="center">Neutral Potato</p>
-<p align="center">NeutralPotato</p>
-<p align="center">Nizidramaniiyt</p>
-<p align="center">noonomoon</p>
-<p align="center">NTWgreatest</p>
-<p align="center">NTWgrinder</p>
-<p align="center">oholoko</p>
-<p align="center">Okami</p>
-<p align="center">okunderground</p>
-<p align="center">onianinara</p>
-<p align="center">Onoxious</p>
-<p align="center">Origin</p>
-<p align="center">oswarlan</p>
-<p align="center">OvenBakedGod</p>
-<p align="center">Paah</p>
-<p align="center">pacmanlite</p>
-<p align="center">Palamazzi</p>
-<p align="center">Parasitez83</p>
-<p align="center">Piezza24</p>
-<p align="center">pizza_troll</p>
-<p align="center">pkal</p>
-<p align="center">plaaosert</p>
-<p align="center">player2aj</p>
-<p align="center">Polibus</p>
-<p align="center">Popington</p>
-<p align="center">primal cradily</p>
-<p align="center">Proxy</p>
-<p align="center">pseudobyte</p>
-<p align="center">PseudonymousBosh</p>
-<p align="center">Pyxl</p>
-<p align="center">q1235<p></p>
-<p align="center">raato</p>
-<p align="center">Rade</p>
-<p align="center">RageBall</p>
-<p align="center">RastlinV</p>
-<p align="center">RebelKeithy</p>
-<p align="center">Redd</p>
-<p align="center">Redd</p>
-<p align="center">Regulus</p>
-<p align="center">Reknot</p>
-<p align="center">RetroDerpSquid9</p>
-<p align="center">rhaek7</p>
-<p align="center">Rustle Crowe</p>
-<p align="center">Ryonir</p>
-<p align="center">saitenhieb</p>
-<p align="center">SamGooBat</p>
-<p align="center">Sandworm</p>
-<p align="center">Sas Assassin</p>
-<p align="center">Sc0rp</p>
-<p align="center">Sefa</p>
-<p align="center">Seyliz</p>
-<p align="center">Shantie</p>
-<p align="center">shayner12</p>
-<p align="center">Sheer</p>
-<p align="center">Sho Phaune</p>
-<p align="center">Skulled190</p>
-<p align="center">Slakkarn</p>
-<p align="center">Slakkarn</p>
-<p align="center">slantfer</p>
-<p align="center">solidifiedmind</p>
-<p align="center">somarilnos</p>
-<p align="center">SomeoneLucas</p>
-<p align="center">Soulrift</p>
-<p align="center">Space Troll</p>
-<p align="center">spamtraprus</p>
-<p align="center">Spanosa</p>
-<p align="center">SRT</p>
-<p align="center">StAUG</p>
-<p align="center">stmlee</p>
-<p align="center">Stoner Claff</p>
-<p align="center">Sum Yung Gai</p>
-<p align="center">sunk</p>
-<p align="center">Suranis</p>
-<p align="center">swim</p>
-<p align="center">Synthini</p>
-<p align="center">Sythen2014</p>
-<p align="center">tangyifei</p>
-<p align="center">Tanny</p>
-<p align="center">Taxiway</p>
-<p align="center">tbrown30</p>
-<p align="center">Teabagger Vance</p>
-<p align="center">Technosaurus</p>
-<p align="center">Tenebricosus</p>
-<p align="center">Tenyasha</p>
-<p align="center">ThatGuy</p>
-<p align="center">The Homa</p>
-<p align="center">ThePeon</p>
-<p align="center">Thorian</p>
-<p align="center">toifel131</p>
-<p align="center">Tornadobird</p>
-<p align="center">torskenn</p>
-<p align="center">trevYT</p>
-<p align="center">Trewq_</p>
-<p align="center">TrostNi</p>
-<p align="center">Tskami_ek</p>
-<p align="center">Tyler</p>
-<p align="center">ukulelejongetje<p></p>
-<p align="center">UndeadAbbys</p>
-<p align="center">Uni</p>
-<p align="center">Username</p>
-<p align="center">uwnim</p>
-<p align="center">Valentin</p>
-<p align="center">Versine</p>
-<p align="center">VilgefortzPL</p>
-<p align="center">Vince</p>
-<p align="center">waga baba bobo</p>
-<p align="center">WaitingIdly</p>
-<p align="center">waterfire425</p>
-<p align="center">websterguy</p>
-<p align="center">Weedheter</p>
-<p align="center">Wlerin</p>
-<p align="center">Wolf415</p>
-<p align="center">wolfsblood</p>
-<p align="center">woopemgood</p>
-<p align="center">WynneYilmaz</p>
-<p align="center">xemima</p>
-<p align="center">XenosHg</p>
-<p align="center">Xentha</p>
-<p align="center">XenTwo</p>
-<p align="center">xeperiset</p>
-<p align="center">Xikre</p>
-<p align="center">Xorious</p>
-<p align="center">Xpt14</p>
-<p align="center">xXRochforteXx</p>
-<p align="center">Yarilo</p>
-<p align="center">ydc1017902176</p>
-<p align="center">yob</p>
-<p align="center">Zange</p>
-<p align="center">Zaraza</p>
-<p align="center">Zariars</p>
-<p align="center">Zeckenschwarm</p>
-<p align="center">Zeen</p>
-<p align="center">Zelphh1</p>
-<p align="center">Zepto</p>
-<p align="center">zionhian</p>
-<p align="center">Zyllyn</p>
-<p align="center">Zylon</p>
-<p align="center">Дикий Речной Пёс</p>
-</marquee>
-<style>
-.html-marquee {
-  height:14px;
-  width:160px;
-  background-color:Black;
-  font-family:Cursive;
-  font-size:14px;
-  color:#98AFC7;
-  font-weight:bold;
-  border-width:1;
-  border-style:solid;
-  border-color:Black;
-}
-</style>
-<script>
-function myFunction(e) {
-  var copyText = e.next();
-  if (isOS()) {
-        var textElement = copyText[0];
-        var editable = textElement.contentEditable;
-        var readOnly = textElement.readOnly;
-        textElement.contentEditable = true;
-        textElement.readOnly = false;
-        var range = document.createRange();
-        range.selectNodeContents(textElement);
-        var selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textElement.setSelectionRange(0, 999999);
-        textElement.contentEditable = editable;
-        textElement.readOnly = readOnly;
-    } else {
-        copyText.select();
-    }
-  document.execCommand('copy');
-}
- function isOS() {
-    return navigator.userAgent.match(/ipad|iphone/i);
-}
-</script>
-<div align="center">
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0" alt="visitor counter"></a>
-</body>
+					</map>
+				<p><b>Factions</b></p>
+				<p>There are several types of Factions:</p>
+				<p>- <b>Vanilla</b>: includes the Good factions (Fairy, Elf and Angel) & Evil factions (Goblin, Undead
+					and Demon)</p>
+				<p>- <b>Neutral</b>: includes Titan, Druid and Faceless</p>
+				<p>- <b>Prestige</b>: includes Dwarven, Drow and much later on, Dragon</p>
+				<p>- <b>Mercenary</b></p>
+				<p>- <b>Elite</b>: includes Archon, Djinn and Makers.</p>
+				</br>
+				<p>The Vanilla Factions show up by default but the others first need to be unlocked. Once unlocked they
+					will stay unlocked throughout all Abdications and Reincarnations.</p>
+				<p>To affiliate with a Faction, you first need to choose their Alignment.</p>
+				<p>This makes all the Factions of that alignment available, and you can then choose which one to join.
+				</p>
+				<p><b>Note</b>: Vanilla and Neutral Factions are together referred as <b>Base Factions</b>.</p>
+				<p><b>Note</b>: The icons used in the below section are the Faction's <b>Trade Treaties</b>, their first
+					Faction upgrade.</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/FairyFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/FairyTradeTreaty.png" alt="Fairy"></a>
+					Fairy</p>
+				<p><b>Requirement</b>: Proof of Good Deed</p>
+				<p><b>Cost</b>: Free with 0 gems, 20 Fairy Coins with any gems</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/ElfFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/ElvenTradeTreaty.png"></a> Elven</p>
+				<p><b>Requirement</b>: Proof of Good Deed</p>
+				<p><b>Cost</b>: 20 Elven Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Elven Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/AngelFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/AngelTradeTreaty.png"></a> Angel</p>
+				<p><b>Requirement</b>: Proof of Good Deed
+				<p><b>Cost</b>: 20 Angel Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Angel Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/GoblinFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/GoblinTradeTreaty.png"></a> Goblin</p>
+				<p><b>Requirement</b>: Proof of Evil Deed</p>
+				<p><b>Cost</b>: Free with 0 gems, 20 Goblin Coins with any gems</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Goblin Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/UndeadFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/UndeadTradeTreaty.png"></a> Undead</p>
+				<p><b>Requirement</b>: Proof of Evil Deed</p>
+				<p><b>Cost</b>: 20 Undead Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Undead Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DemonFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DemonTradeTreaty.png"></a> Demon</p>
+				<p><b>Requirement</b>: Proof of Evil Deed</p>
+				<p><b>Cost</b>: 20 Demon Coins.</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Demon Coins</p>
+				<hr>
+				<p><b>Neutral Factions</b></p>
+				<p><a href="http://musicfamily.org/realm/TitanFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/TitanTradeTreaty.png"></a> Titan</p>
+				<p><b>Unlock Requirement</b>: Fragment of a Titan Statue (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Neutrality</p>
+				<p><b>Cost</b>: 250 Angel Coins, 250 Goblin Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Angel & Goblin Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DruidFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DruidTradeTreaty.png"></a> Druid</p>
+				<p><b>Unlock Requirement</b>: Druidic Runestone (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Neutrality</p>
+				<p><b>Cost</b>: 250 Elven Coins, 250 Demon Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Elven & Demon Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/FacelessFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/FacelessTradeTreaty.png"></a> Faceless</p>
+				<p><b>Unlock Requirement</b>: Octopus Shaped Spine (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Neutrality</p>
+				<p><b>Cost</b>: 250 Fairy Coins, 250 Undead Coins</p>
+				<p><b>Cost R220+</b>: 1 Qa (1e15) Fairy & Undead Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DwarfFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DwarvenTradeTreaty.png"></a> Dwarven</p>
+				<p><b>Unlock Requirement</b>: Sturdy Bearded Man's Quest (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Good Deed, Alliance upgrade of the Good Base Faction, Underworld
+					Diplomacy (only R0-R2)</p>
+				<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
+				<p><b>Cost</b> 3,000 Dwarven Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DrowFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DrowTradeTreaty.png"></a> Drow</p>
+				<p><b>Unlock Requirement</b>: Cloaked Shady Figure's Quest (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Evil Deed, Alliance upgrade of the Evil Base Faction, Underworld
+					Diplomacy (only R0-R2)</p>
+				<p><b>Available</b>: R0-R99, R116-R219, R235+</p>
+				<p><b>Cost</b> 3,000 Drow Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DragonFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DragonTradeTreaty.png"></a> Dragon</p>
+				<p><b>Unlock Requirement</b>: Elder Dragon (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Neutrality, Alliance upgrade of the Neutral Base Faction</p>
+				<p><b>Available</b>: R46-R99, R116-R219, R235+</p>
+				<p><b>Cost</b>: 5 B (5e9) Dwarven & Drow Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/MercenaryFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/MercenaryFirstContract.png"></a> Mercenary
+				</p>
+				<p><b>Unlock Requirement R3+</b>: Mercenary Tribute (only needs to be bought once)</p>
+				<p><b>Unlock Requirement R160+</b>: Mercenary Duel (only needs to be bought once)</p>
+				<p><b>Alignment: Any</b></p>
+				<p><b>Available</b>: R3-R99, R160-R219</p>
+				<p><b>Cost</b> 50 Spd (5e55), A1+: Free</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/ArchonFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/ArchonTradeTreaty.png"></a> Archon</p>
+				<p><b>Unlock Requirement</b>: Archon Quest (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Order, Union upgrades of both Base & Prestige Faction</p>
+				<p><b>Available</b>: R125-R219</p>
+				<p><b>Cost</b>: 1 Oc (1e27) Angel & Undead Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/DjinnFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/DjinnTradeTreaty.png"></a> Djinn</p>
+				<p><b>Unlock Requirement</b>: Djinn Quest (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Chaos, Union upgrades of both Base & Prestige Faction</p>
+				<p><b>Available</b>: R125-R219</p>
+				<p><b>Cost</b>: 1 Oc (1e27) Fairy & Demon Coins</p>
+				<hr>
+				<p><a href="http://musicfamily.org/realm/MakersFaction"><img
+							src="http://musicfamily.org/realm/Factions/picks/MakersTradeTreaty.png"></a> Makers</p>
+				<p><b>Unlock Requirement</b>: Makers Quest (only needs to be bought once)</p>
+				<p><b>Requirement</b>: Proof of Balance, Union upgrades of both Base & Prestige Faction</p>
+				<p><b>Available</b>: R125-R219</p>
+				<p><b>Cost</b>: 1 Oc (1e27) Elven & Goblin Coins</p>
+				<hr>
+				<p><b>Historical Background</b></p>
+				<p>Good Factions are oriented to a more active game-play, focusing on spells and treasure clicks.</p>
+				<p>Evil Factions are oriented to a more idle game-play, focusing on steady and passive building
+					production.</p>
+				<p>The Neutral Factions were added in the Ancient Races expansion, they cover a mixture both active and
+					passive game-play and may offer faster advancement than Good and Evil factions. Neutral Factions are
+					only available once you have reached billion gems and fulfilled certain requirements.</p>
+				<p>Part of the Underworld expansion, Prestige Factions are purchased in "addition to" a Vanilla faction
+					of the same alignment. They enable the player to combine the power from both the Vanilla and
+					Prestige factions.</p>
+				<p>Mercenaries were added in the After-life expansion as an ultimate powerhouse.</p>
+				<p>Elite Factions were added in v3.4, they are paired with the additional alignment unlocked in
+					Ascension 2 and will be able to stack upon a base and prestige factions, for a total of three
+					affiliations simultaneously.</p>
+				<hr>
+				<p><b>Faction Spell & Upgrades</b></p>
+				<p>Each Faction has its own Faction specific spell and 3x3 Tier upgrades (3x4 for Mercenaries). The Tier
+					upgrades only show up in order, so when you buy Tier 1 then Tier 2 will show up and then Tier 3, and
+					hence cannot be bought before.</p>
+				<p>Each Faction also has its own symbol and color code.</p>
+				<p>In the first column are the Tier 1 upgrades, in the second, Tier 2 and third, Tier 3 upgrades. </p>
+				<p>The first colored upgrade of each tier cost Faction coins and they unlock the 3 following upgrades.
+				</p>
+				<p>These upgrades are exclusive faction upgrades and cost usual coins.</p>
+				<p>Early game, it is advised to quickly affiliate with each Faction at least once, because for each
+					Faction, purchasing 12 faction upgrades (this includes faction treaty) once grants their Faction
+					Champion trophy, which in turn rewards their exclusive and universal <a
+						href="http://musicfamily.org/realm/Heritages"><b>Heritage upgrade</b></a>.</p>
+				<p>Also, the quantity of bought faction upgrades is tracked throughout reincarnations and it is required
+					to unlock Bloodline upgrades.</p>
+				<p>PS: In order to simplify notation, instead of using the individual names of each Faction upgrade, we
+					generally identify them numerically. e.g.: DD5 = Druid(2,3) means: In the 2nd Tier, the third
+					secondary Tier upgrade, belonging to Druid. (which is an upgrade named Shapeshifting), more info
+					about the terminology can be found <a
+						href="http://musicfamily.org/realm/Terminology/"><b>here</a></b>.
+				</p>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+	<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
+		<tbody>
+			<tr>
+				<td style="padding:0.2em 0.5em;">
+					<FONT color=#98AFC7> | <a href="/Resources"
+							research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds">
+							<FONT color=#98AFC7>Resources
+						</a> | <a href="/Reset" research="Reset - Abdication - Reincarnation">
+							<FONT color=#98AFC7>Soft Resets
+						</a> | <a href="/BuildingAlignments" research="Building Alignments">
+							<FONT color=#98AFC7>Buildings
+						</a> | <a href="/Heritages" research="Faction Heritages">
+							<FONT color=#98AFC7>Heritages
+						</a> | <a href="/Bloodline" research="Faction Bloodlines" class="mw-redirect">
+							<FONT color=#98AFC7>Bloodlines
+						</a>
+						| <a href="/Spells" research="Spells and Tier unlock Times">
+							<FONT color=#98AFC7>Spells
+						</a> | <a href="/Artifacts" research="Excavations">
+							<FONT color=#98AFC7>Excavations
+						</a> | <a href="/Challenges" research="Complete list of Challenges and descriptions">
+							<FONT color=#98AFC7>Challenges
+						</a> | <a href="/Upgrades" research="Upgrades">
+							<FONT color=#98AFC7>Upgrades
+						</a> | <a href="/TrophyPage" research="Complete list of Trophies and descriptions">
+							<FONT color=#98AFC7>Trophies
+						</a>
+						| <a href="/Factions" research="Factions">
+							<FONT color=#98AFC7>Factions
+						</a> | <a href="/Research" research="The Research Facilities - Short and long names">
+							<FONT color=#98AFC7>Research
+						</a> |
+						<p> | <a href="/MercBuilds" research="Mercenary Builds">
+								<FONT color=#98AFC7>Merc Builds
+							</a> | <a href="/ResearchBuilds" research="Research Builds">
+								<FONT color=#98AFC7>Research Builds
+							</a> | <a href="/PBuilds" research="Evil and Good Prestige Builds">
+								<FONT color=#98AFC7>Prestige Builds
+							</a> | <a href="/R40-R46" research="Ascension Builds">
+								<FONT color=#98AFC7>Dragon Unlock
+							</a> | <a href="/R47-R60" research="Neutral Prestige Builds">
+								<FONT color=#98AFC7>Neutral Prestige Builds
+							</a> | <a href="/Researchtree" research="Complete list of Research and descriptions">
+								<FONT color=#98AFC7>Research Tree
+							</a> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a
+									research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Vanilla Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a
+									research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>">
+									<FONT color=#98AFC7>Good Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a
+									research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon">
+									<FONT color=#98AFC7>Evil Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a
+									research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Neutral Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon">
+									<FONT color=#98AFC7>Prestige Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers">
+									<FONT color=#98AFC7>A2 Elite Factions
+								</a> </span> |
+						</p>
+						| <a href="/Events" research="Events">
+							<FONT color=#98AFC7>Events
+						</a> | <a href="/Changes" research="Latest Major Patch">
+							<FONT color=#98AFC7>Latest Major Patch
+						</a> | <a href="/Changelog" research="Changelog">
+							<FONT color=#98AFC7>Changelog
+						</a> | <a href="/Notation" research="Short - Scientific - Engineering">
+							<FONT color=#98AFC7>Notation
+						</a> | <a href="/Terminology" research="Commonly used terms and abbreviations">
+							<FONT color=#98AFC7>Terminology
+						</a> | <a href="/Tools"
+							research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki">
+							<FONT color=#98AFC7>Tools
+						</a> | <a href="/Kong" research="Help">
+							<FONT color=#98AFC7>Kongregate Links
+						</a> |
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a
+									href="/FairyFaction" research="Fairy (Good)">
+									<FONT color=#98AFC7>Fairy
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a
+									href="/ElfFaction" research="Elf (Good)">
+									<FONT color=#98AFC7>Elven
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a
+									href="/AngelFaction" research="Angel (Good)">
+									<FONT color=#98AFC7>Angel
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a
+									href="/GoblinFaction" research="Goblin (Evil)">
+									<FONT color=#98AFC7>Goblin
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a
+									href="/UndeadFaction" research="Undead (Evil)">
+									<FONT color=#98AFC7>Undead
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a
+									href="/DemonFaction" research="Demon (Evil)">
+									<FONT color=#98AFC7>Demon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a
+									href="/TitanFaction" research="Titan (Neutral)">
+									<FONT color=#98AFC7>Titan
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a
+									href="/DruidFaction" research="Druid (Neutral)">
+									<FONT color=#98AFC7>Druid
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a
+									href="/FacelessFaction" research="Faceless (Neutral)">
+									<FONT color=#98AFC7>Faceless
+								</a> </span> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									href="/MercenaryFaction" research="Mercenary">
+									<FONT color=#98AFC7>Mercenary
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a
+									href="/DwarfFaction" research="Dwarf (Good Prestige)">
+									<FONT color=#98AFC7>Dwarf
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a
+									href="/DrowFaction" research="Drow (Evil Prestige)">
+									<FONT color=#98AFC7>Drow
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a
+									href="/DragonFaction" research="Dragon (Neutral Prestige)">
+									<FONT color=#98AFC7>Dragon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a
+									href="/ArchonFaction" research="Archon (A2 Elite)">
+									<FONT color=#98AFC7>Archon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a
+									href="/DjinnFaction" research="Djinn (A2 Elite)">
+									<FONT color=#98AFC7>Djinn
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a
+									href="/MakersFaction" research="Makers (A2 Elite)">
+									<FONT color=#98AFC7>Makers
+								</a> </span> |
+						</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p align="center">
+		<FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/">
+				<FONT color=#98AFC7><b>G00FBALL</b></font>
+			</a>
+	</p>
+	<div align="center">
+		<FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
+			<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
+				<p align="center">5ku||3d</p>
+				<p align="center">6000j</p>
+				<p align="center">7636kei</p>
+				<p align="center">Aaborg</p>
+				<p align="center">Aaron Cook</p>
+				<p align="center">acbdefgfedbca</p>
+				<p align="center">acer4321</p>
+				<p align="center">Ach3ck</p>
+				<p align="center">AJZ3</p>
+				<p align="center">AKL</p>
+				<p align="center">Alright</p>
+				<p align="center">Altoscholto</p>
+				<p align="center">Amirin</p>
+				<p align="center">Anathah</p>
+				<p align="center">AndreikaD</p>
+				<p align="center">Antendren</p>
+				<p align="center">apocal_88</p>
+				<p align="center">arcanmster</p>
+				<p align="center">Archmage</p>
+				<p align="center">arintayn2</p>
+				<p align="center">ARTEZZ</p>
+				<p align="center">art-of-dom</p>
+				<p align="center">ash1soccer</p>
+				<p align="center">Ashthar</p>
+				<p align="center">aurora</p>
+				<p align="center">aviv</p>
+				<p align="center">Azua</p>
+				<p align="center">Bearpaws</p>
+				<p align="center">BigGeak</p>
+				<p align="center">bigshawnt</p>
+				<p align="center">BillK14</p>
+				<p align="center">BionicFrog</p>
+				<p align="center">BioRules</p>
+				<p align="center">blackbird</p>
+				<p align="center">Blackeye</p>
+				<p align="center">Blue</p>
+				<p align="center">bobbert</p>
+				<p align="center">Boffo</p>
+				<p align="center">Book909</p>
+				<p align="center">boss_mc</p>
+				<p align="center">Boyo</p>
+				<p align="center">brc48632</p>
+				<p align="center">Breeze</p>
+				<p align="center">btzeroes</p>
+				<p align="center">burninglegion64</p>
+				<p align="center">BuzzMarzz</p>
+				<p align="center">CafeMaker</p>
+				<p align="center">CamoBrie</p>
+				<p align="center">capito27</p>
+				<p align="center">Chaos</p>
+				<p align="center">Chaosmancer7</p>
+				<p align="center">chaosmarine4226</p>
+				<p align="center">CheeseWitch</p>
+				<p align="center">chris</p>
+				<p align="center">chrispi</p>
+				<p align="center">CHRullz</p>
+				<p align="center">Ck</p>
+				<p align="center">CluelessWonder</p>
+				<p align="center">Coal_CC</p>
+				<p align="center">ColdDrake13</p>
+				<p align="center">Corgi</p>
+				<p align="center">cralo</p>
+				<p align="center">Cromedome</p>
+				<p align="center">Cromieplays</p>
+				<p align="center">Curunur</p>
+				<p align="center">Cyden</p>
+				<p align="center">Da Banana Man</p>
+				<p align="center">DainDwarf</p>
+				<p align="center">Damxacer1</p>
+				<p align="center">Dariof4</p>
+				<p align="center">DED SERVER</p>
+				<p align="center">Delichtig</p>
+				<p align="center">Dienes</p>
+				<p align="center">djones0823</p>
+				<p align="center">djru8ix</p>
+				<p align="center">Doubleshoe</p>
+				<p align="center">dox4242</p>
+				<p align="center">DR</p>
+				<p align="center">Draven</p>
+				<p align="center">Drogor</p>
+				<p align="center">drseilzug</p>
+				<p align="center">EagleAgg03</p>
+				<p align="center">Ebilkill</p>
+				<p align="center">ehyder</p>
+				<p align="center">eleganceseraph</p>
+				<p align="center">ElJay</p>
+				<p align="center">Eltro</p>
+				<p align="center">Enexplogen</p>
+				<p align="center">ensteffahn</p>
+				<p align="center">ErrolErrolson</p>
+				<p align="center">escalon</p>
+				<p align="center">Essigschurke</p>
+				<p align="center">Evengrey</p>
+				<p align="center">Exsanguine</p>
+				<p align="center">FastHit</p>
+				<p align="center">FedeJossa</p>
+				<p align="center">Fire</p>
+				<p align="center">Flameslinger01</p>
+				<p align="center">Fonzoland</p>
+				<p align="center">Franelas</p>
+				<p align="center">Freakomant</p>
+				<p align="center">Fryguy9</p>
+				<p align="center">furkannnO</p>
+				<p align="center">fwbx529</p>
+				<p align="center">gaccount</p>
+				<p align="center">GalacManta</p>
+				<p align="center">gamemasterty</p>
+				<p align="center">Geno</p>
+				<p align="center">Ghorre</p>
+				<p align="center">Glitchstorm</p>
+				<p align="center">Goholtramor</p>
+				<p align="center">Grazloth</p>
+				<p align="center">GreenMJ13</p>
+				<p align="center">grelf</p>
+				<p align="center">Guy</p>
+				<p align="center">gvaiou</p>
+				<p align="center">HeinQuek</p>
+				<p align="center">HellTest</p>
+				<p align="center">Heronimo2</p>
+				<p align="center">heyitsdross</p>
+				<p align="center">hiimahotdog</p>
+				<p align="center">homebrewer54</p>
+				<p align="center">Hotspot</p>
+				<p align="center">iam10ninjas</p>
+				<p align="center">Ignus</p>
+				<p align="center">Igorogi</p>
+				<p align="center">iluxa4000</p>
+				<p align="center">Ilya</p>
+				<p align="center">ivanovichkoslov</p>
+				<p align="center">j8ner</p>
+				<p align="center">jabberok</p>
+				<p align="center">Jakeb2002</p>
+				<p align="center">Jenetikitty</p>
+				<p align="center">JezuzLizard</p>
+				<p align="center">JGChan</p>
+				<p align="center">jgchan29</p>
+				<p align="center">Joa</p>
+				<p align="center">johnharveybc</p>
+				<p align="center">johnleprude</p>
+				<p align="center">johny_blaze</p>
+				<p align="center">jonny0panic</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">kabuto44</p>
+				<p align="center">Kacper</p>
+				<p align="center">Kain</p>
+				<p align="center">Kanra</p>
+				<p align="center">Kaos</p>
+				<p align="center">Keben</p>
+				<p align="center">kiluh</p>
+				<p align="center">KRIEG</p>
+				<p align="center">Kroll</p>
+				<p align="center">kuerti</p>
+				<p align="center">KuraTheDog</p>
+				<p align="center">Kurt-bookboy</p>
+				<p align="center">KyonLevic</p>
+				<p align="center">Lailoken</p>
+				<p align="center">Lapare</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lead Luigi</p>
+				<p align="center">LeoB516</p>
+				<p align="center">LeoC.II</p>
+				<p align="center">lesd</p>
+				<p align="center">lesdruides</p>
+				<p align="center">Liraso</p>
+				<p align="center">Lollipop</p>
+				<p align="center">lordulster</p>
+				<p align="center">Luio2revenge</p>
+				<p align="center">lvl 1 crook</p>
+				<p align="center">magnanimousCynic</p>
+				<p align="center">Magnusly</p>
+				<p align="center">ManDude33</p>
+				<p align="center">mangafreak140</p>
+				<p align="center">mangaking118</p>
+				<p align="center">MarioFanaticXV</p>
+				<p align="center">masteff</p>
+				<p align="center">Masterzan</p>
+				<p align="center">Matrix4767</p>
+				<p align="center">Max Schradin</p>
+				<p align="center">Maya</p>
+				<p align="center">McguyverZero</p>
+				<p align="center">Mechaflood</p>
+				<p align="center">Merp</p>
+				<p align="center">Milkopilko</p>
+				<p align="center">mpeechee</p>
+				<p align="center">Mr.Celedown</p>
+				<p align="center">MrGerman</p>
+				<p align="center">mrothorr</p>
+				<p align="center">myogin</p>
+				<p align="center">Mysticman89</p>
+				<p align="center">MythWiz_</p>
+				<p align="center">nakota</p>
+				<p align="center">Namelessname</p>
+				<p align="center">NateMcCloud</p>
+				<p align="center">Necrodoom</p>
+				<p align="center">NecroXD</p>
+				<p align="center">Neutral Potato</p>
+				<p align="center">NeutralPotato</p>
+				<p align="center">Nizidramaniiyt</p>
+				<p align="center">noonomoon</p>
+				<p align="center">NTWgreatest</p>
+				<p align="center">NTWgrinder</p>
+				<p align="center">oholoko</p>
+				<p align="center">Okami</p>
+				<p align="center">okunderground</p>
+				<p align="center">onianinara</p>
+				<p align="center">Onoxious</p>
+				<p align="center">Origin</p>
+				<p align="center">oswarlan</p>
+				<p align="center">OvenBakedGod</p>
+				<p align="center">Paah</p>
+				<p align="center">pacmanlite</p>
+				<p align="center">Palamazzi</p>
+				<p align="center">Parasitez83</p>
+				<p align="center">Piezza24</p>
+				<p align="center">pizza_troll</p>
+				<p align="center">pkal</p>
+				<p align="center">plaaosert</p>
+				<p align="center">player2aj</p>
+				<p align="center">Polibus</p>
+				<p align="center">Popington</p>
+				<p align="center">primal cradily</p>
+				<p align="center">Proxy</p>
+				<p align="center">pseudobyte</p>
+				<p align="center">PseudonymousBosh</p>
+				<p align="center">Pyxl</p>
+				<p align="center">q1235
+				<p></p>
+				<p align="center">raato</p>
+				<p align="center">Rade</p>
+				<p align="center">RageBall</p>
+				<p align="center">RastlinV</p>
+				<p align="center">RebelKeithy</p>
+				<p align="center">Redd</p>
+				<p align="center">Redd</p>
+				<p align="center">Regulus</p>
+				<p align="center">Reknot</p>
+				<p align="center">RetroDerpSquid9</p>
+				<p align="center">rhaek7</p>
+				<p align="center">Rustle Crowe</p>
+				<p align="center">Ryonir</p>
+				<p align="center">saitenhieb</p>
+				<p align="center">SamGooBat</p>
+				<p align="center">Sandworm</p>
+				<p align="center">Sas Assassin</p>
+				<p align="center">Sc0rp</p>
+				<p align="center">Sefa</p>
+				<p align="center">Seyliz</p>
+				<p align="center">Shantie</p>
+				<p align="center">shayner12</p>
+				<p align="center">Sheer</p>
+				<p align="center">Sho Phaune</p>
+				<p align="center">Skulled190</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">slantfer</p>
+				<p align="center">solidifiedmind</p>
+				<p align="center">somarilnos</p>
+				<p align="center">SomeoneLucas</p>
+				<p align="center">Soulrift</p>
+				<p align="center">Space Troll</p>
+				<p align="center">spamtraprus</p>
+				<p align="center">Spanosa</p>
+				<p align="center">SRT</p>
+				<p align="center">StAUG</p>
+				<p align="center">stmlee</p>
+				<p align="center">Stoner Claff</p>
+				<p align="center">Sum Yung Gai</p>
+				<p align="center">sunk</p>
+				<p align="center">Suranis</p>
+				<p align="center">swim</p>
+				<p align="center">Synthini</p>
+				<p align="center">Sythen2014</p>
+				<p align="center">tangyifei</p>
+				<p align="center">Tanny</p>
+				<p align="center">Taxiway</p>
+				<p align="center">tbrown30</p>
+				<p align="center">Teabagger Vance</p>
+				<p align="center">Technosaurus</p>
+				<p align="center">Tenebricosus</p>
+				<p align="center">Tenyasha</p>
+				<p align="center">ThatGuy</p>
+				<p align="center">The Homa</p>
+				<p align="center">ThePeon</p>
+				<p align="center">Thorian</p>
+				<p align="center">toifel131</p>
+				<p align="center">Tornadobird</p>
+				<p align="center">torskenn</p>
+				<p align="center">trevYT</p>
+				<p align="center">Trewq_</p>
+				<p align="center">TrostNi</p>
+				<p align="center">Tskami_ek</p>
+				<p align="center">Tyler</p>
+				<p align="center">ukulelejongetje
+				<p></p>
+				<p align="center">UndeadAbbys</p>
+				<p align="center">Uni</p>
+				<p align="center">Username</p>
+				<p align="center">uwnim</p>
+				<p align="center">Valentin</p>
+				<p align="center">Versine</p>
+				<p align="center">VilgefortzPL</p>
+				<p align="center">Vince</p>
+				<p align="center">waga baba bobo</p>
+				<p align="center">WaitingIdly</p>
+				<p align="center">waterfire425</p>
+				<p align="center">websterguy</p>
+				<p align="center">Weedheter</p>
+				<p align="center">Wlerin</p>
+				<p align="center">Wolf415</p>
+				<p align="center">wolfsblood</p>
+				<p align="center">woopemgood</p>
+				<p align="center">WynneYilmaz</p>
+				<p align="center">xemima</p>
+				<p align="center">XenosHg</p>
+				<p align="center">Xentha</p>
+				<p align="center">XenTwo</p>
+				<p align="center">xeperiset</p>
+				<p align="center">Xikre</p>
+				<p align="center">Xorious</p>
+				<p align="center">Xpt14</p>
+				<p align="center">xXRochforteXx</p>
+				<p align="center">Yarilo</p>
+				<p align="center">ydc1017902176</p>
+				<p align="center">yob</p>
+				<p align="center">Zange</p>
+				<p align="center">Zaraza</p>
+				<p align="center">Zariars</p>
+				<p align="center">Zeckenschwarm</p>
+				<p align="center">Zeen</p>
+				<p align="center">Zelphh1</p>
+				<p align="center">Zepto</p>
+				<p align="center">zionhian</p>
+				<p align="center">Zyllyn</p>
+				<p align="center">Zylon</p>
+				<p align="center">Дикий Речной Пёс</p>
+			</marquee>
+			<style>
+				.html-marquee {
+					height: 14px;
+					width: 160px;
+					background-color: Black;
+					font-family: Cursive;
+					font-size: 14px;
+					color: #98AFC7;
+					font-weight: bold;
+					border-width: 1;
+					border-style: solid;
+					border-color: Black;
+				}
+			</style>
+			<script>
+				function myFunction(e) {
+					var copyText = e.next();
+					if (isOS()) {
+						var textElement = copyText[0];
+						var editable = textElement.contentEditable;
+						var readOnly = textElement.readOnly;
+						textElement.contentEditable = true;
+						textElement.readOnly = false;
+						var range = document.createRange();
+						range.selectNodeContents(textElement);
+						var selection = window.getSelection();
+						selection.removeAllRanges();
+						selection.addRange(range);
+						textElement.setSelectionRange(0, 999999);
+						textElement.contentEditable = editable;
+						textElement.readOnly = readOnly;
+					} else {
+						copyText.select();
+					}
+					document.execCommand('copy');
+				}
+				function isOS() {
+					return navigator.userAgent.match(/ipad|iphone/i);
+				}
+			</script>
+			<div align="center">
+				<a href="https://www.cutercounter.com/" target="_blank"><img
+						src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0"
+						alt="visitor counter"></a>
+				</body>
+
 </html>

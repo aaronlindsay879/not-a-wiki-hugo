@@ -1,464 +1,522 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
 <head>
-<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/realm/scripts/common.css"/>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js" integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw==" crossorigin="anonymous"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
-<title>G00F's Not a Wiki </title>
-<meta charset="UTF-8">
-<meta name="keywords" content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward"/>
-<style>
+	<link rel="shortcut icon" href="http://musicfamily.org/realm/Factions/picks/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/scripts/common.css" />
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"
+		integrity="sha512-K7Zj7PGsHk2fpY3Jwvbuo9nKc541MofFrrLaUUO9zqghnJxbZ3Zn35W/ZeXvbT2RtSujxGbw8PgkqpoZXXbGhw=="
+		crossorigin="anonymous"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://musicfamily.org/realm/scripts/jquery.style-my-tooltips.js"></script>
+	<title>G00F's Not a Wiki </title>
+	<meta charset="UTF-8">
+	<meta name="keywords"
+		content="Realm Grinder, Game, Artifact, Artifacts, Factions, Reincarnation, Challenges, Mercenary Builds, Mercenary, Research Builds, Research, Upgrades, Spells, Ascension, Ascension Builds, Prestige Research, Prestige, Prestige Builds, Kongregate, Trophies, Trophy, Faction Champion, Games, Coins, Treasure, Mana, Assistants, Gem, Gems,  Archaeology, Excavation, Ruby, Rubies, Lore Artifacts, Quest Artifacts, Fairy, Elven, Angel, Goblin, Undead, Demon, Titan, Druid, Faceless, Dwarven, Drow, Research, Notation, Premium Upgrades, Requirements, Final Reward, Reward" />
+	<style>
 		table.Faction {
 			border-collapse: collapse;
 		}
-		.Faction th,.Faction td {
+
+		.Faction th,
+		.Faction td {
 			border: 2px solid black;
-		padding: 3px;
+			padding: 3px;
 		}
+
 		.Faction td {
 			font-weight: bold;
-		padding: 10px;
+			padding: 10px;
 		}
-	   .gsc-cursor-page  {
-		padding-right: 10px;
-	   }
+
+		.gsc-cursor-page {
+			padding-right: 10px;
+		}
 	</style>
-<style>
+	<style>
 		table.ManaColors {
 			border-collapse: collapse;
 		}
-		.ManaColors th,.ManaColors td {
+
+		.ManaColors th,
+		.ManaColors td {
 			border: 3px solid black;
 		}
+
 		.ManaColors td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
-</style>
-<style>
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
+	</style>
+	<style>
 		table.numtable {
 			border-collapse: collapse;
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
+
 		.numtable tr:hover {
 			background-color: #ffffff
 		}
-		.numtable th,.numtable td {
+
+		.numtable th,
+		.numtable td {
 			border: 3px solid #4c5b86;
 		}
+
 		.numtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
+	<style>
 		table.imgtable {
 			border-collapse: collapse;
 		}
-		.imgtable th,.imgtable td {
+
+		.imgtable th,
+		.imgtable td {
 			border: none;
 		}
+
 		.imgtable td {
 			font-weight: bold
 		}
-	   .gsc-cursor-page  {
-		padding: 4px;
-	   }
+
+		.gsc-cursor-page {
+			padding: 4px;
+		}
 	</style>
-<style>
-	.black_overlay {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		z-index: 1001;
-		-moz-opacity: 0.8;
-		opacity: .80;
-		filter: alpha(opacity=80);
-	}
+	<style>
+		.black_overlay {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index: 1001;
+			-moz-opacity: 0.8;
+			opacity: .80;
+			filter: alpha(opacity=80);
+		}
 
-	.white_content {
-		display: none;
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 99%;
-		height: 50%;
-		padding: 16px;
-		border: 1px solid orange;
-		background-color: white;
-		z-index: 1002;
-		overflow: auto;
-	}
-</style>
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 99%;
+			height: 50%;
+			padding: 16px;
+			border: 1px solid orange;
+			background-color: white;
+			z-index: 1002;
+			overflow: auto;
+		}
+	</style>
 
-<script>
-	$(document).ready(function () {
-		$("#Expand").on("hide.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
-		});
-		$("#Expand").on("show.bs.collapse", function () {
-			$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
-		});
-	});
-</script>
-<script>
-	(function ($) {
+	<script>
 		$(document).ready(function () {
-			$("[research]").style_my_tooltips();
+			$("#Expand").on("hide.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Expand');
+			});
+			$("#Expand").on("show.bs.collapse", function () {
+				$(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Collapse');
+			});
 		});
-	})(jQuery);
-</script>
-<script type="text/javascript">
-	function shohid(e) {
-		//$('.autohide').not(e.next()).hide();
-		$(e).parents('.autohide').show();
-		$(e).next().toggle();
-	}
-</script>
-<div id="outer">
-	<div id="parent">
-		<div id="header" align="center">
+	</script>
+	<script>
+		(function ($) {
+			$(document).ready(function () {
+				$("[research]").style_my_tooltips();
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript">
+		function shohid(e) {
+			//$('.autohide').not(e.next()).hide();
+			$(e).parents('.autohide').show();
+			$(e).next().toggle();
+		}
+	</script>
+	<div id="outer">
+		<div id="parent">
+			<div id="header" align="center">
+			</div>
 		</div>
-	</div>
-	<div id="navbox">
-		<div class="menu">
-			<ul>
-				<li><a href="/realm/Challenges" research="A complete list of Challenges and their requirements in image map form">Challenges</a>
-					<!--[if lte IE 6]>
+		<div id="navbox">
+			<div class="menu">
+				<ul>
+					<li><a href="/Challenges"
+							research="A complete list of Challenges and their requirements in image map form">Challenges</a>
+						<!--[if lte IE 6]>
 					<a href="#">Category one
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/Fairy" research="All Fairy Challenges">Fairy</a>
-						<li><a href="/realm/Elf" research="All Elven Challenges">Elven</a>
-						<li><a href="/realm/Angel" research="All Angel Challenges">Angel</a>
-						<li><a href="/realm/Goblin" research="All Goblin Challenges">Goblin</a>
-						<li><a href="/realm/Undead" research="All Undead Challenges">Undead</a>
-						<li><a href="/realm/Demon" research="All Demon Challenges">Demon</a>
-						<li><a href="/realm/Titan" research="All Titan Challenges">Titan</a>
-						<li><a href="/realm/Druid" research="All Druid Challenges">Druid</a>
-						<li><a href="/realm/Faceless" research="All Faceless Challenges">Faceless</a>
-						<li><a href="/realm/Dwarf" research="All Dwarven Challenges">Dwarven</a>
-						<li><a href="/realm/Drow" research="All Drow Challenges">Drow</a>
-						<li><a href="/realm/Dragons" research="All Dragon Challenges">Dragon</a>
-						<li><a href="/realm/Archon" research="All Archon Challenges">Archon</a>
-						<li><a href="/realm/Djinn" research="All Djinn Challenges">Djinn</a>
-						<li><a href="/realm/Makers" research="All Makers Challenges">Makers</a>
-						<li><a href="/realm/Mercenary" research="All Mercenary Challenges">Mercenary</a>
-							<ul>
-							</ul>
-							<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/Fairy" research="All Fairy Challenges">Fairy</a>
+							<li><a href="/Elf" research="All Elven Challenges">Elven</a>
+							<li><a href="/Angel" research="All Angel Challenges">Angel</a>
+							<li><a href="/Goblin" research="All Goblin Challenges">Goblin</a>
+							<li><a href="/Undead" research="All Undead Challenges">Undead</a>
+							<li><a href="/Demon" research="All Demon Challenges">Demon</a>
+							<li><a href="/Titan" research="All Titan Challenges">Titan</a>
+							<li><a href="/Druid" research="All Druid Challenges">Druid</a>
+							<li><a href="/Faceless" research="All Faceless Challenges">Faceless</a>
+							<li><a href="/Dwarf" research="All Dwarven Challenges">Dwarven</a>
+							<li><a href="/Drow" research="All Drow Challenges">Drow</a>
+							<li><a href="/Dragons" research="All Dragon Challenges">Dragon</a>
+							<li><a href="/Archon" research="All Archon Challenges">Archon</a>
+							<li><a href="/Djinn" research="All Djinn Challenges">Djinn</a>
+							<li><a href="/Makers" research="All Makers Challenges">Makers</a>
+							<li><a href="/Mercenary" research="All Mercenary Challenges">Mercenary</a>
+								<ul>
+								</ul>
+								<!--[if lte IE 6]>
 							</td></tr></table>
 							</a>
 							<![endif]-->
-						</li>
-					</ul>
-					<!--[if lte IE 6]>
+							</li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/TrophyPage" research="A complete list of Trophies and their requirements in image map form">Trophies</a>
-				</li>
-				<li><a href="/realm/Factions">Factions</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/TrophyPage"
+							research="A complete list of Trophies and their requirements in image map form">Trophies</a>
+					</li>
+					<li><a href="/Factions">Factions</a>
+						<!--[if lte IE 6]>
 					<a href="#">CATEGORY THREE
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/FairyFaction" research="Fairy">Fairy</a></li>
-						<li><a href="/realm/ElfFaction" research="Elven">Elven</a></li>
-						<li><a href="/realm/AngelFaction" research="Angel">Angel</a></li>
-						<li><a href="/realm/GoblinFaction" research="Goblin">Goblin</a></li>
-						<li><a href="/realm/UndeadFaction" research="Undead">Undead</a></li>
-						<li><a href="/realm/DemonFaction" research="Demon">Demon</a></li>
-						<li><a href="/realm/TitanFaction" research="Titan">Titan</a></li>
-						<li><a href="/realm/DruidFaction" research="Druid">Druid</a></li>
-						<li><a href="/realm/FacelessFaction" research="Faceless">Faceless</a></li>
-						<li><a href="/realm/DwarfFaction" research="Dwarven">Dwarven</a></li>
-						<li><a href="/realm/DrowFaction" research="Drow">Drow</a></li>
-						<li><a href="/realm/DragonFaction" research="Dragon">Dragon</a></li>
-						<li><a href="/realm/MercenaryFaction" research="Mercenary">Mercenary</a></li>
-						<li><a href="/realm/ArchonFaction" research="Archon">Archon</a></li>
-						<li><a href="/realm/DjinnFaction" research="Djinn">Djinn</a></li>
-						<li><a href="/realm/MakersFaction" research="Makers">Makers</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/FairyFaction" research="Fairy">Fairy</a></li>
+							<li><a href="/ElfFaction" research="Elven">Elven</a></li>
+							<li><a href="/AngelFaction" research="Angel">Angel</a></li>
+							<li><a href="/GoblinFaction" research="Goblin">Goblin</a></li>
+							<li><a href="/UndeadFaction" research="Undead">Undead</a></li>
+							<li><a href="/DemonFaction" research="Demon">Demon</a></li>
+							<li><a href="/TitanFaction" research="Titan">Titan</a></li>
+							<li><a href="/DruidFaction" research="Druid">Druid</a></li>
+							<li><a href="/FacelessFaction" research="Faceless">Faceless</a></li>
+							<li><a href="/DwarfFaction" research="Dwarven">Dwarven</a></li>
+							<li><a href="/DrowFaction" research="Drow">Drow</a></li>
+							<li><a href="/DragonFaction" research="Dragon">Dragon</a></li>
+							<li><a href="/MercenaryFaction" research="Mercenary">Mercenary</a></li>
+							<li><a href="/ArchonFaction" research="Archon">Archon</a></li>
+							<li><a href="/DjinnFaction" research="Djinn">Djinn</a></li>
+							<li><a href="/MakersFaction" research="Makers">Makers</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Artifacts" research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Artifacts"
+							research="A complete list of Artifacts and their requirements in image map form">Artifacts</a>
+						<!--[if lte IE 6]>
 					<a href="#">category 4
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
-						<li><a href="/realm/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/QuestArtifacts/" research="Quest Artifacts">Quest Artifacts</a></li>
+							<li><a href="/LoreArtifacts/" research="Lore Artifacts">Lore Artifacts</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Research">Research</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Research">Research</a>
+						<!--[if lte IE 6]>
 					<a href="#">EXPLORER
 						<table>
 							<tr>
 								<td>
 					<![endif]-->
-					<ul>
-						<li><a href="/realm/ResearchList" research="Research List">Research List</a>
-						<li><a href="/realm/Researchtree" research="Research Tree">Research Tree</a></li>
-						<li><a href="/realm/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
-					</ul>
-					<!--[if lte IE 6]>
+						<ul>
+							<li><a href="/ResearchList" research="Research List">Research List</a>
+							<li><a href="/Researchtree" research="Research Tree">Research Tree</a></li>
+							<li><a href="/UniqueBuilding" research="Unique Buildings">Unique Buildings</a></li>
+						</ul>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/Notation">Notation</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/Notation">Notation</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-				<li><a href="/realm/PremiumUpgrades/">Premium</a>
-					<!--[if lte IE 6]>
+					</li>
+					<li><a href="/PremiumUpgrades/">Premium</a>
+						<!--[if lte IE 6]>
 					</td></tr></table>
 					</a>
 					<![endif]-->
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="parent">
-		<div id="leftcolumn">
-			<div id="leftbox">
+					</li>
+				</ul>
 			</div>
-			<div id="navcontainer">
-				<ul id="navlist">
-				  <li id="active"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
+		</div>
+
+		<div id="parent">
+			<div id="leftcolumn">
+				<div id="leftbox">
+				</div>
+				<div id="navcontainer">
+					<ul id="navlist">
+						<li id="active">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABBed3WDi1lVV5pb+JKKoYxXUQAMvwYA+htRxJfFiGAMlMqfmaPiuCsUi++mOPAcx0wTGPbNZFt5j3GzM1PtKo7Ag7X06KwgnuGTc2M6N9wRsWTSUjVsZ5tw0cWlxCWj1CC0bzp373SfqYtypUH5XsY5G+XS55/GoZzF98vDuvMTELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIcDGWTXI8JiWAgYBzhzJtHTz8vZAY7UXlviKEHTZcr2ZwfsZgLTdzWsRGDwCslcnt7a7X1OVJWCHY6B8En5HibuEly48lX7LTL/IVQJKo9Jy2Z+w7RYLRZRRmKnlO36w+NoYeEXcWBrTiwFMWTc2whdE8/edgCtJqdCBqqYzINIyoIom44F3wRV0NEKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE4MDMyOTEwNDMzMlowIwYJKoZIhvcNAQkEMRYEFBjsXbW7ntttO6jWnQyxxbGxQxK7MA0GCSqGSIb3DQEBAQUABIGAiWv748Lds8X4GoPOpfiDzdc0Fue/FXeUKsMAVnAcNuBolecQvJuOCvFAAfGxKtYk9MlJHRhn+GWPrWStmE+i1ptRh9rgeTrZ/BeHR8wyOMq7dGhEkQpvj4pZP1Pf4AmA0nse87p8e77itIiZ/0tYb+yh4hcw9Ij2jo80j8VwJ/A=-----END PKCS7-----
 ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-					<li id="active"><a href="/realm" id="current">Home</a></li>
-					<li id="active"><a href="/realm/GuestBook/gbook.php" id="current">G00F's<br/>not a Guest Book</a></li>
-					<li id="active"><a href="/realm/SiteMap/" id="current">Sitemap</a></li>
-					<li id="active"><a href="/realm/Kong">Kongregate Links</a></li>
-					<li id="active"><a href="/realm/WallofShame">Wall of Shame</a></li>
-					<li id="active"><a href="/realm/Changes/" id="current">Latest Major Patch</a></li>
-					<li id="active"><a href="/realm/Changelog">Changelog</a></li>
-					<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder Discord</a></li>
-					<P align="center">The Game
-					<li id="active"><a href="/realm/GameWindow">Game Window</a></li>
-					<li id="active"><a href="/realm/Notation">Notation</a></li>
-					<li id="active"><a href="/realm/Terminology">Terminology<br/>HotKeys</a></li>
-					<li id="active"><a href="/realm/RNG/" id="current">Random Number Generator</a></li>
-					<li id="active"><a href="/realm/Reset">Abdication<br/>Reincarnation<br/>Ascension</a></li>
-					<li id="active"><a href="/realm/Ascension2">Ascension 2</a></li>
-					<li id="active"><a href="/realm/Ascension4">Ascension 4</a></li>
-					<li id="active"><a href="/realm/Events">Events</a></li>
-					<P align="center">Tools and Guides
-					<li id="active"><a href="/realm/Tools">Realm Grinder Tools</a></li>
-					<li id="active"><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners Guide </a></li>
-					<li id="active"><a href="/realm/TrophyGuide">Trophy Guide</a></li>
-					<li id="active"><a href="/realm/R16Guide">R16 Research Guide</a></li>
-					<P align="center">Upgrades
-					<li id="active"><a href="/realm/Upgrades">Misc Upgrades</a></li>
-					<li id="active"><a href="/realm/BuildingAlignments">Building Alignments</a></li>
-					<li id="active"><a href="/realm/BuildingUpgrades">Building Upgrades</a></li>
-					<li id="active"><a href="/realm/PremiumUpgrades">Premium Upgrades</a></li>
-					<li id="active"><a href="/realm/Rubies">Rubies</a></li>
-					<li id="active"><a href="/realm/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a></li>
-					<li id="active"><a href="/realm/Factions">Factions</a></li>
-					<li id="active"><a href="/realm/FactionUpgrades">Faction Upgrades</a></li>
-					<li id="active"><a href="/realm/Spells">Spells</a></li>
-					<li id="active"><a href="/realm/Heritages">Heritages</a></li>
-					<li id="active"><a href="/realm/Artifacts/">Artifacts</a></li>
-					<li id="active"><a href="/realm/Challenges/">Challenges</a></li>
-					<li id="active"><a href="/realm/Bloodline">Bloodlines</a></li>
-					<li id="active"><a href="/realm/Research">Research</a></li>
-					<li id="active"><a href="/realm/Researchtree">Research Tree</a></li>
-					<li id="active"><a href="/realm/SunForce">Sun Force</a></li>
-					<li id="active"><a href="/realm/SpellTiers">Spell Tiers</a></li>
-					<li id="active"><a href="/realm/Lineages">Lineages</a></li>
-					<li id="active"><a href="/realm/ArtifactSet">Artifact Sets</a></li>
-					<li id="active"><a href="/realm/Legacies">Legacies</a></li>
-					<P align="center">Builds
-					<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/realm/A0_Plot.png">A0 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/MercBuilds" research="Mercenaries">R3-R16 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/ResearchBuilds" research="Research">R16-R29 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/PBuilds" research="Prestige Research">R30-R39 Builds <span style="color:gold">(Not updated for v4.2)</span></span></a></li>
-					<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/realm/A1_Plot.png">A1 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R40-R46" research="Ascension 1">R40-R46 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R47-R60" research="Dragons">R47-R59 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R60-R75" research="Lineages">R60-R75 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R75Plus" research="Mercenary Research">R75-R99 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/realm/A2_Plot.png">A2 Plot</a></li>
-					<li id="active"><a href="/realm/R100Plus" research="Ascension 2">R100-R115 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
-					<li id="active"><a href="/realm/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
-					<li id="active"><a target="_blank" research="R160+ Guide" href="/realm/A3_Plot.png">A3 Plot <span style="color:gold">(Not updated for v4.2)</span></a></li>
-					<li id="active"><a href="/realm/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
-					<li id="active"><a href="/realm/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>					
-					<li id="active"><a href="/realm/R220Plus" research="Ascension 4">R220+ Builds <span style="color:gold">(Not updated for v4.2)</span></a></li>
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+									border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+									width="1" height="1">
+							</form>
+						<li id="active"><a href="/realm" id="current">Home</a></li>
+						<li id="active"><a href="/GuestBook/gbook.php" id="current">G00F's<br />not a Guest Book</a>
+						</li>
+						<li id="active"><a href="/SiteMap/" id="current">Sitemap</a></li>
+						<li id="active"><a href="/Kong">Kongregate Links</a></li>
+						<li id="active"><a href="/WallofShame">Wall of Shame</a></li>
+						<li id="active"><a href="/Changes/" id="current">Latest Major Patch</a></li>
+						<li id="active"><a href="/Changelog">Changelog</a></li>
+						<li id="active"><a href="https://discord.gg/cq6zmQX" id="current">Official Realm Grinder
+								Discord</a></li>
+						<P align="center">The Game
+							<li id="active"><a href="/GameWindow">Game Window</a></li>
+							<li id="active"><a href="/Notation">Notation</a></li>
+							<li id="active"><a href="/Terminology">Terminology<br />HotKeys</a></li>
+							<li id="active"><a href="/RNG/" id="current">Random Number Generator</a></li>
+							<li id="active"><a href="/Reset">Abdication<br />Reincarnation<br />Ascension</a></li>
+							<li id="active"><a href="/Ascension2">Ascension 2</a></li>
+							<li id="active"><a href="/Ascension4">Ascension 4</a></li>
+							<li id="active"><a href="/Events">Events</a></li>
+						<P align="center">Tools and Guides
+							<li id="active"><a href="/Tools">Realm Grinder Tools</a></li>
+							<li id="active"><a target="_blank"
+									href="https://steamcommunity.com/sharedfiles/filedetails/?id=1118498519">Beginners
+									Guide </a></li>
+							<li id="active"><a href="/TrophyGuide">Trophy Guide</a></li>
+							<li id="active"><a href="/R16Guide">R16 Research Guide</a></li>
+						<P align="center">Upgrades
+							<li id="active"><a href="/Upgrades">Misc Upgrades</a></li>
+							<li id="active"><a href="/BuildingAlignments">Building Alignments</a></li>
+							<li id="active"><a href="/BuildingUpgrades">Building Upgrades</a></li>
+							<li id="active"><a href="/PremiumUpgrades">Premium Upgrades</a></li>
+							<li id="active"><a href="/Rubies">Rubies</a></li>
+							<li id="active"><a href="/TrophyPage" reserach="A complete list of Trophies">Trophy Page</a>
+							</li>
+							<li id="active"><a href="/Factions">Factions</a></li>
+							<li id="active"><a href="/FactionUpgrades">Faction Upgrades</a></li>
+							<li id="active"><a href="/Spells">Spells</a></li>
+							<li id="active"><a href="/Heritages">Heritages</a></li>
+							<li id="active"><a href="/Artifacts/">Artifacts</a></li>
+							<li id="active"><a href="/Challenges/">Challenges</a></li>
+							<li id="active"><a href="/Bloodline">Bloodlines</a></li>
+							<li id="active"><a href="/Research">Research</a></li>
+							<li id="active"><a href="/Researchtree">Research Tree</a></li>
+							<li id="active"><a href="/SunForce">Sun Force</a></li>
+							<li id="active"><a href="/SpellTiers">Spell Tiers</a></li>
+							<li id="active"><a href="/Lineages">Lineages</a></li>
+							<li id="active"><a href="/ArtifactSet">Artifact Sets</a></li>
+							<li id="active"><a href="/Legacies">Legacies</a></li>
+						<P align="center">Builds
+							<li id="active"><a target="_blank" research="R0 - R39 Guide" href="/A0_Plot.png">A0 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/MercBuilds" research="Mercenaries">R3-R16 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/ResearchBuilds" research="Research">R16-R29 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/PBuilds" research="Prestige Research">R30-R39 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></span></a></li>
+							<li id="active"><a target="_blank" research="R40 - R99 Guide" href="/A1_Plot.png">A1 Plot
+									<span style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R40-R46" research="Ascension 1">R40-R46 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R47-R60" research="Dragons">R47-R59 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R60-R75" research="Lineages">R60-R75 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R75Plus" research="Mercenary Research">R75-R99 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a target="_blank" research="R100 - R159 Guide" href="/A2_Plot.png">A2
+									Plot</a></li>
+							<li id="active"><a href="/R100Plus" research="Ascension 2">R100-R115 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R116Plus" research="Prestige Ascension 2">R116-R125 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R125Plus" research="Elite Factions">R125-R135 Builds</a></li>
+							<li id="active"><a href="/R135Plus" research="Elite Challenges">R135-R159 Builds</a></li>
+							<li id="active"><a target="_blank" research="R160+ Guide" href="/A3_Plot.png">A3 Plot <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R160Plus" research="Ascension 3">R160-R189 Builds</a></li>
+							<li id="active"><a href="/R190Plus" research="Mercenary Challenges">R190-R219 Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
+							<li id="active"><a href="/R220Plus" research="Ascension 4">R220+ Builds <span
+										style="color:gold">(Not updated for v4.2)</span></a></li>
 
 					</ul>
+				</div>
+			</div>
+			<div id="rightcolumn">
+				<div class="rightbox">
+					<div class="rightboxcontent">
+						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img
+								src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
 					</div>
-					</div>
-					<div id="rightcolumn">
-					<div class="rightbox">
-				  <div class="rightboxcontent">
-						<a href="https://discord.gg/cq6zmQX" research="Click to join Realm Grinder Chat on Discord"><img src="http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png"></img></a>
-					</div>
-					</div>
-	<h6><img src="http://musicfamily.org/realm/Factions/picks/LegacyBanner.png"></h6>
-	<p></p>
-	<h6>Legacies</h6>
-	<p><b>Requirement</b>: Ascension 4 (R220+)</p>
-	<p>This set of upgrade appears with no other unlock requirement.</p>
-	<p>With each Legacy Container you can choose a Legacy (equal to the set of 3 faction upgrades of the same tier) that doesn't match your current faction.</p>
-	<p>This unlocks those 3 faction upgrades for purchase for their normal coin cost (see faction upgrade costs at <a href="/realm/Ascension4" research="Ascension 4"><b>Ascension 4</b></a>).</p>
-	<p>You can purchase more Legacies for a progressively increasing cost.</p>
-	<p>The current limit is 9 Legacy Container - not including the special one granted by the Research Relativity (F11750).</p>
-	<p><b>Note</b>: While the Container from Relativity is free to purchase, the granted upgrades still have their normal coin cost. It also does not influence the cost of the other container.</p>
-	<p><b>Base Faction Legacies</b>:</p>
-	<p><b>Coin Cost</b>: (1e72 * (1,000 ^ (x ^ 2 - x))), where x is your current Legacy container.</p>
-	<p><b>Faction Coin Cost</b>: (1e33 * (1,000 ^ ( 0.5 * ( x ^ 2 - x)))), where x is your current Legacy container.</p>
-	<p><b>Prestige Faction Legacies</b>:</p>
-	<p><b>Coin Cost</b>: (1e135 * (1,000 ^ (x ^ 2 - x))), where x is your current Legacy container.</p>
-	<p><b>Faction Coin Cost</b>: (1e45 * (1,000 ^ ( 0.5 * ( x ^ 2 - x)))), where x is your current Legacy container.</p>
-	<center>
-		<table class="numtable" style="color: black;">
-			<tr>
-				<th border="none"></th>
-				<th colspan="2">Base Faction</th>
-				<th colspan="2">Prestige Faction</th>
-			<tr>
-				<td>Legacy</td>
-				<td>Sapphire</td>
-				<td>Faction Coin</td>
-				<td>Sapphire</td>
-				<td>Faction Coin</td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>1 Tvg (1e72)</td>
-				<td>1 Dc (1e33)</td>
-				<td>1 Qatg (1e105)</td>
-				<td>1 Qad (1e45)</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>1 Qivg (1e78)</td>
-				<td>1 Ud (1e36)</td>
-				<td>1 Sxtg (1e111)</td>
-				<td>1 Qid (1e48)</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>1 Novg (1e90)</td>
-				<td>1 Td (1e42)</td>
-				<td>1 Qag (1e123)</td>
-				<td>1 Spd (1e54)</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>1 Qitg (1e108)</td>
-				<td>1 Sxd (1e51)</td>
-				<td>1 Sxqag (1e141)</td>
-				<td>1 Vg (1e63)</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>1 Tqag (1e132)</td>
-				<td>1 Vg (1e63)</td>
-				<td>1 QaSxg (1e195)</td>
-				<td>1 Qavg (1e75)</td>
-			</tr>
-			<tr>
-				<td>6</td>
-				<td>1 TQig (1e162)</td>
-				<td>1 Qivg (1e78)</td>
-				<td>1 QaSpg (1e225)</td>
-				<td>1 Novg (1e90)</td>
-			</tr>
-			<tr>
-				<td>7</td>
-				<td>1 QiSxg (1e198)</td>
-				<td>1 Utg (1e96)</td>
-				<td>1 SxOcg (1e261)</td>
-				<td>1 Qitg (1e108)</td>
-			</tr>
-			<tr>
-				<td>8</td>
-				<td>1 NoSpg (1e240)</td>
-				<td>1 Octg (1e117)</td>
-				<td>1 C (1e303)</td>
-				<td>1 Dqag (1e129)</td>
-			</tr>
-			<tr>
-				<td>9</td>
-				<td>1 QiNog (1e288)</td>
-				<td>1 Sxqag (1e141)</td>
-				<td>INF</td>
-				<td>1 Qig (1e153)</td>
-			</tr>				
-		</table>
-	</center>
-	<hr>
-	<p><b>Legacy Combos</b></p>
-	<p>Once you purchased 2 different Vanilla Legacies, you will be able to select their specific Legacy Combo upgrade.</p>
-	<p>The current limit is one Legacy Combo - not including the additional one granted by the Research Revelation (F12000).</p>
-	<p><b>Coin Cost</b>: 1 Tvg (1e72).</p>
-	<p><b>Faction Coin Cost</b>: 1 Dc (1e33) of both Factions.</p>
-	<hr>
-	<br style="clear: both" />
-	<a id="Legacies"></a>
-	<center>
-		<table class="imgtable">
-			<tr>
-				<td>
-					<center>Legacy Menu</center>
-					<center><img src="http://musicfamily.org/realm/Factions/picks/LegacyMenu.png" usemap="#Legacy-map"></center>
-				</td>
-				<td>
-					<center>Legacy Combo Menu</center>
-					<center><img src="http://musicfamily.org/realm/Factions/picks/LegacyComboMenu.png" usemap="#Combo-map"></center>
-				</td>
-			</tr>
-		</table>
-	</center>
-	<map name="Legacy-map">
-		<area research="
+				</div>
+				<h6><img src="http://musicfamily.org/realm/Factions/picks/LegacyBanner.png"></h6>
+				<p></p>
+				<h6>Legacies</h6>
+				<p><b>Requirement</b>: Ascension 4 (R220+)</p>
+				<p>This set of upgrade appears with no other unlock requirement.</p>
+				<p>With each Legacy Container you can choose a Legacy (equal to the set of 3 faction upgrades of the
+					same tier) that doesn't match your current faction.</p>
+				<p>This unlocks those 3 faction upgrades for purchase for their normal coin cost (see faction upgrade
+					costs at <a href="/Ascension4" research="Ascension 4"><b>Ascension 4</b></a>).</p>
+				<p>You can purchase more Legacies for a progressively increasing cost.</p>
+				<p>The current limit is 9 Legacy Container - not including the special one granted by the Research
+					Relativity (F11750).</p>
+				<p><b>Note</b>: While the Container from Relativity is free to purchase, the granted upgrades still have
+					their normal coin cost. It also does not influence the cost of the other container.</p>
+				<p><b>Base Faction Legacies</b>:</p>
+				<p><b>Coin Cost</b>: (1e72 * (1,000 ^ (x ^ 2 - x))), where x is your current Legacy container.</p>
+				<p><b>Faction Coin Cost</b>: (1e33 * (1,000 ^ ( 0.5 * ( x ^ 2 - x)))), where x is your current Legacy
+					container.</p>
+				<p><b>Prestige Faction Legacies</b>:</p>
+				<p><b>Coin Cost</b>: (1e135 * (1,000 ^ (x ^ 2 - x))), where x is your current Legacy container.</p>
+				<p><b>Faction Coin Cost</b>: (1e45 * (1,000 ^ ( 0.5 * ( x ^ 2 - x)))), where x is your current Legacy
+					container.</p>
+				<center>
+					<table class="numtable" style="color: black;">
+						<tr>
+							<th border="none"></th>
+							<th colspan="2">Base Faction</th>
+							<th colspan="2">Prestige Faction</th>
+						<tr>
+							<td>Legacy</td>
+							<td>Sapphire</td>
+							<td>Faction Coin</td>
+							<td>Sapphire</td>
+							<td>Faction Coin</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1 Tvg (1e72)</td>
+							<td>1 Dc (1e33)</td>
+							<td>1 Qatg (1e105)</td>
+							<td>1 Qad (1e45)</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>1 Qivg (1e78)</td>
+							<td>1 Ud (1e36)</td>
+							<td>1 Sxtg (1e111)</td>
+							<td>1 Qid (1e48)</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>1 Novg (1e90)</td>
+							<td>1 Td (1e42)</td>
+							<td>1 Qag (1e123)</td>
+							<td>1 Spd (1e54)</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>1 Qitg (1e108)</td>
+							<td>1 Sxd (1e51)</td>
+							<td>1 Sxqag (1e141)</td>
+							<td>1 Vg (1e63)</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>1 Tqag (1e132)</td>
+							<td>1 Vg (1e63)</td>
+							<td>1 QaSxg (1e195)</td>
+							<td>1 Qavg (1e75)</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>1 TQig (1e162)</td>
+							<td>1 Qivg (1e78)</td>
+							<td>1 QaSpg (1e225)</td>
+							<td>1 Novg (1e90)</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>1 QiSxg (1e198)</td>
+							<td>1 Utg (1e96)</td>
+							<td>1 SxOcg (1e261)</td>
+							<td>1 Qitg (1e108)</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>1 NoSpg (1e240)</td>
+							<td>1 Octg (1e117)</td>
+							<td>1 C (1e303)</td>
+							<td>1 Dqag (1e129)</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>1 QiNog (1e288)</td>
+							<td>1 Sxqag (1e141)</td>
+							<td>INF</td>
+							<td>1 Qig (1e153)</td>
+						</tr>
+					</table>
+				</center>
+				<hr>
+				<p><b>Legacy Combos</b></p>
+				<p>Once you purchased 2 different Vanilla Legacies, you will be able to select their specific Legacy
+					Combo upgrade.</p>
+				<p>The current limit is one Legacy Combo - not including the additional one granted by the Research
+					Revelation (F12000).</p>
+				<p><b>Coin Cost</b>: 1 Tvg (1e72).</p>
+				<p><b>Faction Coin Cost</b>: 1 Dc (1e33) of both Factions.</p>
+				<hr>
+				<br style="clear: both" />
+				<a id="Legacies"></a>
+				<center>
+					<table class="imgtable">
+						<tr>
+							<td>
+								<center>Legacy Menu</center>
+								<center><img src="http://musicfamily.org/realm/Factions/picks/LegacyMenu.png"
+										usemap="#Legacy-map"></center>
+							</td>
+							<td>
+								<center>Legacy Combo Menu</center>
+								<center><img src="http://musicfamily.org/realm/Factions/picks/LegacyComboMenu.png"
+										usemap="#Combo-map"></center>
+							</td>
+						</tr>
+					</table>
+				</center>
+				<map name="Legacy-map">
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FairyUpgrade3.png' align='middle'><b> Fairy Bronze Legacy</b></p>
 	<p><b>Pixie Dust Fertilizer</b></p>
 	<p><b>Effect</b>: Increase the base production of Farms by +98.</p>
@@ -471,7 +529,7 @@
 	<p><b>Effect</b>: Increases maximum Mana additively based on Good buildings you own.</p>
 	<p><b>Formula</b>: +(1.3 * x ^ 0.7), where x is the amount of Good buildings you own.</p>
 		" coords="10,10,64,64" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FairyUpgrade6.png' align='middle'><b> Fairy Silver Legacy</b></p>
 	<p><b>Fairy Cuisine</b></p>
 	<p><b>Effect</b>: Increase the base production of Inns by +234 and reduce the building cost multiplier.</p>
@@ -484,7 +542,7 @@
 	<p><b>Effect</b>: Blacksmiths also increase your Mana Regeneration.</p>
 	<p><b>Formula</b>: +(2.75 * x ^ 0.275), where x is the number of Blacksmiths you own.</p>
 		" coords="70,10,124,64" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FairyUpgrade9.png' align='middle'><b> Fairy Gold Legacy</b></p>
 	<p><b>Starmetal Alloys</b></p>
 	<p><b>Effect</b>: Increase the base production of Blacksmiths by +580.</p>
@@ -498,7 +556,7 @@
 	<p><b>Effect</b>: You gain additional assistants based on the amount of Farms, Inns and Blacksmiths you own.</p>
 	<p><b>Formula</b>: +(1.2 * x ^ 0.6), where x is the number of Farms, Inns, and Blacksmiths you own.</p>
 		" coords="130,10,184,64" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FairyUpgrade12.png' align='middle'><b> Fairy Diamond Legacy</b></p>
 	<p><b>Bubble Swarm</b></p>
 	<p><b>Effect</b>: Increase maximum mana based on the highest amount of Swarming Towers you made this Reincarnation.</p>
@@ -512,7 +570,7 @@
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Chaos spells cast this Reincarnation.</p>
 	<p><b>Formula</b>: (1.2 * x ^ 0.8)%, where x is Chaos spells cast this Reincarnation.</p>
 		" coords="190,10,244,64" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ElvenUpgrade3.png' align='middle'><b> Elven Bronze Legacy</b></p>
 	<p><b>Elven Mint</b></p>
 	<p><b>Effect</b>: The base chance to find Faction Coins is increased by a multiplicative 150%.</p>
@@ -525,7 +583,7 @@
 	<p><b>Effect</b>: Increase Mana Regeneration based on the amount of clicks made in this Reincarnation.</p>
 	<p><b>Formula</b>: +(2 * log10(1 + x) ^ 1.25), where x is the amount of clicks made in this Reincarnation.</p>
 		" coords="10,70,64,124" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ElvenUpgrade6.png' align='middle'><b> Elven Silver Legacy</b></p>
 	<p><b>Elven Emissary</b></p>
 	<p><b>Effect</b>: Increase clicking reward based on the amount of Good buildings you own, and assistants find 3 times as many Faction Coins.</p>
@@ -539,7 +597,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on Clicks total.</p>
 	<p><b>Formula</b>: (2 * x ^ 0.4)%, where x is your Treasure Clicks all time.</p>
 		" coords="70,70,124,124" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ElvenUpgrade9.png' align='middle'><b> Elven Gold Legacy</b></p>
 	<p><b>Elven Diplomacy</b></p>
 	<p><b>Effect</b>: Clicks count more based on Faction Coins found this game.</p>
@@ -554,7 +612,7 @@
 	<p><b>Sylvan Treasure Frills</b></p>
 	<p><b>Effect</b>: Additively increase base clicking reward by 50% of your building production.</p>
 		" coords="130,70,184,124" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ElvenUpgrade12.png' align='middle'><b> Elven Diamond Legacy</b></p>
 	<p><b>Wooden Dice</b></p>
 	<p><b>Effect</b>: Increase Elven Luck chance to activate and its effects based on the highest amount of Arboreal Cities you own in this Reincarnation.</p>
@@ -573,7 +631,7 @@
 	<p><b>Formula</b>: +(50 * ln(1 + x) ^ 1.5), where x is Faction Coins found this game (additively).</p>
 	<p><b>Formula</b>: (1.5 * log10(1 + x) ^ 1.5)%, where x is Faction Coins found this game (multiplicatively).</p>
 		" coords="190,70,244,124" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/AngelUpgrade3.png' align='middle'><b> Angel Bronze Legacy</b></p>
 	<p><b>Holy Bells</b></p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on the amount of buildings you own.</p>
@@ -588,7 +646,7 @@
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on the amount of active spells.</p>
 	<p><b>Formula</b>: +(10 * x)%, where x is the amount of active spells.</p>
 		" coords="10,130,64,184" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/AngelUpgrade6.png' align='middle'><b> Angel Silver Legacy</b></p>
 	<p><b>Guardian Angels</b></p>
 	<p><b>Effect</b>: Spell casts count 100% more.</p>
@@ -601,7 +659,7 @@
 	<p><b>Archangel Feathers</b></p>
 	<p><b>Effect</b>: Increase Mana Regeneration multiplicatively by 50%.</p>
 		" coords="70,130,124,184" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/AngelUpgrade9.png' align='middle'><b> Angel Gold Legacy</b></p>
 	<p><b>Magical Gates</b></p>
 	<p><b>Effect</b>: Increase Maximum Mana based on time spent as Good in this Reincarnation.</p>
@@ -614,7 +672,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on Mana Regeneration.</p>
 	<p><b>Formula</b>: (4 * ln(1 + x) ^ 2)%, where x is your Mana Regeneration.</p>
 		" coords="130,130,184,184" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/AngelUpgrade12.png' align='middle'><b> Angel Diamond Legacy</b></p>
 	<p><b>Heaven's Brilliance</b></p>
 	<p><b>Effect</b>: Increase the bonus multiplier for all spells at tier 7 and above based on the highest amount of Holy Sites you own in this Reincarnation. Gem Grinder and all Dragon's Breath effects are increased based on the highest amount of Holy Sites you own in this Reincarnation.</p>
@@ -629,7 +687,7 @@
 	<p><b>Seraphim Wings</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana, Mana Regeneration, Faction Coin find chance and assistants by 200%.</p>
 		" coords="190,130,244,184" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GoblinUpgrade3.png' align='middle'><b> Goblin Bronze Legacy</b></p>
 	<p><b>Strong Currency</b></p>
 	<p><b>Effect</b>: Gain assistants additively based on the amount of Faction Coins found in this game.</p>
@@ -643,7 +701,7 @@
 	<p><b>Effect</b>: Tax Collection is worth more seconds additively based on the amount of buildings you own.</p>
 	<p><b>Formula</b>: +(x ^ 0.5), where x is the amount of buildings you own.</p>
 		" coords="10,190,64,244" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GoblinUpgrade6.png' align='middle'><b> Goblin Silver Legacy</b></p>
 	<p><b>Black Market</b></p>
 	<p><b>Effect</b>: Production bonus from gems is increased by a multiplicative 150%.</p>
@@ -658,7 +716,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the worth in seconds of your Tax Collection spell.</p>
 	<p><b>Formula</b>: (12 * ln(1 + x) ^ 3)%, where x is the seconds of your Tax Collection.</p>
 		" coords="70,190,124,244" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GoblinUpgrade9.png' align='middle'><b> Goblin Gold Legacy</b></p>
 	<p><b>Goblin Central Bank</b></p>
 	<p><b>Effect</b>: Whenever you cast a spell, also cast a Tax Collection for free.</p>
@@ -671,7 +729,7 @@
 	<p><b>Effect</b>: Gain coins randomly every 10 minutes. Also works while being offline.</p>
 	<p><b>Formula</b>: (randRange(1 , 2500) * x), where x is your total (buildings + assistants) coin production per second, <b>including spells</b>.</p>
 		" coords="130,190,184,244" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GoblinUpgrade12.png' align='middle'><b> Goblin Diamond Legacy</b></p>
 	<p><b>Fool's Gems</b></p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the highest amount of Slave Markets you own in this Reincarnation.</p>
@@ -686,7 +744,7 @@
 	<p><b>Effect</b>: Increase Non-Unique buildings production based on the amount of buildings of the same tier.</p>
 	<p><b>Formula</b>: (x ^ 0.65)%, where x is the amount of buildings of the same tier. </p>
 		" coords="190,190,244,244" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/UndeadUpgrade3.png' align='middle'><b> Undead Bronze Legacy</b></p>
 	<p><b>The Walking Dead</b></p>
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on assistants owned.</p>
@@ -700,7 +758,7 @@
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the highest amount of Necropolises you built in this Reincarnation.</p>
 	<p><b>Formula</b>: +(x ^ 0.3), where x is the highest amount of Necropolises you built in this Reincarnation.</p>
 		" coords="10,250,64,304" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/UndeadUpgrade6.png' align='middle'><b> Undead Silver Legacy</b></p>
 	<p><b>Unholy Rituals</b></p>
 	<p><b>Effect</b>: Increase offline production based on time spent being offline in this Reincarnation.</p>
@@ -714,7 +772,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on time spent in this game.</p>
 	<p><b>Formula</b>: (0.75 * x ^ 0.75)%, where x is time spent this game.</p>
 		" coords="70,250,124,304" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/UndeadUpgrade9.png' align='middle'><b> Undead Gold Legacy</b></p>
 	<p><b>Dead Fields</b></p>
 	<p><b>Effect</b>: Buildings count 75% more.</p>
@@ -726,7 +784,7 @@
 	<p><b>Effect</b>: Increases offline production based on Mana Regeneration.</p>
 	<p><b>Formula</b>: (125 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 		" coords="130,250,184,304" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/UndeadUpgrade12.png' align='middle'><b> Undead Diamond Legacy</b></p>
 	<p><b>Flesh Servants</b></p>
 	<p><b>Effect</b>: Mutiplicatively increase assistants based on the highest amount of Flesh Workshops you built in this Reincarnation.</p>
@@ -740,7 +798,7 @@
 	<p><b>Effect</b>: Gain assistants additively based on the total amount of time spent offline in this Reincarnation.</p>
 	<p><b>Formula</b>: +(21 * x ^ 0.7), where x is offline time in this Reincarnation.</p>
 		" coords="190,250,244,304" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DemonUpgrade3.png' align='middle'><b> Demon Bronze Legacy</b></p>
 	<p><b>Torture Chambers</b></p>
 	<p><b>Effect</b>: Increase the production of Royal Castles / Evil Fortresses / Iron Strongholds (based on your Alignment) based on the amount of assistants you own.</p>
@@ -754,7 +812,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Hell Portals you built in this Reincarnation.</p>
 	<p><b>Formula</b>: (4 * x ^ 0.8)%, where x is the highest amount of Hell Portals you built in this Reincarnation.</p>
 		" coords="10,310,64,364" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DemonUpgrade6.png' align='middle'><b> Demon Silver Legacy</b></p>
 	<p><b>Lava Pits</b></p>
 	<p><b>Effect</b>: Increase the base production of Evil Fortresses by +200,000 and Hell Portals by +2,000,000.</p>
@@ -768,7 +826,7 @@
 	<p><b>Effect</b>: Increase the maximum Mana additively based on Evil spells cast in this game (additive).</p>
 	<p><b>Formula</b>: +(6 * x ^ 0.4), where x is Evil spells cast this game.</p>
 		" coords="70,310,124,364" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DemonUpgrade9.png' align='middle'><b> Demon Gold Legacy</b></p>
 	<p><b>Infernal Magic</b></p>
 	<p><b>Effect</b>: Hell Portals also increase your Mana Regeneration rate.</p>
@@ -782,7 +840,7 @@
 	<p><b>Effect</b>: Increase the production of Heaven's Gate / Hell Portals / Ancient Pyramid (based on your Alignment) based on the highest amount of Hell Portals you built in this Reincarnation.</p>
 	<p><b>Formula</b>: (4 * x ^ 0.8)%, where x is the highest amount of Hell Portals you built in this Reincarnation.</p>
 		" coords="130,310,184,364" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DemonUpgrade12.png' align='middle'><b> Demon Diamond Legacy</b></p>
 	<p><b>Abyssal Furnance</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Burning Abysses you built in this Reincarnation. Higher tiers get better bonuses.</p>
@@ -796,7 +854,7 @@
 	<p><b>Effect</b>: Increase production of three highest building tiers based on your Mana Regeneration.</p>
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is your Mana Regeneration.</p>
 		" coords="190,310,244,364" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/TitanUpgrade3.png' align='middle'><b> Titan Bronze Legacy</b></p>
 	<p><b>Colossal Forge</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of buildings you own.</p>
@@ -810,7 +868,7 @@
 	<p><b>Effect</b>: Increase Faction Coin find chance additively based on time spent as Neutral in this Reincarnation.</p>
 	<p><b>Formula</b>: +(3 * x ^ 0.7)%, where x is time spent as Neutral in this Reincarnation.</p>
 		" coords="10,370,64,424" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/TitanUpgrade6.png' align='middle'><b> Titan Silver Legacy</b></p>
 	<p><b>Titan Drill</b></p>
 	<p><b>Effect</b>: Increase the base production of Warrior Barracks / Slave Pens / Deep Mines by +9635, and Cathedrals / Dark Temples / Monasteries by +98000 (based on your Alignment). Also increase production of those building tiers by 1000%.</p>
@@ -823,7 +881,7 @@
 	<p><b>Effect</b>: Increase Hall of Legends production based on the amount of assistants you own.</p>
 	<p><b>Formula</b>: (20 + 2.15 * ln(1 + x) ^ 2.15)%, where x is the amount of assistants you own.</p>
 		" coords="70,370,124,424" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/TitanUpgrade9.png' align='middle'><b> Titan Gold Legacy</b></p>
 	<p><b>Cyclopean Strength</b></p>
 	<p><b>Effect</b>: Assistants count 200% more, and increase their production by 200%.</p>
@@ -836,7 +894,7 @@
 	<p><b>Effect</b>: Also increase the production of assistants based on the amount of Halls of Legends built.</p>
 	<p><b>Formula</b>: (6 * x ^ 0.6)%, where x is the amount of Hall of Legends built.</p>
 		" coords="130,370,184,424" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/TitanUpgrade12.png' align='middle'><b> Titan Diamond Legacy</b></p>
 	<p><b>Giant Market</b></p>
 	<p><b>Effect</b>: Makes Royal Exchanges count more based on the highest amount of Mountain Palaces you built in this Reincarnation.</p>
@@ -850,7 +908,7 @@
 	<p><b>Effect</b>: Gain assistants based on time spent as Order in this Reincarnation.</p>
 	<p><b>Formula</b>: +(25 * x ^ 0.7), where x time spent as Order in this Reincarnation.</p>
 		" coords="190,370,244,424" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DruidUpgrade3.png' align='middle'><b> Druid Bronze Legacy</b></p>
 	<p><b>Druidic Vocubulary</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier, giving the best bonus to the lowest.</p>
@@ -864,7 +922,7 @@
 	<p><b>Effect</b>: Increase Faction Coin find chance additively and multiplicatively based on the amount of the total buildings you own.</p>
 	<p><b>Formula</b>: (0.4 x ^ 0.4), where x is total buildings built. (additively and multiplicatively)</p>
 		" coords="10,430,64,484" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DruidUpgrade6.png' align='middle'><b> Druid Silver Legacy</b></p>
 	<p><b>Earthly Bond</b></p>
 	<p><b>Effect</b>: Increase maximum Mana additively based on the highest amount of Stone Pillars built in this Reincarnation.</p>
@@ -878,7 +936,7 @@
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of assistants you own.</p>
 	<p><b>Formula</b>: +(1.3 * x ^ 0.7), where x is the amount of assistants you own.</p>
 		" coords="70,430,124,484" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DruidUpgrade9.png' align='middle'><b> Druid Gold Legacy</b></p>
 	<p><b>Mabinogion</b></p>
 	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on their tier, giving the best bonus to the lowest.</p>
@@ -892,7 +950,7 @@
 	<p><b>Effect</b>: Increase the production of each building based on the amount of buildings of the same type. </p>
 	<p><b>Formula</b>: (1.5 * x ^ 0.9)%, where x is the amount of buildings of the same type.</p>
 		" coords="130,430,184,484" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DruidUpgrade12.png' align='middle'><b> Druid Diamond Legacy</b></p>
 	<p><b>Building Vines</b></p>
 	<p><b>Effect</b>: Increase spell duration based on the highest amount of Ziggurats you built in this Reincarnation.</p>
@@ -908,7 +966,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on their tier. Middle tiers get better bonuses.</p>
 	<p><b>Formula</b>: (0.8 * ((6 - abs(6 - T)) ^ 4))%, where T is building tier.</p>
 		" coords="190,430,244,484" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FacelessUpgrade3.png' align='middle'><b> Faceless Bronze Legacy</b></p>
 	<p><b>Territorial Expanse</b></p>
 	<p><b>Effect</b>: Increase the production of Citadels / Necropolises / Labyrinths (based on your Alignment) based on the amount of assistants you own.</p>
@@ -922,7 +980,7 @@
 	<p><b>Effect</b>: Multiplicatively increase assistants based on the time spent on your longest game session in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.3 * x ^ 0.7)%, where x is your Playtime (Longest Session) stat this Reincarnation.</p>
 		" coords="10,490,64,544" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FacelessUpgrade6.png' align='middle'><b> Faceless Silver Legacy</b></p>
 	<p><b>Gold Synthesis</b></p>
 	<p><b>Effect</b>: Increase the production of Neutral buildings based on the amount of coins owned.</p>
@@ -936,7 +994,7 @@
 	<p><b>Effect</b>: Increases production based on the highest amount of buildings purchased in a single game in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is your Buildings Owned (Max) stat.</p>
 		" coords="70,490,124,544" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FacelessUpgrade9.png' align='middle'><b> Faceless Gold Legacy</b></p>
 	<p><b>Magical Treasure</b></p>
 	<p><b>Effect</b>: Increase mana regeneration based on the amount of assistants you own.</p>
@@ -950,7 +1008,7 @@
 	<p><b>Effect</b>: Increases production based on total time spent affiliated with Faceless. Persists through Reincarnations.</p>
 	<p><b>Formula</b>: (x ^ 0.5)%, where x is total time spent as Faceless (all time).</p>
 		" coords="130,490,184,544" shape="rect">
-		<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FacelessUpgrade12.png' align='middle'><b> Faceless Diamond Legacy</b></p>
 	<p><b>Primal Knowledge</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on the highest amount of Forbidden Libraries you built in this Reincarnation. Grows over time and resets every 15 minutes.</p>
@@ -964,7 +1022,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the highest amount of Maximum Mana you had in this Reincarnation.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is highest Maximum Mana this Reincarnation.</p>
 		" coords="190,490,244,544" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DwarvenUpgrade3.png' align='middle'><b> Dwarven Bronze Legacy</b></p>
 	<p><b>Dwarven Ale</b></p>
 	<p><b>Effect</b>:Increase Faction Coin find chance based on the amount of Blacksmiths you own (Additive).</p>
@@ -978,7 +1036,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Excavations you made, including resets, in this Reincarnation.</p>
 	<p><b>Formula</b>: (40 * (x * (1 + 2 * y)) ^ 0.4)%, where x is the number of excavations made this Reincarnation, y is the number of excavation resets in this Reincarnation.</p>
 		" coords="10,550,64,604" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DwarvenUpgrade6.png' align='middle'><b> Dwarven Silver Legacy</b></p>
 	<p><b>Underground Citadels</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration based on the amount of Gems you own.</p>
@@ -992,7 +1050,7 @@
 	<p><b>Effect</b>: Increase the production of assistants based on how long their beard is (it grows over time!).</p>
 	<p><b>Formula</b>: (x ^ 0.7)%, where x is time spent in this game.</p>
 		" coords="70,550,124,604" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DwarvenUpgrade9.png' align='middle'><b> Dwarven Gold Legacy</b></p>
 	<p><b>Battlehammers</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of Dwarven Coins found in this game.</p>
@@ -1006,7 +1064,7 @@
 	<p><b>Effect</b>: Increase Maximum Mana based on the duration of your longest spell.</p>
 	<p><b>Formula</b>: +(50 + 35 * x ^ 0.7), where x is the duration of your longest spell.</p>
 		" coords="130,550,184,604" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DwarvenUpgrade12.png' align='middle'><b> Dwarven Diamond Legacy</b></p>
 	<p><b>Solidity</b></p>
 	<p><b>Effect</b>: Multiplicatively increase production bonus from Gems based on the highest amount of High Bastions you built in this Reincarnation.</p>
@@ -1020,7 +1078,7 @@
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration and Maximum Mana based on highest time spent as Order, Balance or Chaos.</p>
 	<p><b>Formula</b>: (0.03 * max(x, y, z) ^ 0.7)%, where x, y & z is time spent as Order, Balance and Chaos in this Reincarnation respectively.</p>
 		" coords="190,550,244,604" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DrowUpgrade3.png' align='middle'><b> Drow Bronze Legacy</b></p>
 	<p><b>Underworld Tyranny</b></p>
 			<p><b>Effect</b>: Increase the production of all buildings based on your total time spent being Evil in this Reincarnation.</p>
@@ -1034,7 +1092,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on Maximum Mana.</p>
 	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2))%, where x is your Maximum Mana.</p>
 		" coords="10,610,64,664" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DrowUpgrade6.png' align='middle'><b> Drow Silver Legacy</b></p>
 	<p><b>Mana Addicts</b></p>
 	<p><b>Effect</b>: Mana Regeneration increases over time.</p>
@@ -1047,7 +1105,7 @@
 	<p><b>Blackmail</b></p>
 			<p><b>Effect</b>: Reduces Royal Exchange cost multiplier by 0.02; with no other reductions applying, the multiplier will be 1.08 instead of 1.1.</p>
 		" coords="70,610,124,664" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DrowUpgrade9.png' align='middle'><b> Drow Gold Legacy</b></p>
 	<p><b>Spider Gods</b></p>
 	<p><b>Effect</b>: Mutiplicatively increase assistants based on the amount of buildings you own.</p>
@@ -1061,7 +1119,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on Combo Strike counter in this game.</p>
 	<p><b>Formula</b>: (100 + 80 * x ^ 0.4)%, where x is your Combo Strike counter.</p>
 		" coords="130,610,184,664" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DrowUpgrade12.png' align='middle'><b> Drow Diamond Legacy</b></p>
 	<p><b>Spider Clerics</b></p>
 	<p><b>Effect</b>: Increase Royal Exchange bonus based on the highest amount of Brothels you built in this Reincarnation (Additive).</p>
@@ -1075,7 +1133,7 @@
 	<p><b>Effect</b>: Multiplicatively gain assistants based on current gem amount.</p>
 	<p><b>Formula</b>: (1.75 * log10(1 + x) ^ 1.75)%, where x is your current amount of gems.</p>
 		" coords="190,610,244,664" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DragonUpgrade3.png' align='middle'><b> Dragon Bronze Legacy</b></p>
 	<p><b>Dragon Scales</b></p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of time spent as Neutral in this Reincarnation. Effect is increased on Stone Pillars, Labyrinths and Hall Of Legends.</p>
@@ -1089,7 +1147,7 @@
 	<p><b>Effect</b>: Increase Mana Regeneration additively based on the amount of Neutral buildings you own.</p>
 	<p><b>Formula</b>: +(0.5 * x ^ 0.5), where x is the number of Neutral buildings owned.</p>
 		" coords="10,670,64,724" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DragonUpgrade6.png' align='middle'><b> Dragon Silver Legacy</b></p>
 	<p><b>Dragonborn</b></p>
 	<p><b>Effect</b>: Increase assistants additively and multiplicatively, and their production, based on time spent affiliated with Dragons.</p>
@@ -1105,7 +1163,7 @@
 	<p><b>Effect</b>: Multiplicatively increase Royal Exchange Bonus and Faction Coin find chance based on clicks made in this game.</p>
 	<p><b>Formula</b>: (0.8 * x ^ 0.35)%, where x is the number of clicks this game.</p>
 		" coords="70,670,124,724" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DragonUpgrade9.png' align='middle'><b> Dragon Gold Legacy</b></p>
 	<p><b>Ancient Hunger</b></p>
 	<p><b>Effect</b>: Increase Maximum Mana additively and multiplicatively based on the amount of Faction Coins found in this game.</p>
@@ -1120,7 +1178,7 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of active Dragon's Breath effects.</p>
 	<p><b>Formula</b>: (100 * (x ^ 2))%, where x is amount of active Dragon's Breath effects.</p>
 		" coords="130,670,184,724" shape="rect">
-	<area research="
+					<area research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DragonUpgrade12.png' align='middle'><b> Dragon Diamond Legacy</b></p>
 	<p><b>Fang Food</b></p>
 	<p><b>Effect</b>: Multiplicatively increase Mana Regeneration and Assistants based on the highest amount of Dragon Pastures you built in this Reincarnation.</p>
@@ -1135,51 +1193,51 @@
 	<p><b>Effect</b>: Increase the production of all buildings based on Maximum Mana.</p>
 	<p><b>Formula</b>: (20 * ln(1 + x) ^ 2)%, where x is your Maximum Mana.</p>
 		" coords="190,670,244,724" shape="rect">
-	</map>
-	<map name="Combo-map">
-		<area href="#FR-EL" research="
+				</map>
+				<map name="Combo-map">
+					<area href="#FR-EL" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/MysticForest.png' align='middle'><b> Mystic Forest</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Elf Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of assistants you own.</p>
 		" coords="10,10,64,64" shape="rect">
-		<area href="#EL-AN" research="
+					<area href="#EL-AN" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/SacredGlade.png' align='middle'><b> Sacred Glade</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Angel Legacy</p>
 	<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
 	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
 		" coords="70,10,124,64" shape="rect">
-		<area href="#AN-GB" research="
+					<area href="#AN-GB" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GoldenHeaven.png' align='middle'><b> Golden Heaven</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
 	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
 		" coords="130,10,184,64" shape="rect">
-		<area href="#FR-AN" research="
+					<area href="#FR-AN" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DreamRealm.png' align='middle'><b> Dream Realm</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
 	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
 		" coords="10,70,64,124" shape="rect">
-		<area href="#EL-UD" research="
+					<area href="#EL-UD" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/SwampofSorrows.png' align='middle'><b> Swamp of Sorrows</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
 	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
 		" coords="70,70,124,124" shape="rect">
-		<area href="#AN-UD" research="
+					<area href="#AN-UD" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/DarkSanctum.png' align='middle'><b> Dark Sanctum</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Order in this Reincarnation.</p>
 		" coords="130,70,184,124" shape="rect">
-		<area href="#FR-GB" research="
+					<area href="#FR-GB" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ArtifactCaveau.png' align='middle'><b> Artifact Caveau</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Increase the production of all buildings based on artifacts found.</p>
 	<p><b>Formula</b>: (x ^ 0.95)%, where x is the number of artifacts found.</p>
 		" coords="10,130,64,184" shape="rect">
-		<area href="#EL-DM" research="
+					<area href="#EL-DM" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/ForbiddenGrove.png' align='middle'><b> Forbidden Grove</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
@@ -1188,19 +1246,19 @@
 	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
 	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
 		" coords="70,130,124,184" shape="rect">
-		<area href="#AN-DM" research="
+					<area href="#AN-DM" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/EternalBattlefield.png' align='middle'><b> Eternal Battlefield</b></p>
 	<p><b>Requirement</b>: Angel Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
 		" coords="130,130,184,184" shape="rect">
-		<area href="#EL-GB" research="
+					<area href="#EL-GB" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/GreedFactory.png' align='middle'><b> Greed Factory</b></p>
 	<p><b>Requirement</b>: Elf Legacy, Goblin Legacy</p>
 	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this game.</p>
 	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.</p>
 		" coords="10,190,64,244" shape="rect">
-		<area href="#FR-UD" research="
+					<area href="#FR-UD" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/TwistingNetherCombo.png' align='middle'><b> Twisting Nether</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Gain a new spell with the same name (20 seconds duration, 1 M (1e6) Mana Cost, can be cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
@@ -1208,14 +1266,14 @@
 	<p><b>Note</b>: The Lineage Level increase is only a 'count more' effect and does not affect base lineage in any way.</p>
 	<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>
 		" coords="70,190,124,244" shape="rect">
-		<area href="#FR-DM" research="
+					<area href="#FR-DM" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/BroodingAbyss.png' align='middle'><b> Brooding Abyss</b></p>
 	<p><b>Requirement</b>: Fairy Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Chaotically increase assistants based on amount of alignments among the active spells you have.</p>
 	<p><b>Formula</b>: ((a ^ 1.3 + b ^ 1.3 + c ^ 1.3 + d ^ 1.3 + e ^ 1.3 + f ^ 1.3) ^ (1 + 0.3 * (a + b + c + d + e + f)))%, where a - f are the amount of spells in the respective alignment.</p>
 	<p><b>Examples</b>: Fairy Chanting (both good & chaos), Combo Strike (evil), Temporal Flux (order).</p>
 		" coords="130,190,184,244" shape="rect">
-		<area href="#GB-UD" research="
+					<area href="#GB-UD" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/HomunculusLab.png' align='middle'><b> Homunculus Lab</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Undead Legacy</p>
 	<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in this Reincarnation.</p>
@@ -1223,523 +1281,694 @@
 	<p><b>Effect</b>: Also increase the production of all buildings based on unspent research budget.</p>
 	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the sum of your unspent research budget across all branches.</p>
 		" coords="10,250,64,304" shape="rect">
-		<area href="#UD-DM" research="
+					<area href="#UD-DM" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/FrozenWastes.png' align='middle'><b> Frozen Wastes</b></p>
 	<p><b>Requirement</b>: Undead Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
 	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
 		" coords="70,250,124,304" shape="rect">
-		<area href="#GB-DM" research="
+					<area href="#GB-DM" research="
 	<p><img src='http://musicfamily.org/realm/Factions/picks/CorruptionZone.png' align='middle'><b> Corruption Zone</b></p>
 	<p><b>Requirement</b>: Goblin Legacy, Demon Legacy</p>
 	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest spell.</p>
 	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p></p>
 		" coords="130,250,184,304" shape="rect">
-	</map>
-	<hr>
-	<p id="FR-EL"><img src="http://musicfamily.org/realm/Factions/picks/MysticForest.png" align="middle"><b> Mystic Forest</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Elf Legacy</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of assistants you own.</p>
-	<hr>
-	<p id="FR-AN"><img src="http://musicfamily.org/realm/Factions/picks/DreamRealm.png" align="middle"><b> Dream Realm</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
-	<hr>
-	<p id="FR-GB"><img src="http://musicfamily.org/realm/Factions/picks/ArtifactCaveau.png" align="middle"><b> Artifact Caveau</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Goblin Legacy</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on artifacts found.</p>
-	<p><b>Formula</b>: (x ^ 0.95)%, where x is the number of artifacts found.</p>
-	<hr>
-	<p id="FR-UD"><img src="http://musicfamily.org/realm/Factions/picks/TwistingNetherCombo.png" align="middle"><b> Twisting Nether</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
-	<p><b>Effect</b>: Gain a new spell with the same name (20 seconds duration, 1 M (1e6) Mana Cost, can be cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
-	<p><img src="http://musicfamily.org/realm/Factions/picks/TwistingNether.png" align="middle"></p>
-	<p><b>Note</b>: The Lineage Level increase is only a "count more" effect and does not affect base lineage in any way.</p>
-	<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as Djinn Challenge 5.</p>
-	<hr>
-	<p id="FR-DM"><img src="http://musicfamily.org/realm/Factions/picks/BroodingAbyss.png" align="middle"><b> Brooding Abyss</b></p>
-	<p><b>Requirement</b>: Fairy Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Chaotically increase assistants based on amount of alignments among the active spells you have.</p>
-	<p><b>Formula</b>: ((a ^ 1.3 + b ^ 1.3 + c ^ 1.3 + d ^ 1.3 + e ^ 1.3 + f ^ 1.3) ^ (1 + 0.3 * (a + b + c + d + e + f)))%, where a - f are the amount of spells in the respective alignment.</p>
-	<p><b>Examples</b>: Fairy Chanting (good & chaos), Combo Strike (evil), Temporal Flux (order).</p>
-	<hr>
-	<p id="EL-AN"><img src="http://musicfamily.org/realm/Factions/picks/SacredGlade.png" align="middle"><b> Sacred Glade</b></p>
-	<p><b>Requirement</b>: Elf Legacy, Angel Legacy</p>
-	<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
-	<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
-	<hr>
-	<p id="EL-GB"><img src="http://musicfamily.org/realm/Factions/picks/GreedFactory.png" align="middle"><b> Greed Factory</b></p>
-	<p><b>Requirement</b>: Elf Legacy, Goblin Legacy</p>
-	<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in this game.</p>
-	<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.</p>
-	<hr>
-	<p id="EL-UD"><img src="http://musicfamily.org/realm/Factions/picks/SwampofSorrows.png" align="middle"><b> Swamp of Sorrows</b></p>
-	<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
-	<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
-	<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
-	<hr>
-	<p id="EL-DM"><img src="http://musicfamily.org/realm/Factions/picks/ForbiddenGrove.png" align="middle"><b> Forbidden Grove</b></p>
-	<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
-	<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
-	<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this game.</p>
-	<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
-	<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
-	<hr>
-	<p id="AN-GB"><img src="http://musicfamily.org/realm/Factions/picks/GoldenHeaven.png" align="middle"><b> Golden Heaven</b></p>
-	<p><b>Requirement</b>: Angel Legacy, Goblin Legacy</p>
-	<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
-	<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
-	<hr>
-	<p id="AN-UD"><img src="http://musicfamily.org/realm/Factions/picks/DarkSanctum.png" align="middle"><b> Dark Sanctum</b></p>
-	<p><b>Requirement</b>: Angel Legacy, Undead Legacy</p>
-	<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Order in this Reincarnation.</p>
-	<hr>
-	<p id="AN-DM"><img src="http://musicfamily.org/realm/Factions/picks/EternalBattlefield.png" align="middle"><b> Eternal Battlefield</b></p>
-	<p><b>Requirement</b>: Angel Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
-	<hr>
-	<p id="GB-UD"><img src="http://musicfamily.org/realm/Factions/picks/HomunculusLab.png" align="middle"><b> Homunculus Lab</b></p>
-	<p><b>Requirement</b>: Goblin Legacy, Undead Legacy</p>
-	<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in this Reincarnation.</p>
-	<p><b>Formula</b>: +(75 + ln(1 + min(x , y)) ^ 3.25)%, where x and y is time spent as Order and Balance respectively in this Reincarnation.</p>
-	<p><b>Effect</b>: Also increase the production of all buildings based on unspent research budget.</p>
-	<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the sum of your unspent research budget across all branches.</p>
-	<hr>
-	<p id="GB-DM"><img src="http://musicfamily.org/realm/Factions/picks/CorruptionZone.png" align="middle"><b> Corruption Zone</b></p>
-	<p><b>Requirement</b>: Goblin Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest spell.</p>
-	<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p>
-	<hr>
-	<p id="UD-DM"><img src="http://musicfamily.org/realm/Factions/picks/FrozenWastes.png" align="middle"><b> Frozen Wastes</b></p>
-	<p><b>Requirement</b>: Undead Legacy, Demon Legacy</p>
-	<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
-	<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
-</div>
-<div id="footer">
-</div>
-</div>
-</div>
-<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
-<tbody>
-<tr>
-<td style="padding:0.2em 0.5em;">
-<FONT color=#98AFC7> | <a href="/realm/Resources" research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds"><FONT color=#98AFC7>Resources</a> | <a href="/realm/Reset" research="Reset - Abdication - Reincarnation"><FONT color=#98AFC7>Soft Resets</a> | <a href="/realm/BuildingAlignments" research="Building Alignments"><FONT color=#98AFC7>Buildings</a> | <a href="/realm/Heritages" research="Faction Heritages"><FONT color=#98AFC7>Heritages</a> | <a href="/realm/Bloodline" research="Faction Bloodlines" class="mw-redirect"><FONT color=#98AFC7>Bloodlines</a>
- | <a href="/realm/Spells" research="Spells and Tier unlock Times"><FONT color=#98AFC7>Spells</a> | <a href="/realm/Artifacts" research="Excavations"><FONT color=#98AFC7>Excavations</a>  | <a href="/realm/Challenges" research="Complete list of Challenges and descriptions"><FONT color=#98AFC7>Challenges</a> | <a href="/realm/Upgrades" research="Upgrades"><FONT color=#98AFC7>Upgrades</a> | <a href="/realm/TrophyPage" research="Complete list of Trophies and descriptions"><FONT color=#98AFC7>Trophies</a>
- | <a href="/realm/Factions" research="Factions"><FONT color=#98AFC7>Factions</a> | <a href="/realm/Research" research="The Research Facilities - Short and long names"><FONT color=#98AFC7>Research</a> |
-<p> | <a href="/realm/MercBuilds" research="Mercenary Builds"><FONT color=#98AFC7>Merc Builds</a> | <a href="/realm/ResearchBuilds" research="Research Builds"><FONT color=#98AFC7>Research Builds</a> | <a href="/realm/PBuilds" research="Evil and Good Prestige Builds"><FONT color=#98AFC7>Prestige Builds</a> | <a href="/realm/R40-R46" research="Ascension Builds"><FONT color=#98AFC7>Dragon Unlock</a> | <a href="/realm/R47-R60" research="Neutral Prestige Builds"><FONT color=#98AFC7>Neutral Prestige Builds</a> | <a href="/realm/Researchtree" research="Complete list of Research and descriptions"><FONT color=#98AFC7>Research Tree</a> |
-</p>
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Vanilla Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>"><FONT color=#98AFC7>Good Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon"><FONT color=#98AFC7>Evil Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless"><FONT color=#98AFC7>Neutral Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon"><FONT color=#98AFC7>Prestige Factions</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers"><FONT color=#98AFC7>A2 Elite Factions</a> </span> |
-</p>
- | <a href="/realm/Events" research="Events"><FONT color=#98AFC7>Events</a>  | <a href="/realm/Changes" research="Latest Major Patch"><FONT color=#98AFC7>Latest Major Patch</a> | <a href="/realm/Changelog" research="Changelog"><FONT color=#98AFC7>Changelog</a> | <a href="/realm/Notation" research="Short - Scientific - Engineering"><FONT color=#98AFC7>Notation</a> |  <a href="/realm/Terminology" research="Commonly used terms and abbreviations"><FONT color=#98AFC7>Terminology</a> | <a href="/realm/Tools" research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki"><FONT color=#98AFC7>Tools</a> | <a href="/realm/Kong" research="Help"><FONT color=#98AFC7>Kongregate Links</a>  |
-<p>  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a href="/realm/FairyFaction" research="Fairy (Good)"><FONT color=#98AFC7>Fairy</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a href="/realm/ElfFaction" research="Elf (Good)"><FONT color=#98AFC7>Elven</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a href="/realm/AngelFaction" research="Angel (Good)"><FONT color=#98AFC7>Angel</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a href="/realm/GoblinFaction" research="Goblin (Evil)"><FONT color=#98AFC7>Goblin</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a href="/realm/UndeadFaction" research="Undead (Evil)"><FONT color=#98AFC7>Undead</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a href="/realm/DemonFaction" research="Demon (Evil)"><FONT color=#98AFC7>Demon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a href="/realm/TitanFaction" research="Titan (Neutral)"><FONT color=#98AFC7>Titan</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a href="/realm/DruidFaction" research="Druid (Neutral)"><FONT color=#98AFC7>Druid</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a href="/realm/FacelessFaction" research="Faceless (Neutral)"><FONT color=#98AFC7>Faceless</a> </span> |
-</p>
-<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a href="/realm/MercenaryFaction" research="Mercenary"><FONT color=#98AFC7>Mercenary</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a href="/realm/DwarfFaction" research="Dwarf (Good Prestige)"><FONT color=#98AFC7>Dwarf</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a href="/realm/DrowFaction" research="Drow (Evil Prestige)"><FONT color=#98AFC7>Drow</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a href="/realm/DragonFaction" research="Dragon (Neutral Prestige)"><FONT color=#98AFC7>Dragon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a href="/realm/ArchonFaction" research="Archon (A2 Elite)"><FONT color=#98AFC7>Archon</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a href="/realm/DjinnFaction" research="Djinn (A2 Elite)"><FONT color=#98AFC7>Djinn</a> </span>
-  |  <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a href="/realm/MakersFaction" research="Makers (A2 Elite)"><FONT color=#98AFC7>Makers</a> </span> |
-</p>
-</td></tr></tbody></table>
-<p align="center"><FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/"><FONT color=#98AFC7><b>G00FBALL</b></font></a></p>
-<div align="center"><FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
-<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
-<p align="center">5ku||3d</p>
-<p align="center">6000j</p>
-<p align="center">7636kei</p>
-<p align="center">Aaborg</p>
-<p align="center">Aaron Cook</p>
-<p align="center">acbdefgfedbca</p>
-<p align="center">acer4321</p>
-<p align="center">Ach3ck</p>
-<p align="center">AJZ3</p>
-<p align="center">AKL</p>
-<p align="center">Alright</p>
-<p align="center">Altoscholto</p>
-<p align="center">Amirin</p>
-<p align="center">Anathah</p>
-<p align="center">AndreikaD</p>
-<p align="center">Antendren</p>
-<p align="center">apocal_88</p>
-<p align="center">arcanmster</p>
-<p align="center">Archmage</p>
-<p align="center">arintayn2</p>
-<p align="center">ARTEZZ</p>
-<p align="center">art-of-dom</p>
-<p align="center">ash1soccer</p>
-<p align="center">Ashthar</p>
-<p align="center">aurora</p>
-<p align="center">aviv</p>
-<p align="center">Azua</p>
-<p align="center">Bearpaws</p>
-<p align="center">BigGeak</p>
-<p align="center">bigshawnt</p>
-<p align="center">BillK14</p>
-<p align="center">BionicFrog</p>
-<p align="center">BioRules</p>
-<p align="center">blackbird</p>
-<p align="center">Blackeye</p>
-<p align="center">Blue</p>
-<p align="center">bobbert</p>
-<p align="center">Boffo</p>
-<p align="center">Book909</p>
-<p align="center">boss_mc</p>
-<p align="center">Boyo</p>
-<p align="center">brc48632</p>
-<p align="center">Breeze</p>
-<p align="center">btzeroes</p>
-<p align="center">burninglegion64</p>
-<p align="center">BuzzMarzz</p>
-<p align="center">CafeMaker</p>
-<p align="center">CamoBrie</p>
-<p align="center">capito27</p>
-<p align="center">Chaos</p>
-<p align="center">Chaosmancer7</p>
-<p align="center">chaosmarine4226</p>
-<p align="center">CheeseWitch</p>
-<p align="center">chris</p>
-<p align="center">chrispi</p>
-<p align="center">CHRullz</p>
-<p align="center">Ck</p>
-<p align="center">CluelessWonder</p>
-<p align="center">Coal_CC</p>
-<p align="center">ColdDrake13</p>
-<p align="center">Corgi</p>
-<p align="center">cralo</p>
-<p align="center">Cromedome</p>
-<p align="center">Cromieplays</p>
-<p align="center">Curunur</p>
-<p align="center">Cyden</p>
-<p align="center">Da Banana Man</p>
-<p align="center">DainDwarf</p>
-<p align="center">Damxacer1</p>
-<p align="center">Dariof4</p>
-<p align="center">DED SERVER</p>
-<p align="center">Delichtig</p>
-<p align="center">Dienes</p>
-<p align="center">djones0823</p>
-<p align="center">djru8ix</p>
-<p align="center">Doubleshoe</p>
-<p align="center">dox4242</p>
-<p align="center">DR</p>
-<p align="center">Draven</p>
-<p align="center">Drogor</p>
-<p align="center">drseilzug</p>
-<p align="center">EagleAgg03</p>
-<p align="center">Ebilkill</p>
-<p align="center">ehyder</p>
-<p align="center">eleganceseraph</p>
-<p align="center">ElJay</p>
-<p align="center">Eltro</p>
-<p align="center">Enexplogen</p>
-<p align="center">ensteffahn</p>
-<p align="center">ErrolErrolson</p>
-<p align="center">escalon</p>
-<p align="center">Essigschurke</p>
-<p align="center">Evengrey</p>
-<p align="center">Exsanguine</p>
-<p align="center">FastHit</p>
-<p align="center">FedeJossa</p>
-<p align="center">Fire</p>
-<p align="center">Flameslinger01</p>
-<p align="center">Fonzoland</p>
-<p align="center">Franelas</p>
-<p align="center">Freakomant</p>
-<p align="center">Fryguy9</p>
-<p align="center">furkannnO</p>
-<p align="center">fwbx529</p>
-<p align="center">gaccount</p>
-<p align="center">GalacManta</p>
-<p align="center">gamemasterty</p>
-<p align="center">Geno</p>
-<p align="center">Ghorre</p>
-<p align="center">Glitchstorm</p>
-<p align="center">Goholtramor</p>
-<p align="center">Grazloth</p>
-<p align="center">GreenMJ13</p>
-<p align="center">grelf</p>
-<p align="center">Guy</p>
-<p align="center">gvaiou</p>
-<p align="center">HeinQuek</p>
-<p align="center">HellTest</p>
-<p align="center">Heronimo2</p>
-<p align="center">heyitsdross</p>
-<p align="center">hiimahotdog</p>
-<p align="center">homebrewer54</p>
-<p align="center">Hotspot</p>
-<p align="center">iam10ninjas</p>
-<p align="center">Ignus</p>
-<p align="center">Igorogi</p>
-<p align="center">iluxa4000</p>
-<p align="center">Ilya</p>
-<p align="center">ivanovichkoslov</p>
-<p align="center">j8ner</p>
-<p align="center">jabberok</p>
-<p align="center">Jakeb2002</p>
-<p align="center">Jenetikitty</p>
-<p align="center">JezuzLizard</p>
-<p align="center">JGChan</p>
-<p align="center">jgchan29</p>
-<p align="center">Joa</p>
-<p align="center">johnharveybc</p>
-<p align="center">johnleprude</p>
-<p align="center">johny_blaze</p>
-<p align="center">jonny0panic</p>
-<p align="center">Just1pirate</p>
-<p align="center">Just1pirate</p>
-<p align="center">kabuto44</p>
-<p align="center">Kacper</p>
-<p align="center">Kain</p>
-<p align="center">Kanra</p>
-<p align="center">Kaos</p>
-<p align="center">Keben</p>
-<p align="center">kiluh</p>
-<p align="center">KRIEG</p>
-<p align="center">Kroll</p>
-<p align="center">kuerti</p>
-<p align="center">KuraTheDog</p>
-<p align="center">Kurt-bookboy</p>
-<p align="center">KyonLevic</p>
-<p align="center">Lailoken</p>
-<p align="center">Lapare</p>
-<p align="center">Lavi04</p>
-<p align="center">Lavi04</p>
-<p align="center">Lead Luigi</p>
-<p align="center">LeoB516</p>
-<p align="center">LeoC.II</p>
-<p align="center">lesd</p>
-<p align="center">lesdruides</p>
-<p align="center">Liraso</p>
-<p align="center">Lollipop</p>
-<p align="center">lordulster</p>
-<p align="center">Luio2revenge</p>
-<p align="center">lvl 1 crook</p>
-<p align="center">magnanimousCynic</p>
-<p align="center">Magnusly</p>
-<p align="center">ManDude33</p>
-<p align="center">mangafreak140</p>
-<p align="center">mangaking118</p>
-<p align="center">MarioFanaticXV</p>
-<p align="center">masteff</p>
-<p align="center">Masterzan</p>
-<p align="center">Matrix4767</p>
-<p align="center">Max Schradin</p>
-<p align="center">Maya</p>
-<p align="center">McguyverZero</p>
-<p align="center">Mechaflood</p>
-<p align="center">Merp</p>
-<p align="center">Milkopilko</p>
-<p align="center">mpeechee</p>
-<p align="center">Mr.Celedown</p>
-<p align="center">MrGerman</p>
-<p align="center">mrothorr</p>
-<p align="center">myogin</p>
-<p align="center">Mysticman89</p>
-<p align="center">MythWiz_</p>
-<p align="center">nakota</p>
-<p align="center">Namelessname</p>
-<p align="center">NateMcCloud</p>
-<p align="center">Necrodoom</p>
-<p align="center">NecroXD</p>
-<p align="center">Neutral Potato</p>
-<p align="center">NeutralPotato</p>
-<p align="center">Nizidramaniiyt</p>
-<p align="center">noonomoon</p>
-<p align="center">NTWgreatest</p>
-<p align="center">NTWgrinder</p>
-<p align="center">oholoko</p>
-<p align="center">Okami</p>
-<p align="center">okunderground</p>
-<p align="center">onianinara</p>
-<p align="center">Onoxious</p>
-<p align="center">Origin</p>
-<p align="center">oswarlan</p>
-<p align="center">OvenBakedGod</p>
-<p align="center">Paah</p>
-<p align="center">pacmanlite</p>
-<p align="center">Palamazzi</p>
-<p align="center">Parasitez83</p>
-<p align="center">Piezza24</p>
-<p align="center">pizza_troll</p>
-<p align="center">pkal</p>
-<p align="center">plaaosert</p>
-<p align="center">player2aj</p>
-<p align="center">Polibus</p>
-<p align="center">Popington</p>
-<p align="center">primal cradily</p>
-<p align="center">Proxy</p>
-<p align="center">pseudobyte</p>
-<p align="center">PseudonymousBosh</p>
-<p align="center">Pyxl</p>
-<p align="center">q1235<p></p>
-<p align="center">raato</p>
-<p align="center">Rade</p>
-<p align="center">RageBall</p>
-<p align="center">RastlinV</p>
-<p align="center">RebelKeithy</p>
-<p align="center">Redd</p>
-<p align="center">Redd</p>
-<p align="center">Regulus</p>
-<p align="center">Reknot</p>
-<p align="center">RetroDerpSquid9</p>
-<p align="center">rhaek7</p>
-<p align="center">Rustle Crowe</p>
-<p align="center">Ryonir</p>
-<p align="center">saitenhieb</p>
-<p align="center">SamGooBat</p>
-<p align="center">Sandworm</p>
-<p align="center">Sas Assassin</p>
-<p align="center">Sc0rp</p>
-<p align="center">Sefa</p>
-<p align="center">Seyliz</p>
-<p align="center">Shantie</p>
-<p align="center">shayner12</p>
-<p align="center">Sheer</p>
-<p align="center">Sho Phaune</p>
-<p align="center">Skulled190</p>
-<p align="center">Slakkarn</p>
-<p align="center">Slakkarn</p>
-<p align="center">slantfer</p>
-<p align="center">solidifiedmind</p>
-<p align="center">somarilnos</p>
-<p align="center">SomeoneLucas</p>
-<p align="center">Soulrift</p>
-<p align="center">Space Troll</p>
-<p align="center">spamtraprus</p>
-<p align="center">Spanosa</p>
-<p align="center">SRT</p>
-<p align="center">StAUG</p>
-<p align="center">stmlee</p>
-<p align="center">Stoner Claff</p>
-<p align="center">Sum Yung Gai</p>
-<p align="center">sunk</p>
-<p align="center">Suranis</p>
-<p align="center">swim</p>
-<p align="center">Synthini</p>
-<p align="center">Sythen2014</p>
-<p align="center">tangyifei</p>
-<p align="center">Tanny</p>
-<p align="center">Taxiway</p>
-<p align="center">tbrown30</p>
-<p align="center">Teabagger Vance</p>
-<p align="center">Technosaurus</p>
-<p align="center">Tenebricosus</p>
-<p align="center">Tenyasha</p>
-<p align="center">ThatGuy</p>
-<p align="center">The Homa</p>
-<p align="center">ThePeon</p>
-<p align="center">Thorian</p>
-<p align="center">toifel131</p>
-<p align="center">Tornadobird</p>
-<p align="center">torskenn</p>
-<p align="center">trevYT</p>
-<p align="center">Trewq_</p>
-<p align="center">TrostNi</p>
-<p align="center">Tskami_ek</p>
-<p align="center">Tyler</p>
-<p align="center">ukulelejongetje<p></p>
-<p align="center">UndeadAbbys</p>
-<p align="center">Uni</p>
-<p align="center">Username</p>
-<p align="center">uwnim</p>
-<p align="center">Valentin</p>
-<p align="center">Versine</p>
-<p align="center">VilgefortzPL</p>
-<p align="center">Vince</p>
-<p align="center">waga baba bobo</p>
-<p align="center">WaitingIdly</p>
-<p align="center">waterfire425</p>
-<p align="center">websterguy</p>
-<p align="center">Weedheter</p>
-<p align="center">Wlerin</p>
-<p align="center">Wolf415</p>
-<p align="center">wolfsblood</p>
-<p align="center">woopemgood</p>
-<p align="center">WynneYilmaz</p>
-<p align="center">xemima</p>
-<p align="center">XenosHg</p>
-<p align="center">Xentha</p>
-<p align="center">XenTwo</p>
-<p align="center">xeperiset</p>
-<p align="center">Xikre</p>
-<p align="center">Xorious</p>
-<p align="center">Xpt14</p>
-<p align="center">xXRochforteXx</p>
-<p align="center">Yarilo</p>
-<p align="center">ydc1017902176</p>
-<p align="center">yob</p>
-<p align="center">Zange</p>
-<p align="center">Zaraza</p>
-<p align="center">Zariars</p>
-<p align="center">Zeckenschwarm</p>
-<p align="center">Zeen</p>
-<p align="center">Zelphh1</p>
-<p align="center">Zepto</p>
-<p align="center">zionhian</p>
-<p align="center">Zyllyn</p>
-<p align="center">Zylon</p>
-<p align="center">Дикий Речной Пёс</p>
-</marquee>
-<style>
-.html-marquee {
-  height:14px;
-  width:160px;
-  background-color:Black;
-  font-family:Cursive;
-  font-size:14px;
-  color:#98AFC7;
-  font-weight:bold;
-  border-width:1;
-  border-style:solid;
-  border-color:Black;
-}
-</style>
-<script>
-function myFunction(e) {
-  var copyText = e.next();
-  if (isOS()) {
-        var textElement = copyText[0];
-        var editable = textElement.contentEditable;
-        var readOnly = textElement.readOnly;
-        textElement.contentEditable = true;
-        textElement.readOnly = false;
-        var range = document.createRange();
-        range.selectNodeContents(textElement);
-        var selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textElement.setSelectionRange(0, 999999);
-        textElement.contentEditable = editable;
-        textElement.readOnly = readOnly;
-    } else {
-        copyText.select();
-    }
-  document.execCommand('copy');
-}
- function isOS() {
-    return navigator.userAgent.match(/ipad|iphone/i);
-}
-</script>
-<div align="center">
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0" alt="visitor counter"></a>
-</body>
+				</map>
+				<hr>
+				<p id="FR-EL"><img src="http://musicfamily.org/realm/Factions/picks/MysticForest.png" align="middle"><b>
+						Mystic Forest</b></p>
+				<p><b>Requirement</b>: Fairy Legacy, Elf Legacy</p>
+				<p><b>Effect</b>: Increase the production of all buildings based on the amount of assistants you own.
+				</p>
+				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2)%, where x is the amount of assistants you own.</p>
+				<hr>
+				<p id="FR-AN"><img src="http://musicfamily.org/realm/Factions/picks/DreamRealm.png" align="middle"><b>
+						Dream
+						Realm</b></p>
+				<p><b>Requirement</b>: Fairy Legacy, Angel Legacy</p>
+				<p><b>Effect</b>: Increase Mana Regeneration based on time spent as Good in this Reincarnation.</p>
+				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good in this Reincarnation.</p>
+				<hr>
+				<p id="FR-GB"><img src="http://musicfamily.org/realm/Factions/picks/ArtifactCaveau.png"
+						align="middle"><b>
+						Artifact Caveau</b></p>
+				<p><b>Requirement</b>: Fairy Legacy, Goblin Legacy</p>
+				<p><b>Effect</b>: Increase the production of all buildings based on artifacts found.</p>
+				<p><b>Formula</b>: (x ^ 0.95)%, where x is the number of artifacts found.</p>
+				<hr>
+				<p id="FR-UD"><img src="http://musicfamily.org/realm/Factions/picks/TwistingNetherCombo.png"
+						align="middle"><b> Twisting Nether</b></p>
+				<p><b>Requirement</b>: Fairy Legacy, Undead Legacy</p>
+				<p><b>Effect</b>: Gain a new spell with the same name (20 seconds duration, 1 M (1e6) Mana Cost, can be
+					cast up to Tier 99). While active, increases Lineage Level by +1 per Tier.</p>
+				<p><img src="http://musicfamily.org/realm/Factions/picks/TwistingNether.png" align="middle"></p>
+				<p><b>Note</b>: The Lineage Level increase is only a "count more" effect and does not affect base
+					lineage in any way.</p>
+				<p><b>Note</b>: Twisting Nether counts as a faction spell, but has no alignments for upgrades such as
+					Djinn Challenge 5.</p>
+				<hr>
+				<p id="FR-DM"><img src="http://musicfamily.org/realm/Factions/picks/BroodingAbyss.png"
+						align="middle"><b>
+						Brooding Abyss</b></p>
+				<p><b>Requirement</b>: Fairy Legacy, Demon Legacy</p>
+				<p><b>Effect</b>: Chaotically increase assistants based on amount of alignments among the active spells
+					you have.</p>
+				<p><b>Formula</b>: ((a ^ 1.3 + b ^ 1.3 + c ^ 1.3 + d ^ 1.3 + e ^ 1.3 + f ^ 1.3) ^ (1 + 0.3 * (a + b + c
+					+ d + e + f)))%, where a - f are the amount of spells in the respective alignment.</p>
+				<p><b>Examples</b>: Fairy Chanting (good & chaos), Combo Strike (evil), Temporal Flux (order).</p>
+				<hr>
+				<p id="EL-AN"><img src="http://musicfamily.org/realm/Factions/picks/SacredGlade.png" align="middle"><b>
+						Sacred
+						Glade</b></p>
+				<p><b>Requirement</b>: Elf Legacy, Angel Legacy</p>
+				<p><b>Effect</b>: Increase all spells duration based on clicks made in this game.</p>
+				<p><b>Formula</b>: (2.4 * x ^ 0.4)%, where x is the amount of clicks made in this game.</p>
+				<hr>
+				<p id="EL-GB"><img src="http://musicfamily.org/realm/Factions/picks/GreedFactory.png" align="middle"><b>
+						Greed
+						Factory</b></p>
+				<p><b>Requirement</b>: Elf Legacy, Goblin Legacy</p>
+				<p><b>Effect</b>: Multiplicatively increase Faction Coin find chance based on Tax Collections casts in
+					this game.</p>
+				<p><b>Formula</b>: (2.5 * ln(1 + x) ^ 2.5)%, where x is the amount of Tax Collection casts in this game.
+				</p>
+				<hr>
+				<p id="EL-UD"><img src="http://musicfamily.org/realm/Factions/picks/SwampofSorrows.png"
+						align="middle"><b>
+						Swamp of Sorrows</b></p>
+				<p><b>Requirement</b>: Elf Legacy, Undead Legacy</p>
+				<p><b>Effect</b>: Activity time of all spells counts more based on Maximum Mana.</p>
+				<p><b>Formula</b>: (2 * ln(1 + x) ^ 2.25)%, where x is your Maximum Mana.</p>
+				<hr>
+				<p id="EL-DM"><img src="http://musicfamily.org/realm/Factions/picks/ForbiddenGrove.png"
+						align="middle"><b>
+						Forbidden Grove</b></p>
+				<p><b>Requirement</b>: Elf Legacy, Demon Legacy</p>
+				<p><b>Effect</b>: Autoclicks per second based on the amount of Unique Buildings you own.</p>
+				<p><b>Formula</b>: +(1 + 1.5 * x ^ 0.2)%, where x is the amount of Unique Buildings you own.</p>
+				<p><b>Effect</b>: Also increases production of Unique Buildings based on Autoclicks this game.</p>
+				<p><b>Formula</b>: (2 * log10(1 + x) ^ 2)%, where x is Autoclicks made this game.</p>
+				<p><b>Note</b>: 'Clicks count more' effects are <b>not</b> affecting this upgrade.</p>
+				<hr>
+				<p id="AN-GB"><img src="http://musicfamily.org/realm/Factions/picks/GoldenHeaven.png" align="middle"><b>
+						Golden Heaven</b></p>
+				<p><b>Requirement</b>: Angel Legacy, Goblin Legacy</p>
+				<p><b>Effect</b>: Increase the production of all buildings based on Gold owned.</p>
+				<p><b>Formula</b>: (log10(1 + x) ^ 2)%, where x is the current amount of Gold you own.</p>
+				<hr>
+				<p id="AN-UD"><img src="http://musicfamily.org/realm/Factions/picks/DarkSanctum.png" align="middle"><b>
+						Dark
+						Sanctum</b></p>
+				<p><b>Requirement</b>: Angel Legacy, Undead Legacy</p>
+				<p><b>Effect</b>: Multiplicatively increase Maximum Mana based on time spent as Order in this
+					Reincarnation.</p>
+				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Order in this Reincarnation.</p>
+				<hr>
+				<p id="AN-DM"><img src="http://musicfamily.org/realm/Factions/picks/EternalBattlefield.png"
+						align="middle"><b>
+						Eternal Battlefield</b></p>
+				<p><b>Requirement</b>: Angel Legacy, Demon Legacy</p>
+				<p><b>Effect</b>: Increase the production of Evil Buildings based on time spent as Good in this
+					Reincarnation, and vice-versa. Does not affect Neutral Buildings</p>
+				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent as Good/Evil in this Reincarnation.</p>
+				<hr>
+				<p id="GB-UD"><img src="http://musicfamily.org/realm/Factions/picks/HomunculusLab.png"
+						align="middle"><b>
+						Homunculus Lab</b></p>
+				<p><b>Requirement</b>: Goblin Legacy, Undead Legacy</p>
+				<p><b>Effect</b>: Increase Research Budget based on the least time spent between Order and Balance in
+					this Reincarnation.</p>
+				<p><b>Formula</b>: +(75 + ln(1 + min(x , y)) ^ 3.25)%, where x and y is time spent as Order and Balance
+					respectively in this Reincarnation.</p>
+				<p><b>Effect</b>: Also increase the production of all buildings based on unspent research budget.</p>
+				<p><b>Formula</b>: (1.3 * x ^ 0.7)%, where x is the sum of your unspent research budget across all
+					branches.</p>
+				<hr>
+				<p id="GB-DM"><img src="http://musicfamily.org/realm/Factions/picks/CorruptionZone.png"
+						align="middle"><b>
+						Corruption Zone</b></p>
+				<p><b>Requirement</b>: Goblin Legacy, Demon Legacy</p>
+				<p><b>Effect</b>: Increase the production of Non-Unique buildings based on the duration of your longest
+					spell.</p>
+				<p><b>Formula</b>: (0.8 * x ^ 0.8)%, where x is the duration of your longest spell.</p>
+				<hr>
+				<p id="UD-DM"><img src="http://musicfamily.org/realm/Factions/picks/FrozenWastes.png" align="middle"><b>
+						Frozen Wastes</b></p>
+				<p><b>Requirement</b>: Undead Legacy, Demon Legacy</p>
+				<p><b>Effect</b>: Increase Offline Production based on time spent offline in this Reincarnation.</p>
+				<p><b>Formula</b>: (0.7 * x ^ 0.7)%, where x is time spent offline in this Reincarnation.</p>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+	<table style="width:100%; margin-top:1em; border:1px solid #; font-size:90%; text-align:center;">
+		<tbody>
+			<tr>
+				<td style="padding:0.2em 0.5em;">
+					<FONT color=#98AFC7> | <a href="/Resources"
+							research="Mana - Coins - Faction Coins - Gems - Rubies - Kreds">
+							<FONT color=#98AFC7>Resources
+						</a> | <a href="/Reset" research="Reset - Abdication - Reincarnation">
+							<FONT color=#98AFC7>Soft Resets
+						</a> | <a href="/BuildingAlignments" research="Building Alignments">
+							<FONT color=#98AFC7>Buildings
+						</a> | <a href="/Heritages" research="Faction Heritages">
+							<FONT color=#98AFC7>Heritages
+						</a> | <a href="/Bloodline" research="Faction Bloodlines" class="mw-redirect">
+							<FONT color=#98AFC7>Bloodlines
+						</a>
+						| <a href="/Spells" research="Spells and Tier unlock Times">
+							<FONT color=#98AFC7>Spells
+						</a> | <a href="/Artifacts" research="Excavations">
+							<FONT color=#98AFC7>Excavations
+						</a> | <a href="/Challenges" research="Complete list of Challenges and descriptions">
+							<FONT color=#98AFC7>Challenges
+						</a> | <a href="/Upgrades" research="Upgrades">
+							<FONT color=#98AFC7>Upgrades
+						</a> | <a href="/TrophyPage" research="Complete list of Trophies and descriptions">
+							<FONT color=#98AFC7>Trophies
+						</a>
+						| <a href="/Factions" research="Factions">
+							<FONT color=#98AFC7>Factions
+						</a> | <a href="/Research" research="The Research Facilities - Short and long names">
+							<FONT color=#98AFC7>Research
+						</a> |
+						<p> | <a href="/MercBuilds" research="Mercenary Builds">
+								<FONT color=#98AFC7>Merc Builds
+							</a> | <a href="/ResearchBuilds" research="Research Builds">
+								<FONT color=#98AFC7>Research Builds
+							</a> | <a href="/PBuilds" research="Evil and Good Prestige Builds">
+								<FONT color=#98AFC7>Prestige Builds
+							</a> | <a href="/R40-R46" research="Ascension Builds">
+								<FONT color=#98AFC7>Dragon Unlock
+							</a> | <a href="/R47-R60" research="Neutral Prestige Builds">
+								<FONT color=#98AFC7>Neutral Prestige Builds
+							</a> | <a href="/Researchtree" research="Complete list of Research and descriptions">
+								<FONT color=#98AFC7>Research Tree
+							</a> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #f1e9d1;"> <a
+									research="Vanilla Factions<p><FONT color=Blue>Good</font>: <FONT color=#efbbf0>Fairy, <FONT color=#46bd53>Elf</font>, <FONT color=#b1f4f1>Angel<p><FONT color=DarkRed>Evil</font>: <FONT color=#b8b87b>Goblin</font>, <FONT color=#62269d>Undead</font>, <FONT color=#e55131>Demon</font><p><FONT color=DarkGoldenRod>Neutral</font>: <FONT color=#eed835>Titan</font>, <FONT color=#876137>Druid</font>, <FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Vanilla Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #4db1e8;"> <a
+									research="Good Factions<p><FONT color=#efbbf0>Fairy<p><FONT color=#46bd53>Elf<p><FONT color=#b1f4f1>Angel<p>">
+									<FONT color=#98AFC7>Good Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #a0000d;"> <a
+									research="Evil Factions<p><FONT color=#b8b87b>Goblin<p><FONT color=#62269d>Undead<p><FONT color=#e55131>Demon">
+									<FONT color=#98AFC7>Evil Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #dcdcdc;"> <a
+									research="Neutral Factions<p><FONT color=#eed835>Titan<p><FONT color=#876137>Druid<p><FONT color=#ac94ec>Faceless">
+									<FONT color=#98AFC7>Neutral Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="Prestige Factions<p><FONT color=#3333e6>Dwarf<p><FONT color=#9a0368>Drow<p><FONT color=#006400>Dragon">
+									<FONT color=#98AFC7>Prestige Factions
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									research="A2 Elite Factions<p><FONT color=#B0C4DE>Archon<p><FONT color=#483D8B>Djinn<p><FONT color=#C0C0C0>Makers">
+									<FONT color=#98AFC7>A2 Elite Factions
+								</a> </span> |
+						</p>
+						| <a href="/Events" research="Events">
+							<FONT color=#98AFC7>Events
+						</a> | <a href="/Changes" research="Latest Major Patch">
+							<FONT color=#98AFC7>Latest Major Patch
+						</a> | <a href="/Changelog" research="Changelog">
+							<FONT color=#98AFC7>Changelog
+						</a> | <a href="/Notation" research="Short - Scientific - Engineering">
+							<FONT color=#98AFC7>Notation
+						</a> | <a href="/Terminology" research="Commonly used terms and abbreviations">
+							<FONT color=#98AFC7>Terminology
+						</a> | <a href="/Tools"
+							research="Realm Weather Service - pastebin - auto clicker - Royal Scribe - Lara Crypt - imgur.com - Realm Grinder Wiki">
+							<FONT color=#98AFC7>Tools
+						</a> | <a href="/Kong" research="Help">
+							<FONT color=#98AFC7>Kongregate Links
+						</a> |
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #efbbf0;"> <a
+									href="/FairyFaction" research="Fairy (Good)">
+									<FONT color=#98AFC7>Fairy
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #46bd53;"> <a
+									href="/ElfFaction" research="Elf (Good)">
+									<FONT color=#98AFC7>Elven
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b1f4f1;"> <a
+									href="/AngelFaction" research="Angel (Good)">
+									<FONT color=#98AFC7>Angel
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #b8b87b;"> <a
+									href="/GoblinFaction" research="Goblin (Evil)">
+									<FONT color=#98AFC7>Goblin
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #62269d;"> <a
+									href="/UndeadFaction" research="Undead (Evil)">
+									<FONT color=#98AFC7>Undead
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #e55131;"> <a
+									href="/DemonFaction" research="Demon (Evil)">
+									<FONT color=#98AFC7>Demon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #eed835;"> <a
+									href="/TitanFaction" research="Titan (Neutral)">
+									<FONT color=#98AFC7>Titan
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #876137;"> <a
+									href="/DruidFaction" research="Druid (Neutral)">
+									<FONT color=#98AFC7>Druid
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #ac94ec;"> <a
+									href="/FacelessFaction" research="Faceless (Neutral)">
+									<FONT color=#98AFC7>Faceless
+								</a> </span> |
+						</p>
+						<p> | <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #000000;"> <a
+									href="/MercenaryFaction" research="Mercenary">
+									<FONT color=#98AFC7>Mercenary
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #3333e6;"> <a
+									href="/DwarfFaction" research="Dwarf (Good Prestige)">
+									<FONT color=#98AFC7>Dwarf
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #9a0368;"> <a
+									href="/DrowFaction" research="Drow (Evil Prestige)">
+									<FONT color=#98AFC7>Drow
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #006400;"> <a
+									href="/DragonFaction" research="Dragon (Neutral Prestige)">
+									<FONT color=#98AFC7>Dragon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #B0C4DE;"> <a
+									href="/ArchonFaction" research="Archon (A2 Elite)">
+									<FONT color=#98AFC7>Archon
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #483D8B;"> <a
+									href="/DjinnFaction" research="Djinn (A2 Elite)">
+									<FONT color=#98AFC7>Djinn
+								</a> </span>
+							| <span style="display:inline-block; padding:1px 0;border-bottom:5px solid #C0C0C0;"> <a
+									href="/MakersFaction" research="Makers (A2 Elite)">
+									<FONT color=#98AFC7>Makers
+								</a> </span> |
+						</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p align="center">
+		<FONT color=#98AFC7> Contact me <a target="_blank" href="http://www.kongregate.com/accounts/G00FBALL/">
+				<FONT color=#98AFC7><b>G00FBALL</b></font>
+			</a>
+	</p>
+	<div align="center">
+		<FONT color=#98AFC7> <b>Thank You!!! for all your help.</b></a></p>
+			<marquee class="html-marquee" direction="up" behavior="scroll" scrollamount="2">
+				<p align="center">5ku||3d</p>
+				<p align="center">6000j</p>
+				<p align="center">7636kei</p>
+				<p align="center">Aaborg</p>
+				<p align="center">Aaron Cook</p>
+				<p align="center">acbdefgfedbca</p>
+				<p align="center">acer4321</p>
+				<p align="center">Ach3ck</p>
+				<p align="center">AJZ3</p>
+				<p align="center">AKL</p>
+				<p align="center">Alright</p>
+				<p align="center">Altoscholto</p>
+				<p align="center">Amirin</p>
+				<p align="center">Anathah</p>
+				<p align="center">AndreikaD</p>
+				<p align="center">Antendren</p>
+				<p align="center">apocal_88</p>
+				<p align="center">arcanmster</p>
+				<p align="center">Archmage</p>
+				<p align="center">arintayn2</p>
+				<p align="center">ARTEZZ</p>
+				<p align="center">art-of-dom</p>
+				<p align="center">ash1soccer</p>
+				<p align="center">Ashthar</p>
+				<p align="center">aurora</p>
+				<p align="center">aviv</p>
+				<p align="center">Azua</p>
+				<p align="center">Bearpaws</p>
+				<p align="center">BigGeak</p>
+				<p align="center">bigshawnt</p>
+				<p align="center">BillK14</p>
+				<p align="center">BionicFrog</p>
+				<p align="center">BioRules</p>
+				<p align="center">blackbird</p>
+				<p align="center">Blackeye</p>
+				<p align="center">Blue</p>
+				<p align="center">bobbert</p>
+				<p align="center">Boffo</p>
+				<p align="center">Book909</p>
+				<p align="center">boss_mc</p>
+				<p align="center">Boyo</p>
+				<p align="center">brc48632</p>
+				<p align="center">Breeze</p>
+				<p align="center">btzeroes</p>
+				<p align="center">burninglegion64</p>
+				<p align="center">BuzzMarzz</p>
+				<p align="center">CafeMaker</p>
+				<p align="center">CamoBrie</p>
+				<p align="center">capito27</p>
+				<p align="center">Chaos</p>
+				<p align="center">Chaosmancer7</p>
+				<p align="center">chaosmarine4226</p>
+				<p align="center">CheeseWitch</p>
+				<p align="center">chris</p>
+				<p align="center">chrispi</p>
+				<p align="center">CHRullz</p>
+				<p align="center">Ck</p>
+				<p align="center">CluelessWonder</p>
+				<p align="center">Coal_CC</p>
+				<p align="center">ColdDrake13</p>
+				<p align="center">Corgi</p>
+				<p align="center">cralo</p>
+				<p align="center">Cromedome</p>
+				<p align="center">Cromieplays</p>
+				<p align="center">Curunur</p>
+				<p align="center">Cyden</p>
+				<p align="center">Da Banana Man</p>
+				<p align="center">DainDwarf</p>
+				<p align="center">Damxacer1</p>
+				<p align="center">Dariof4</p>
+				<p align="center">DED SERVER</p>
+				<p align="center">Delichtig</p>
+				<p align="center">Dienes</p>
+				<p align="center">djones0823</p>
+				<p align="center">djru8ix</p>
+				<p align="center">Doubleshoe</p>
+				<p align="center">dox4242</p>
+				<p align="center">DR</p>
+				<p align="center">Draven</p>
+				<p align="center">Drogor</p>
+				<p align="center">drseilzug</p>
+				<p align="center">EagleAgg03</p>
+				<p align="center">Ebilkill</p>
+				<p align="center">ehyder</p>
+				<p align="center">eleganceseraph</p>
+				<p align="center">ElJay</p>
+				<p align="center">Eltro</p>
+				<p align="center">Enexplogen</p>
+				<p align="center">ensteffahn</p>
+				<p align="center">ErrolErrolson</p>
+				<p align="center">escalon</p>
+				<p align="center">Essigschurke</p>
+				<p align="center">Evengrey</p>
+				<p align="center">Exsanguine</p>
+				<p align="center">FastHit</p>
+				<p align="center">FedeJossa</p>
+				<p align="center">Fire</p>
+				<p align="center">Flameslinger01</p>
+				<p align="center">Fonzoland</p>
+				<p align="center">Franelas</p>
+				<p align="center">Freakomant</p>
+				<p align="center">Fryguy9</p>
+				<p align="center">furkannnO</p>
+				<p align="center">fwbx529</p>
+				<p align="center">gaccount</p>
+				<p align="center">GalacManta</p>
+				<p align="center">gamemasterty</p>
+				<p align="center">Geno</p>
+				<p align="center">Ghorre</p>
+				<p align="center">Glitchstorm</p>
+				<p align="center">Goholtramor</p>
+				<p align="center">Grazloth</p>
+				<p align="center">GreenMJ13</p>
+				<p align="center">grelf</p>
+				<p align="center">Guy</p>
+				<p align="center">gvaiou</p>
+				<p align="center">HeinQuek</p>
+				<p align="center">HellTest</p>
+				<p align="center">Heronimo2</p>
+				<p align="center">heyitsdross</p>
+				<p align="center">hiimahotdog</p>
+				<p align="center">homebrewer54</p>
+				<p align="center">Hotspot</p>
+				<p align="center">iam10ninjas</p>
+				<p align="center">Ignus</p>
+				<p align="center">Igorogi</p>
+				<p align="center">iluxa4000</p>
+				<p align="center">Ilya</p>
+				<p align="center">ivanovichkoslov</p>
+				<p align="center">j8ner</p>
+				<p align="center">jabberok</p>
+				<p align="center">Jakeb2002</p>
+				<p align="center">Jenetikitty</p>
+				<p align="center">JezuzLizard</p>
+				<p align="center">JGChan</p>
+				<p align="center">jgchan29</p>
+				<p align="center">Joa</p>
+				<p align="center">johnharveybc</p>
+				<p align="center">johnleprude</p>
+				<p align="center">johny_blaze</p>
+				<p align="center">jonny0panic</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">Just1pirate</p>
+				<p align="center">kabuto44</p>
+				<p align="center">Kacper</p>
+				<p align="center">Kain</p>
+				<p align="center">Kanra</p>
+				<p align="center">Kaos</p>
+				<p align="center">Keben</p>
+				<p align="center">kiluh</p>
+				<p align="center">KRIEG</p>
+				<p align="center">Kroll</p>
+				<p align="center">kuerti</p>
+				<p align="center">KuraTheDog</p>
+				<p align="center">Kurt-bookboy</p>
+				<p align="center">KyonLevic</p>
+				<p align="center">Lailoken</p>
+				<p align="center">Lapare</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lavi04</p>
+				<p align="center">Lead Luigi</p>
+				<p align="center">LeoB516</p>
+				<p align="center">LeoC.II</p>
+				<p align="center">lesd</p>
+				<p align="center">lesdruides</p>
+				<p align="center">Liraso</p>
+				<p align="center">Lollipop</p>
+				<p align="center">lordulster</p>
+				<p align="center">Luio2revenge</p>
+				<p align="center">lvl 1 crook</p>
+				<p align="center">magnanimousCynic</p>
+				<p align="center">Magnusly</p>
+				<p align="center">ManDude33</p>
+				<p align="center">mangafreak140</p>
+				<p align="center">mangaking118</p>
+				<p align="center">MarioFanaticXV</p>
+				<p align="center">masteff</p>
+				<p align="center">Masterzan</p>
+				<p align="center">Matrix4767</p>
+				<p align="center">Max Schradin</p>
+				<p align="center">Maya</p>
+				<p align="center">McguyverZero</p>
+				<p align="center">Mechaflood</p>
+				<p align="center">Merp</p>
+				<p align="center">Milkopilko</p>
+				<p align="center">mpeechee</p>
+				<p align="center">Mr.Celedown</p>
+				<p align="center">MrGerman</p>
+				<p align="center">mrothorr</p>
+				<p align="center">myogin</p>
+				<p align="center">Mysticman89</p>
+				<p align="center">MythWiz_</p>
+				<p align="center">nakota</p>
+				<p align="center">Namelessname</p>
+				<p align="center">NateMcCloud</p>
+				<p align="center">Necrodoom</p>
+				<p align="center">NecroXD</p>
+				<p align="center">Neutral Potato</p>
+				<p align="center">NeutralPotato</p>
+				<p align="center">Nizidramaniiyt</p>
+				<p align="center">noonomoon</p>
+				<p align="center">NTWgreatest</p>
+				<p align="center">NTWgrinder</p>
+				<p align="center">oholoko</p>
+				<p align="center">Okami</p>
+				<p align="center">okunderground</p>
+				<p align="center">onianinara</p>
+				<p align="center">Onoxious</p>
+				<p align="center">Origin</p>
+				<p align="center">oswarlan</p>
+				<p align="center">OvenBakedGod</p>
+				<p align="center">Paah</p>
+				<p align="center">pacmanlite</p>
+				<p align="center">Palamazzi</p>
+				<p align="center">Parasitez83</p>
+				<p align="center">Piezza24</p>
+				<p align="center">pizza_troll</p>
+				<p align="center">pkal</p>
+				<p align="center">plaaosert</p>
+				<p align="center">player2aj</p>
+				<p align="center">Polibus</p>
+				<p align="center">Popington</p>
+				<p align="center">primal cradily</p>
+				<p align="center">Proxy</p>
+				<p align="center">pseudobyte</p>
+				<p align="center">PseudonymousBosh</p>
+				<p align="center">Pyxl</p>
+				<p align="center">q1235
+				<p></p>
+				<p align="center">raato</p>
+				<p align="center">Rade</p>
+				<p align="center">RageBall</p>
+				<p align="center">RastlinV</p>
+				<p align="center">RebelKeithy</p>
+				<p align="center">Redd</p>
+				<p align="center">Redd</p>
+				<p align="center">Regulus</p>
+				<p align="center">Reknot</p>
+				<p align="center">RetroDerpSquid9</p>
+				<p align="center">rhaek7</p>
+				<p align="center">Rustle Crowe</p>
+				<p align="center">Ryonir</p>
+				<p align="center">saitenhieb</p>
+				<p align="center">SamGooBat</p>
+				<p align="center">Sandworm</p>
+				<p align="center">Sas Assassin</p>
+				<p align="center">Sc0rp</p>
+				<p align="center">Sefa</p>
+				<p align="center">Seyliz</p>
+				<p align="center">Shantie</p>
+				<p align="center">shayner12</p>
+				<p align="center">Sheer</p>
+				<p align="center">Sho Phaune</p>
+				<p align="center">Skulled190</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">Slakkarn</p>
+				<p align="center">slantfer</p>
+				<p align="center">solidifiedmind</p>
+				<p align="center">somarilnos</p>
+				<p align="center">SomeoneLucas</p>
+				<p align="center">Soulrift</p>
+				<p align="center">Space Troll</p>
+				<p align="center">spamtraprus</p>
+				<p align="center">Spanosa</p>
+				<p align="center">SRT</p>
+				<p align="center">StAUG</p>
+				<p align="center">stmlee</p>
+				<p align="center">Stoner Claff</p>
+				<p align="center">Sum Yung Gai</p>
+				<p align="center">sunk</p>
+				<p align="center">Suranis</p>
+				<p align="center">swim</p>
+				<p align="center">Synthini</p>
+				<p align="center">Sythen2014</p>
+				<p align="center">tangyifei</p>
+				<p align="center">Tanny</p>
+				<p align="center">Taxiway</p>
+				<p align="center">tbrown30</p>
+				<p align="center">Teabagger Vance</p>
+				<p align="center">Technosaurus</p>
+				<p align="center">Tenebricosus</p>
+				<p align="center">Tenyasha</p>
+				<p align="center">ThatGuy</p>
+				<p align="center">The Homa</p>
+				<p align="center">ThePeon</p>
+				<p align="center">Thorian</p>
+				<p align="center">toifel131</p>
+				<p align="center">Tornadobird</p>
+				<p align="center">torskenn</p>
+				<p align="center">trevYT</p>
+				<p align="center">Trewq_</p>
+				<p align="center">TrostNi</p>
+				<p align="center">Tskami_ek</p>
+				<p align="center">Tyler</p>
+				<p align="center">ukulelejongetje
+				<p></p>
+				<p align="center">UndeadAbbys</p>
+				<p align="center">Uni</p>
+				<p align="center">Username</p>
+				<p align="center">uwnim</p>
+				<p align="center">Valentin</p>
+				<p align="center">Versine</p>
+				<p align="center">VilgefortzPL</p>
+				<p align="center">Vince</p>
+				<p align="center">waga baba bobo</p>
+				<p align="center">WaitingIdly</p>
+				<p align="center">waterfire425</p>
+				<p align="center">websterguy</p>
+				<p align="center">Weedheter</p>
+				<p align="center">Wlerin</p>
+				<p align="center">Wolf415</p>
+				<p align="center">wolfsblood</p>
+				<p align="center">woopemgood</p>
+				<p align="center">WynneYilmaz</p>
+				<p align="center">xemima</p>
+				<p align="center">XenosHg</p>
+				<p align="center">Xentha</p>
+				<p align="center">XenTwo</p>
+				<p align="center">xeperiset</p>
+				<p align="center">Xikre</p>
+				<p align="center">Xorious</p>
+				<p align="center">Xpt14</p>
+				<p align="center">xXRochforteXx</p>
+				<p align="center">Yarilo</p>
+				<p align="center">ydc1017902176</p>
+				<p align="center">yob</p>
+				<p align="center">Zange</p>
+				<p align="center">Zaraza</p>
+				<p align="center">Zariars</p>
+				<p align="center">Zeckenschwarm</p>
+				<p align="center">Zeen</p>
+				<p align="center">Zelphh1</p>
+				<p align="center">Zepto</p>
+				<p align="center">zionhian</p>
+				<p align="center">Zyllyn</p>
+				<p align="center">Zylon</p>
+				<p align="center">Дикий Речной Пёс</p>
+			</marquee>
+			<style>
+				.html-marquee {
+					height: 14px;
+					width: 160px;
+					background-color: Black;
+					font-family: Cursive;
+					font-size: 14px;
+					color: #98AFC7;
+					font-weight: bold;
+					border-width: 1;
+					border-style: solid;
+					border-color: Black;
+				}
+			</style>
+			<script>
+				function myFunction(e) {
+					var copyText = e.next();
+					if (isOS()) {
+						var textElement = copyText[0];
+						var editable = textElement.contentEditable;
+						var readOnly = textElement.readOnly;
+						textElement.contentEditable = true;
+						textElement.readOnly = false;
+						var range = document.createRange();
+						range.selectNodeContents(textElement);
+						var selection = window.getSelection();
+						selection.removeAllRanges();
+						selection.addRange(range);
+						textElement.setSelectionRange(0, 999999);
+						textElement.contentEditable = editable;
+						textElement.readOnly = readOnly;
+					} else {
+						copyText.select();
+					}
+					document.execCommand('copy');
+				}
+				function isOS() {
+					return navigator.userAgent.match(/ipad|iphone/i);
+				}
+			</script>
+			<div align="center">
+				<a href="https://www.cutercounter.com/" target="_blank"><img
+						src="https://www.cutercounter.com/hits.php?id=geqcfpc&nd=9&style=39" border="0"
+						alt="visitor counter"></a>
+				</body>
+
 </html>
