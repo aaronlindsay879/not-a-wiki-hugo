@@ -70,7 +70,7 @@ body {
     overflow: auto;
     width: 950px;
     height: 166px;
-    background-image: url(http://musicfamily.org/realm/Factions/picks/ResearctTreeHeader.png);
+    background-image: url(/Factions/picks/ResearctTreeHeader.png);
 }
 
 #navbox {
@@ -99,7 +99,7 @@ body {
 }
 
 #leftbox {
-    background-image: url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+    background-image: url(/Factions/picks/RealmGrinderGameRL.png);
     background-repeat: no-repeat;
     background-position: center top;
     text-align: left;
@@ -209,7 +209,7 @@ body {
     text-align: left;
     font-size: 1.2em;
     color: transparent;
-    background-image: url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+    background-image: url(/Factions/picks/RealmGrinderGameRL.png);
     background-repeat: no-repeat;
     position: 10px 10px 10px 10px;
     width: 145px;

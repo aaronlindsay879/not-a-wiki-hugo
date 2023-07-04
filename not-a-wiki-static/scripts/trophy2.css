@@ -44,7 +44,7 @@ background: #4c5b86;
 overflow: auto; 
 width: 750px;
 height: 165px;
-background-image:url(http://musicfamily.org/realm/Factions/picks/RealmGrinderHeader.png);
+background-image:url(/Factions/picks/RealmGrinderHeader.png);
 }
 #navbox{
 margin: 0;
@@ -128,7 +128,7 @@ width: 186px;
 float: left; 
 }
 #leftbox { 
-background-image:url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+background-image:url(/Factions/picks/RealmGrinderGameRL.png);
 background-repeat: no-repeat;
 background-position:center top;
 text-align: left;
@@ -199,7 +199,7 @@ float: right;
 text-align: left;
 font-size:1.2em;
 color: transparent;
-background-image:url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+background-image:url(/Factions/picks/RealmGrinderGameRL.png);
 background-repeat: no-repeat;
 position: 10px 10px 10px 10px;
 width: 145px;

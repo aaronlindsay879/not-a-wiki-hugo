@@ -80,7 +80,7 @@ width: 1100px;
 
 height: 160px;
 
-background-image:url(http://musicfamily.org/realm/Factions/picks/GameWindowHeader.png);
+background-image:url(/Factions/picks/GameWindowHeader.png);
 
 }
 
@@ -130,7 +130,7 @@ float: left;
 
 #leftbox { 
 
-background-image:url(http://musicfamily.org/realm/Factions/picks/RealmGrinderGameRL.png);
+background-image:url(/Factions/picks/RealmGrinderGameRL.png);
 
 background-repeat: no-repeat;
 
