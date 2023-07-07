@@ -9,26 +9,26 @@
     <div class="autohide">
         <p><b>Author</b>: {{ .build.author }}</p>
 
-        {{ if isset .build "gem_range"}}
-        <p><b>Range</b>: {{ .build.gem_range }}</p>
+        {{ with .build.gem_range }}
+        <p><b>Range</b>: {{ . }}</p>
         {{ end }}
 
-        {{ if isset .build "requirements" }}
-        <p><b>Requirements</b>: {{ delimit .build.requirements ", "}}</p>
+        {{ with .build.requirements }}
+        <p><b>Requirements</b>: {{ delimit . ", "}}</p>
         {{ end }}
 
         <p><b>Alignment</b>: {{ .build.alignment }}</p>
 
-        {{ if isset .build "bloodline"}}
-        <p><b>Bloodline</b>: {{ safeHTML .build.bloodline }}</p>
+        {{ with .build.bloodline }}
+        <p><b>Bloodline</b>: {{ safeHTML . }}</p>
         {{ end }}
 
         {{ range .build.builds }}
         <p>
             <button onclick="myFunction($(this))">Copy Build</button>
             <input type="text" value="{{ .build }}" />
-            {{ if isset . "note" }}
-            <b>{{ .note }}</b>
+            {{ with .note }}
+            <b>{{ . }}</b>
             {{ end }}
         </p>
         {{ end }}
@@ -37,13 +37,13 @@
         <p><b>Note</b>: {{ . }}</p>
         {{ end }}
 
-        {{ if isset .build "slowdown" }}
+        {{ with .build.slowdown }}
         <p>
             <b>
                 <font color="DarkRed">When build slows down:</font>
             </b>
         </p>
-        {{ range .build.slowdown }}
+        {{ range . }}
         <p><b>Note</b>: {{ . }}</p>
         {{ end }}
         {{ end }}
