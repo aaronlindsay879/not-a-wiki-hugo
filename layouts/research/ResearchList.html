@@ -1,12 +1,12 @@
 {{ define "main" }}
-<h6><img src="http://musicfamily.org/realm/Factions/picks/ResearchTopPage.png"></h6>
+<h6><img src="/Factions/picks/ResearchTopPage.png"></h6>
 <p>
     Information about how Research Slots / Budget work can be found at
-    <b><a href="http://musicfamily.org/realm/Research">Research</a></b>.
+    <b><a href="/Research">Research</a></b>.
 </p>
 <p>
     All Researches can also be found in a graphical form at:
-    <b><a href="http://musicfamily.org/realm/Researchtree">Research Tree</a></b>.
+    <b><a href="/Researchtree">Research Tree</a></b>.
 </p>
 <hr>
 <p><b>Research Facilities</b>:</p>
@@ -15,7 +15,7 @@
     {{ range .Site.Data.research }}
     {{ range $facility, $list := . }}
     <p onclick="shohid($(this));">
-        <img src="http://musicfamily.org/realm/Factions/picks/{{ $facility }}.png" alt="{{ $facility }}" align="middle">
+        <img src="/Factions/picks/{{ $facility }}.png" alt="{{ $facility }}" align="middle">
         <a href="#" onclick="return false;">
             <b>{{ $facility }}</b>
         </a>
