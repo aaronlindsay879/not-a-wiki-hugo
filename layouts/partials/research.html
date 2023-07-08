@@ -1,0 +1,29 @@
+{{/*
+Displays information about a single research, requiring the following to be passed:
+* research: A map containing (at the very least) `id`, `for`,`name`, `cost` and `effect`
+*/}}
+
+<p><b>{{ .research.id }}</b> - For {{ .research.for }}</p>
+<p><b>Research Name</b>: {{ .research.name }}</p>
+
+{{ with .research.hint }}
+<p><b>Hint</b>: {{ . }}</p>
+{{ end }}
+
+{{ with .research.requirement }}
+<p><b>Requirement</b>: {{ . }}</p>
+{{ end }}
+
+<p><b>Cost</b>: {{ .research.cost }}</p>
+
+{{ if reflect.IsMap .research.effect }}
+{{/* Simplest case: just a single effect, so just display it */}}
+{{ partial "effect.html"
+(dict "description" .research.effect.description "formula" .research.effect.formula)}}
+{{ else }}
+{{/* Otherwise handle the list of effects */}}
+{{ range .research.effect }}
+{{ partial "effect.html"
+(dict "description" .description "formula" .formula)}}
+{{ end }}
+{{ end }}

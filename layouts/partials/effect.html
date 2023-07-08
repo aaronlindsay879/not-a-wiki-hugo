@@ -1,0 +1,16 @@
+{{/*
+Displays information about a single effect, requiring the following to be passed:
+* description: A string containing the description
+* formula: Either a string or an array of strings of formulas
+*/}}
+
+<p><b>Effect</b>: {{ .description }}</p>
+{{ with .formula }}
+{{ if reflect.IsMap . }}
+{{ range $text, $formula := . }}
+<p><b>{{ $text }}</b>: {{ $formula }}</p>
+{{ end }}
+{{ else }}
+<p><b>Formula</b>: {{ . }}</p>
+{{ end }}
+{{ end }}
