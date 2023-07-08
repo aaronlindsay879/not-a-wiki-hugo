@@ -1,7 +1,6 @@
 ---
 title: "MercBuilds"
 url: "/MercBuilds"
-type: builds
 builds:
   - name: Assisted Advancement
     author: Cyden
