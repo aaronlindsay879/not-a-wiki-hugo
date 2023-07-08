@@ -27,8 +27,8 @@
       effect:
         description: Increase Maximum Mana and Mana Regeneration rate based on time spent in this game.
         formula:
-          "Max mana formula": +(0.1 * x), where x is time spent in this game."
-          "Mana Regeneration Formula": +(0.5 * x ^ 0.5), where x is time spent in this game."
+          "Max mana formula": "+(0.1 * x), where x is time spent in this game."
+          "Mana Regeneration Formula": "+(0.5 * x ^ 0.5), where x is time spent in this game."
     - id: S50
       name: Conjuration
       for: Goblin
