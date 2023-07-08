@@ -17,9 +17,11 @@ An example of this is [MercBuilds.md](/content/builds/MercBuilds.md) using the t
 
 An example of this is the content file [ResearchList.md](/content/research/ResearchList.md), using the template [layouts/research/ResearchList.html](/layouts/research/ResearchList.html) and the data file [research.yaml](/data/research.yaml).
 
-`Researchlist.md` is an almost empty file, which only exists to tell hugo to create a page at that url with the right template file.
+`ResearchList.md` is an almost empty file, which only exists to tell hugo to create a page at that url with the right template file.
 `layouts/research/ResearchList.html` tells hugo how to convert the data from the data file into html.
 `research.yaml` contains research data.
+
+This is used for when data needs to be used in more than one place - builds will only ever be displayed on the build page, but researches are displayed in both the tree and list, for example.
 
 #### Other important things:
 
