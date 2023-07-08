@@ -94,7 +94,11 @@ builds:
 
 <h6><img src="/Factions/picks/MercenaryTopPage.png" alt="Spellcraft" align="middle"></h6>
 <p><b>Important</b>: For <font color=DarkRed><b>R12</b> and above get the <b>Know Your Enemy Part I</b> Artifact, using the Harley Quinn build.</font>
-<p>With version 2 comes the ability to load and save mercenary builds. The Faction Upgrades and Spells are saved in templates.</p>
-<p><b>Note</b>: You will need to manually select the alignment and bloodline.</p>
-<p><b>Templates</b> can be found at the top of each build table (if available).</p>
-<p><b>Note</b>: Most Templates are in order that the game save them in. Also when loading Templates the game will buy the upgrades you can afford first and you may need to load Templates several times to buy all upgrades.</p>
+
+With version 2 comes the ability to load and save mercenary builds. The Faction Upgrades and Spells are saved in templates.
+
+**Note**: You will need to manually select the alignment and bloodline.
+
+**Templates** can be found at the top of each build table (if available).
+
+**Note**: Most Templates are in order that the game save them in. Also when loading Templates the game will buy the upgrades you can afford first and you may need to load Templates several times to buy all upgrades.
