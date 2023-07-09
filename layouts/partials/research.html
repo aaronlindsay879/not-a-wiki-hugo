@@ -14,7 +14,7 @@ Displays information about a single research, requiring the following to be pass
 <p><b>Requirement</b>: {{ . }}</p>
 {{ end }}
 
-<p><b>Cost</b>: {{ .research.cost }}</p>
+<p><b>Cost</b>: {{ replace (print .research.cost) "+" "" }}</p>
 
 {{ if reflect.IsMap .research.effect }}
 {{/* Simplest case: just a single effect, so just display it */}}
