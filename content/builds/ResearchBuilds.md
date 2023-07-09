@@ -276,7 +276,7 @@ builds:
         - Optionally, swap D200->D400.
 ---
 
-<h6><img src="http://musicfamily.org/realm/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
+<h6><img src="/Factions/picks/TopPageResearch.png" alt="Spellcraft" align="middle"></h6>
 
 As a general Rule: All builds were tested without Sunforce, if not stated otherwise. All builds had access to all relevant trophies, challenges and artifacts. Only the fastest build for each bracket made it into this, but every combination that looked useful (and even some others) was tested.
 
