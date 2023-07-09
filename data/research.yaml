@@ -25,9 +25,11 @@
       requirement: Have 4,000 Mana. (This Game)
       cost: 9.588e130
       effect:
-        description: Increase Maximum Mana and Mana Regeneration rate based on time spent in this game.
+        description:
+          Increase Maximum Mana and Mana Regeneration rate based on time
+          spent in this game.
         formula:
-          "Max mana formula": "+(0.1 * x), where x is time spent in this game."
+          "Maximum Mana Formula": "+(0.1 * x), where x is time spent in this game."
           "Mana Regeneration Formula": "+(0.5 * x ^ 0.5), where x is time spent in this game."
     - id: S50
       name: Conjuration
@@ -36,7 +38,9 @@
       requirement: Have 6,000 mana (as Fairy) (This Game)
       cost: 3.188e+134
       effect:
-        - description: Each time you cast a spell you also cast free Tax Collections based on the amount of Goblin Banks you own.
+        - description:
+            Each time you cast a spell you also cast free Tax Collections
+            based on the amount of Goblin Banks you own.
           formula: "floor((x / 600) ^ 0.9), where x is the number of Goblin Banks you own."
         - description: Also increases offline spell cast amount multiplicatively by 150%.
 
@@ -47,6 +51,57 @@
       cost: 7.5e125
       effect:
         description:
-          Increase Elven Training Grounds production based on the amount of
-          Faction Coins you found.
+          Increase Elven Training Grounds production based on the amount
+          of Faction Coins you found.
         formula: "(3 * ln(1 + x) ^ 3)%, where x is your Faction Coins found this game."
+
+- Divine:
+    - id: D1
+      name: Blessing
+      for: Angel
+      cost: 7.5e125
+      effect:
+        description:
+          Increase the production of Heaven's Domains based on total time spent
+          with at least one active spell.
+        formula: "(8 * x ^ 0.8)%, where x is total time spent with at least one active spell."
+
+- Economics:
+    - id: E1
+      name: Coinage
+      for: Goblin
+      cost: 7.5e125
+      effect:
+        description:
+          Increase the production of Goblin Banks based on the amount of buildings
+          you own.
+        formula: "(0.85 * x ^ 0.85)%, where x is your Buildings Owned (This Game) stat."
+
+- Alchemy:
+    - id: A1
+      name: Plague
+      for: Undead
+      cost: 7.5e125
+      effect:
+        description: Increase the production of Undercities by 20% per assistant you own.
+
+- Warfare:
+    - id: W1
+      name: Assault
+      for: Demon
+      cost: 7.5e125
+      effect:
+        description:
+          Increase the production of Infernal Realms based on the amount of Hellfire
+          Blasts cast in this game.
+        formula: "(30 * x ^ 0.7)%, where x is Hellfire Blasts Cast This Game."
+
+- Forbidden:
+    - id: F5250
+      name: Dreamwalking
+      for: All Factions
+      requirement: R176+, Forgotten Relic, Apeiron artifact and upgrade.
+      cost: Free
+      effect:
+        description: Increase Offline Bonus based on time spent offline in this Reincarnation.
+        formula: "(0.7 * x ^ 0.7), where x is offline time (This R)."
