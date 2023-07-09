@@ -1,5 +1,9 @@
 {{ define "main" }}
 {{ .Content }}
+
+{{ if eq .Params.group_by "type" }}
+{{/* if grouping by type, filter for each type and then make distinct sections */}}
+
 {{ $prod_builds := where .Params.builds "type" "Production" }}
 {{ $trophy_builds := where .Params.builds "type" "Trophy" }}
 {{ $buff_builds := where .Params.builds "type" "Buff" }}
@@ -31,4 +35,19 @@
 </div>
 {{ end }}
 
+{{ else if eq .Params.group_by "nesting" }}
+{{/* otherwise, iterate through each outer yaml nesting group and make sections */}}
+
+{{ range $id, $builds := .Params.builds }}
+<p onclick="shohid($(this));">
+    <b><a href="#" onclick="return false;">{{ upper $id }}</a></b>
+</p>
+<div class="category autohide">
+    {{ range $builds }}
+    {{ partial "build.html" (dict "build" .) }}
+    {{ end }}
+</div>
+{{ end }}
+
+{{ end }}
 {{ end }}

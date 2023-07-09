@@ -2,28 +2,45 @@
     <p onclick="shohid($(this));">
         <b>
             <a href="#" onclick="return false;">
+                {{ if isset .build "uses" }}
                 {{ .build.name }} - {{ delimit .build.uses ", " }}
+                {{ else }}
+                {{ .build.name }}
+                {{ end }}
             </a>
         </b>
     </p>
     <div class="autohide">
-        <p><b>Author</b>: {{ .build.author }}</p>
-
-        {{ with .build.gem_range }}
-        <p><b>Range</b>: {{ . }}</p>
+        {{ with .build.author }}
+        <p><b>Author</b>: {{ . }}</p>
         {{ end }}
 
         {{ with .build.requirements }}
         <p><b>Requirements</b>: {{ delimit . ", "}}</p>
         {{ end }}
 
-        <p><b>Alignment</b>: {{ .build.alignment }}</p>
+        {{ with .build.faction }}
+        <p><b>Faction</b>: {{ . }}</p>
+        {{ end }}
+
+        {{ with .build.alignment }}
+        <p><b>Alignment</b>: {{ . }}</p>
+        {{ end }}
 
         {{ with .build.bloodline }}
         <p><b>Bloodline</b>: {{ safeHTML . }}</p>
         {{ end }}
 
-        {{ range .build.builds }}
+        {{ with .build.gem_range }}
+        <p><b>Range</b>: {{ . }}</p>
+        {{ end }}
+
+        {{ with .build.duration }}
+        <p><b>Duration</b>: {{ . }}</p>
+        {{ end }}
+
+        {{ with .build.builds }}
+        {{ range . }}
         <p>
             <button onclick="myFunction($(this))">Copy Build</button>
             <input type="text" value="{{ .build }}" />
@@ -32,9 +49,24 @@
             {{ end }}
         </p>
         {{ end }}
+        {{ end }}
 
+        {{ with .build.builds }}
+        {{ range split (index . 0).build "\n" }}
+        <p>{{ . }}</p>
+        {{ end }}
+        {{ end }}
+
+        {{/* check if this is a notes or build section by seeing what fields exist */}}
+        {{ if eq (len .build) 2 }}
+        {{/* if notes section, dont need to include note text for each entry */}}
         {{ range .build.notes }}
-        <p><b>Note</b>: {{ . }}</p>
+        <p>{{ safeHTML . }}</p>
+        {{ end }}
+        {{ else }}
+        {{ range .build.notes }}
+        <p><b>Note</b>: {{ safeHTML . }}</p>
+        {{ end }}
         {{ end }}
 
         {{ with .build.slowdown }}
