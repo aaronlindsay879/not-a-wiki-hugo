@@ -30,5 +30,5 @@ This is used for when data needs to be used in more than one place - builds will
 Partial files are essentially snippets of HTML (with embedded code, like shown before) that can be included in templates.
 They are being used in two main ways in this project:
 
-- Partials such as [head.html](/layouts/partials/head.html), [header.html](/layouts/partials/header.html) and [footer.html](/layouts/partials/footer.html) which are used to generate static parts of the site and split it up. `head.html` is the head tag, `header.html` is header content within the body
+- Partials such as [head.html](/layouts/partials/static/head.html), [header.html](/layouts/partials/static//header.html) and [footer.html](/layouts/partials/static//footer.html) which are used to generate static parts of the site and split it up. `head.html` is the head tag, `header.html` is header content within the body
 - Partials such as [effect.html](/layouts/partials/effect.html) which are used to abstract away logic and make templates simpler - in this case, `effect.html` converts a single research effect into html while handling every edge case.
