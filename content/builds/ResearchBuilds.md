@@ -8,7 +8,7 @@ builds:
       notes:
         - There is a relevant guide on how to go through the unlocking of the
           researches needed to start using research builds.
-          (<a target="_blank" href="http://musicfamily.org/realm/R16Guide/"><b>R16 Research Guide</b></a>)
+          (<a target="_blank" href="/R16Guide/"><b>R16 Research Guide</b></a>)
         - "IMPORTANT: Although you unlock all researches at the end of R16, you do not use research until R17. Keep using Mercenary to finish R16"
         - All factions were used and tested, Goblin proved to be the best in a reasonable amount of time.
     - name: Goblin
@@ -58,7 +58,7 @@ builds:
             A10,A105,A120,A135,A150,
             W25,W120,W150,W180,W205
   "R21-R25":
-    - name: Notes for R16
+    - name: Notes for R21+
       notes:
         - "<b>R22+</b>: Remember to grab Ancient Cocoa Bean, you will need it from R26 on."
     - name: Goblin
